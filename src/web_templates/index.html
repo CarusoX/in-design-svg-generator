@@ -3,6 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <title>{{ title }} — Preview</title>
+  <!--
+    Fonts for the SVG previews. We inline the SVG markup into this document
+    (see makePage in the script below) so these stylesheets reach the SVG
+    text — <object>-loaded SVGs would be isolated documents and wouldn't
+    see them. The on-disk SVG files in out/ stay clean (no <style> or font
+    imports), so the InDesign handoff is unaffected.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+    rel="stylesheet"
+  />
   <style>
     :root {
       --bg: #2a2a2a;
@@ -74,7 +87,8 @@
       flex: 0 0 auto;
     }
     .page.blank { background: transparent; box-shadow: none; }
-    .page object {
+    /* Inline SVGs (injected by makePage) fill the page wrapper. */
+    .page > svg {
       width: 100%; height: 100%; display: block;
     }
     .page .pagenum {
@@ -163,17 +177,21 @@
     // Cache-busted reticle URL so livereload picks up regenerated overlays.
     const RETICLE_URL = `/out/_reticle.svg?t=${Date.now()}`;
 
-    function makePage(id) {
+    // Fetch and inline the SVG so it shares this document's font registry
+    // (the Google Fonts <link> in <head>). <object> would isolate the SVG
+    // into its own document and the fonts wouldn't apply.
+    async function makePage(id) {
       const wrap = document.createElement('div');
       if (id === null || !PAGE_SET.has(id)) {
         wrap.className = 'page blank';
         return wrap;
       }
       wrap.className = 'page';
-      const obj = document.createElement('object');
-      obj.type = 'image/svg+xml';
-      obj.data = pageUrl(id);
-      wrap.appendChild(obj);
+
+      const res = await fetch(pageUrl(id));
+      const svgText = (await res.text()).replace(/^\s*<\?xml[^>]*\?>\s*/, '');
+      // innerHTML on an HTML element parses SVG correctly into the page.
+      wrap.insertAdjacentHTML('afterbegin', svgText);
 
       // Reticle overlay (hidden unless body.reticle-on is set).
       const reticle = document.createElement('img');
@@ -189,7 +207,7 @@
       return wrap;
     }
 
-    function renderSpread(idx) {
+    async function renderSpread(idx) {
       stage.innerHTML = '';
       const start = SPREAD_STARTS[idx];
       if (start === undefined) {
@@ -205,8 +223,11 @@
         left = start;
         right = start + 1;
       }
-      stage.appendChild(makePage(left));
-      stage.appendChild(makePage(right));
+      const [leftEl, rightEl] = await Promise.all([makePage(left), makePage(right)]);
+      // Guard against an in-flight spread being replaced by a faster one.
+      if (stage.dataset.idx !== String(idx)) return;
+      stage.appendChild(leftEl);
+      stage.appendChild(rightEl);
 
       const shownLeft = left !== null && PAGE_SET.has(left) ? left : null;
       const shownRight = right !== null && PAGE_SET.has(right) ? right : null;
@@ -220,6 +241,7 @@
       const max = parseInt(slider.max, 10);
       const clamped = Math.max(0, Math.min(idx, max));
       slider.value = clamped;
+      stage.dataset.idx = String(clamped);
       renderSpread(clamped);
       try { localStorage.setItem('spread-idx', String(clamped)); } catch (_) {}
     }

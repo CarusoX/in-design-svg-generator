@@ -21,18 +21,33 @@ from __future__ import annotations
 from .. import render as r
 
 
+# Positions taken from tests/ground-truth/Section1.svg (Illustrator export
+# by the design teammate). Values converted from points → mm via × 0.3528.
+ROMAN_X_MM = 14.31
+ROMAN_Y_MM = 72.06
+TITLE_X_MM = 15.41
+TITLE_Y_MM = 102.37
+META_Y_MM = 113.10
+QUOTE_Y_MM = 161.26
+FOLIO_X_MM = 13.65
+FOLIO_Y_MM = 203.04
+
+# Text columns end at the reticle's right edge (= MARGIN + CONTENT - INSET).
+# Cap the wrapping at this so justified lines don't overflow past the grid.
+TEXT_MAX_W_MM = (r.MARGIN_MM + r.CONTENT_W_MM - r.RETICLE_INSET_MM) - TITLE_X_MM
+
+
 def render(page_id: int, data: dict) -> str:
     parts = [r.svg_open(r.PALETTE["rojo_tinta"])]
 
-    # Roman numeral. Baseline near upper-third; slight indent past the margin
-    # so the serifs of the "I" sit visually inside the column.
+    # Roman numeral. Baseline near upper-third.
     romano = str(data.get("romano", "")).strip()
     if romano:
         parts.append(r.text(
             "13-Portadilla-Romano",
             romano,
-            x_mm=r.MARGIN_MM + 14,
-            y_mm=85,
+            x_mm=ROMAN_X_MM,
+            y_mm=ROMAN_Y_MM,
         ))
 
     # Section title — Lato Black, wraps within content width if long.
@@ -41,9 +56,9 @@ def render(page_id: int, data: dict) -> str:
         parts.append(r.text(
             "14-Portadilla-Nombre",
             nombre,
-            x_mm=r.MARGIN_MM,
-            y_mm=108,
-            max_width_mm=r.CONTENT_W_MM,
+            x_mm=TITLE_X_MM,
+            y_mm=TITLE_Y_MM,
+            max_width_mm=TEXT_MAX_W_MM,
         ))
 
     # Metadata line: "<periodo>  ·  <piezas>" — both uppercased by the style.
@@ -54,8 +69,8 @@ def render(page_id: int, data: dict) -> str:
         parts.append(r.text(
             "15-Portadilla-Periodo",
             "  ·  ".join(meta_segments),
-            x_mm=r.MARGIN_MM,
-            y_mm=118,
+            x_mm=TITLE_X_MM,
+            y_mm=META_Y_MM,
         ))
 
     # Curatorial quote — lower third, italic serif.
@@ -64,17 +79,17 @@ def render(page_id: int, data: dict) -> str:
         parts.append(r.text(
             "16-Portadilla-CitaCurato",
             quote,
-            x_mm=r.MARGIN_MM,
-            y_mm=160,
-            max_width_mm=r.CONTENT_W_MM,
+            x_mm=TITLE_X_MM,
+            y_mm=QUOTE_Y_MM,
+            max_width_mm=TEXT_MAX_W_MM,
         ))
 
     # Folio (page number) — bottom-left, cream.
     parts.append(r.text(
         "Folio-Light",
         str(page_id),
-        x_mm=r.MARGIN_MM,
-        y_mm=r.TRIM_H_MM - 7,
+        x_mm=FOLIO_X_MM,
+        y_mm=FOLIO_Y_MM,
     ))
 
     parts.append(r.svg_close())

@@ -8,7 +8,7 @@ from dataclasses import dataclass
 
 
 PALETTE: dict[str, str] = {
-    "rojo_tinta":   "#A82A1F",
+    "rojo_tinta":   "#A92A20",   # matches tests/ground-truth/Section1.svg
     "papel_crema":  "#F5F2EB",
     "negro_tinta":  "#1A1A1A",
     "gris_texto":   "#555555",
@@ -128,8 +128,9 @@ TEXT_STYLES: dict[str, TextStyle] = {
 
     # — Portadilla de sala (red-bg section title page) —
     "13-Portadilla-Romano": TextStyle(
+        # Size 156.71pt to match tests/ground-truth/Section1.svg.
         font_family="EB Garamond",
-        size_pt=180, leading_pt=155,
+        size_pt=156.71, leading_pt=155,
         color="papel_crema",
     ),
     "14-Portadilla-Nombre": TextStyle(
@@ -138,6 +139,7 @@ TEXT_STYLES: dict[str, TextStyle] = {
         tracking_per1000=-10,
         color="papel_crema",
         space_before_mm=6,
+        justified=True,
     ),
     "15-Portadilla-Periodo": TextStyle(
         font_family="Lato", font_weight=900,
@@ -149,6 +151,7 @@ TEXT_STYLES: dict[str, TextStyle] = {
         font_family="EB Garamond", font_style="italic",
         size_pt=13, leading_pt=18,
         color="papel_crema",
+        justified=True,
     ),
 
     # — Fichas (artwork cards, both pages of the spread) —

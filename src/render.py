@@ -113,7 +113,9 @@ def _char_factor(style: TextStyle) -> float:
         # reference page 11 portadilla.
         return 0.48 if style.font_weight >= 900 else 0.46
     if "garamond" in fam:
-        return 0.48 if style.font_style == "italic" else 0.46
+        # Italic factor tuned against tests/ground-truth/Section1.svg so the
+        # Sala I curatorial quote wraps to 3 lines like the reference.
+        return 0.37 if style.font_style == "italic" else 0.46
     if "caveat" in fam:
         return 0.42
     return 0.50
@@ -197,10 +199,28 @@ def text(
     if ls_mm:
         attrs.append(f'letter-spacing="{ls_mm:.5f}"')
 
+    # Justified text: every line gets textLength + lengthAdjust="spacing"
+    # so the browser distributes spacing using its own font metrics — the
+    # only renderer we ship through that needs to match the layout exactly
+    # (InDesign re-flows on import). For multi-line paragraphs the last
+    # line stays ragged (standard convention); for a single-line block
+    # (e.g. a title), the only line IS the one to justify.
+    justify = style.justified and max_width_mm is not None
+
     parts = [f'<text x="{x_mm}" y="{y_mm}" {" ".join(attrs)}>']
+    last_idx = len(lines) - 1
+    single_line = len(lines) == 1
     for i, line in enumerate(lines):
         dy = "0" if i == 0 else f"{leading_mm:.4f}"
-        parts.append(f'<tspan x="{x_mm}" dy="{dy}">{escape(line)}</tspan>')
+        justify_line = justify and (single_line or i < last_idx)
+        if justify_line:
+            parts.append(
+                f'<tspan x="{x_mm}" dy="{dy}" '
+                f'textLength="{max_width_mm:.4f}" lengthAdjust="spacing">'
+                f'{escape(line)}</tspan>'
+            )
+        else:
+            parts.append(f'<tspan x="{x_mm}" dy="{dy}">{escape(line)}</tspan>')
     parts.append('</text>')
     return "".join(parts)
 
@@ -274,14 +294,31 @@ def paragraph(
     if ls_mm:
         attrs.append(f'letter-spacing="{ls_mm:.5f}"')
 
+    # Justified text: every line except the last is stretched to fit its
+    # available width via SVG's `textLength` + `lengthAdjust="spacing"`.
+    # First-line indent reduces the available width on line 1; hanging
+    # indent reduces it on every later line.
+    justify = style.justified and len(lines) > 1
+    first_w_mm = max_width_mm - first_line_indent_mm
+    rest_w_mm = max_width_mm - hanging_indent_mm
+
     parts = [f'<text x="{x_mm}" y="{y_mm}" {" ".join(attrs)}>']
+    last_idx = len(lines) - 1
     for i, line in enumerate(lines):
         if i == 0:
             line_x = x_mm + first_line_indent_mm
+            line_w = first_w_mm
         else:
             line_x = x_mm + hanging_indent_mm
+            line_w = rest_w_mm
         dy = "0" if i == 0 else f"{leading_mm:.4f}"
-        parts.append(f'<tspan x="{line_x}" dy="{dy}">{escape(line)}</tspan>')
+        extra = (
+            f' textLength="{line_w}" lengthAdjust="spacing"'
+            if justify and i < last_idx else ''
+        )
+        parts.append(
+            f'<tspan x="{line_x}" dy="{dy}"{extra}>{escape(line)}</tspan>'
+        )
     parts.append('</text>')
 
     # Height = distance from first baseline to (next paragraph's) first

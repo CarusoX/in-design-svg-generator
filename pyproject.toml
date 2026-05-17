@@ -13,6 +13,14 @@ dependencies = [
     "livereload>=2.6.3",
 ]
 
+[project.optional-dependencies]
+# Visual regression tests (tests/test_section1.py) compare a rendered page
+# against tests/ground-truth/Section1.svg using Pillow + rsvg-convert.
+dev = [
+    "pytest>=8.0",
+    "Pillow>=10.0",
+]
+
 [project.scripts]
 catalog-generate = "src.generate:main"
 catalog-serve = "src.server:main"
