@@ -21,8 +21,23 @@ from PIL import Image, ImageChops
 
 ROOT = Path(__file__).resolve().parent.parent
 REFERENCE_SVG = ROOT / "tests" / "ground-truth" / "Section1.svg"
-GENERATED_SVG = ROOT / "out" / "page-006.svg"
 RENDER_WIDTH_PX = 600
+
+
+def _sala_i_portadilla_page_id() -> int:
+    """Look up which page the Sala I portadilla currently lives on —
+    the page id shifts whenever front-matter (nota_curatorial pages,
+    indice, etc.) grows or shrinks."""
+    # Late import to avoid module-load order weirdness with the
+    # templates package.
+    from src.generate import load_catalog
+    pages = load_catalog().get("pages", [])
+    for p in pages:
+        if p.get("template") == "portadilla_sala":
+            data = p.get("data") or {}
+            if str(data.get("romano", "")).strip() == "I":
+                return p["id"]
+    raise RuntimeError("No portadilla_sala page found for sala I")
 
 # Empirically: a perfect-match render scores ~0; small per-glyph kerning
 # differences between rsvg + our wrap estimate land around 5-10 (out of
@@ -44,14 +59,17 @@ def _render(svg_path: Path, png_path: Path) -> None:
 
 @pytest.fixture(scope="module")
 def generated_svg() -> Path:
-    """Re-generate page 6 from the current catalog so the test always
-    compares fresh output against the reference."""
+    """Re-generate the current Sala I portadilla page so the test
+    always compares fresh output against the reference, regardless of
+    page-number shifts from front-matter changes."""
+    page_id = _sala_i_portadilla_page_id()
     subprocess.run(
-        [sys.executable, "-m", "src.generate", "--page", "6"],
+        [sys.executable, "-m", "src.generate", "--page", str(page_id)],
         cwd=ROOT, check=True,
     )
-    assert GENERATED_SVG.exists(), f"generator did not produce {GENERATED_SVG}"
-    return GENERATED_SVG
+    path = ROOT / "out" / f"page-{page_id:03d}.svg"
+    assert path.exists(), f"generator did not produce {path}"
+    return path
 
 
 @pytest.mark.skipif(not _have_rsvg(), reason="rsvg-convert not installed")

@@ -101,9 +101,8 @@ TEXT_STYLES: dict[str, TextStyle] = {
     ),
     "09-Body-Garamond": TextStyle(
         font_family="EB Garamond",
-        size_pt=10, leading_pt=15.5,
+        size_pt=12, leading_pt=18.6,
         color="negro_tinta",
-        justified=True,
         first_line_indent_mm=5,
     ),
 

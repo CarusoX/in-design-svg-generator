@@ -84,9 +84,21 @@ def _compile_pages(raw: dict) -> list[dict]:
     if "epigrafe" in raw:
         add("epigrafe", dict(raw["epigrafe"]))
 
-    # — Nota curatorial (multi-page essay; one YAML item per page)
-    for note_page in raw.get("nota_curatorial") or []:
-        add("nota_curatorial", dict(note_page))
+    # — Nota curatorial: a single body string in YAML; the template
+    # paginates it dynamically (line capacity per page is computed from
+    # the body style + reticle, so paragraphs flow naturally instead of
+    # leaving blank space at the bottom). Pad with one blank cream page
+    # if the count is odd, so the running front-matter parity
+    # (portada + epigrafe + N + indice = even) keeps the first
+    # portadilla_sala on an even page.
+    nota_raw = raw.get("nota_curatorial")
+    if nota_raw:
+        from .templates.nota_curatorial import paginate as paginate_nota
+        nota_pages = paginate_nota(nota_raw)
+        for page_data in nota_pages:
+            add("nota_curatorial", page_data)
+        if len(nota_pages) % 2 == 1:
+            add("blank_cream", {})
 
     # — Índice (auto-derive entradas if not provided). Each entry gets
     # the sala portadilla's page number, pre-computed: the índice

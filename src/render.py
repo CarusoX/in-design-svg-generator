@@ -145,25 +145,41 @@ def _letter_spacing_pt(style: TextStyle) -> float:
 # "iiii" vs "MMMM") would land at visibly wrong positions.
 
 _FONT_CACHE: dict[tuple, "ImageFont.FreeTypeFont"] = {}
-_FONT_DIR = Path.home() / "Library" / "Fonts"
+_USER_FONT_DIR = Path.home() / "Library" / "Fonts"
+# Project-vendored fonts (committed alongside the source). Used for
+# anything where the system-installed variant has different metrics
+# from what the browser preview actually renders — currently just EB
+# Garamond, where Pillow must measure against the same Google-Fonts
+# variable family the preview loads, not the locally-installed
+# optical-12 OTF.
+_VENDOR_FONT_DIR = Path(__file__).resolve().parent.parent / "vendor" / "fonts"
 
 
-def _font_filename(family: str, weight: int, italic: bool) -> str | None:
-    """On-disk filename for `family`/`weight`/`italic` matching the layout
-    the Homebrew Google Fonts casks produce in ~/Library/Fonts/."""
+def _font_path(family: str, weight: int, italic: bool) -> Path | None:
+    """Absolute path to the on-disk font file Pillow should measure with."""
     fam = family.lower()
     if "lato" in fam:
         if italic:
-            if weight >= 900: return "Lato-BlackItalic.ttf"
-            if weight >= 800: return "Lato-HeavyItalic.ttf"
-            if weight >= 700: return "Lato-BoldItalic.ttf"
-            return "Lato-Italic.ttf"
-        if weight >= 900: return "Lato-Black.ttf"
-        if weight >= 800: return "Lato-Heavy.ttf"
-        if weight >= 700: return "Lato-Bold.ttf"
-        return "Lato-Regular.ttf"
+            if weight >= 900: name = "Lato-BlackItalic.ttf"
+            elif weight >= 800: name = "Lato-HeavyItalic.ttf"
+            elif weight >= 700: name = "Lato-BoldItalic.ttf"
+            else: name = "Lato-Italic.ttf"
+        elif weight >= 900: name = "Lato-Black.ttf"
+        elif weight >= 800: name = "Lato-Heavy.ttf"
+        elif weight >= 700: name = "Lato-Bold.ttf"
+        else: name = "Lato-Regular.ttf"
+        return _USER_FONT_DIR / name
     if "garamond" in fam:
-        return "EBGaramond12-Italic.otf" if italic else "EBGaramond12-Regular.otf"
+        # Google variable-weight family — matches the family the preview
+        # HTML loads from fonts.googleapis.com, so Pillow's advance
+        # widths match what the browser actually renders. The locally
+        # installed EBGaramond12-Regular.otf is ~2–3% narrower per glyph
+        # and caused wrap to spill past the right reticle column.
+        name = (
+            "EBGaramond-Italic-VariableFont_wght.ttf" if italic
+            else "EBGaramond-VariableFont_wght.ttf"
+        )
+        return _VENDOR_FONT_DIR / name
     return None
 
 
@@ -174,11 +190,8 @@ def _get_font(style: TextStyle) -> "ImageFont.FreeTypeFont | None":
     key = (style.font_family, style.font_weight, italic, style.size_pt)
     if key in _FONT_CACHE:
         return _FONT_CACHE[key]
-    filename = _font_filename(style.font_family, style.font_weight, italic)
-    if filename is None:
-        return None
-    path = _FONT_DIR / filename
-    if not path.exists():
+    path = _font_path(style.font_family, style.font_weight, italic)
+    if path is None or not path.exists():
         return None
     try:
         _FONT_CACHE[key] = ImageFont.truetype(str(path), size=style.size_pt)

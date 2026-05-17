@@ -36,49 +36,107 @@ epigrafe:
     Daniel Silverman y Marina Garone Gravier
     Laudationes Quinque (1766), Diseña Nº 18, 2021
 
-# ── Nota curatorial (one item per page) ───────────────────────────────
+# ── Nota curatorial (single body; the generator paginates dynamically) ─
 nota_curatorial:
-  - label: "Nota curatorial"
-    titulo: "Sobre esta colección y el museo que no existe"
-    body: >-
-      En 1994, Roger Chartier formuló una observación que con el tiempo se
-      volvió incómoda: la tasa de sobrevida de un impreso es inversamente
-      proporcional a la importancia de su producción. Dicho de otro modo,
-      cuanto más se imprimió y más manos pasó, menos posibilidades tuvo de
-      llegar hasta nosotros. Los objetos que una cultura considera valiosos
-      los guarda; los que considera menores o utilitarios los consume hasta
-      agotarlos. Esta colección existe, en buena medida, para poner en
-      cuestión ese mecanismo de selección.
+  titulo: "Sobre esta colección y el museo que no existe"
+  body: >-
+    En 1994, Roger Chartier formuló una observación que con el tiempo se
+    volvió incómoda: la tasa de sobrevida de un impreso es inversamente
+    proporcional a la importancia de su producción (Chartier, R., 2006,
+    p. 55). Dicho de otro modo, cuanto más se imprimió y más manos pasó,
+    menos posibilidades tuvo de llegar hasta nosotros. Los objetos que
+    una cultura considera valiosos los guarda; los que considera menores
+    o utilitarios los consume hasta agotarlos. Esta colección existe, en
+    buena medida, para poner en cuestión ese mecanismo de selección.
 
-      Las piezas reunidas en este catálogo pertenecen a la historia del diseño
-      gráfico latinoamericano. Pertenecen a ella no como objetos marginales o
-      curiosidades de época, sino como documentos centrales de una práctica
-      que organizó la vida cotidiana, construyó identidades colectivas, hizo
-      circular ideas y configuró maneras de ver durante siglos. Sin embargo,
-      ninguna de estas piezas forma parte de una colección museística
-      permanente dedicada específicamente al diseño gráfico latinoamericano.
-      La razón es simple: esa colección no existe.
+    Las piezas reunidas en este catálogo pertenecen a la historia del
+    diseño gráfico latinoamericano. Pertenecen a ella no como objetos
+    marginales o curiosidades de época, sino como documentos centrales
+    de una práctica que organizó la vida cotidiana, construyó identidades
+    colectivas, hizo circular ideas y configuró maneras de ver durante
+    siglos. Sin embargo, ninguna de estas piezas forma parte de una
+    colección museística permanente dedicada específicamente al diseño
+    gráfico latinoamericano. La razón es simple y es también el problema
+    que este proyecto intenta nombrar: esa colección no existe.
 
-      El ensayista e investigador argentino Gustavo Valdés de León señaló que
-      el diseño latinoamericano carece todavía de una historia escrita
-      sistemática. Sus objetos han sido clasificados de maneras que les restan
-      especificidad: como arte, como artesanía, como patrimonio histórico,
-      como documento de época. Rara vez como diseño. Esta operación
-      clasificatoria no es inocente.
+    El ensayista e investigador argentino Gustavo Valdés de León señaló
+    que el diseño latinoamericano carece todavía de una historia escrita
+    sistemática (Valdés de León, G., 2008). Sus objetos han sido
+    clasificados de maneras que les restan especificidad: como arte,
+    como artesanía, como patrimonio histórico, como documento de época.
+    Rara vez como diseño. Esta operación clasificatoria no es inocente.
+    Al desplazar un objeto de la categoría de diseño a la de arte
+    precolombino, por ejemplo, se lo traslada de un campo de análisis
+    funcional y proyectual a uno de contemplación estética, vaciándolo
+    de la trama social que le dio origen, uso y sentido (Valdés de León,
+    2008, p. 57). El resultado es una historia del diseño latinoamericano
+    que en los grandes libros de referencia internacional casi no existe:
+    en la obra de Philip B. Meggs, con cerca de novecientas entradas en
+    su índice, apenas media docena refieren a autores latinoamericanos
+    (Valdés de León, 2008).
 
-  - is_continuation: true
-    body: >-
-      Este catálogo propone un ejercicio de restitución. No pretende construir
-      esa historia que falta. Pretende algo más acotado: aplicar a un conjunto
-      de objetos seleccionados el tratamiento formal que merecen. Las fichas
-      que componen esta colección utilizan los mismos criterios descriptivos
-      que cualquier museo utilizaría para documentar una pintura del siglo
-      XVIII o una escultura colonial.
+    Este catálogo propone un ejercicio de restitución. No pretende
+    construir esa historia que falta, tarea que requeriría esfuerzos
+    colectivos y programas de investigación de largo plazo (Valdés de
+    León, 2008, p. 60). Pretende algo más acotado y más concreto:
+    aplicar a un conjunto de objetos seleccionados el tratamiento
+    formal que merecen. Las fichas que componen esta colección utilizan
+    los mismos criterios descriptivos que cualquier museo utilizaría
+    para documentar una pintura del siglo XVIII o una escultura
+    colonial: técnica, materiales, dimensiones, procedencia, estado de
+    conservación, notas curatoriales, bibliografía de referencia.
 
-      Una aclaración: el museo que respalda este catálogo no existe. Lo que
-      existe es la pregunta de por qué no existe. Este catálogo es una
-      propuesta de cómo podría empezar a verse esa historia. Nada más, y nada
-      menos.
+    La decisión de aplicar ese sistema a una página de libro tipográfico
+    de 1766 (Silverman, D. & Garone Gravier, M., 2021), a una filigrana
+    de papel de procedencia incierta (Silverman & Garone Gravier, 2021),
+    a la arquitectura editorial de una revista de 1902 (Rogers, G.,
+    2008), o a una tabla cronológica familiar en un almanaque de 1917
+    (Mosqueda, A., 2012), es, en sí misma, una toma de posición. Afirma
+    que estos objetos son dignos del mismo rigor analítico y del mismo
+    cuidado documental que cualquier otra expresión de la cultura
+    material de su tiempo.
+
+    La colección está organizada cronológicamente y abarca desde los
+    primeros impresos producidos en el actual territorio argentino
+    durante el período colonial hasta las primeras décadas del siglo XX.
+    Este recorte no implica una jerarquía: no se afirma que los objetos
+    más antiguos sean más importantes que los más recientes, ni que
+    Buenos Aires sea el centro desde el cual deba leerse el diseño
+    latinoamericano (Valdés de León, 2008). El recorte responde
+    exclusivamente a los textos que fundamentan el trabajo curatorial y
+    que se detallan en la bibliografía de referencia al final de este
+    volumen.
+
+    Una aclaración que el rigor exige: el museo que respalda este
+    catálogo no existe. No hay una institución, una sede, una sala ni un
+    número de inventario real detrás de estas páginas. Lo que existe es
+    la pregunta de por qué no existe.
+
+    Esa pregunta no se formula aquí de manera retórica ni como gesto
+    irónico. Se formula con seriedad, con el convencimiento de que
+    nombrar una ausencia es el primer paso para que deje de serlo. El
+    diseño gráfico latinoamericano tiene una historia larga, compleja,
+    híbrida y en gran parte invisibilizada (Valdés de León, 2008). Tiene
+    objetos que merecen ser conservados, estudiados y exhibidos. Tiene
+    una genealogía formal que no comienza con la llegada de las
+    vanguardias europeas ni con la institucionalización universitaria de
+    la disciplina, sino mucho antes, en talleres coloniales con tipos
+    desgastados (Ares, F., 2009), en pliegos que nadie guardó (Mosqueda,
+    2012), en filigranas de papel cuyo molino de origen todavía no hemos
+    podido identificar (Silverman & Garone Gravier, 2021).
+
+    Este catálogo es una propuesta de cómo podría empezar a verse esa
+    historia. Nada más, y nada menos.
+
+    Las piezas de esta colección han sido documentadas a partir de
+    fuentes académicas especializadas en historia del libro, tipografía
+    colonial y diseño gráfico latinoamericano. Las imágenes que
+    acompañan cada ficha corresponden a reproducciones de los originales
+    o de sus facsímiles, obtenidas de archivos públicos, repositorios
+    digitales y publicaciones académicas de referencia. En los casos en
+    que el original no ha sido localizado, se indica explícitamente en
+    la ficha correspondiente el estado de conservación y la fuente de la
+    imagen utilizada.
 
 # ── Índice (entradas auto-derived from salas below) ───────────────────
 indice:
