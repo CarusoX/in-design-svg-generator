@@ -216,7 +216,15 @@
       posIdx.textContent = `${idx + 1} / ${SPREAD_STARTS.length}`;
     }
 
-    slider.addEventListener('input', () => renderSpread(parseInt(slider.value, 10)));
+    function setSpread(idx) {
+      const max = parseInt(slider.max, 10);
+      const clamped = Math.max(0, Math.min(idx, max));
+      slider.value = clamped;
+      renderSpread(clamped);
+      try { localStorage.setItem('spread-idx', String(clamped)); } catch (_) {}
+    }
+
+    slider.addEventListener('input', () => setSpread(parseInt(slider.value, 10)));
 
     document.addEventListener('keydown', (e) => {
       // Grid toggle — 'g' anywhere outside form fields.
@@ -227,19 +235,20 @@
       }
       const cur = parseInt(slider.value, 10);
       const max = parseInt(slider.max, 10);
+      let next = cur;
       if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === 'PageDown') {
-        slider.value = Math.min(cur + 1, max);
+        next = Math.min(cur + 1, max);
       } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft' || e.key === 'PageUp') {
-        slider.value = Math.max(cur - 1, 0);
+        next = Math.max(cur - 1, 0);
       } else if (e.key === 'Home') {
-        slider.value = 0;
+        next = 0;
       } else if (e.key === 'End') {
-        slider.value = max;
+        next = max;
       } else {
         return;
       }
       e.preventDefault();
-      renderSpread(parseInt(slider.value, 10));
+      setSpread(next);
     });
 
     // Reticle toggle — state persists across reloads.
@@ -256,7 +265,13 @@
     reticleBtn.addEventListener('click', toggleReticle);
     applyReticle(localStorage.getItem('reticle-on') === '1');
 
-    renderSpread(0);
+    // Restore the last-viewed spread (clamped if the catalog shrank).
+    let initialIdx = 0;
+    try {
+      const saved = parseInt(localStorage.getItem('spread-idx') || '0', 10);
+      if (!Number.isNaN(saved)) initialIdx = saved;
+    } catch (_) {}
+    setSpread(initialIdx);
   </script>
 </body>
 </html>

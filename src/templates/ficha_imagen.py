@@ -39,10 +39,15 @@ _RETICLE_ROW_H_MM = (
 )
 _ROW_1_BOTTOM_Y = r.MARGIN_MM + r.RETICLE_INSET_MM + _RETICLE_ROW_H_MM
 _ROW_2_TOP_Y = _ROW_1_BOTTOM_Y + r.RETICLE_GUTTER_MM
+_ROW_2_BOTTOM_Y = _ROW_2_TOP_Y + _RETICLE_ROW_H_MM
 
-# Vertical positions (mm from top of trim).
-RED_RULE_TOP_Y_MM = 28
-RED_RULE_H_MM = 30
+# Horizontal positions for the tipo/title block:
+#   - Red rule left edge sits on the first vertical reticle line.
+#   - Text starts one reticle gutter (4mm) past the rule's right edge.
+RULE_X_MM = r.MARGIN_MM + r.RETICLE_INSET_MM      # 15.4 — first reticle vline
+RULE_W_MM = 2.5                                    # per spec in CLAUDE.md
+TEXT_X_MM = RULE_X_MM + RULE_W_MM + r.RETICLE_GUTTER_MM  # 21.9
+TEXT_MAX_W_MM = (r.MARGIN_MM + r.CONTENT_W_MM) - TEXT_X_MM   # 112.1
 
 # Tipo baseline = bottom of reticle row 1 (= top of gutter 1).
 # Title cap-top = top of reticle row 2 (= bottom of gutter 1).
@@ -53,6 +58,10 @@ TITLE_Y_MM = (
     _ROW_2_TOP_Y
     + 0.7165 * TEXT_STYLES["20-Ficha-Titulo-Pieza"].size_pt * r.MM_PER_PT
 )
+
+# For sizing the red rule height: cap-height / descender ratios per font.
+_TIPO_CAP_RATIO = 0.685     # EB Garamond Italic
+_TITLE_DESC_RATIO = 0.27    # generous descender allowance
 
 AUTOR_Y_MM = 68
 DATOS_Y_MM = 75
@@ -84,17 +93,26 @@ def render(page_id: int, data: dict) -> str:
     # — Top chrome
     parts.append(ch.cabecera(pieza_id, cabecera_sub))
 
-    # — Red vertical rule alongside tipo + title
-    parts.append(r.red_rule_vertical(r.MARGIN_MM, RED_RULE_TOP_Y_MM, RED_RULE_H_MM))
+    # — Red vertical rule alongside tipo + title.
+    #   Spans from the tipo's cap-top down to the bottom of reticle row 2
+    #   (the row the title lives in). Height is fixed regardless of how
+    #   many lines the title wraps to.
+    tipo_style = TEXT_STYLES["19-Ficha-Tipo"]
+    title_style = TEXT_STYLES["20-Ficha-Titulo-Pieza"]
+    tipo_cap_top = TIPO_Y_MM - _TIPO_CAP_RATIO * tipo_style.size_pt * r.MM_PER_PT
+    title_cap_top = TITLE_Y_MM - 0.7165 * title_style.size_pt * r.MM_PER_PT
+    rule_top = tipo_cap_top if tipo else title_cap_top
+    rule_h = _ROW_2_BOTTOM_Y - rule_top
+    parts.append(r.red_rule_vertical(RULE_X_MM, rule_top, rule_h, width_mm=RULE_W_MM))
 
     if tipo:
         parts.append(r.text("19-Ficha-Tipo", tipo,
-                            x_mm=r.MARGIN_MM + 6, y_mm=TIPO_Y_MM))
+                            x_mm=TEXT_X_MM, y_mm=TIPO_Y_MM))
     if titulo:
         parts.append(r.text(
             "20-Ficha-Titulo-Pieza", titulo,
-            x_mm=r.MARGIN_MM + 6, y_mm=TITLE_Y_MM,
-            max_width_mm=r.CONTENT_W_MM - 6,
+            x_mm=TEXT_X_MM, y_mm=TITLE_Y_MM,
+            max_width_mm=TEXT_MAX_W_MM,
         ))
 
     if autor:
