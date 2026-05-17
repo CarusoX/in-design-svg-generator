@@ -61,9 +61,6 @@ def render(page_id: int, data: dict) -> str:
             parts.append(r.text("12-Indice-Periodo", periodo,
                                 x_mm=PERIODO_X_MM, y_mm=y))
 
-    parts.append(r.text(
-        "Folio-Dark", str(page_id),
-        x_mm=r.MARGIN_MM, y_mm=r.TRIM_H_MM - 7,
-    ))
+    parts.append(r.folio(page_id))
     parts.append(r.svg_close())
     return "".join(parts)

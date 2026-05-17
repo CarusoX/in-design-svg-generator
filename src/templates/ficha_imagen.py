@@ -138,7 +138,7 @@ def render(page_id: int, data: dict) -> str:
     parts.extend(_caption(pieza_id, caption))
 
     # — Bottom chrome
-    parts.append(ch.folio(page_id, pieza_id))
+    parts.append(r.folio(page_id))
 
     parts.append(r.svg_close())
     return "".join(parts)

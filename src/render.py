@@ -6,9 +6,15 @@ the page format stays consistent across the catalog.
 
 from __future__ import annotations
 
+from pathlib import Path
 from xml.sax.saxutils import escape
 
 from .styles import PALETTE, TEXT_STYLES, TextStyle
+
+try:
+    from PIL import ImageFont
+except ImportError:
+    ImageFont = None  # type: ignore[assignment]
 
 TRIM_W_MM = 148
 TRIM_H_MM = 210
@@ -29,6 +35,32 @@ PT_PER_MM = 2.83465
 # Origin (0, 0) is the top-left of the trim; viewBox extends out by BLEED on
 # each side so artwork can run to the bleed.
 VIEWBOX = f"{-BLEED_MM} {-BLEED_MM} {CANVAS_W_MM} {CANVAS_H_MM}"
+
+# Reticle (preview-only grid overlay) — also the source of truth for any
+# chrome that aligns to the grid (folio position, etc.).
+RETICLE_INSET_MM = 1.4
+RETICLE_COLS = 6
+RETICLE_ROWS = 9
+RETICLE_GUTTER_MM = 4.0   # 0.4 cm
+
+_RETICLE_INNER_W_MM = CONTENT_W_MM - 2 * RETICLE_INSET_MM
+_RETICLE_INNER_H_MM = CONTENT_H_MM - 2 * RETICLE_INSET_MM
+RETICLE_COL_W_MM = (
+    _RETICLE_INNER_W_MM - (RETICLE_COLS - 1) * RETICLE_GUTTER_MM
+) / RETICLE_COLS
+RETICLE_ROW_H_MM = (
+    _RETICLE_INNER_H_MM - (RETICLE_ROWS - 1) * RETICLE_GUTTER_MM
+) / RETICLE_ROWS
+
+# Absolute x position of each reticle column's RIGHT edge (i.e. the line
+# that closes the column before the next gutter starts). Justification
+# snaps to one of these so a short title doesn't get stretched across the
+# full reticle width.
+RETICLE_COL_RIGHT_X_MM = [
+    MARGIN_MM + RETICLE_INSET_MM
+    + (i + 1) * RETICLE_COL_W_MM + i * RETICLE_GUTTER_MM
+    for i in range(RETICLE_COLS)
+]
 
 
 def svg_open(background_hex: str) -> str:
@@ -99,6 +131,69 @@ def _letter_spacing_pt(style: TextStyle) -> float:
     return style.tracking_per1000 / 1000.0 * style.size_pt
 
 
+# — Real font-metric measurement for word-based justification —
+#
+# Word-based justification (distribute extra width across inter-word gaps,
+# never across inter-letter gaps) needs real per-word advance widths to
+# place words at the correct x. The char_factor estimate below is too
+# rough — words of similar char count but different glyph mixes (e.g.
+# "iiii" vs "MMMM") would land at visibly wrong positions.
+
+_FONT_CACHE: dict[tuple, "ImageFont.FreeTypeFont"] = {}
+_FONT_DIR = Path.home() / "Library" / "Fonts"
+
+
+def _font_filename(family: str, weight: int, italic: bool) -> str | None:
+    """On-disk filename for `family`/`weight`/`italic` matching the layout
+    the Homebrew Google Fonts casks produce in ~/Library/Fonts/."""
+    fam = family.lower()
+    if "lato" in fam:
+        if italic:
+            if weight >= 900: return "Lato-BlackItalic.ttf"
+            if weight >= 800: return "Lato-HeavyItalic.ttf"
+            if weight >= 700: return "Lato-BoldItalic.ttf"
+            return "Lato-Italic.ttf"
+        if weight >= 900: return "Lato-Black.ttf"
+        if weight >= 800: return "Lato-Heavy.ttf"
+        if weight >= 700: return "Lato-Bold.ttf"
+        return "Lato-Regular.ttf"
+    if "garamond" in fam:
+        return "EBGaramond12-Italic.otf" if italic else "EBGaramond12-Regular.otf"
+    return None
+
+
+def _get_font(style: TextStyle) -> "ImageFont.FreeTypeFont | None":
+    if ImageFont is None:
+        return None
+    italic = (style.font_style == "italic")
+    key = (style.font_family, style.font_weight, italic, style.size_pt)
+    if key in _FONT_CACHE:
+        return _FONT_CACHE[key]
+    filename = _font_filename(style.font_family, style.font_weight, italic)
+    if filename is None:
+        return None
+    path = _FONT_DIR / filename
+    if not path.exists():
+        return None
+    try:
+        _FONT_CACHE[key] = ImageFont.truetype(str(path), size=style.size_pt)
+    except OSError:
+        return None
+    return _FONT_CACHE[key]
+
+
+def _measure_word_mm(word: str, style: TextStyle) -> float:
+    """Rendered advance width of `word` in mm — falls back to the rough
+    char_factor estimate when Pillow or the font file isn't available."""
+    font = _get_font(style)
+    if font is not None:
+        width_pt = font.getlength(word)
+    else:
+        width_pt = len(word) * style.size_pt * _char_factor(style)
+    width_pt += max(0, len(word) - 1) * _letter_spacing_pt(style)
+    return width_pt * MM_PER_PT
+
+
 def _char_factor(style: TextStyle) -> float:
     """Rough average glyph-width as a fraction of em, by family/weight/style.
 
@@ -153,16 +248,19 @@ def text(
     x_mm: float,
     y_mm: float,
     max_width_mm: float | None = None,
+    align: str | None = None,
 ) -> str:
     """Emit a styled <text> block at baseline (x_mm, y_mm).
 
     `body` may be a single string (split on \\n, then auto-wrapped if
     max_width_mm is given) or a list of strings (each rendered as its own
     line). Uppercase is pre-applied in Python — never via CSS, since InDesign
-    discards text-transform on import.
+    discards text-transform on import. `align` overrides the style's default
+    text-anchor when provided ("start" | "middle" | "end").
     """
     style = TEXT_STYLES[style_id]
     fill = PALETTE[style.color]
+    text_anchor = align if align is not None else style.align
 
     if isinstance(body, str):
         if "\n" in body:
@@ -192,19 +290,18 @@ def text(
         f'font-size="{size_mm:.4f}"',
         f'font-weight="{style.font_weight}"',
         f'fill="{fill}"',
-        f'text-anchor="{style.align}"',
+        f'text-anchor="{text_anchor}"',
     ]
     if style.font_style != "normal":
         attrs.append(f'font-style="{style.font_style}"')
     if ls_mm:
         attrs.append(f'letter-spacing="{ls_mm:.5f}"')
 
-    # Justified text: every line gets textLength + lengthAdjust="spacing"
-    # so the browser distributes spacing using its own font metrics — the
-    # only renderer we ship through that needs to match the layout exactly
-    # (InDesign re-flows on import). For multi-line paragraphs the last
-    # line stays ragged (standard convention); for a single-line block
-    # (e.g. a title), the only line IS the one to justify.
+    # Justified text: distribute extra width across inter-WORD gaps only,
+    # never inter-letter (the browser's textLength + lengthAdjust="spacing"
+    # would stretch every glyph-pair, which looks grotesque on short
+    # titles). For multi-line paragraphs the last line stays ragged
+    # (standard convention); a single-line title gets justified too.
     justify = style.justified and max_width_mm is not None
 
     parts = [f'<text x="{x_mm}" y="{y_mm}" {" ".join(attrs)}>']
@@ -214,15 +311,78 @@ def text(
         dy = "0" if i == 0 else f"{leading_mm:.4f}"
         justify_line = justify and (single_line or i < last_idx)
         if justify_line:
-            parts.append(
-                f'<tspan x="{x_mm}" dy="{dy}" '
-                f'textLength="{max_width_mm:.4f}" lengthAdjust="spacing">'
-                f'{escape(line)}</tspan>'
-            )
+            parts.extend(_word_justified_tspans(line, x_mm, dy, max_width_mm, style))
         else:
             parts.append(f'<tspan x="{x_mm}" dy="{dy}">{escape(line)}</tspan>')
     parts.append('</text>')
     return "".join(parts)
+
+
+def _word_justified_tspans(
+    line: str, x_start: float, dy_first: str,
+    max_width_mm: float, style: TextStyle,
+) -> list[str]:
+    """Per-word <tspan>s that justify `line`.
+
+    The target width is snapped to the smallest reticle column right-edge
+    that fits the natural text width (capped at `max_width_mm`). A short
+    title stops at a nearby column instead of being stretched across the
+    full width; a long title naturally reaches the far right.
+
+    Words 1..N-1 sit at explicit x positions computed from Pillow advance
+    widths plus an even per-gap stretch. The LAST word is anchored with
+    text-anchor="end" at the snapped right edge, so it's always flush
+    regardless of Pillow-vs-browser metric drift. Extra width lands in
+    inter-word gaps only — inter-letter spacing is untouched.
+    """
+    words = line.split()
+    if len(words) < 2:
+        return [f'<tspan x="{x_start}" dy="{dy_first}">{escape(line)}</tspan>']
+
+    word_widths_mm = [_measure_word_mm(w, style) for w in words]
+    space_mm = _measure_word_mm(" ", style) or (
+        style.size_pt * _char_factor(style) * MM_PER_PT
+    )
+    natural_total_mm = sum(word_widths_mm) + (len(words) - 1) * space_mm
+
+    target_right_mm = _snap_target_right_mm(
+        x_start, natural_total_mm, max_width_mm,
+    )
+    effective_width_mm = target_right_mm - x_start
+    extra_per_gap_mm = max(
+        0.0, (effective_width_mm - natural_total_mm) / (len(words) - 1),
+    )
+    gap_mm = space_mm + extra_per_gap_mm
+
+    last_i = len(words) - 1
+    out: list[str] = []
+    x = x_start
+    for i, word in enumerate(words):
+        word_dy = dy_first if i == 0 else "0"
+        if i == last_i:
+            out.append(
+                f'<tspan x="{target_right_mm:.4f}" dy="{word_dy}" '
+                f'text-anchor="end">{escape(word)}</tspan>'
+            )
+        else:
+            out.append(f'<tspan x="{x:.4f}" dy="{word_dy}">{escape(word)}</tspan>')
+            x += word_widths_mm[i] + gap_mm
+    return out
+
+
+def _snap_target_right_mm(
+    x_start: float, natural_width_mm: float, max_width_mm: float,
+) -> float:
+    """Smallest reticle column right-edge x ≥ x_start + natural_width and
+    ≤ x_start + max_width. Falls back to x_start + max_width if no column
+    edge fits in that range (e.g. when natural already exceeds every
+    column edge inside the available width)."""
+    natural_right = x_start + natural_width_mm
+    max_right = x_start + max_width_mm
+    for edge in RETICLE_COL_RIGHT_X_MM:
+        if natural_right <= edge <= max_right:
+            return edge
+    return max_right
 
 
 def paragraph(
@@ -294,8 +454,8 @@ def paragraph(
     if ls_mm:
         attrs.append(f'letter-spacing="{ls_mm:.5f}"')
 
-    # Justified text: every line except the last is stretched to fit its
-    # available width via SVG's `textLength` + `lengthAdjust="spacing"`.
+    # Justified text: word-based — extra width goes into inter-word gaps
+    # via per-word <tspan>s. Last line stays ragged (standard convention).
     # First-line indent reduces the available width on line 1; hanging
     # indent reduces it on every later line.
     justify = style.justified and len(lines) > 1
@@ -312,19 +472,58 @@ def paragraph(
             line_x = x_mm + hanging_indent_mm
             line_w = rest_w_mm
         dy = "0" if i == 0 else f"{leading_mm:.4f}"
-        extra = (
-            f' textLength="{line_w}" lengthAdjust="spacing"'
-            if justify and i < last_idx else ''
-        )
-        parts.append(
-            f'<tspan x="{line_x}" dy="{dy}"{extra}>{escape(line)}</tspan>'
-        )
+        if justify and i < last_idx:
+            parts.extend(_word_justified_tspans(line, line_x, dy, line_w, style))
+        else:
+            parts.append(f'<tspan x="{line_x}" dy="{dy}">{escape(line)}</tspan>')
     parts.append('</text>')
 
     # Height = distance from first baseline to (next paragraph's) first
     # baseline, which is N×leading where N is the number of rendered lines.
     height_mm = len(lines) * leading_mm
     return "".join(parts), height_mm
+
+
+# — Folio (page number) —
+#
+# Convention: even pages are the LEFT page of a spread, odd pages are the
+# RIGHT page. The folio is the only chrome at the bottom of the page —
+# no artwork ID or other secondary label rides alongside it.
+#
+# Horizontally the digit's inner edge sits flush on the outermost vertical
+# reticle line. Vertically the digit's TOP (cap top, not the invisible
+# baseline) sits one gutter (RETICLE_GUTTER_MM) below the reticle's bottom
+# edge — so the visible margin between content and folio matches the
+# reticle gutter exactly.
+
+# Cap-height-to-em ratio for the Folio styles' font (Lato ≈ 0.72). Hardcoded
+# rather than measured because we no longer ship Pillow font metrics; if a
+# different font replaces Lato for the folio, retune this.
+_FOLIO_CAP_RATIO = 0.72
+_FOLIO_SIZE_PT = TEXT_STYLES["Folio-Light"].size_pt   # 8 pt
+_FOLIO_CAP_HEIGHT_MM = _FOLIO_SIZE_PT * _FOLIO_CAP_RATIO * MM_PER_PT
+
+FOLIO_Y_MM = (
+    TRIM_H_MM - MARGIN_MM - RETICLE_INSET_MM   # bottom edge of the reticle
+    + RETICLE_GUTTER_MM                        # visible gap = one gutter
+    + _FOLIO_CAP_HEIGHT_MM                     # baseline = cap-top + cap-height
+)
+
+
+def folio(page_id: int, *, light: bool = False, y_mm: float = FOLIO_Y_MM) -> str:
+    """Place the page number flush against the outermost reticle vline,
+    one gutter below the bottom of the reticle (in the outer margin).
+
+    Pass `light=True` for red-background pages (uses the cream folio style).
+    """
+    style_id = "Folio-Light" if light else "Folio-Dark"
+    if page_id % 2 == 0:
+        x = MARGIN_MM + RETICLE_INSET_MM
+        anchor = "end"
+    else:
+        x = TRIM_W_MM - MARGIN_MM - RETICLE_INSET_MM
+        anchor = "start"
+    return text(style_id, str(page_id), x_mm=x, y_mm=y_mm, align=anchor)
 
 
 # — Graphic element helpers (decorative) —
@@ -361,16 +560,13 @@ def image_placeholder(x_mm: float, y_mm: float, w_mm: float, h_mm: float) -> str
 
 # — Reticle (preview-only grid overlay) —
 #
-# Sits inside the content box with a 1.4mm inset on all sides. Divides the
-# remaining area into RETICLE_COLS × RETICLE_ROWS cells separated by
+# Sits inside the content box with RETICLE_INSET_MM on all sides. Divides
+# the remaining area into RETICLE_COLS × RETICLE_ROWS cells separated by
 # RETICLE_GUTTER_MM gutters. Each cell boundary is drawn as a thin line
 # that spans the full page (not just the reticle area) so the grid is easy
-# to read against the layout.
+# to read against the layout. The geometry constants are hoisted to the
+# top of this module so chrome (folio, etc.) can align to the grid.
 
-RETICLE_INSET_MM = 1.4
-RETICLE_COLS = 6
-RETICLE_ROWS = 9
-RETICLE_GUTTER_MM = 4.0   # 0.4 cm
 # White lines + `mix-blend-mode: difference` in the preview CSS make the
 # reticle invert whatever's behind it — readable on cream and on red.
 RETICLE_STROKE = "#FFFFFF"
@@ -386,15 +582,12 @@ def reticle_svg() -> str:
     top = MARGIN_MM + RETICLE_INSET_MM
     bottom = TRIM_H_MM - MARGIN_MM - RETICLE_INSET_MM
 
-    col_w = (right - left - (RETICLE_COLS - 1) * RETICLE_GUTTER_MM) / RETICLE_COLS
-    row_h = (bottom - top - (RETICLE_ROWS - 1) * RETICLE_GUTTER_MM) / RETICLE_ROWS
-
     # Compute every vertical cell-boundary x: outer-left, then (right-of-col,
     # left-of-next-col) pairs across each gutter, then outer-right.
     v_xs: list[float] = [left]
     cursor = left
     for _ in range(RETICLE_COLS - 1):
-        cursor += col_w
+        cursor += RETICLE_COL_W_MM
         v_xs.append(cursor)
         cursor += RETICLE_GUTTER_MM
         v_xs.append(cursor)
@@ -403,7 +596,7 @@ def reticle_svg() -> str:
     h_ys: list[float] = [top]
     cursor = top
     for _ in range(RETICLE_ROWS - 1):
-        cursor += row_h
+        cursor += RETICLE_ROW_H_MM
         h_ys.append(cursor)
         cursor += RETICLE_GUTTER_MM
         h_ys.append(cursor)

@@ -70,7 +70,7 @@ def render(page_id: int, data: dict) -> str:
         parts.append(_meta_line(fuente, estado))
 
     # — Bottom chrome
-    parts.append(ch.folio(page_id, pieza_id))
+    parts.append(r.folio(page_id))
 
     parts.append(r.svg_close())
     return "".join(parts)

@@ -6,7 +6,7 @@ Layout mirrors reference page 2:
 - Label "EPÍGRAFE" centred horizontally near the upper third.
 - Quote (italic serif, large, cream) left-aligned starting just below.
 - Source line (italic serif, small, cream) centred below the quote.
-- Folio bottom-left in cream.
+- Folio in the outer margin (cream on red).
 
 Expected `data` keys:
     label (str)   — defaults to "Epígrafe" (uppercased by the style)
@@ -21,7 +21,6 @@ from .. import render as r
 LABEL_Y_MM = 85
 QUOTE_Y_MM = 100
 SOURCE_Y_MM = 148
-FOLIO_Y_MM = r.TRIM_H_MM - 7
 
 CENTER_X_MM = r.TRIM_W_MM / 2
 
@@ -52,9 +51,7 @@ def render(page_id: int, data: dict) -> str:
             max_width_mm=r.CONTENT_W_MM,
         ))
 
-    # Folio (cream on red)
-    parts.append(r.text("Folio-Light", str(page_id),
-                        x_mm=r.MARGIN_MM, y_mm=FOLIO_Y_MM))
+    parts.append(r.folio(page_id, light=True))
 
     parts.append(r.svg_close())
     return "".join(parts)

@@ -6,7 +6,7 @@ Layout mirrors reference page 6:
 - Section title: Lato Black, cream, just below the numeral.
 - Metadata line "<periodo>  ·  <piezas>": uppercase, tracked Lato Black.
 - Curatorial quote: italic serif (EB Garamond Italic) in the lower third.
-- Page folio: small Lato in cream, bottom-left.
+- Page folio: small Lato in cream, in the outer margin.
 
 Expected `data` keys:
     romano (str)            — Roman numeral, e.g. "I"
@@ -29,8 +29,6 @@ TITLE_X_MM = 15.41
 TITLE_Y_MM = 102.37
 META_Y_MM = 113.10
 QUOTE_Y_MM = 161.26
-FOLIO_X_MM = 13.65
-FOLIO_Y_MM = 203.04
 
 # Text columns end at the reticle's right edge (= MARGIN + CONTENT - INSET).
 # Cap the wrapping at this so justified lines don't overflow past the grid.
@@ -84,13 +82,7 @@ def render(page_id: int, data: dict) -> str:
             max_width_mm=TEXT_MAX_W_MM,
         ))
 
-    # Folio (page number) — bottom-left, cream.
-    parts.append(r.text(
-        "Folio-Light",
-        str(page_id),
-        x_mm=FOLIO_X_MM,
-        y_mm=FOLIO_Y_MM,
-    ))
+    parts.append(r.folio(page_id, light=True))
 
     parts.append(r.svg_close())
     return "".join(parts)

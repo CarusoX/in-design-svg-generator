@@ -10,6 +10,7 @@ Run:
 
 from __future__ import annotations
 
+import traceback
 from pathlib import Path
 
 from flask import Flask, abort, render_template, send_from_directory
@@ -29,11 +30,6 @@ app = Flask(
     template_folder=str(SRC_DIR / "web_templates"),
     static_folder=str(SRC_DIR / "static"),
 )
-
-
-def _page_ids() -> list[int]:
-    catalog = generate.load_catalog()
-    return sorted(p["id"] for p in catalog.get("pages", []))
 
 
 def _spread_starts(page_ids: list[int]) -> list[int]:
@@ -58,15 +54,35 @@ def _spread_starts(page_ids: list[int]) -> list[int]:
     return starts
 
 
+def _ids_on_disk() -> list[int]:
+    """Page IDs that actually have a generated SVG in out/. Used as a
+    fallback when the catalog YAML is mid-edit and won't parse."""
+    ids: list[int] = []
+    for p in OUT_DIR.glob("page-*.svg"):
+        try:
+            ids.append(int(p.stem.split("-", 1)[1]))
+        except (IndexError, ValueError):
+            continue
+    return sorted(ids)
+
+
 @app.route("/")
 def index():
-    ids = _page_ids()
-    starts = _spread_starts(ids)
-    title = (generate.load_catalog().get("meta") or {}).get("title", "Catalog")
+    # Degrade gracefully if the YAML is broken — render the index using
+    # whatever SVGs are currently on disk so the preview keeps working
+    # while the operator fixes the error.
+    try:
+        catalog = generate.load_catalog()
+        ids = sorted(p["id"] for p in catalog.get("pages", []))
+        title = (catalog.get("meta") or {}).get("title", "Catalog")
+    except Exception:
+        traceback.print_exc()
+        ids = _ids_on_disk()
+        title = "Catalog (catalog.yaml has an error — see terminal)"
     return render_template(
         "index.html",
         page_ids=ids,
-        spread_starts=starts,
+        spread_starts=_spread_starts(ids),
         title=title,
     )
 
@@ -86,8 +102,15 @@ def image_file(filename: str):
 
 
 def _regenerate() -> None:
-    paths = generate.regenerate_all()
-    print(f"[regen] wrote {len(paths)} pages")
+    """Regenerate every page. Swallows exceptions so a broken YAML or
+    template doesn't kill the watcher — the previous good output stays on
+    disk, and the next file save triggers another attempt."""
+    try:
+        paths = generate.regenerate_all()
+        print(f"[regen] wrote {len(paths)} pages")
+    except Exception:
+        traceback.print_exc()
+        print("[regen] FAILED — keeping last good output. Fix the error and save again.")
 
 
 def main() -> None:
