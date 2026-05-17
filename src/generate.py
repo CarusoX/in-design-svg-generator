@@ -196,9 +196,12 @@ def _compile_pages(raw: dict) -> list[dict]:
                 add("ficha_texto", texto)
                 add("ficha_imagen", imagen)
 
-    # — Bibliografía
+    # — Bibliografía (paginated; long reference lists span several pages,
+    # so the template wraps each ref into lines and packs them per page).
     if "bibliografia" in raw:
-        add("bibliografia", dict(raw["bibliografia"]))
+        from .templates.bibliografia import paginate as paginate_biblio
+        for page_data in paginate_biblio(raw["bibliografia"]):
+            add("bibliografia", page_data)
 
     return pages
 

@@ -223,11 +223,14 @@ TEXT_STYLES: dict[str, TextStyle] = {
     ),
 
     # — Bibliografía —
+    # Left-aligned (ragged right) — the per-word-tspan justification
+    # path drops the visible space after commas, same bug we hit on
+    # nota_curatorial. Hanging indent stays at 5mm so the author surname
+    # sits flush left on its own line.
     "27-Biblio-Referencia": TextStyle(
         font_family="EB Garamond",
         size_pt=9, leading_pt=13.5,
         color="negro_tinta",
-        justified=True,
         hanging_indent_mm=5,
     ),
 
