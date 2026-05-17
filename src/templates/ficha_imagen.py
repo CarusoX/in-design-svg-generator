@@ -4,18 +4,33 @@ After the v2 refactor this page is image-only on a full rojo_tinta
 background. No cabecera, no tipo, no title, no autor — those live on
 the facing text page now.
 
-All cases (1 to 5 images) dispatch through `layouts.best_layout()` —
+By default all 1–5 images dispatch through `layouts.best_layout()`:
 the variable-slot guillotine packer picks each image's slot dimensions
-to match its aspect ratio. For a single image that means a portrait
-gets, say, a 4×9 slot centered horizontally with red breathing room on
-either side, instead of being awkwardly contained inside the full
-reticle. Missing source files fall back to a thin placeholder rect.
+to match its aspect ratio.
+
+For piezas where the auto-pick gives the wrong arrangement, the YAML
+can override per image with a `slot:` field. The packer is bypassed
+ONLY when EVERY image in the list has an explicit slot — otherwise it
+runs as usual (slot overrides on a subset of images would conflict
+with the packer's tiling).
+
+Image-list shapes accepted:
+    images: [L005.png]                       # single string
+    images:                                  # plain list
+      - L005.png
+      - L005-1.png
+    images:                                  # explicit per-image slot
+      - {file: L005-1.png, slot: [1, 1, 6, 4]}
+      - {file: L005.png,   slot: [1, 5, 6, 5]}
+
+Each `slot` is `[col, row, cspan, rspan]` in reticle units (1-indexed,
+col 1..6, row 1..9 for the image page since chrome lives on the text
+page). Missing source files fall back to a thin placeholder rect.
 Empty `images:` (or absent key) shows the legacy proof placeholder.
-Light folio at the bottom.
 
 Expected `data` keys:
     pieza_id (str)            — for the empty-list placeholder
-    images (list[str], opt.)  — relative paths (basename used)
+    images (list, optional)   — see shapes above
     categoria (str)           — labels the placeholder; defaults "A"
 """
 
@@ -51,40 +66,58 @@ def render(page_id: int, data: dict) -> str:
     return "".join(parts)
 
 
-def _coerce_images(data: dict) -> list[str]:
-    """Read `images: [path, …]` (preferred) or single `image: "path"`
-    (legacy). Returns stripped, non-empty paths."""
+def _coerce_images(data: dict) -> list[dict]:
+    """Read `images: […]` (preferred) or single `image: "path"`
+    (legacy). Each entry becomes `{file: <str>, slot: <Slot | None>}`.
+    String entries get slot=None (packer assigns); dict entries with
+    an explicit `slot: [col, row, cspan, rspan]` pin the placement."""
     raw = data.get("images")
     if raw is None:
         single = data.get("image")
         raw = [single] if single else []
     elif not isinstance(raw, (list, tuple)):
         raw = [raw]
-    paths = [str(p).strip() for p in raw if p and str(p).strip()]
-    if len(paths) > MAX_IMAGES:
+    out: list[dict] = []
+    for item in raw:
+        if not item:
+            continue
+        if isinstance(item, dict):
+            f = str(item.get("file", "")).strip()
+            if not f:
+                continue
+            slot_raw = item.get("slot")
+            slot = tuple(int(n) for n in slot_raw) if slot_raw else None
+            out.append({"file": f, "slot": slot})
+        else:
+            s = str(item).strip()
+            if s:
+                out.append({"file": s, "slot": None})
+    if len(out) > MAX_IMAGES:
         raise ValueError(
-            f"ficha_imagen supports up to {MAX_IMAGES} images, got {len(paths)}"
+            f"ficha_imagen supports up to {MAX_IMAGES} images, got {len(out)}"
         )
-    return paths
+    return out
 
 
-def _render_images(images: list[str], pieza_id: str, categoria: str) -> list[str]:
-    """Place each image via best_layout() — the guillotine packer
-    picks each image's slot dimensions to match its aspect ratio,
-    even in the single-image case (so a portrait gets a portrait-
-    shaped slot with red breathing room rather than the whole
-    reticle). YAML entries are stripped to basename: aspect read
-    from reference/imagenes/<file>, href emitted as images/<file>."""
+def _render_images(images: list[dict], pieza_id: str, categoria: str) -> list[str]:
+    """Place each image. If EVERY entry has an explicit slot, use
+    those directly (override mode). Otherwise pack via best_layout()
+    using the variable-slot guillotine. Basename is stripped from
+    `file`; aspect read from reference/imagenes/<file>; href emitted
+    as images/<file>."""
     if not images:
         return _empty_placeholder(pieza_id, categoria)
 
-    basenames = [Path(p).name for p in images]
+    basenames = [Path(item["file"]).name for item in images]
     source_rel = [f"{SOURCE_IMAGES_REL}/{name}" for name in basenames]
 
-    aspects = [layouts.image_aspect(p, PROJECT_ROOT) for p in source_rel]
-    slots = layouts.best_layout(len(images), aspects)
-    if slots is None:                    # shouldn't happen — guarded by MAX
-        return _empty_placeholder(pieza_id, categoria)
+    if all(item["slot"] is not None for item in images):
+        slots = [item["slot"] for item in images]
+    else:
+        aspects = [layouts.image_aspect(p, PROJECT_ROOT) for p in source_rel]
+        slots = layouts.best_layout(len(images), aspects)
+        if slots is None:                # shouldn't happen — guarded by MAX
+            return _empty_placeholder(pieza_id, categoria)
 
     out: list[str] = []
     for name, src_rel, slot in zip(basenames, source_rel, slots):

@@ -159,9 +159,7 @@ salas:
           titulo: "Página interior del Laudationes Quinque"
           autor: "P. Pablo Karer (impresor)"
           datos: "1766 · Córdoba, Argentina"
-          images:
-            - L004.jpg
-            - L004-1.png
+          images: [L004-1.png]
         texto:
           descripcion: >-
             Página interior del Laudationes Quinque, primer libro impreso
@@ -188,7 +186,9 @@ salas:
           titulo: "Tipos Garamond del Laudationes Quinque"
           autor: "Punzonista no identificado (estilo Claude Garamond, c. 1530)"
           datos: "Antes de 1766 · Origen incierto, Probablemente Francia, Países Bajos o España"
-          images: [L005.png]
+          images:
+            - {file: L005-1.png, slot: [1, 1, 6, 5]}
+            - {file: L005.png,   slot: [1, 6, 6, 4]}
         texto:
           descripcion: >-
             Letras de imprenta usadas para la composición del primer libro
@@ -244,7 +244,8 @@ salas:
           titulo: "Prensa de hierro de la 'Imprenta de la Patria' (Museo del Vino de Cafayate)"
           autor: "Manufactura indeterminada (siglo XIX)"
           datos: "Siglo XIX · Cafayate, Salta, Argentina"
-          images: [L007.jpeg]
+          images:
+            - {file: L007.jpeg, slot: [1, 1, 6, 9]}
         texto:
           descripcion: >-
             Prensa tipográfica manual conocida popularmente como 'Imprenta de
@@ -298,8 +299,8 @@ salas:
           autor: "Juan Hipólito Vieytes (editor)"
           datos: "1802-1807 · Buenos Aires, Argentina"
           images:
-            - L009.jpg
-            - L009-1.png
+            - {file: L009.jpg,   slot: [1, 3, 3, 4]}
+            - {file: L009-1.png, slot: [4, 3, 3, 4]}
         texto:
           descripcion: >-
             Periódico semanal fundado por Juan Hipólito Vieytes en septiembre
@@ -670,33 +671,6 @@ salas:
           estado: "Conservada (colecciones encuadernadas de Caras y Caretas)"
 
       - imagen:
-          tipo: "Serie de caricaturas políticas"
-          titulo: "Serie 'Caricaturas contemporáneas' de Cao (Caras y Caretas)"
-          autor: "José María Cao"
-          datos: "1900-1904 · Buenos Aires, Argentina"
-        texto:
-          descripcion: >-
-            Serie de caricaturas inaugurada por José María Cao en Caras y
-            Caretas en enero de 1900: una galería de retratos satíricos de las
-            personalidades eminentes de la política y la cultura argentina,
-            publicada semana a semana en tapa o doble página interior. La
-            operación editorial era nueva en el Río de la Plata: la caricatura
-            política dejaba de ser ilustración suelta y se volvía colección
-            sistemática. La primera entrega estuvo dedicada a Bartolomé Mitre
-            (13 de enero de 1900); la segunda, a Julio A. Roca (20 de enero de
-            1900). El contraste era deliberado: Mitre apareció como prohombre
-            de gloria militar, política y literaria; Roca, una semana después,
-            ataviado con ropas eclesiásticas y rodeado de incondicionales. El
-            archivo retiene la serie como pieza-sistema: la primera operación
-            argentina de retrato político seriado, antecedente directo de la
-            fotonovela y de las galerías de personajes del siglo XX.
-          cita_textual: >-
-            "Caras y Caretas inauguró una serie de ilustraciones de Cao,
-            'Caricaturas contemporáneas' de personajes eminentes de la
-            política y la cultura"
-          estado: "Conservada"
-
-      - imagen:
           tipo: "Caricatura política / nota gráfica"
           titulo: "Caricatura 'Los ministros odontólogos' (Caras y Caretas, septiembre de 1902)"
           autor: "Caricaturista no identificado del staff de Caras y Caretas"
@@ -722,58 +696,6 @@ salas:
             "el hecho era retomado de modo satírico con una ilustración
             titulada 'Los ministros odontólogos'"
           estado: "Conservada (Caras y Caretas, 13 de septiembre de 1902)"
-
-      - imagen:
-          tipo: "Tapa de revista / caricatura política"
-          titulo: "Tapa 'Ley de Residencia' (Caras y Caretas, enero de 1903)"
-          autor: "Manuel Mayol"
-          datos: "Enero de 1903 · Buenos Aires, Argentina"
-        texto:
-          descripcion: >-
-            Tapa de Caras y Caretas de enero de 1903 dibujada por Manuel
-            Mayol, crítica a la recientemente aprobada Ley de Residencia
-            (4144), que facultaba al Poder Ejecutivo a expulsar del país a
-            cualquier extranjero considerado peligroso para el orden público.
-            La ley había sido sancionada en noviembre de 1902 en respuesta al
-            conflicto obrero y a la presencia anarquista en los puertos. La
-            tapa de Mayol —que la revista discutió ampliamente en sus páginas
-            interiores— marcó la posición de Caras y Caretas frente a una de
-            las herramientas represivas más duras del régimen conservador. El
-            archivo retiene la tapa como momento bisagra: la revista, que
-            durante sus primeros años había practicado la sátira política
-            suave, se vio obligada a tomar posición frente a un conflicto que
-            tocaba directamente a su público inmigrante.
-          cita_textual: >-
-            "enero de 1903 llevaba una tapa de Mayol titulada 'Ley de
-            Residencia'"
-          estado: "Conservada (colecciones encuadernadas)"
-
-      - imagen:
-          tipo: "Fotomontaje político / foto trucada"
-          titulo: "Foto trucada del 'Cónclave electoral' (Caras y Caretas N° 253)"
-          autor: "Staff de Caras y Caretas"
-          datos: "8 de agosto de 1903 · Buenos Aires, Argentina"
-        texto:
-          descripcion: >-
-            Doble página publicada en Caras y Caretas el 8 de agosto de 1903
-            contra la Convención de Notables que iba a elegir al sucesor de
-            Roca. Foto trucada que presentaba a los electores con ropajes
-            eclesiásticos, como si se tratara de la elección de un Papa. El
-            epígrafe explicaba: 'Aquí tenemos también, como en Roma, un
-            cónclave electoral, y estamos seguros de que en cada uno de los
-            purpurados dormita un candidato presidencial, como en cada uno de
-            los cardenales, un papa...'. La pieza es archivísticamente
-            excepcional por dos razones: documenta una de las primeras
-            operaciones de fotomontaje político en el Río de la Plata, y
-            registra la posición editorial de Caras y Caretas frente a la
-            maquinaria sucesoria del roquismo. El archivo retiene el
-            fotomontaje como antecedente directo de las técnicas que medio
-            siglo después adoptarían Grete Stern y la propaganda peronista.
-          cita_textual: >-
-            "en agosto de 1903, una foto trucada había presentado a los
-            electores con ropajes eclesiásticos, como si se tratara de la
-            elección de un Papa"
-          estado: "Conservada (Caras y Caretas N° 253)"
 
       - imagen:
           tipo: "Folletín ilustrado / diseño editorial seriado"
@@ -878,6 +800,7 @@ salas:
           titulo: "Página 'Tabla cronológica' del Almanaque del Mensajero"
           autor: "M. Sundt (editor)"
           datos: "1909 y siguientes · Buenos Aires, Argentina"
+          images: [L025.webp]
         texto:
           descripcion: >-
             Página interior del Almanaque del Mensajero diseñada para ser
@@ -900,33 +823,6 @@ salas:
             escudos en blanco que el lector debía completar con los datos de
             su familia"
           estado: "Conservada (ejemplar de Arturo Luna, 1917, entre otros)"
-
-      - imagen:
-          tipo: "Identidad corporativa / diseño industrial"
-          titulo: "Identidad Siam Di Tella (1910-1960)"
-          autor: "Siam Di Tella (Sociedad Italiana de Amasadoras Mecánicas)"
-          datos: "1910-1960 · Buenos Aires (planta en Avellaneda), Argentina"
-          images: [L030.jpg]
-        texto:
-          descripcion: >-
-            Sistema de identidad gráfica de Siam Di Tella, empresa fundada en
-            1910 como Sociedad Italiana de Amasadoras Mecánicas. La firma
-            produjo el primer surtidor de nafta argentino (1912), bombas,
-            motores eléctricos, las motocicletas Siambretta (c. 1954) y el
-            automóvil Siam Di Tella 1500 (1960). En 1952 inauguró un local de
-            venta en la calle Florida, en la misma cuadra donde seis años
-            después se instalaría el Instituto Torcuato Di Tella. La operación
-            gráfica de Siam fue ejemplar para una empresa privada argentina de
-            la primera mitad del siglo XX: aplicaciones unificadas en
-            surtidores YPF, fábricas, máquinas, motocicletas, automóviles,
-            publicidad y puntos de venta. El archivo retiene la pieza como
-            caso paradigmático del primer diseño corporativo argentino
-            sistemático, y como antecedente directo del Di Tella
-            institucional.
-          cita_textual: >-
-            "Siam Di Tella (1910) inició como Sociedad Italiana de Amasadoras
-            Mecánicas"
-          estado: "Conservada parcialmente (archivos Di Tella y museos)"
 
       - imagen:
           tipo: "Identidad institucional / sistema gráfico de empresa pública"
@@ -1122,37 +1018,10 @@ salas:
             "Silabario de la decoración americana (1930)"
           estado: "Conservada"
 
-      - imagen:
-          tipo: "Estudio fotográfico / agencia de publicidad"
-          titulo: "Estudio fotográfico y publicitario 'Grete y Horacio Coppola'"
-          autor: "Grete Stern (Alemania, 1904 - Buenos Aires, 1999) y Horacio Coppola (Buenos Aires, 1906 - 2012)"
-          datos: "1935-c. 1955 · Buenos Aires, Argentina"
-          images: [L038.png]
-        texto:
-          descripcion: >-
-            Estudio fotográfico y publicitario abierto en Buenos Aires por
-            Grete Stern y Horacio Coppola tras su llegada al país en 1935,
-            escapando del régimen nazi. La pareja se había conocido en 1932 en
-            las clases de fotografía de la Bauhaus de Berlín bajo Walter
-            Peterhans; trabajaron primero en Londres y arribaron a Buenos
-            Aires con todo el bagaje técnico y conceptual de la última
-            Bauhaus. El estudio aplicó al mercado publicitario porteño
-            técnicas que en Buenos Aires no se habían visto: fotomontaje
-            constructivista, 'foto-tipo' (combinación de fotografía y
-            tipografía), tipografía sans-serif moderna, retícula. El archivo
-            retiene el estudio como punto exacto de llegada de la Bauhaus al
-            Río de la Plata: no a través de un manual ni una escuela, sino a
-            través de un matrimonio de fotógrafos que abrió oficina y empezó a
-            trabajar.
-          cita_textual: >-
-            "Inauguran el estudio fotográfico y publicitario 'Grete y Horacio
-            Coppola'"
-          estado: "Conservada (archivos en MALBA, Eduardo F. Costantini; colecciones públicas y privadas)"
-
   # ── Sala V ──────────────────────────────────────────────────────
   - romano: "V"
     portadilla:
-      nombre: "El Estado se hace ver: peronismo gráfico"
+      nombre: "Peronismo gráfico"
       periodo: "1946-1955"
       cita_curatorial: >-
         "Los nueve años del primer peronismo en que la propaganda gráfica
@@ -1164,6 +1033,9 @@ salas:
           titulo: "Identidades gráficas de las empresas estatales peronistas"
           autor: "Estado argentino (varios diseñadores anónimos)"
           datos: "1941-1952 · Buenos Aires, Argentina"
+          images:
+            - L038.png
+            - L038-1.png
         texto:
           descripcion: >-
             Conjunto de emblemas y aplicaciones gráficas de las empresas
@@ -1448,33 +1320,6 @@ salas:
           cita_textual: >-
             "Eduardo Giménez y Raúl y Ronald Shakespeare"
           estado: "En uso urbano; pieza expuesta a desgaste y reemplazo continuo"
-
-      - imagen:
-          tipo: "Familia tipográfica digital de patrimonio"
-          titulo: "Tipografía digital Expósitos (reconstrucción de Fabio Ares)"
-          autor: "Fabio Ares / Dirección General Patrimonio e Instituto Histórico (Gobierno CABA)"
-          datos: "2010 (en el marco del Bicentenario) · Buenos Aires, Argentina"
-        texto:
-          descripcion: >-
-            Reconstrucción digital de los tipos romanos antiguos, cursivos y
-            vinetas usados durante el período virreinal por la Real Imprenta
-            de Niños Expósitos. Producida por Fabio Ares en el marco del
-            Bicentenario de la Revolución de Mayo, la familia se compone de
-            una romana redonda, una cursiva y un conjunto de viñetas
-            tipográficas y filetes. El método partió de los impresos
-            producidos entre 1780 y 1810: escaneo a 600-1200 dpi, retoque
-            manual, vectorización, edición tipográfica y empaquetado en
-            formatos PostScript y TrueType. Las letras conservan
-            deliberadamente las marcas del desgaste, los empastamientos y la
-            irregularidad del color tipográfico que caracterizaban a los
-            originales. La fuente se distribuye gratuitamente para usos
-            educativos y culturales, con la única condición de mencionar la
-            fuente. El archivo la conserva como ejemplo paradigmático de
-            reconstrucción digital del patrimonio gráfico latinoamericano.
-          cita_textual: >-
-            "reconstrucción digital de los primeros caracteres y ornamentos
-            utilizados"
-          estado: "Disponible digitalmente con licencia abierta"
 
 # ── Bibliografía ──────────────────────────────────────────────────────
 bibliografia:
