@@ -136,12 +136,20 @@ def _compile_pages(raw: dict) -> list[dict]:
             pieza_counter += 1
             default_pieza_id = pieza.get("id") or f"L{pieza_counter:03d}"
 
-            imagen = dict(pieza.get("imagen") or {})
+            imagen_raw = dict(pieza.get("imagen") or {})
+            texto_raw = dict(pieza.get("texto") or {})
+
+            imagen = imagen_raw
             imagen.setdefault("pieza_id", default_pieza_id)
             imagen.setdefault("cabecera_sub", default_cabecera)
+            # Bridge: estado lives in the texto block (it's part of the
+            # artwork's record), but renders on the imagen page (row 8 /
+            # col 4). Copy it across unless imagen sets its own.
+            if "estado" in texto_raw:
+                imagen.setdefault("estado", texto_raw["estado"])
             add("ficha_imagen", imagen)
 
-            texto = dict(pieza.get("texto") or {})
+            texto = texto_raw
             texto.setdefault("pieza_id", default_pieza_id)
             texto.setdefault("cabecera_sub", default_cabecera)
             add("ficha_texto", texto)

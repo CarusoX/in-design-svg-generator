@@ -26,6 +26,8 @@ Expected `data` keys:
 
 from __future__ import annotations
 
+from xml.sax.saxutils import escape
+
 from .. import render as r
 from ..styles import TEXT_STYLES
 from . import _ficha_common as ch
@@ -90,17 +92,26 @@ FRAME_W_MM = _RETICLE_RIGHT_X_MM - _RETICLE_LEFT_X_MM        # 117.2
 FRAME_H_MM = _row_bottom(7) - _row_top(4)                    # 77.44 = 4 rows + 3 gutters
 FRAME_INSET_MM = 4                                            # padding for internal labels
 
-# Caption row — caption STARTS flush against the first vertical reticle
-# line (left edge of col 1). Its visible cap-top sits at the TOP of the
-# bottom-most reticle row (row 9), so the text rides inside the square.
-# Baseline = row top + cap-height of the caption style.
+# Footer chrome — caption and ESTADO both sit in row 8 with their
+# cap-tops on the row's top line. Caption takes cols 1–3 (left half of
+# the page), ESTADO takes cols 4–6 (right half). Each block left-aligns
+# inside its 3-column box; long strings hyphenate to wrap rather than
+# overflow.
 _CAPTION_STYLE = TEXT_STYLES["23-Ficha-Epigrafe-Imagen"]
 _CAPTION_CAP_RATIO = 0.685   # EB Garamond Italic
 _CAPTION_CAP_HEIGHT_MM = (
     _CAPTION_STYLE.size_pt * _CAPTION_CAP_RATIO * r.MM_PER_PT
 )
+_FOOTER_Y_MM = ch.row_top(8) + _CAPTION_CAP_HEIGHT_MM
+
 CAPTION_ANCHOR_X_MM = _RETICLE_LEFT_X_MM                              # 15.4
-CAPTION_ANCHOR_Y_MM = _row_top(9) + _CAPTION_CAP_HEIGHT_MM            # ~180.07
+CAPTION_ANCHOR_Y_MM = _FOOTER_Y_MM
+CAPTION_MAX_W_MM = r.RETICLE_COL_RIGHT_X_MM[2] - CAPTION_ANCHOR_X_MM  # cols 1–3
+
+# ESTADO starts at col 4's left edge (= col 3 right + gutter).
+ESTADO_X_MM = r.RETICLE_COL_RIGHT_X_MM[2] + r.RETICLE_GUTTER_MM       # 76.0
+ESTADO_Y_MM = _FOOTER_Y_MM
+ESTADO_MAX_W_MM = _RETICLE_RIGHT_X_MM - ESTADO_X_MM                   # cols 4–6
 
 
 def render(page_id: int, data: dict) -> str:
@@ -113,6 +124,7 @@ def render(page_id: int, data: dict) -> str:
     image_href = str(data.get("image", "")).strip()
     categoria = str(data.get("categoria", "A")).strip()
     caption = str(data.get("caption", "nota al pie")).strip()
+    estado = str(data.get("estado", "")).strip()
 
     parts = [r.svg_open(r.PALETTE["papel_crema"])]
 
@@ -160,8 +172,10 @@ def render(page_id: int, data: dict) -> str:
     else:
         parts.extend(_image_placeholder(pieza_id, categoria))
 
-    # — Caption with red curly bracket
+    # — Footer row (row 8): caption left half + ESTADO right half
     parts.extend(_caption(caption))
+    if estado:
+        parts.append(_estado_block(estado))
 
     # — Bottom chrome
     parts.append(r.folio(page_id))
@@ -214,13 +228,63 @@ def _image_placeholder(pieza_id: str, categoria: str) -> list[str]:
 
 
 def _caption(caption: str) -> list[str]:
-    """Italic gray caption, starting flush against the first vertical
-    reticle line and flowing rightward, baseline at the bottom row."""
+    """Italic gray caption, left-aligned inside cols 1–3 of row 8.
+    Wraps with Spanish hyphenation when too long for one line."""
     return [r.text(
         "23-Ficha-Epigrafe-Imagen", caption,
         x_mm=CAPTION_ANCHOR_X_MM, y_mm=CAPTION_ANCHOR_Y_MM,
+        max_width_mm=CAPTION_MAX_W_MM,
         align="start",
     )]
+
+
+_ESTADO_LABEL = "ESTADO:"
+
+
+def _estado_block(estado: str) -> str:
+    """Render 'ESTADO: <value>' inside cols 4–6 of row 8 — bold sans
+    label + italic serif value (matching the caption style). The full
+    string is wrapped together so hyphenation works across the label
+    boundary; the label is then re-styled inline on the first line.
+    """
+    full = f"{_ESTADO_LABEL} {estado}"
+    lines = r.wrap_lines(full, _CAPTION_STYLE, ESTADO_MAX_W_MM)
+    if not lines:
+        return ""
+
+    size_mm = _CAPTION_STYLE.size_pt * r.MM_PER_PT
+    leading_pt = _CAPTION_STYLE.leading_pt or _CAPTION_STYLE.size_pt * 1.2
+    leading_mm = leading_pt * r.MM_PER_PT
+    fill = r.PALETTE[_CAPTION_STYLE.color]
+    family_italic = r.font_family_css("EB Garamond")
+    family_bold = r.font_family_css("Lato", 900)
+
+    parts = [
+        f'<text x="{ESTADO_X_MM}" y="{ESTADO_Y_MM}" '
+        f'fill="{fill}" text-anchor="start" '
+        f'font-size="{size_mm:.4f}">',
+    ]
+    for i, line in enumerate(lines):
+        dy = "0" if i == 0 else f"{leading_mm:.4f}"
+        # Bold the LABEL only where it appears intact at the start of
+        # the first line. Otherwise render the line in plain italic.
+        if i == 0 and line.startswith(_ESTADO_LABEL):
+            rest = line[len(_ESTADO_LABEL):]
+            parts.append(
+                f'<tspan x="{ESTADO_X_MM}" dy="{dy}" '
+                f'font-family="{family_bold}" font-weight="900">'
+                f'{_ESTADO_LABEL}</tspan>'
+                f'<tspan font-family="{family_italic}" font-style="italic" '
+                f'font-weight="400" xml:space="preserve">{escape(rest)}</tspan>'
+            )
+        else:
+            parts.append(
+                f'<tspan x="{ESTADO_X_MM}" dy="{dy}" '
+                f'font-family="{family_italic}" font-style="italic" '
+                f'font-weight="400">{escape(line)}</tspan>'
+            )
+    parts.append('</text>')
+    return "".join(parts)
 
 
 # — Small inline SVG helpers for the placeholder internals —
