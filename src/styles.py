@@ -174,8 +174,8 @@ TEXT_STYLES: dict[str, TextStyle] = {
         color="rojo_tinta",
     ),
     "20-Ficha-Titulo-Pieza": TextStyle(
-        font_family="Lato", font_weight=900,
-        size_pt=20, leading_pt=20,
+        font_family="Lato", font_weight=700,
+        size_pt=18, leading_pt=22.5,
         tracking_per1000=-15,
         color="negro_tinta",
     ),
@@ -230,6 +230,14 @@ TEXT_STYLES: dict[str, TextStyle] = {
         font_family="EB Garamond",
         size_pt=9, leading_pt=12,
         color="negro_tinta",
+    ),
+
+    # — Top-left metadata stack on ficha_texto (Fecha / Origen / Autor /
+    # Estado). Small italic gray, no labels — values stack tightly. —
+    "Ficha-Meta-Top": TextStyle(
+        font_family="EB Garamond", font_style="italic",
+        size_pt=8.5, leading_pt=11,
+        color="gris_texto",
     ),
 
     # — Auxiliary: page numbers (folios). Not in the original spec — added

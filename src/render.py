@@ -261,13 +261,19 @@ def _hyphen_break_word(word: str, max_width_mm: float, style: TextStyle) -> tupl
     return word[:best], word[best:]
 
 
-def wrap_lines(text_str: str, style: TextStyle, max_width_mm: float) -> list[str]:
+def wrap_lines(
+    text_str: str,
+    style: TextStyle,
+    max_width_mm: float,
+    hyphenate: bool = True,
+) -> list[str]:
     """Greedy word-wrap to fit within max_width_mm using REAL font
     metrics (Pillow advance widths) — the char_factor estimate breaks
     lines too short for fonts like EB Garamond where average glyph
-    width is well under 0.46 em. When a word doesn't fit, tries Spanish
-    hyphenation so a syllable prefix can ride out the line, followed
-    by a '-'."""
+    width is well under 0.46 em. When a word doesn't fit and
+    `hyphenate=True`, tries Spanish hyphenation so a syllable prefix
+    can ride out the line, followed by a '-'. Set `hyphenate=False`
+    for headlines / titles where word breaks aren't acceptable."""
     words = text_str.split()
     if not words:
         return [text_str]
@@ -283,19 +289,20 @@ def wrap_lines(text_str: str, style: TextStyle, max_width_mm: float) -> list[str
         word_w_mm = _measure_word_mm(word, style)
         added_w_mm = word_w_mm + (space_mm if current else 0.0)
         if current and current_w_mm + added_w_mm > max_width_mm:
-            # Word overflows. Try to hyphenate so a syllable prefix fits.
-            space_for_prefix_mm = max_width_mm - current_w_mm - space_mm
-            broken = _hyphen_break_word(word, space_for_prefix_mm, style)
-            if broken is not None:
-                prefix, suffix = broken
-                current.append(prefix + "-")
-                lines.append(" ".join(current))
-                current = [suffix]
-                current_w_mm = _measure_word_mm(suffix, style)
-            else:
-                lines.append(" ".join(current))
-                current = [word]
-                current_w_mm = word_w_mm
+            if hyphenate:
+                # Word overflows. Try to hyphenate so a prefix fits.
+                space_for_prefix_mm = max_width_mm - current_w_mm - space_mm
+                broken = _hyphen_break_word(word, space_for_prefix_mm, style)
+                if broken is not None:
+                    prefix, suffix = broken
+                    current.append(prefix + "-")
+                    lines.append(" ".join(current))
+                    current = [suffix]
+                    current_w_mm = _measure_word_mm(suffix, style)
+                    continue
+            lines.append(" ".join(current))
+            current = [word]
+            current_w_mm = word_w_mm
         else:
             current.append(word)
             current_w_mm += added_w_mm
@@ -311,6 +318,7 @@ def text(
     y_mm: float,
     max_width_mm: float | None = None,
     align: str | None = None,
+    hyphenate: bool = True,
 ) -> str:
     """Emit a styled <text> block at baseline (x_mm, y_mm).
 
@@ -318,7 +326,9 @@ def text(
     max_width_mm is given) or a list of strings (each rendered as its own
     line). Uppercase is pre-applied in Python — never via CSS, since InDesign
     discards text-transform on import. `align` overrides the style's default
-    text-anchor when provided ("start" | "middle" | "end").
+    text-anchor when provided ("start" | "middle" | "end"). Pass
+    `hyphenate=False` for headlines / titles where mid-word breaks are
+    not acceptable (long words will overflow to a new line whole).
     """
     style = TEXT_STYLES[style_id]
     fill = PALETTE[style.color]
@@ -328,7 +338,7 @@ def text(
         if "\n" in body:
             lines = body.split("\n")
         elif max_width_mm is not None:
-            lines = wrap_lines(body, style, max_width_mm)
+            lines = wrap_lines(body, style, max_width_mm, hyphenate=hyphenate)
         else:
             lines = [body]
     else:
@@ -571,6 +581,68 @@ def paragraph(
     # Height = distance from first baseline to (next paragraph's) first
     # baseline, which is N×leading where N is the number of rendered lines.
     height_mm = len(lines) * leading_mm
+    return "".join(parts), height_mm
+
+
+def paragraph_two_column(
+    style_id: str,
+    text_str: str,
+    x_mm: float,
+    y_mm: float,
+    col_w_mm: float,
+    gutter_mm: float,
+) -> tuple[str, float]:
+    """Render `text_str` flowing across 2 equal columns. Returns
+    (svg, max_column_height_mm). Both columns share the same baseline
+    on their first line (y_mm); col A is at x_mm, col B at
+    x_mm + col_w_mm + gutter_mm. Reading order: left → right.
+
+    Wraps at one column's width, then splits ceil(n/2) | floor(n/2)
+    so the column heights stay balanced (col A is always ≥ col B by at
+    most one line)."""
+    style = TEXT_STYLES[style_id]
+    fill = PALETTE[style.color]
+    leading_pt = style.leading_pt if style.leading_pt else style.size_pt * 1.2
+    leading_mm = leading_pt * MM_PER_PT
+    size_mm = style.size_pt * MM_PER_PT
+    ls_pt = _letter_spacing_pt(style)
+    ls_mm = ls_pt * MM_PER_PT
+
+    lines = wrap_lines(text_str, style, col_w_mm)
+    if style.uppercase:
+        lines = [line.upper() for line in lines]
+
+    half = (len(lines) + 1) // 2
+    cols = [
+        (x_mm, lines[:half]),
+        (x_mm + col_w_mm + gutter_mm, lines[half:]),
+    ]
+
+    attrs = [
+        f'font-family="{font_family_css(style.font_family, style.font_weight)}"',
+        f'font-size="{size_mm:.4f}"',
+        f'font-weight="{style.font_weight}"',
+        f'fill="{fill}"',
+        f'text-anchor="{style.align}"',
+    ]
+    if style.font_style != "normal":
+        attrs.append(f'font-style="{style.font_style}"')
+    if ls_mm:
+        attrs.append(f'letter-spacing="{ls_mm:.5f}"')
+    attrs_str = " ".join(attrs)
+
+    parts: list[str] = []
+    for col_x, col_lines in cols:
+        if not col_lines:
+            continue
+        parts.append(f'<text x="{col_x}" y="{y_mm}" {attrs_str}>')
+        for i, line in enumerate(col_lines):
+            dy = "0" if i == 0 else f"{leading_mm:.4f}"
+            parts.append(f'<tspan x="{col_x}" dy="{dy}">{escape(line)}</tspan>')
+        parts.append('</text>')
+
+    max_lines = max(len(c[1]) for c in cols)
+    height_mm = max_lines * leading_mm
     return "".join(parts), height_mm
 
 

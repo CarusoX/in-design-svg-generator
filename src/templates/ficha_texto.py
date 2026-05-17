@@ -1,26 +1,37 @@
-"""Ficha — text side (right page of an artwork spread).
+"""Ficha — text side of an artwork spread.
 
-- Top cabecera + horizontal rule (shared with ficha_imagen).
-- Metadata stack. Each entry is TWO lines:
-    line 1: Autor / Estado / Fecha / Origen — EB Garamond italic red
-            at 8.5pt (same family / style / color / size as the page-1
-            "tipo" eyebrow), sentence-case.
-    line 2: the value — Garamond regular, not italic.
-  with 0.2cm between the label and its value, and 0.4cm visible gap
-  between entries. All labels left-anchor at col 1.
-- Autor's label baseline lands on row 1's bottom line so the stack
-  starts higher and frees vertical space for the description.
-- Description body has its own Descripción title, snapped to the next
-  reticle row top after the metadata block ends.
-- Folio strip at the bottom (shared).
+After the v2 refactor the text page can land on EITHER side of a
+spread, alternating per pieza within a sala (so the red image pages
+back-to-back across the spine form full-red leaves every other
+sheet — see `generate._compile_pages`). The typographic layout stays
+identical on both orientations — only the rojo_tinta bleed strip
+moves to whichever edge is the spine, so the red continues from the
+adjacent image page across the binding.
+
+Layout:
+- No cabecera; folio at the page's outer edge (handled by
+  `r.folio()` via page parity).
+- 4 unlabeled metadata lines (Fecha / Origen / Autor / Estado) in
+  row 1, left-anchored at col 1.
+- A thin (0.8mm) rojo_tinta rule on the right edge of col 1, 2 rows
+  tall. Title in Lato Bold starting at col 2, with the LAST line's
+  baseline at the bottom of row 4.
+- `tipo` as a bold uppercase red label (07-Seccion-Label) at row 6.
+- 2-column description body below (cols 1-3 + cols 4-6), reading
+  left → right top → bottom regardless of which side of the spread
+  the page is on.
+- 7mm rojo_tinta bleed strip on the SPINE side: right edge for
+  even/left-of-spread pages, left edge for odd/right-of-spread pages.
 
 Expected `data` keys:
-    pieza_id (str)       — same as ficha_imagen
-    cabecera_sub (str)   — same
+    pieza_id (str)       — surfaced via bridged YAML, not rendered
+    cabecera_sub (str)   — bridged, unused (kept for compat)
     autor (str)          — bridged from imagen block
     estado (str)         — from texto block
     datos (str)          — bridged; split by " · " into fecha + origen
-    descripcion (str)    — multi-line body, auto-wraps + hyphenates
+    tipo (str)           — bridged from imagen block
+    titulo (str)         — bridged from imagen block
+    descripcion (str)    — multi-line body, 2-col wrap + hyphenation
 """
 
 from __future__ import annotations
@@ -30,25 +41,76 @@ from ..styles import TEXT_STYLES
 from . import _ficha_common as ch
 
 
-META_X_MM = ch.LEFT_X_MM                                          # 15.4
-META_W_MM = ch.RIGHT_X_MM - ch.LEFT_X_MM                          # 117.2
-_LABEL_VALUE_GAP_MM = 2.0                                         # 0.2cm
-_ITEM_GAP_MM = r.RETICLE_GUTTER_MM                                # 0.4cm between items
+# ── Horizontal anchors (computed for the DEFAULT layout; mirrored at
+# render time when the text page lands on an odd page) ───────────────
+
+META_X_MM = ch.LEFT_X_MM                       # 15.4 (start of col 1)
+META_MAX_W_MM = ch.RIGHT_X_MM - META_X_MM      # 117.2 (col 1 → col 6 right edge)
+RULE_W_MM = 0.8                                 # "much thinner" red rule
+COL_1_RIGHT_X_MM = r.RETICLE_COL_RIGHT_X_MM[0]  # right edge of col 1
+RULE_X_MM = COL_1_RIGHT_X_MM - RULE_W_MM        # rule's right edge IS col 1's right
+TITLE_X_MM = COL_1_RIGHT_X_MM + r.RETICLE_GUTTER_MM  # left edge of col 2
+TITLE_MAX_W_MM = ch.RIGHT_X_MM - TITLE_X_MM     # col 2 through col 6
+
+BODY_X_MM = ch.LEFT_X_MM
+_HALF_COLS = 3
+BODY_COL_W_MM = (
+    _HALF_COLS * r.RETICLE_COL_W_MM
+    + (_HALF_COLS - 1) * r.RETICLE_GUTTER_MM
+)
+BODY_GUTTER_MM = r.RETICLE_GUTTER_MM
+
+BLEED_W_MM = 7.0                                # half the 14mm margin
+BLEED_Y_MM = 0.0
+BLEED_H_MM = r.TRIM_H_MM
+
+# ── Vertical layout (mirror-invariant) ───────────────────────────────
+
 _GARAMOND_CAP_RATIO = 0.685
 _GARAMOND_DESC_RATIO = 0.21
+_LATO_CAP_RATIO = 0.72
 
+META_FIRST_BASELINE_Y_MM = (
+    ch.row_top(1)
+    + _GARAMOND_CAP_RATIO * TEXT_STYLES["Ficha-Meta-Top"].size_pt * r.MM_PER_PT
+)
+META_LEADING_MM = (
+    (TEXT_STYLES["Ficha-Meta-Top"].leading_pt or
+     TEXT_STYLES["Ficha-Meta-Top"].size_pt * 1.2) * r.MM_PER_PT
+)
 
-def _line_metrics(style):
-    """(cap_height_mm, descender_mm) for a Garamond style."""
-    return (
-        style.size_pt * _GARAMOND_CAP_RATIO * r.MM_PER_PT,
-        style.size_pt * _GARAMOND_DESC_RATIO * r.MM_PER_PT,
-    )
+_TITLE_STYLE = TEXT_STYLES["20-Ficha-Titulo-Pieza"]
+_TITLE_LEADING_MM = (
+    (_TITLE_STYLE.leading_pt or _TITLE_STYLE.size_pt * 1.2) * r.MM_PER_PT
+)
+TITLE_LAST_BASELINE_Y_MM = ch.row_bottom(4)
+RULE_TOP_Y_MM = ch.row_top(3)
+RULE_BOTTOM_Y_MM = ch.row_bottom(4)
+RULE_H_MM = RULE_BOTTOM_Y_MM - RULE_TOP_Y_MM
+
+TIPO_LABEL_STYLE_ID = "07-Seccion-Label"
+TIPO_CAP_TOP_Y_MM = ch.row_top(6)
+TIPO_BASELINE_Y_MM = (
+    TIPO_CAP_TOP_Y_MM
+    + _LATO_CAP_RATIO * TEXT_STYLES[TIPO_LABEL_STYLE_ID].size_pt * r.MM_PER_PT
+)
+_TIPO_DESC_MM = (
+    TEXT_STYLES[TIPO_LABEL_STYLE_ID].size_pt * _GARAMOND_DESC_RATIO * r.MM_PER_PT
+)
+
+_BODY_GAP_MM = 4.0
+_BODY_STYLE_ID = "24-Ficha-Descripcion"
+_BODY_CAP_H_MM = (
+    _GARAMOND_CAP_RATIO * TEXT_STYLES[_BODY_STYLE_ID].size_pt * r.MM_PER_PT
+)
+BODY_BASELINE_Y_MM = (
+    TIPO_BASELINE_Y_MM + _TIPO_DESC_MM + _BODY_GAP_MM + _BODY_CAP_H_MM
+)
 
 
 def render(page_id: int, data: dict) -> str:
-    pieza_id = str(data.get("pieza_id", "")).strip()
-    cabecera_sub = str(data.get("cabecera_sub", "")).strip()
+    titulo = str(data.get("titulo", "")).strip()
+    tipo = str(data.get("tipo", "")).strip()
     descripcion = str(data.get("descripcion", "")).strip()
     autor = str(data.get("autor", "")).strip()
     estado = str(data.get("estado", "")).strip()
@@ -58,117 +120,91 @@ def render(page_id: int, data: dict) -> str:
     else:
         fecha, origen = datos, ""
 
+    # The ONLY thing that flips with page parity is the bleed strip:
+    # it sits on the spine side so the red continues from the adjacent
+    # image page across the binding.
+    #   even page (left of spread):  spine = right edge → bleed right
+    #   odd page  (right of spread): spine = left edge  → bleed left
+    bleed_x = 0.0 if (page_id % 2 == 1) else (r.TRIM_W_MM - BLEED_W_MM)
+
     parts = [r.svg_open(r.PALETTE["papel_crema"])]
 
-    # — Top chrome
-    parts.append(ch.cabecera(pieza_id, cabecera_sub))
+    # — Bleed strip on the spine side
+    parts.append(
+        f'<rect x="{bleed_x}" y="{BLEED_Y_MM}" '
+        f'width="{BLEED_W_MM}" height="{BLEED_H_MM}" '
+        f'fill="{r.PALETTE["rojo_tinta"]}"/>'
+    )
 
-    # — Metadata stack. Autor's label baseline lands on row 1's bottom
-    #   line (bottom-left of cell (1, 1)) so the stack starts higher
-    #   and saves vertical space. Every entry left-anchors at col 1;
-    #   Estado / Fecha / Origen follow 0.4cm below the previous text.
-    label_cap_h = _LABEL_SIZE_PT * _GARAMOND_CAP_RATIO * r.MM_PER_PT
-    cap_top_y = ch.row_bottom(1) - label_cap_h
-    for label, value in (
-        ("Autor",  autor),
-        ("Estado", estado),
-        ("Fecha",  fecha),
-        ("Origen", origen),
-    ):
-        cap_top_y = _add_meta_entry(parts, label, value, cap_top_y)
+    # — Metadata stack (4 unlabeled lines, left-anchored at col 1)
+    parts.append(_metadata_stack([fecha, origen, autor, estado]))
 
-    # — Descripción: label follows the metadata stack's gap conventions
-    #   (0.4cm visible gap from Origen's last value to the label cap-top,
-    #   0.2cm from the label descender to the body cap-top) — NOT snapped
-    #   to a reticle row, since snapping wastes a whole square whenever
-    #   Estado/Origen wrap. Body rendered with r.paragraph() so paragraph
-    #   breaks (split on \n from folded scalars) come out as separate runs.
+    # — Title block: thin red rule + title. Last line's baseline at
+    # row_bottom(4); multi-line titles stack upward. Never hyphenate.
+    if titulo:
+        parts.append(r.red_rule_vertical(
+            RULE_X_MM, RULE_TOP_Y_MM, RULE_H_MM, width_mm=RULE_W_MM,
+        ))
+        n_lines = len(r.wrap_lines(
+            titulo, _TITLE_STYLE, TITLE_MAX_W_MM, hyphenate=False,
+        ))
+        first_baseline = TITLE_LAST_BASELINE_Y_MM - (n_lines - 1) * _TITLE_LEADING_MM
+        parts.append(r.text(
+            "20-Ficha-Titulo-Pieza", titulo,
+            x_mm=TITLE_X_MM, y_mm=first_baseline,
+            max_width_mm=TITLE_MAX_W_MM,
+            hyphenate=False,
+        ))
+
+    # — Tipo as bold uppercase label
+    if tipo:
+        parts.append(r.text(
+            TIPO_LABEL_STYLE_ID, tipo,
+            x_mm=BODY_X_MM, y_mm=TIPO_BASELINE_Y_MM,
+        ))
+
+    # — 2-column description (always left → right reading order)
     if descripcion:
-        _add_descripcion(parts, descripcion, cap_top_y)
+        svg, _ = r.paragraph_two_column(
+            _BODY_STYLE_ID, descripcion,
+            x_mm=BODY_X_MM, y_mm=BODY_BASELINE_Y_MM,
+            col_w_mm=BODY_COL_W_MM, gutter_mm=BODY_GUTTER_MM,
+        )
+        parts.append(svg)
 
-    # — Bottom chrome
     parts.append(r.folio(page_id))
-
     parts.append(r.svg_close())
     return "".join(parts)
 
 
-_LABEL_SIZE_PT = 8.5    # matches the page-1 tipo eyebrow (style 19)
-_LABEL_WEIGHT = 400
-_META_VALUE_STYLE_ID = "Ficha-Meta-Value"
-_DESCRIPCION_INDENT_MM = 0   # no first-line indent
-
-
-def _label_svg(label: str, baseline_y: float) -> str:
-    """Italic red EB Garamond label at META_X_MM, baseline at `baseline_y`."""
-    label_size_mm = _LABEL_SIZE_PT * r.MM_PER_PT
-    return (
-        f'<text x="{META_X_MM}" y="{baseline_y:.4f}" '
-        f'font-family="{r.font_family_css("EB Garamond")}" '
-        f'font-style="italic" '
-        f'font-weight="{_LABEL_WEIGHT}" '
-        f'font-size="{label_size_mm:.4f}" '
-        f'fill="{r.PALETTE["rojo_tinta"]}" '
-        f'text-anchor="start">{label}</text>'
-    )
-
-
-def _add_descripcion(parts: list[str], descripcion: str, label_cap_top_y: float) -> None:
-    """Append the 'Descripción' label followed by the body, where each
-    paragraph (split on \\n) gets a 5mm first-line indent."""
-    label_cap_h = _LABEL_SIZE_PT * _GARAMOND_CAP_RATIO * r.MM_PER_PT
-    label_desc = _LABEL_SIZE_PT * _GARAMOND_DESC_RATIO * r.MM_PER_PT
-    label_baseline = label_cap_top_y + label_cap_h
-    parts.append(_label_svg("Descripción", label_baseline))
-
-    body_style = TEXT_STYLES["24-Ficha-Descripcion"]
-    body_cap_h, _ = _line_metrics(body_style)
-    y = label_baseline + label_desc + _LABEL_VALUE_GAP_MM + body_cap_h
-
-    paragraphs = [p.strip() for p in descripcion.split("\n") if p.strip()]
-    if not paragraphs:
-        paragraphs = [descripcion]
-    for paragraph in paragraphs:
-        svg, height_mm = r.paragraph(
-            "24-Ficha-Descripcion", paragraph,
-            x_mm=META_X_MM, y_mm=y,
-            max_width_mm=META_W_MM,
-            first_line_indent_mm=_DESCRIPCION_INDENT_MM,
-        )
-        parts.append(svg)
-        y += height_mm
-
-
-def _add_meta_entry(
-    parts: list[str], label: str, value: str, cap_top_y: float,
-) -> float:
-    """Append one metadata entry — EB Garamond italic red label (same
-    family/style/color as the page-1 tipo eyebrow) on its own line,
-    value below — and return the next entry's cap-top (last value
-    descender + 0.4cm)."""
-    if not value:
-        return cap_top_y
-
-    # Label (1 line, never wraps for these short labels).
-    label_cap_h = _LABEL_SIZE_PT * _GARAMOND_CAP_RATIO * r.MM_PER_PT
-    label_desc = _LABEL_SIZE_PT * _GARAMOND_DESC_RATIO * r.MM_PER_PT
-    label_baseline = cap_top_y + label_cap_h
-    parts.append(_label_svg(label, label_baseline))
-
-    # Value (potentially multi-line; wraps + hyphenates via r.text).
-    value_style = TEXT_STYLES[_META_VALUE_STYLE_ID]
-    value_cap_h, value_desc = _line_metrics(value_style)
-    value_cap_top = label_baseline + label_desc + _LABEL_VALUE_GAP_MM
-    value_baseline = value_cap_top + value_cap_h
-    parts.append(r.text(
-        _META_VALUE_STYLE_ID, value,
-        x_mm=META_X_MM, y_mm=value_baseline,
-        max_width_mm=META_W_MM,
-    ))
-
-    # Account for value wrapping when handing off to the next entry.
-    n_lines = len(r.wrap_lines(value, value_style, META_W_MM))
-    leading_pt = value_style.leading_pt or value_style.size_pt * 1.2
-    leading_mm = leading_pt * r.MM_PER_PT
-    value_last_baseline = value_baseline + (n_lines - 1) * leading_mm
-    return value_last_baseline + value_desc + _ITEM_GAP_MM
+def _metadata_stack(values: list[str]) -> str:
+    """Stack of italic gray lines (no labels) at top-left of col 1.
+    Empty values are skipped so the stack closes up rather than
+    leaving a gap. Each value wraps with Spanish hyphenation at the
+    full reticle width (col 1 → col 6 right edge), so long autors etc.
+    flow into a second/third line instead of overrunning the page."""
+    items = [v for v in values if v]
+    if not items:
+        return ""
+    style = TEXT_STYLES["Ficha-Meta-Top"]
+    fill = r.PALETTE[style.color]
+    size_mm = style.size_pt * r.MM_PER_PT
+    parts = [
+        f'<text x="{META_X_MM}" y="{META_FIRST_BASELINE_Y_MM:.4f}" '
+        f'font-family="{r.font_family_css(style.font_family)}" '
+        f'font-style="{style.font_style}" '
+        f'font-weight="{style.font_weight}" '
+        f'font-size="{size_mm:.4f}" '
+        f'fill="{fill}" text-anchor="start">'
+    ]
+    first_line_emitted = False
+    for val in items:
+        lines = r.wrap_lines(val, style, META_MAX_W_MM, hyphenate=True)
+        for line in lines:
+            dy = "0" if not first_line_emitted else f"{META_LEADING_MM:.4f}"
+            parts.append(
+                f'<tspan x="{META_X_MM}" dy="{dy}">{r.escape(line)}</tspan>'
+            )
+            first_line_emitted = True
+    parts.append('</text>')
+    return "".join(parts)

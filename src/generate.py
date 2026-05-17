@@ -140,30 +140,40 @@ def _compile_pages(raw: dict) -> list[dict]:
             else sala_nombre or sala_periodo
         )
 
-        for pieza in sala_piezas:
+        for pieza_idx, pieza in enumerate(sala_piezas):
             pieza_counter += 1
             default_pieza_id = pieza.get("id") or f"L{pieza_counter:03d}"
 
             imagen_raw = dict(pieza.get("imagen") or {})
             texto_raw = dict(pieza.get("texto") or {})
 
-            imagen = imagen_raw
-            imagen.setdefault("pieza_id", default_pieza_id)
-            imagen.setdefault("cabecera_sub", default_cabecera)
-            add("ficha_imagen", imagen)
-
+            # Text page carries the full ficha typography (title, tipo,
+            # autor, datos). Those are authored under `imagen:` but
+            # bridge here.
             texto = texto_raw
             texto.setdefault("pieza_id", default_pieza_id)
             texto.setdefault("cabecera_sub", default_cabecera)
-            # Bridge: autor / datos are authored under `imagen:` (the
-            # catalog record for the artwork), but render on the text
-            # page now. `tipo` stays on the image page (eyebrow above
-            # the title) — it is NOT bridged. `estado` already lives
-            # under `texto:` and renders here directly — no bridge.
-            for key in ("autor", "datos"):
+            for key in ("autor", "datos", "tipo", "titulo"):
                 if key in imagen_raw:
                     texto.setdefault(key, imagen_raw[key])
-            add("ficha_texto", texto)
+
+            imagen = imagen_raw
+            imagen.setdefault("pieza_id", default_pieza_id)
+            imagen.setdefault("cabecera_sub", default_cabecera)
+
+            # Alternate the image side per pieza within the sala. The
+            # first pieza puts the image on the LEFT (even page) so
+            # the red expanse continues from the blank_red across the
+            # spine. Subsequent piezas flip. Because each pieza spans
+            # 2 pages and every back-to-back pair of red pages lies on
+            # ONE physical leaf, this rhythm produces fully-red
+            # leaves every other sheet through the sala.
+            if pieza_idx % 2 == 0:
+                add("ficha_imagen", imagen)
+                add("ficha_texto", texto)
+            else:
+                add("ficha_texto", texto)
+                add("ficha_imagen", imagen)
 
     # — Bibliografía
     if "bibliografia" in raw:

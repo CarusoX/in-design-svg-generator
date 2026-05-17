@@ -128,36 +128,9 @@ salas:
           estado: "Reconstruida por fotomontaje a partir del único ejemplar conocido"
 
       - imagen:
-          tipo: "Conjunto de tipos móviles"
-          titulo: "Tipos romanos antiguos de la Imprenta de Niños Expósitos"
-          autor: "Punzonistas y fundidores europeos no identificados (probablemente españoles: Juan Merlo, Francisco Rongel, Antonio Rojo)"
-          datos: "Antes de 1764 · Madrid (origen probable), España (origen)"
-        texto:
-          descripcion: >-
-            Conjunto de tipos móviles utilizados durante los primeros años del
-            único taller tipográfico que funcionó en el virreinato del Río de
-            la Plata. Importados desde Europa y ya usados al momento de su
-            llegada, los caracteres se desgastaron progresivamente al ser
-            sometidos al clima húmedo de Buenos Aires, a tintas artesanales y
-            a los apuros productivos del taller único. Cuando la Imprenta
-            cerró en 1824, ningún ejemplar físico de estos tipos sobrevivió:
-            solo los conocemos a través de la huella que dejaron sobre el
-            papel. La reconstrucción digital realizada por Fabio Ares en 2010
-            —compuesta por una romana redonda, una cursiva y un conjunto de
-            viñetas— recupera esa materialidad ausente trabajando sobre
-            escaneos de impresos originales. La fuente conserva
-            deliberadamente las marcas del desgaste, las irregularidades y los
-            empastamientos, en una operación que asume la imperfección como
-            rasgo identitario de la primera tipografía rioplatense.
-          cita_textual: >-
-            "este establecimiento adopta como modelo... la letra que se usa no
-            hay la necesaria y está gastada"
-          estado: "Tipos físicos perdidos; reconstrucción digital disponible"
-
-      - imagen:
           tipo: "Libro impreso colonial"
-          titulo: "Laudationes Quinque (ejemplar único de la Abadía de Montserrat)"
-          autor: "Atribuido a Josep Manuel Peramàs; impreso por el P. Pablo Karer"
+          titulo: "Laudatione Quinque"
+          autor: "Impreso por el p. Pablo Karer"
           datos: "1766 · Córdoba, Argentina"
           images: [L003.jpg]
         texto:
@@ -270,7 +243,7 @@ salas:
           tipo: "Prensa tipográfica manual / objeto industrial"
           titulo: "Prensa de hierro de la 'Imprenta de la Patria' (Museo del Vino de Cafayate)"
           autor: "Manufactura indeterminada (siglo XIX)"
-          datos: "siglo XIX (no s. XVIII como suele atribuirse) · Cafayate, Salta, Argentina"
+          datos: "Siglo XIX · Cafayate, Salta, Argentina"
           images: [L007.jpeg]
         texto:
           descripcion: >-
@@ -468,9 +441,7 @@ salas:
           titulo: "Almanak patriótico de Buenos Ayres, para el año décimo de nuestra libertad"
           autor: "Imprenta de la Independencia"
           datos: "1819 · Buenos Aires, Argentina"
-          images:
-            - L014.jpeg
-            - L014.jpg
+          images: [L014.jpg]
         texto:
           descripcion: >-
             Primer almanaque rioplatense en abandonar el régimen estrictamente
