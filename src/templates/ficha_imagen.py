@@ -82,10 +82,17 @@ _AUTOR_STYLE = TEXT_STYLES["21-Ficha-Subtitulo-Autor"]
 _AUTOR_CAP_HEIGHT_MM = _AUTOR_STYLE.size_pt * 0.685 * r.MM_PER_PT      # EB Gar. Italic
 AUTOR_Y_MM = _row_top(3) + _AUTOR_CAP_HEIGHT_MM
 
-# Datos sits at the BOTTOM-LEFT corner of cell (row 3, col 1): baseline
-# on the row's bottom line, same x as autor.
+# Datos sits one reticle gutter (0.4cm = 4mm of *visible* gap) below
+# autor — measured from autor's descender bottom to datos' cap-top.
+_DATOS_STYLE = TEXT_STYLES["22-Ficha-Subtitulo-Datos"]
+_DATOS_CAP_HEIGHT_MM = _DATOS_STYLE.size_pt * 0.685 * r.MM_PER_PT     # EB Garamond
+_AUTOR_DESCENDER_MM = _AUTOR_STYLE.size_pt * 0.21 * r.MM_PER_PT       # ≈ Garamond italic
 DATOS_X_MM = _RETICLE_LEFT_X_MM                                       # 15.4
-DATOS_Y_MM = _row_bottom(3)
+DATOS_Y_MM = (
+    AUTOR_Y_MM + _AUTOR_DESCENDER_MM   # autor's visible bottom
+    + r.RETICLE_GUTTER_MM              # 4mm visible gap
+    + _DATOS_CAP_HEIGHT_MM             # then drop to datos baseline
+)
 
 # Image frame: 6×4 reticle squares — all 6 columns (full reticle width)
 # × rows 4–7 (4 squares tall, sharing 3 internal row gutters).
