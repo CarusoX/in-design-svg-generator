@@ -195,10 +195,11 @@ TEXT_STYLES: dict[str, TextStyle] = {
         color="gris_texto",
     ),
     "24-Ficha-Descripcion": TextStyle(
+        # Left-aligned (ragged right). Hyphenation in wrap_lines keeps
+        # the rag tight; justification adds little once hyphens are in.
         font_family="EB Garamond",
         size_pt=10, leading_pt=15,
         color="negro_tinta",
-        justified=True,
     ),
     "25-Ficha-CitaTextual": TextStyle(
         # Reference uses EB Garamond Italic, not Caveat — see CLAUDE.md note.

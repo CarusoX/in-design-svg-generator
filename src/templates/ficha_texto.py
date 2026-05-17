@@ -1,19 +1,15 @@
 """Ficha — text side (right page of an artwork spread).
 
-Layout mirrors reference page 8:
 - Top cabecera + horizontal rule (shared with ficha_imagen).
-- Long justified description body (rendered ragged in preview — InDesign
-  re-flows it on import).
-- 0.3pt red separator rule.
-- Red italic serif pull-quote.
+- Long justified description body anchored to the top-left of row 2 /
+  col 1 of the reticle, spanning the full reticle width.
 - FUENTE / ESTADO footer line with bold labels and regular values.
 - Folio strip at the bottom (shared).
 
 Expected `data` keys:
     pieza_id (str)       — same as ficha_imagen
     cabecera_sub (str)   — same
-    descripcion (str)    — multi-line body, auto-wraps
-    cita_textual (str)   — red italic pull-quote
+    descripcion (str)    — multi-line body, auto-wraps + justified
     fuente (str)         — value after "FUENTE:" label
     estado (str)         — value after "ESTADO:" label
 """
@@ -21,15 +17,19 @@ Expected `data` keys:
 from __future__ import annotations
 
 from .. import render as r
+from ..styles import TEXT_STYLES
 from . import _ficha_common as ch
 
 
-BODY_X_MM = r.MARGIN_MM
-BODY_Y_MM = 33
-BODY_W_MM = r.CONTENT_W_MM
+# Body: cap-top on the top line of reticle row 2, left edge on col 1,
+# full reticle width. Style 24 is justified=True so the per-word
+# justification path kicks in automatically.
+_BODY_STYLE = TEXT_STYLES["24-Ficha-Descripcion"]
+_BODY_CAP_HEIGHT_MM = _BODY_STYLE.size_pt * 0.685 * r.MM_PER_PT   # EB Garamond
+BODY_X_MM = ch.LEFT_X_MM                                          # 15.4
+BODY_Y_MM = ch.row_top(2) + _BODY_CAP_HEIGHT_MM
+BODY_W_MM = ch.RIGHT_X_MM - ch.LEFT_X_MM                          # 117.2
 
-SEPARATOR_Y_MM = 132
-QUOTE_Y_MM = 142
 FOOTER_Y_MM = 183
 
 
@@ -37,7 +37,6 @@ def render(page_id: int, data: dict) -> str:
     pieza_id = str(data.get("pieza_id", "")).strip()
     cabecera_sub = str(data.get("cabecera_sub", "")).strip()
     descripcion = str(data.get("descripcion", "")).strip()
-    cita = str(data.get("cita_textual", "")).strip()
     fuente = str(data.get("fuente", "")).strip()
     estado = str(data.get("estado", "")).strip()
 
@@ -46,22 +45,11 @@ def render(page_id: int, data: dict) -> str:
     # — Top chrome
     parts.append(ch.cabecera(pieza_id, cabecera_sub))
 
-    # — Justified description (renders ragged in preview)
+    # — Justified description body
     if descripcion:
         parts.append(r.text(
             "24-Ficha-Descripcion", descripcion,
             x_mm=BODY_X_MM, y_mm=BODY_Y_MM,
-            max_width_mm=BODY_W_MM,
-        ))
-
-    # — 0.3pt red separator
-    parts.append(r.ficha_footer_rule(SEPARATOR_Y_MM))
-
-    # — Red italic pull-quote
-    if cita:
-        parts.append(r.text(
-            "25-Ficha-CitaTextual", cita,
-            x_mm=BODY_X_MM, y_mm=QUOTE_Y_MM,
             max_width_mm=BODY_W_MM,
         ))
 

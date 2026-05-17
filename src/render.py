@@ -16,6 +16,11 @@ try:
 except ImportError:
     ImageFont = None  # type: ignore[assignment]
 
+try:
+    import pyphen as _pyphen
+except ImportError:
+    _pyphen = None  # type: ignore[assignment]
+
 TRIM_W_MM = 148
 TRIM_H_MM = 210
 BLEED_MM = 0   # no bleed — SVG canvas matches A5 trim exactly
@@ -216,27 +221,84 @@ def _char_factor(style: TextStyle) -> float:
     return 0.50
 
 
-def wrap_lines(text_str: str, style: TextStyle, max_width_mm: float) -> list[str]:
-    """Greedy word-wrap to fit within max_width_mm given the style's metrics."""
-    char_pt = style.size_pt * _char_factor(style) + _letter_spacing_pt(style)
-    char_mm = char_pt * MM_PER_PT
-    if char_mm <= 0:
-        return [text_str]
-    max_chars = max(1, int(max_width_mm / char_mm))
+# Hyphenation: pyphen ships TeX hyphenation patterns. Catalog content is
+# in Spanish, so the dict is lazy-loaded for "es_ES". A different language
+# would need its own dict (and likely a `lang` field on TextStyle).
+_HYPHEN_LANG = "es_ES"
+_HYPHEN_DICT: object | None = None
+_HYPHEN_MIN_FRAGMENT = 2   # don't break "a-rrancado"; need >=2 chars on each side
 
+
+def _hyphen_dict():
+    global _HYPHEN_DICT
+    if _HYPHEN_DICT is None and _pyphen is not None:
+        _HYPHEN_DICT = _pyphen.Pyphen(lang=_HYPHEN_LANG)
+    return _HYPHEN_DICT
+
+
+def _hyphen_break_word(word: str, max_width_mm: float, style: TextStyle) -> tuple[str, str] | None:
+    """Return (prefix, suffix) such that prefix + '-' fits in `max_width_mm`
+    using real font metrics (via Pillow when available), choosing the
+    LONGEST valid Spanish-syllable break. Returns None when no usable
+    break exists (no pyphen, too few chars on either side, or no
+    hyphenation point fits)."""
+    dic = _hyphen_dict()
+    if dic is None or max_width_mm <= 0:
+        return None
+    positions = dic.positions(word)
+    if not positions:
+        return None
+    best = None
+    for p in positions:
+        if p < _HYPHEN_MIN_FRAGMENT or len(word) - p < _HYPHEN_MIN_FRAGMENT:
+            continue
+        if _measure_word_mm(word[:p] + "-", style) <= max_width_mm:
+            best = p
+        else:
+            break                # positions are increasing
+    if best is None:
+        return None
+    return word[:best], word[best:]
+
+
+def wrap_lines(text_str: str, style: TextStyle, max_width_mm: float) -> list[str]:
+    """Greedy word-wrap to fit within max_width_mm using REAL font
+    metrics (Pillow advance widths) — the char_factor estimate breaks
+    lines too short for fonts like EB Garamond where average glyph
+    width is well under 0.46 em. When a word doesn't fit, tries Spanish
+    hyphenation so a syllable prefix can ride out the line, followed
+    by a '-'."""
     words = text_str.split()
+    if not words:
+        return [text_str]
+
+    space_mm = _measure_word_mm(" ", style) or (
+        style.size_pt * _char_factor(style) * MM_PER_PT
+    )
+
     lines: list[str] = []
     current: list[str] = []
-    current_len = 0
+    current_w_mm = 0.0
     for word in words:
-        added = len(word) + (1 if current else 0)
-        if current and current_len + added > max_chars:
-            lines.append(" ".join(current))
-            current = [word]
-            current_len = len(word)
+        word_w_mm = _measure_word_mm(word, style)
+        added_w_mm = word_w_mm + (space_mm if current else 0.0)
+        if current and current_w_mm + added_w_mm > max_width_mm:
+            # Word overflows. Try to hyphenate so a syllable prefix fits.
+            space_for_prefix_mm = max_width_mm - current_w_mm - space_mm
+            broken = _hyphen_break_word(word, space_for_prefix_mm, style)
+            if broken is not None:
+                prefix, suffix = broken
+                current.append(prefix + "-")
+                lines.append(" ".join(current))
+                current = [suffix]
+                current_w_mm = _measure_word_mm(suffix, style)
+            else:
+                lines.append(" ".join(current))
+                current = [word]
+                current_w_mm = word_w_mm
         else:
             current.append(word)
-            current_len += added
+            current_w_mm += added_w_mm
     if current:
         lines.append(" ".join(current))
     return lines
@@ -311,7 +373,14 @@ def text(
         dy = "0" if i == 0 else f"{leading_mm:.4f}"
         justify_line = justify and (single_line or i < last_idx)
         if justify_line:
-            parts.extend(_word_justified_tspans(line, x_mm, dy, max_width_mm, style))
+            # Snap only for single-line titles. For multi-line content
+            # every line shares the same right edge — snapping would let
+            # short-wrapped lines stop at an earlier column and the
+            # paragraph would look ragged on the right.
+            parts.extend(_word_justified_tspans(
+                line, x_mm, dy, max_width_mm, style,
+                snap=single_line,
+            ))
         else:
             parts.append(f'<tspan x="{x_mm}" dy="{dy}">{escape(line)}</tspan>')
     parts.append('</text>')
@@ -321,17 +390,24 @@ def text(
 def _word_justified_tspans(
     line: str, x_start: float, dy_first: str,
     max_width_mm: float, style: TextStyle,
+    snap: bool = True,
 ) -> list[str]:
     """Per-word <tspan>s that justify `line`.
 
-    The target width is snapped to the smallest reticle column right-edge
-    that fits the natural text width (capped at `max_width_mm`). A short
+    When `snap` is True (the default — used for single-line titles), the
+    target width is snapped to the smallest reticle column right-edge
+    that fits the natural text width, capped at `max_width_mm`. A short
     title stops at a nearby column instead of being stretched across the
     full width; a long title naturally reaches the far right.
 
+    When `snap` is False (used for multi-line paragraphs), the target IS
+    `max_width_mm` — every line aligns to the same right edge, otherwise
+    short-wrapped lines would snap to an earlier column and the paragraph
+    would look ragged on the right.
+
     Words 1..N-1 sit at explicit x positions computed from Pillow advance
     widths plus an even per-gap stretch. The LAST word is anchored with
-    text-anchor="end" at the snapped right edge, so it's always flush
+    text-anchor="end" at the target right edge, so it's always flush
     regardless of Pillow-vs-browser metric drift. Extra width lands in
     inter-word gaps only — inter-letter spacing is untouched.
     """
@@ -345,8 +421,9 @@ def _word_justified_tspans(
     )
     natural_total_mm = sum(word_widths_mm) + (len(words) - 1) * space_mm
 
-    target_right_mm = _snap_target_right_mm(
-        x_start, natural_total_mm, max_width_mm,
+    target_right_mm = (
+        _snap_target_right_mm(x_start, natural_total_mm, max_width_mm)
+        if snap else x_start + max_width_mm
     )
     effective_width_mm = target_right_mm - x_start
     extra_per_gap_mm = max(
@@ -412,30 +489,40 @@ def paragraph(
     ls_pt = _letter_spacing_pt(style)
     ls_mm = ls_pt * MM_PER_PT
 
-    # Word-wrap with two widths: first line narrower if indented, subsequent
-    # lines narrower if hanging-indented.
-    char_pt = style.size_pt * _char_factor(style) + ls_pt
-    char_mm = char_pt * MM_PER_PT
-    first_w = max(1.0, max_width_mm - first_line_indent_mm)
-    rest_w = max(1.0, max_width_mm - hanging_indent_mm)
-    first_max = max(1, int(first_w / char_mm)) if char_mm > 0 else 80
-    rest_max = max(1, int(rest_w / char_mm)) if char_mm > 0 else 80
+    # Word-wrap with two widths (first line narrower if indented, rest
+    # narrower if hanging-indented), real font metrics, Spanish
+    # hyphenation when a word overflows.
+    first_w_mm = max(1.0, max_width_mm - first_line_indent_mm)
+    rest_w_mm = max(1.0, max_width_mm - hanging_indent_mm)
+    space_mm = _measure_word_mm(" ", style) or (
+        style.size_pt * _char_factor(style) * MM_PER_PT
+    )
 
     words = text_str.split()
     lines: list[str] = []
     current: list[str] = []
-    current_len = 0
-    current_max = first_max
+    current_w_mm = 0.0
+    current_max_mm = first_w_mm
     for word in words:
-        added = len(word) + (1 if current else 0)
-        if current and current_len + added > current_max:
-            lines.append(" ".join(current))
-            current = [word]
-            current_len = len(word)
-            current_max = rest_max
+        word_w_mm = _measure_word_mm(word, style)
+        added_w_mm = word_w_mm + (space_mm if current else 0.0)
+        if current and current_w_mm + added_w_mm > current_max_mm:
+            space_for_prefix_mm = current_max_mm - current_w_mm - space_mm
+            broken = _hyphen_break_word(word, space_for_prefix_mm, style)
+            if broken is not None:
+                prefix, suffix = broken
+                current.append(prefix + "-")
+                lines.append(" ".join(current))
+                current = [suffix]
+                current_w_mm = _measure_word_mm(suffix, style)
+            else:
+                lines.append(" ".join(current))
+                current = [word]
+                current_w_mm = word_w_mm
+            current_max_mm = rest_w_mm
         else:
             current.append(word)
-            current_len += added
+            current_w_mm += added_w_mm
     if current:
         lines.append(" ".join(current))
 
@@ -473,7 +560,10 @@ def paragraph(
             line_w = rest_w_mm
         dy = "0" if i == 0 else f"{leading_mm:.4f}"
         if justify and i < last_idx:
-            parts.extend(_word_justified_tspans(line, line_x, dy, line_w, style))
+            # Paragraph lines share a right edge — no per-line snap.
+            parts.extend(_word_justified_tspans(
+                line, line_x, dy, line_w, style, snap=False,
+            ))
         else:
             parts.append(f'<tspan x="{line_x}" dy="{dy}">{escape(line)}</tspan>')
     parts.append('</text>')

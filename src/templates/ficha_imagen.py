@@ -31,27 +31,15 @@ from ..styles import TEXT_STYLES
 from . import _ficha_common as ch
 
 
-# Reticle row math (mirrors src/render.py). All Y positions below derive
-# from r.RETICLE_ROW_H_MM so they stay in sync if the grid is retuned.
-_RETICLE_TOP_Y_MM = r.MARGIN_MM + r.RETICLE_INSET_MM        # 15.4
-_RETICLE_LEFT_X_MM = r.MARGIN_MM + r.RETICLE_INSET_MM       # 15.4
-_RETICLE_RIGHT_X_MM = r.RETICLE_COL_RIGHT_X_MM[-1]          # 132.6
-_ROW_STRIDE_MM = r.RETICLE_ROW_H_MM + r.RETICLE_GUTTER_MM
-
-
-def _row_top(n: int) -> float:
-    """Absolute Y of the top edge of the n-th reticle row (1-indexed)."""
-    return _RETICLE_TOP_Y_MM + (n - 1) * _ROW_STRIDE_MM
-
-
-def _row_bottom(n: int) -> float:
-    """Absolute Y of the bottom edge of the n-th reticle row (1-indexed)."""
-    return _row_top(n) + r.RETICLE_ROW_H_MM
-
-
-_ROW_1_BOTTOM_Y = _row_bottom(1)
-_ROW_2_TOP_Y = _row_top(2)
-_ROW_2_BOTTOM_Y = _row_bottom(2)
+# Reticle row math comes from ch (shared). Cached aliases for the rows
+# that matter on this page.
+_RETICLE_LEFT_X_MM = ch.LEFT_X_MM                            # 15.4
+_RETICLE_RIGHT_X_MM = ch.RIGHT_X_MM                          # 132.6
+_ROW_1_BOTTOM_Y = ch.row_bottom(1)
+_ROW_2_TOP_Y = ch.row_top(2)
+_ROW_2_BOTTOM_Y = ch.row_bottom(2)
+_row_top = ch.row_top
+_row_bottom = ch.row_bottom
 
 # Horizontal positions for the tipo/title block:
 #   - Red rule left edge sits on the first vertical reticle line.

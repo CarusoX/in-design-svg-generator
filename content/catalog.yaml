@@ -19,7 +19,7 @@ meta:
 # ── Cover ──────────────────────────────────────────────────────────────
 portada:
   volumen: "I"
-  rango: "1764 — 2010"
+  rango: "1764-2010"
   titulo: |-
     Archivo
     de lo no
@@ -121,7 +121,7 @@ salas:
             dispositivo de transmisión generacional. Cada pieza condensa la
             línea genealógica de quien la teje. La operación cultural fue
             invisibilizada durante siglos por la categorización europea
-            —'artesanía', 'folklore', 'artesanías populares'— pero, como
+            ('artesanía', 'folklore', 'artesanías populares'), pero, como
             señala Valdés de León, esa misma categorización es la que impide
             reconocer el carácter proyectual de la operación. El archivo
             retiene la pieza como ejemplo de un diseño popular latinoamericano
@@ -129,8 +129,8 @@ salas:
             disciplinar académico apenas empezó a estudiar en los últimos
             cincuenta años.
           cita_textual: >-
-            "En Santiago del Estero —por sus patrones— y Catamarca —creaciones
-            más iconoclastas—, el rol de las tejedoras es crucial"
+            "En Santiago del Estero (por sus patrones) y Catamarca (creaciones
+            más iconoclastas), el rol de las tejedoras es crucial"
           fuente: "Texto 5"
           estado: "En riesgo. Tradición viva en algunas comunidades; objetos dispersos en museos"
 
@@ -156,7 +156,7 @@ salas:
             conocimiento del quipu se perdió casi por completo y aún hoy se
             discute si se trataba de un sistema completo de escritura.
           cita_textual: >-
-            "los sistemas protoescriturales —glifos, códices, quipus—
+            "los sistemas protoescriturales (glifos, códices, quipus)
             constituyen la irrevocable demostración material de la existencia
             de un Diseño originario"
           fuente: "Texto 1 - Valdés de León"

@@ -2,7 +2,8 @@
 
 Both pages of a ficha spread carry the same cabecera (ID + sala) at the
 top. Page-number folios go through `r.folio()` directly — no per-template
-helper needed.
+helper needed. Reticle row/column helpers live here too so the two
+templates anchor to the same grid.
 """
 
 from __future__ import annotations
@@ -23,6 +24,21 @@ CABECERA_Y_MM = CABECERA_RULE_Y_MM - r.RETICLE_GUTTER_MM  # 11.4 (baseline above
 LEFT_X_MM = r.MARGIN_MM + r.RETICLE_INSET_MM                       # 15.4
 RIGHT_X_MM = r.MARGIN_MM + r.CONTENT_W_MM - r.RETICLE_INSET_MM     # 132.6
 RULE_LENGTH_MM = RIGHT_X_MM - LEFT_X_MM                            # 117.2
+
+# Reticle row math (mirrors src/render.py). All derived from
+# r.RETICLE_ROW_H_MM so positions stay in sync if the grid is retuned.
+_RETICLE_TOP_Y_MM = r.MARGIN_MM + r.RETICLE_INSET_MM      # 15.4
+_ROW_STRIDE_MM = r.RETICLE_ROW_H_MM + r.RETICLE_GUTTER_MM
+
+
+def row_top(n: int) -> float:
+    """Absolute Y of the top edge of the n-th reticle row (1-indexed)."""
+    return _RETICLE_TOP_Y_MM + (n - 1) * _ROW_STRIDE_MM
+
+
+def row_bottom(n: int) -> float:
+    """Absolute Y of the bottom edge of the n-th reticle row (1-indexed)."""
+    return row_top(n) + r.RETICLE_ROW_H_MM
 
 
 def cabecera(pieza_id: str, cabecera_sub: str) -> str:
