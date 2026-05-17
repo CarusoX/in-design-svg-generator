@@ -71,17 +71,16 @@ TEXT_STYLES: dict[str, TextStyle] = {
         align="middle",
     ),
     "05-Epigrafe-Cita": TextStyle(
-        # Reference uses EB Garamond Italic, not Caveat — see CLAUDE.md note.
-        # Centered (each line anchored on the page horizontal center).
-        font_family="EB Garamond", font_style="italic",
-        size_pt=28, leading_pt=32,
+        # Regular weight 500 (not italic). Centered on the page.
+        font_family="EB Garamond", font_weight=500,
+        size_pt=22, leading_pt=26,
         color="papel_crema",
         align="middle",
     ),
     "06-Epigrafe-Fuente": TextStyle(
         # Reference centers the source line, not right-aligns (spec was wrong).
         font_family="EB Garamond", font_style="italic",
-        size_pt=8, leading_pt=12,
+        size_pt=10, leading_pt=14,
         color="papel_crema",
         align="middle",
     ),
