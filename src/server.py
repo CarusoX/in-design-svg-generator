@@ -21,7 +21,7 @@ from . import generate
 ROOT = Path(__file__).resolve().parent.parent
 SRC_DIR = ROOT / "src"
 OUT_DIR = ROOT / "out"
-IMAGES_DIR = ROOT / "images"
+IMAGES_DIR = OUT_DIR / "images"
 CONTENT_FILE = ROOT / "content" / "catalog.yaml"
 TEMPLATES_DIR = SRC_DIR / "templates"
 

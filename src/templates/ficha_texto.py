@@ -46,16 +46,6 @@ def _line_metrics(style):
     )
 
 
-def _next_row_top_at_or_after(y_mm: float) -> float:
-    """Smallest row_top(n) >= y_mm (for placing the body block right
-    under whatever vertical space the metadata stack ended up taking)."""
-    for n in range(1, r.RETICLE_ROWS + 1):
-        top = ch.row_top(n)
-        if top >= y_mm:
-            return top
-    return ch.row_top(r.RETICLE_ROWS)
-
-
 def render(page_id: int, data: dict) -> str:
     pieza_id = str(data.get("pieza_id", "")).strip()
     cabecera_sub = str(data.get("cabecera_sub", "")).strip()
@@ -87,13 +77,14 @@ def render(page_id: int, data: dict) -> str:
     ):
         cap_top_y = _add_meta_entry(parts, label, value, cap_top_y)
 
-    # — Descripción: label snapped to the next reticle row top, body
-    #   rendered with r.paragraph() so every paragraph gets a 5mm
-    #   first-line indent (sangría). YAML folded scalars (`>-`) collapse
-    #   single newlines to spaces and blank lines to single \n, so we
-    #   split on \n to detect paragraph breaks.
+    # — Descripción: label follows the metadata stack's gap conventions
+    #   (0.4cm visible gap from Origen's last value to the label cap-top,
+    #   0.2cm from the label descender to the body cap-top) — NOT snapped
+    #   to a reticle row, since snapping wastes a whole square whenever
+    #   Estado/Origen wrap. Body rendered with r.paragraph() so paragraph
+    #   breaks (split on \n from folded scalars) come out as separate runs.
     if descripcion:
-        _add_descripcion(parts, descripcion, _next_row_top_at_or_after(cap_top_y))
+        _add_descripcion(parts, descripcion, cap_top_y)
 
     # — Bottom chrome
     parts.append(r.folio(page_id))

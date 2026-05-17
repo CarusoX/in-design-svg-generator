@@ -15,6 +15,7 @@ catalog) doesn't need to change when the YAML structure does.
 from __future__ import annotations
 
 import argparse
+import shutil
 from pathlib import Path
 
 import yaml
@@ -27,6 +28,13 @@ ROOT = Path(__file__).resolve().parent.parent
 CONTENT_FILE = ROOT / "content" / "catalog.yaml"
 OUT_DIR = ROOT / "out"
 RETICLE_FILE = OUT_DIR / "_reticle.svg"
+
+# Source images live in reference/imagenes/ (authored by the curator)
+# and get copied into out/images/ on each build so the entire `out/`
+# folder is a self-contained InDesign handoff bundle (SVGs reference
+# images via `images/<file>` relative paths).
+SOURCE_IMAGES_DIR = ROOT / "reference" / "imagenes"
+OUT_IMAGES_DIR = OUT_DIR / "images"
 
 
 # ── Catalog loading + section → pages compilation ────────────────────
@@ -201,11 +209,32 @@ def write_reticle() -> Path:
     return RETICLE_FILE
 
 
+def sync_images() -> int:
+    """Mirror reference/imagenes/ into out/images/ so the InDesign
+    handoff bundle (just out/) contains every linked image. Skips
+    files already present at the same size; returns the count copied.
+    """
+    if not SOURCE_IMAGES_DIR.exists():
+        return 0
+    OUT_IMAGES_DIR.mkdir(parents=True, exist_ok=True)
+    copied = 0
+    for src in SOURCE_IMAGES_DIR.iterdir():
+        if not src.is_file() or src.name.startswith("."):
+            continue
+        dst = OUT_IMAGES_DIR / src.name
+        if dst.exists() and dst.stat().st_size == src.stat().st_size:
+            continue
+        shutil.copy2(src, dst)
+        copied += 1
+    return copied
+
+
 def regenerate_all() -> list[Path]:
     catalog = load_catalog()
     _clear_out()
     paths = [write_page(p) for p in catalog["pages"]]
     write_reticle()
+    sync_images()
     return paths
 
 
@@ -235,6 +264,9 @@ def main() -> None:
     if args.page is None:
         path = write_reticle()
         print(f"wrote {path.relative_to(ROOT)}")
+        copied = sync_images()
+        if copied:
+            print(f"synced {copied} image(s) to {OUT_IMAGES_DIR.relative_to(ROOT)}/")
 
 
 if __name__ == "__main__":
