@@ -99,11 +99,30 @@ def _compile_pages(raw: dict) -> list[dict]:
         romano = sala.get("romano", "")
         sala_piezas = sala.get("piezas") or []
 
-        # Portadilla de sala
+        # Portadilla de sala — must land on an EVEN page so it's the
+        # LEFT page of a spread. The blank_red page we add right after it
+        # then occupies the RIGHT page, which makes every following pieza
+        # spread fall cleanly as image (even/left) + text (odd/right).
+        # Each section contributes 2 + 2*N pages (always even), so once
+        # the first portadilla is on an even page, every subsequent one
+        # is too. If this assertion fires, adjust the front-matter
+        # (nota_curatorial / indice page counts) so the running total
+        # before the first portadilla ends on an odd page.
+        if next_id % 2 != 0:
+            raise SystemExit(
+                f"portadilla_sala (sala {romano!r}) would land on odd "
+                f"page {next_id} — adjust front-matter so it falls on an "
+                f"even page (left of spread)."
+            )
+
         portadilla = dict(sala.get("portadilla") or {})
         portadilla.setdefault("romano", romano)
         portadilla.setdefault("piezas", f"{len(sala_piezas)} piezas")
         add("portadilla_sala", portadilla)
+
+        # Blank red facing page — keeps the following image/text spreads
+        # aligned (image on even/left, text on odd/right).
+        add("blank_red", {})
 
         # cabecera_sub auto-filled on every ficha in this sala
         sala_nombre = portadilla.get("nombre", "")
