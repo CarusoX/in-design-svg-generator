@@ -31,15 +31,27 @@ from ..styles import TEXT_STYLES
 from . import _ficha_common as ch
 
 
-# Reticle row math (mirrors src/render.py's reticle). Each row is computed
-# rather than hardcoded so tipo/title stay aligned if the grid is retuned.
-_RETICLE_ROW_H_MM = (
-    (r.CONTENT_H_MM - 2 * r.RETICLE_INSET_MM
-     - (r.RETICLE_ROWS - 1) * r.RETICLE_GUTTER_MM) / r.RETICLE_ROWS
-)
-_ROW_1_BOTTOM_Y = r.MARGIN_MM + r.RETICLE_INSET_MM + _RETICLE_ROW_H_MM
-_ROW_2_TOP_Y = _ROW_1_BOTTOM_Y + r.RETICLE_GUTTER_MM
-_ROW_2_BOTTOM_Y = _ROW_2_TOP_Y + _RETICLE_ROW_H_MM
+# Reticle row math (mirrors src/render.py). All Y positions below derive
+# from r.RETICLE_ROW_H_MM so they stay in sync if the grid is retuned.
+_RETICLE_TOP_Y_MM = r.MARGIN_MM + r.RETICLE_INSET_MM        # 15.4
+_RETICLE_LEFT_X_MM = r.MARGIN_MM + r.RETICLE_INSET_MM       # 15.4
+_RETICLE_RIGHT_X_MM = r.RETICLE_COL_RIGHT_X_MM[-1]          # 132.6
+_ROW_STRIDE_MM = r.RETICLE_ROW_H_MM + r.RETICLE_GUTTER_MM
+
+
+def _row_top(n: int) -> float:
+    """Absolute Y of the top edge of the n-th reticle row (1-indexed)."""
+    return _RETICLE_TOP_Y_MM + (n - 1) * _ROW_STRIDE_MM
+
+
+def _row_bottom(n: int) -> float:
+    """Absolute Y of the bottom edge of the n-th reticle row (1-indexed)."""
+    return _row_top(n) + r.RETICLE_ROW_H_MM
+
+
+_ROW_1_BOTTOM_Y = _row_bottom(1)
+_ROW_2_TOP_Y = _row_top(2)
+_ROW_2_BOTTOM_Y = _row_bottom(2)
 
 # Horizontal positions for the tipo/title block:
 #   - Red rule left edge sits on the first vertical reticle line.
@@ -66,18 +78,25 @@ _TITLE_DESC_RATIO = 0.27    # generous descender allowance
 AUTOR_Y_MM = 68
 DATOS_Y_MM = 75
 
-# Image frame.
-FRAME_X_MM = r.MARGIN_MM            # 14
-FRAME_Y_MM = 85
-FRAME_W_MM = r.CONTENT_W_MM         # 120
-FRAME_H_MM = 100
-FRAME_INSET_MM = 4                  # padding for internal labels
+# Image frame: 6×4 reticle squares — all 6 columns (full reticle width)
+# × rows 4–7 (4 squares tall, sharing 3 internal row gutters).
+FRAME_X_MM = _RETICLE_LEFT_X_MM                              # 15.4
+FRAME_Y_MM = _row_top(4)                                     # 76.47
+FRAME_W_MM = _RETICLE_RIGHT_X_MM - _RETICLE_LEFT_X_MM        # 117.2
+FRAME_H_MM = _row_bottom(7) - _row_top(4)                    # 77.44 = 4 rows + 3 gutters
+FRAME_INSET_MM = 4                                            # padding for internal labels
 
 # Caption row — caption STARTS flush against the first vertical reticle
-# line (left edge of col 1), baseline at the bottom of the last row. The
-# caption flows rightward from there.
-CAPTION_ANCHOR_X_MM = r.MARGIN_MM + r.RETICLE_INSET_MM                # 15.4
-CAPTION_ANCHOR_Y_MM = r.TRIM_H_MM - r.MARGIN_MM - r.RETICLE_INSET_MM  # 194.6
+# line (left edge of col 1). Its visible cap-top sits at the TOP of the
+# bottom-most reticle row (row 9), so the text rides inside the square.
+# Baseline = row top + cap-height of the caption style.
+_CAPTION_STYLE = TEXT_STYLES["23-Ficha-Epigrafe-Imagen"]
+_CAPTION_CAP_RATIO = 0.685   # EB Garamond Italic
+_CAPTION_CAP_HEIGHT_MM = (
+    _CAPTION_STYLE.size_pt * _CAPTION_CAP_RATIO * r.MM_PER_PT
+)
+CAPTION_ANCHOR_X_MM = _RETICLE_LEFT_X_MM                              # 15.4
+CAPTION_ANCHOR_Y_MM = _row_top(9) + _CAPTION_CAP_HEIGHT_MM            # ~180.07
 
 
 def render(page_id: int, data: dict) -> str:
