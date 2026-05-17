@@ -1,0 +1,65 @@
+# Sala I — Orígenes y sustratos prehispánicos
+# pre-1764 · 2 piezas
+# Generated from content/source.json. The portadilla_sala for this
+# room lives in content/catalog.yaml; this file holds only fichas.
+
+sala:
+  numero: 1
+  romano: I
+  nombre: Orígenes y sustratos prehispánicos
+  nombre_completo: 1 — Orígenes y sustratos prehispánicos (pre-1764)
+  periodo: pre-1764
+  cantidad_piezas: 2
+  cita_curatorial: |-
+    Los sistemas previos a la imprenta. Códices, glifos, quipus y telares: dispositivos de información y memoria de las sociedades originarias, parcialmente destruidos por la Conquista, transmitidos en lo que sobrevivió.
+fichas:
+- cabecera_id: Sala I · Pieza 01
+  cabecera_sub: L001
+  tipo: Diseño textil tradicional
+  titulo_pieza: Tejidos populares andinos del NOA
+  autor: Tejedoras anónimas de Santiago del Estero y Catamarca
+  datos: Pre-hispánico - siglo XX · Santiago del Estero, Catamarca, Argentina
+  image: images/sala-01/pieza-01.jpg
+  descripcion: |-
+    Conjunto de patrones, técnicas y formas del tejido popular andino producido en el Noroeste argentino desde el período prehispánico hasta el siglo XX. En Santiago del Estero predominan los patrones más codificados, repetitivos, transmitidos por línea materna; en Catamarca las creaciones son más libres e iconoclastas. La tradición se transmite oralmente, sin manuales ni academias: el telar es el dispositivo de transmisión generacional. Cada pieza condensa la línea genealógica de quien la teje. La operación cultural fue invisibilizada durante siglos por la categorización europea —'artesanía', 'folklore', 'artesanías populares'— pero, como señala Valdés de León, esa misma categorización es la que impide reconocer el carácter proyectual de la operación. El archivo retiene la pieza como ejemplo de un diseño popular latinoamericano que existió continuamente durante seis siglos y que el campo disciplinar académico apenas empezó a estudiar en los últimos cincuenta años.
+  cita_textual: |-
+    En Santiago del Estero —por sus patrones— y Catamarca —creaciones más iconoclastas—, el rol de las tejedoras es crucial
+  fuente: Libro Corcuera (1987); MNAD Argentina; archivos etnográficos
+  source_id: L001
+  contexto_historico: Cultura material andina. Tensión entre lo autóctono y la modernización.
+  estado_conservacion: En riesgo. Tradición viva en algunas comunidades; objetos dispersos
+    en museos
+  palabras_clave:
+  - textil
+  - andino
+  - popular
+  - patrimonio
+  - NOA
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 5
+- cabecera_id: Sala I · Pieza 02
+  cabecera_sub: L002
+  tipo: Sistemas protoescriturales y de registro
+  titulo_pieza: Códices, glifos y quipus precolombinos
+  autor: Culturas mesoamericanas y andinas (anónimos)
+  datos: Antes del siglo XVI · Tenochtitlán, Cuzco, Petén, México, Perú, Guatemala
+  image: images/sala-01/pieza-02.jpg
+  descripcion: |-
+    Conjunto de sistemas de comunicación visual y registro de información desarrollados por las sociedades originarias americanas: los códices pintados mesoamericanos (mayas, mixtecos, aztecas), los glifos epigráficos y los quipus incas, dispositivos de cordeles anudados que codificaban información administrativa, contable y posiblemente narrativa. Valdés de León los reivindica como demostración material de la existencia de un Diseño originario funcional a las demandas de sociedades complejas, frente a la categoría museística de 'arte precolombino' que los desgaja de su trama social y los reduce a objeto contemplativo. La mayor parte de los códices fue quemada por los frailes de la Contrarreforma; el conocimiento del quipu se perdió casi por completo y aún hoy se discute si se trataba de un sistema completo de escritura.
+  cita_textual: |-
+    los sistemas protoescriturales —glifos, códices, quipus— constituyen la irrevocable demostración material de la existencia de un Diseño originario
+  fuente: Codex Mendoza (Bodleian); Códice Florentino (Laurenziana); quipus en Museo Larco
+  source_id: L002
+  contexto_historico: Mesoamérica clásica y postclásica; Tawantinsuyu. Conquista española.
+  estado_conservacion: |-
+    Mayoritariamente destruidos en la Conquista; pocos códices sobreviven (Bodleian, Vaticana, etc.); quipus dispersos en museos
+  palabras_clave:
+  - precolombino
+  - escritura
+  - información
+  - códice
+  - quipu
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 1 - Valdés de León

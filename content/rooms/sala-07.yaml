@@ -1,0 +1,187 @@
+# Sala VII — Diseño como disciplina
+# 1956-2010 · 7 piezas
+# Generated from content/source.json. The portadilla_sala for this
+# room lives in content/catalog.yaml; this file holds only fichas.
+
+sala:
+  numero: 7
+  romano: VII
+  nombre: Diseño como disciplina
+  nombre_completo: 7 — Diseño como disciplina (1956-2010)
+  periodo: 1956-2010
+  cantidad_piezas: 7
+  cita_curatorial: |-
+    Desde el Di Tella hasta la revista Tipográfica: el medio siglo en que el diseño gráfico argentino se institucionaliza académicamente, profesionalmente y disciplinarmente, no siempre con continuidad.
+fichas:
+- cabecera_id: Sala VII · Pieza 01
+  cabecera_sub: L051
+  tipo: Identidad institucional, catálogos, afiches culturales
+  titulo_pieza: Identidad y comunicación visual del Instituto Torcuato Di Tella
+  autor: Juan Carlos Distéfano y equipo de diseño del Di Tella
+  datos: 1958-1970 · Buenos Aires, Argentina
+  image: images/sala-07/pieza-01.jpg
+  descripcion: |-
+    Conjunto de catálogos, afiches, programas y materiales gráficos del Instituto Torcuato Di Tella, especialmente del Centro de Artes Visuales y del Centro de Experimentación Audiovisual, dirigido en gran parte por el diseñador y escultor Juan Carlos Distéfano. Entre 1958 y su cierre forzado en 1970, el Di Tella fue el laboratorio de la vanguardia argentina: por ahí pasaron Marta Minujín, Roberto Plate, Oscar Bony, Alberto Greco, las experiencias del pop, el happening y el video. Su comunicación visual definió un lenguaje moderno argentino: tipografía suiza, geometría, blanco y negro, escala internacional. El archivo retiene la pieza como el caso paradigmático del 'Ulmismo' rioplatense, pero también como ejemplo de que la modernidad gráfica argentina existió, y fue cancelada cuando la política y el mercado dejaron de tolerarla.
+  cita_textual: Félix Beltrán y Juan Carlos Distéfano
+  fuente: Archivo Di Tella en UTDT, MNBA, libros publicados
+  source_id: L051
+  subseccion: 7.a Vanguardia institucional
+  contexto_historico: Argentina desarrollista. Vanguardia artística de los 60. Cierre del
+    Di Tella en 1970.
+  estado_conservacion: Conservada parcialmente (archivo Di Tella en UTDT, MNBA, colecciones
+    privadas)
+  palabras_clave:
+  - identidad
+  - Di Tella
+  - moderno
+  - vanguardia
+  - Distéfano
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 1 - Valdés de León
+- cabecera_id: Sala VII · Pieza 02
+  cabecera_sub: L052
+  tipo: Diseño editorial / tapas y colecciones de libros populares
+  titulo_pieza: Tapas de libros del Centro Editor de América Latina (CEAL)
+  autor: Centro Editor de América Latina (dirección editorial de Boris Spivacow)
+  datos: 1966-1995 · Buenos Aires, Argentina
+  image: images/sala-07/pieza-02.jpg
+  descripcion: |-
+    Conjunto de tapas y diseños de colecciones producidos por el Centro Editor de América Latina, editorial fundada por Boris Spivacow en 1966 tras su renuncia a EUDEBA. CEAL publicó fascículos baratos, colecciones de literatura universal y argentina, historias visuales, capítulos de historia argentina y un sistema editorial que llegó a kioscos, escuelas y barrios donde nunca había llegado un libro. El diseño —firmado por equipos rotativos de jóvenes diseñadores— sostuvo durante tres décadas una idea radical: que el libro popular podía tener calidad gráfica sin disfrazarse de objeto de lujo. La dictadura militar incineró parte del fondo en 1980 (el famoso 'tendal de Sarandí') y el cierre llegó en 1995 por quiebra. El archivo conserva las tapas como testigos de un proyecto editorial que la dictadura no logró aniquilar pero sí mutilar.
+  cita_textual: las tapas de los libros del Centro Editor de América Latina de la década de
+    los 80
+  fuente: Bibliotecas, archivos personales de Spivacow, libros (de Diego, Soifer)
+  source_id: L052
+  subseccion: 7.b Diseño editorial popular
+  contexto_historico: Argentina post-1955. Dictaduras y democracia. Quema de libros de 1980.
+  estado_conservacion: |-
+    Conservada parcialmente (bibliotecas, hemerotecas); fondo editorial parcialmente quemado por la dictadura
+  palabras_clave:
+  - editorial
+  - popular
+  - libro
+  - Spivacow
+  - CEAL
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 1 - Valdés de León
+- cabecera_id: Sala VII · Pieza 03
+  cabecera_sub: L053
+  tipo: Sistema de señalización urbana
+  titulo_pieza: Señalética urbana de Buenos Aires (Estudio Shakespeare)
+  autor: Raúl Shakespeare y Ronald Shakespeare
+  datos: 1971-1990 · Buenos Aires, Argentina
+  image: images/sala-07/pieza-03.jpg
+  descripcion: |-
+    Sistema de señalización urbana de la Ciudad de Buenos Aires diseñado por el estudio Shakespeare a partir de 1971, y posteriormente extendido a autopistas, hospitales, aeropuertos y subterráneos. Los Shakespeare —hermanos de origen británico— resolvieron por primera vez en escala metropolitana sudamericana el problema de la legibilidad a velocidad: tipografía sans-serif normalizada, pictogramas reducidos a su esquema mínimo, sistema cromático estable. Buena parte de las señales todavía en uso hoy en Buenos Aires son herederas directas de ese diseño. El archivo la incluye como una pieza paradójica: está literalmente en la calle, sometida al desgaste cotidiano y al recambio inadvertido, y precisamente por eso es de las menos conservadas. Cada vez que un cartel se reemplaza, una versión del Buenos Aires gráfico moderno desaparece sin que nadie tome nota.
+  cita_textual: Eduardo Giménez y Raúl y Ronald Shakespeare
+  fuente: Fotografías urbanas + archivos del Estudio Shakespeare
+  source_id: L053
+  subseccion: 7.c Sistema, gremio y profesión
+  contexto_historico: Modernización urbana de Buenos Aires bajo intendencias militares y democráticas.
+  estado_conservacion: En uso urbano; pieza expuesta a desgaste y reemplazo continuo
+  palabras_clave:
+  - señalética
+  - urbano
+  - sistema
+  - Shakespeare
+  - Argentina
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 1 - Valdés de León
+- cabecera_id: Sala VII · Pieza 04
+  cabecera_sub: L054
+  tipo: Anuario gremial / publicación profesional
+  titulo_pieza: Anuarios de la ADG (Asociación de Diseñadores Gráficos de Buenos Aires)
+  autor: ADG
+  datos: 1980-1985 · Buenos Aires, Argentina
+  image: images/sala-07/pieza-04.jpg
+  descripcion: |-
+    Cinco ediciones consecutivas del Anuario de la Asociación de Diseñadores Gráficos de Buenos Aires, autoeditadas por sus socios entre 1980 y 1985, en plena dictadura militar y luego en los primeros años democráticos. Los anuarios documentan la producción gráfica argentina del momento —identidades, editorial, afiches, ilustración— en una operación de autoarchivo gremial que no se había intentado antes y que no se repitió después. La ADG se disolvió 'corroída por mezquinas rencillas intestinas', según Valdés de León, y con ella desaparecieron tanto el anuario como la única exposición nacional e internacional de diseño gráfico que se montó en el MAMBA. El archivo guarda los cinco volúmenes como retrato de una institución que no sobrevivió a sí misma.
+  cita_textual: |-
+    la publicación de Anuarios financiados por sus socios —que alcanzaron 5 ediciones consecutivas
+  fuente: Rarezas en bibliotecas especializadas (FADU, IUNA)
+  source_id: L054
+  subseccion: 7.c Sistema, gremio y profesión
+  contexto_historico: Dictadura militar argentina. Transición democrática. Profesionalización
+    del diseño.
+  estado_conservacion: Conservada (rarezas en bibliotecas especializadas)
+  palabras_clave:
+  - anuario
+  - gremial
+  - dictadura
+  - ADG
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 1 - Valdés de León
+- cabecera_id: Sala VII · Pieza 05
+  cabecera_sub: L055
+  tipo: Revista especializada en tipografía y diseño editorial
+  titulo_pieza: Revista Tipográfica
+  autor: Rubén Fontana (director y editor)
+  datos: 1987-2007 · Buenos Aires, Argentina
+  image: images/sala-07/pieza-05.jpg
+  descripcion: |-
+    Revista fundada y dirigida por Rubén Fontana entre 1987 y 2007, considerada hoy la publicación más influyente sobre tipografía en el mundo iberoamericano. Sus 67 números desplegaron debates sobre diseño tipográfico, historia, identidad, autores latinoamericanos y europeos, y formaron a una generación entera de diseñadores rioplatenses. La pregunta de Valdés de León sobre su 'destino final' —escrita justo cuando la revista estaba terminando su ciclo— condensa una verdad incómoda: en el campo del diseño latinoamericano, las publicaciones rara vez duran más allá del impulso de su director, y cuando se apagan dejan un vacío que ninguna institución viene a llenar. El archivo conserva la colección completa como excepción confirmadora de la regla.
+  cita_textual: ¿Cuál fue el destino final de Tipográfica?
+  fuente: Colección completa en bibliotecas universitarias (FADU UBA, IUNA, FAUD UNC)
+  source_id: L055
+  subseccion: 7.d Reconstrucciones tipográficas y archivo
+  contexto_historico: Argentina democrática post-1983. Renacimiento tipográfico latinoamericano.
+  estado_conservacion: Conservada (colección completa accesible en bibliotecas universitarias)
+  palabras_clave:
+  - revista
+  - tipografía
+  - Argentina
+  - Fontana
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 1 - Valdés de León
+- cabecera_id: Sala VII · Pieza 06
+  cabecera_sub: L056
+  tipo: Libro de investigación etnográfica
+  titulo_pieza: Herencia textil andina (libro de Ruth Corcuera)
+  autor: Ruth Corcuera
+  datos: 1987 · Buenos Aires, Argentina
+  image: images/sala-07/pieza-06.jpg
+  descripcion: |-
+    Libro publicado por Ruth Corcuera en 1987, pionero en la investigación sistemática del tejido popular andino argentino y sus vínculos con producciones contemporáneas. Corcuera trabajó durante décadas con tejedoras del NOA registrando técnicas, motivos, simbología y cosmogonías textiles. La operación de su libro es de archivo en sentido estricto: documenta, cataloga y conserva textualmente lo que el campo material estaba perdiendo. El archivo lo retiene como ejemplo de operación archivística femenina argentina del siglo XX: una mujer investigadora documenta la producción de mujeres tejedoras, en un sistema disciplinar que durante décadas no se interesó por ninguna de las dos. La obra abrió camino a la inclusión del textil andino en discusiones internacionales sobre diseño y forma; sus categorías siguen siendo de referencia.
+  cita_textual: cristalizado en el libro Herencia textil andina (1987)
+  fuente: Libro publicado por Ediciones Verlap (1987). Reediciones posteriores
+  source_id: L056
+  subseccion: 7.d Reconstrucciones tipográficas y archivo
+  contexto_historico: Recuperación patrimonial textil. Etnografía argentina de los 80.
+  estado_conservacion: Conservada
+  palabras_clave:
+  - libro
+  - textil
+  - investigación
+  - andino
+  - Corcuera
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 5
+- cabecera_id: Sala VII · Pieza 07
+  cabecera_sub: L057
+  tipo: Familia tipográfica digital de patrimonio
+  titulo_pieza: Tipografía digital Expósitos (reconstrucción de Fabio Ares)
+  autor: Fabio Ares / Dirección General Patrimonio e Instituto Histórico (Gobierno CABA)
+  datos: 2010 (en el marco del Bicentenario) · Buenos Aires, Argentina
+  image: images/sala-07/pieza-07.jpg
+  descripcion: |-
+    Reconstrucción digital de los tipos romanos antiguos, cursivos y vinetas usados durante el período virreinal por la Real Imprenta de Niños Expósitos. Producida por Fabio Ares en el marco del Bicentenario de la Revolución de Mayo, la familia se compone de una romana redonda, una cursiva y un conjunto de viñetas tipográficas y filetes. El método partió de los impresos producidos entre 1780 y 1810: escaneo a 600-1200 dpi, retoque manual, vectorización, edición tipográfica y empaquetado en formatos PostScript y TrueType. Las letras conservan deliberadamente las marcas del desgaste, los empastamientos y la irregularidad del color tipográfico que caracterizaban a los originales. La fuente se distribuye gratuitamente para usos educativos y culturales, con la única condición de mencionar la fuente. El archivo la conserva como ejemplo paradigmático de reconstrucción digital del patrimonio gráfico latinoamericano.
+  cita_textual: reconstrucción digital de los primeros caracteres y ornamentos utilizados
+  fuente: Especímenes publicados por Ares; DGPeIH GCBA; descarga libre
+  source_id: L057
+  subseccion: 7.d Reconstrucciones tipográficas y archivo
+  contexto_historico: Bicentenario argentino. Política patrimonial del Gobierno de CABA.
+  estado_conservacion: Disponible digitalmente con licencia abierta
+  palabras_clave:
+  - reconstrucción
+  - tipografía
+  - digital
+  - patrimonio
+  - Ares
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 3 - Fabio Ares

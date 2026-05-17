@@ -1,0 +1,192 @@
+# Sala VI — El Estado se hace ver
+# 1946-1955 · 7 piezas
+# Generated from content/source.json. The portadilla_sala for this
+# room lives in content/catalog.yaml; this file holds only fichas.
+
+sala:
+  numero: 6
+  romano: VI
+  nombre: El Estado se hace ver
+  nombre_completo: '6 — El Estado se hace ver: peronismo gráfico (1946-1955)'
+  periodo: 1946-1955
+  cantidad_piezas: 7
+  cita_curatorial: |-
+    Los nueve años del primer peronismo en que la propaganda gráfica estatal alcanza una densidad sin precedentes. La SIPP centraliza un corpus que será luego prohibido por decreto en 1956.
+fichas:
+- cabecera_id: Sala VI · Pieza 01
+  cabecera_sub: L044
+  tipo: Identidades institucionales / sistema simbólico estatal
+  titulo_pieza: Identidades gráficas de las empresas estatales peronistas
+  autor: Estado argentino (varios diseñadores anónimos)
+  datos: 1941-1952 · Buenos Aires, Argentina
+  image: images/sala-06/pieza-01.jpg
+  descripcion: |-
+    Conjunto de emblemas y aplicaciones gráficas de las empresas estatales creadas o estatizadas durante el primer peronismo: Fabricaciones Militares (1941), Acindar (1942), Techint (1945), Gas del Estado (1945), Agua y Energía (1947), Ferrocarriles Argentinos (1948), Teléfonos del Estado (1948), Aerolíneas Argentinas (1949), IAME (1952), Dirección Nacional de Industrias del Estado (DINIE). Los emblemas exhiben reminiscencias de los escudos militares: ovalado, simétrico, jerárquico, con tipografía mayúscula sólida y elementos heráldicos simplificados. La operación gráfica era coherente: cada empresa tenía un emblema propio, pero todos compartían un código visual que las identificaba como pertenecientes al programa del Estado nacional. El archivo retiene la pieza como sistema: la primera vez en la historia argentina que el Estado opera con coherencia gráfica explícita en su patrimonio empresario.
+  cita_textual: |-
+    se crean nuevas: Gas del Estado (1945), Agua y Energía (1947), Teléfonos del Estado (1948), y Aerolíneas Argentinas (1949)
+  fuente: AGN, archivos públicos. Logos históricos de Ferrocarriles, Gas, Aerolíneas, Acindar
+  source_id: L044
+  subseccion: 6.a Identidades de empresas estatales
+  contexto_historico: Industrialización estatal peronista. Identidad de Estado.
+  estado_conservacion: Conservada parcialmente / algunas marcas actualizadas, otras desaparecidas
+  palabras_clave:
+  - identidad
+  - estatal
+  - peronismo
+  - ISI
+  - escudo
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 5
+- cabecera_id: Sala VI · Pieza 02
+  cabecera_sub: L045
+  tipo: Corpus propagandístico estatal
+  titulo_pieza: Corpus de afiches de la SIPP (Subsecretaría de Información, Prensa y Propaganda)
+  autor: Anónimos / SIPP del Estado Argentino
+  datos: 1946-1955 · Buenos Aires, Argentina
+  image: images/sala-06/pieza-02.jpg
+  descripcion: |-
+    Conjunto de afiches producidos por la Subsecretaría de Información, Prensa y Propaganda durante los dos primeros gobiernos de Perón. La SIPP centralizó la producción propagandística no sólo de todos los ministerios del gobierno nacional sino también de entidades autárquicas y de la Fundación Eva Perón a través de cinco direcciones: Espectáculos Públicos (área cinematográfica), Difusión, Publicidad, Prensa y Radiodifusión. La operación gráfica del corpus combinó la estética del realismo socialista, el muralismo mexicano y la caricatura popular en una sintaxis novedosa que recuperaba prácticas y costumbres de los sectores populares previamente estigmatizadas. Tras la caída del peronismo, el Decreto 4161/56 del 5 de marzo de 1956 prohibió la circulación de todo el material gráfico del régimen depuesto. El archivo retiene el corpus como caso paradigmático de patrimonio gráfico legalmente prohibido: las piezas que sobreviven hoy lo hacen porque alguien las escondió antes de ser destruidas.
+  cita_textual: |-
+    afiches generados desde la Subsecretaría de Información, Prensa y Propaganda (SIPP) durante el período comprendido por los años 1946 y 1955
+  fuente: 'Paraguas. Sugerencia: composición o logo SIPP + 2-3 afiches emblemáticos'
+  source_id: L045
+  subseccion: 6.b Afiches de la SIPP
+  contexto_historico: Primer y segundo gobierno peronista. Decreto 4161/56.
+  estado_conservacion: Conservada (Archivo General de la Nación; pocas piezas con autoría
+    identificable)
+  palabras_clave:
+  - afiche
+  - peronismo
+  - propaganda
+  - estatal
+  - SIPP
+  imagen_categoria: D
+  imagen_estado_busqueda: Pieza-paraguas — elegir representativa
+  texto_fuente: Texto 7 - Gabriel Hernán
+- cabecera_id: Sala VI · Pieza 03
+  cabecera_sub: L046
+  tipo: Afiche político / propaganda visual
+  titulo_pieza: Afiche 'Campesino rompiendo las cadenas' (SIPP)
+  autor: Anónimo / SIPP
+  datos: c. 1946-1948 · Buenos Aires, Argentina
+  image: images/sala-06/pieza-03.jpg
+  descripcion: |-
+    Afiche del primer peronismo donde un campesino aparece en una demostración de fuerza y destreza física rompiendo cadenas, con la mano derecha empuñando una tacuara que sostiene la bandera argentina. La composición rompe la perspectiva moderna: el pie del personaje avanza sobre el espectador, apoyándose sobre la leyenda del afiche; el cuerpo se proyecta hacia afuera del cuadro. En segundo plano, un jinete con atuendos tradicionales monta un caballo presto a saltar. La estética anticipa por una década el trabajo del pintor Ricardo Carpani y dialoga directamente con el muralismo mexicano de Siqueiros y el realismo socialista soviético. El gesto de romper las cadenas remite explícitamente a un verso central del Himno Nacional Argentino. El archivo retiene la pieza como afiche emblema de la primera fase peronista: justicia social y modernización industrial fundidas en una iconografía de fuerza popular.
+  cita_textual: |-
+    un campesino en una demostración de fuerza y destreza física... rompe las cadenas que lo ataban
+  fuente: Archivo Fotográfico del Archivo Intermedio (AGN)
+  source_id: L046
+  subseccion: 6.b Afiches de la SIPP
+  contexto_historico: Primera fase peronista (1946-1948). Justicia social. Iconografía libertaria.
+  estado_conservacion: Conservada (AGN); autor no identificado
+  palabras_clave:
+  - afiche
+  - peronismo
+  - campesino
+  - realismo socialista
+  - Carpani
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 7 - Gabriel Hernán
+- cabecera_id: Sala VI · Pieza 04
+  cabecera_sub: L047
+  tipo: Afiche político / propaganda visual
+  titulo_pieza: Afiche 'Obrero-campesino cargando una locomotora' (SIPP, nacionalización ferroviaria)
+  autor: Anónimo / SIPP
+  datos: c. 1948 · Buenos Aires, Argentina
+  image: images/sala-06/pieza-04.jpg
+  descripcion: |-
+    Afiche producido alrededor de 1948, año de la nacionalización de los ferrocarriles. La imagen presenta una hibridación estética y de vestimenta entre un obrero y un campesino —tez morena, fisonomía no europea— cargando sobre sus hombros el peso de una locomotora. La iconografía es deliberada: el sujeto que sostiene la nueva propiedad estatal del sistema ferroviario no es el inmigrante europeo blanco asociado al ferrocarril privado británico, sino el 'cabecita' criollo que el peronismo había incorporado a la escena política. El archivo retiene la pieza como ejemplo paradigmático del programa simbólico de la propaganda peronista: la nacionalización de un activo material (los ferrocarriles) se acompaña de una nacionalización del cuerpo del trabajador en la iconografía oficial. La fisonomía propuesta no replica las prescripciones estéticas europeizantes; las disputa.
+  cita_textual: |-
+    hibridación estética y de vestimentas entre un obrero y un campesino... cargando el peso de una locomotora
+  fuente: AGN. Reproducido en Gené (2005)
+  source_id: L047
+  subseccion: 6.b Afiches de la SIPP
+  contexto_historico: |-
+    Nacionalización de los ferrocarriles (1948). Política de incorporación de los 'cabecitas' al imaginario nacional.
+  estado_conservacion: Conservada (AGN); autor no identificado
+  palabras_clave:
+  - afiche
+  - ferrocarriles
+  - peronismo
+  - nacionalización
+  - cabecita
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 7 - Gabriel Hernán
+- cabecera_id: Sala VI · Pieza 05
+  cabecera_sub: L048
+  tipo: Afiche político / propaganda visual
+  titulo_pieza: Afiche 'Familia rural y perfil apoteótico de Perón'
+  autor: Anónimo / SIPP
+  datos: c. 1950-1955 · Buenos Aires, Argentina
+  image: images/sala-06/pieza-05.jpg
+  descripcion: |-
+    Afiche de la segunda fase peronista donde una familia rural ocupa el primer plano (hombre sosteniendo una pala) y el perfil del líder aparece al fondo en tono apoteótico con tonos amarillos. La elección iconográfica es deliberada: el perfil presidencial —y no el rostro frontal— sugiere cercanía con el espectador y con la familia, integrándolo a la escena en lugar de imponerse desde arriba. El crítico Gabriel Hernán describe la operación como 'plebeyización' conceptual de la imagen presidencial: la figura del Jefe de Estado se acerca al nivel de la familia trabajadora y del trabajo físico. La pieza sintetiza el cambio de la propaganda peronista hacia 1950: menos retórica movimientista de masas, más composición intimista del régimen como tutela paternal sobre la familia popular.
+  cita_textual: |-
+    aparece el perfil de Perón en tono apoteótico y con tonos amarillos... lo que se supone es una familia rural
+  fuente: AGN. Reproducido en Gabriel Hernán (2011), Gené (2005)
+  source_id: L048
+  subseccion: 6.b Afiches de la SIPP
+  contexto_historico: Segundo gobierno peronista. Estabilización del régimen.
+  estado_conservacion: Conservada (AGN)
+  palabras_clave:
+  - afiche
+  - Perón
+  - peronismo
+  - familia
+  - perfil
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 7 - Gabriel Hernán
+- cabecera_id: Sala VI · Pieza 06
+  cabecera_sub: L049
+  tipo: Afiche político / propaganda visual
+  titulo_pieza: Afiche 'Tocando el sol' (turismo social peronista)
+  autor: Anónimo / SIPP
+  datos: c. 1950-1955 · Buenos Aires, Argentina
+  image: images/sala-06/pieza-06.jpg
+  descripcion: |-
+    Afiche caricaturizado donde una figura humana estira el brazo hasta casi tocar el sol, sonriendo de manera jocosa y guiñando un ojo en gesto de complicidad. La operación rompe con la solemnidad de los afiches anteriores y entra en el registro del humor popular. La iconografía es leve pero el mensaje es radical: el acceso de los sectores populares al derecho a las vacaciones y a los enclaves geográficos antes reservados a las élites. La caricatura mira hacia abajo y hacia atrás —no al espectador— en una operación de complicidad horizontal entre pares. Al fondo, un edificio en el estilo arquitectónico clásico del peronismo (hoteles sindicales, sanatorios sociales) da solidez material al mensaje. El archivo retiene la pieza como ejemplo del momento en que la propaganda peronista deja la épica y entra al humor: el régimen ya estabilizado puede burlarse de los códigos pasados de las élites.
+  cita_textual: |-
+    presenta una imagen caricaturizada, al parecer ingenua y risueña... la caricatura de una figura humana estira su brazo hasta casi tocar el sol
+  fuente: AGN. Reproducido en Gabriel Hernán (2011)
+  source_id: L049
+  subseccion: 6.b Afiches de la SIPP
+  contexto_historico: Política de turismo social. Hoteles sindicales. Vacaciones obreras.
+  estado_conservacion: Conservada (AGN)
+  palabras_clave:
+  - afiche
+  - peronismo
+  - vacaciones
+  - caricatura
+  - Ícaro
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 7 - Gabriel Hernán
+- cabecera_id: Sala VI · Pieza 07
+  cabecera_sub: L050
+  tipo: Identidad de producto / diseño industrial peronista
+  titulo_pieza: Identidad de marca IAME (motocicleta Puma)
+  autor: IAME (Industrias Aeronáuticas y Mecánicas del Estado), Córdoba
+  datos: c. 1952 · Córdoba, Argentina
+  image: images/sala-06/pieza-07.jpg
+  descripcion: |-
+    Motocicleta Puma producida por IAME a partir de c. 1952, junto a un programa completo de identidad de producto: logo, denominación, publicidad, manuales y postventa. El nombre 'Puma' integraba el programa simbólico del peronismo industrial, que daba a sus productos nombres telúricos (Pampa, Justicialista, Rastrojero, Puma) para inscribirlos en un imaginario nacional vinculado al territorio y la fauna. La marca circuló masivamente en la Argentina de los 50 y luego desapareció cuando la planta IAME fue cerrada en 1980 por la dictadura militar. El archivo retiene la identidad como pieza paradigmática del diseño de producto peronista: no sólo el objeto industrial sino el sistema gráfico que lo nombraba, lo presentaba al consumidor y lo inscribía en el imaginario soberano del Estado productor.
+  cita_textual: |-
+    fabricó las motocicletas 'Puma' (c. 1952), los tractores 'Pampa' (c. 1952) y los automóviles deportivos 'Justicialista' (1953)
+  fuente: Archivos automotrices argentinos, AGN, museos del automóvil
+  source_id: L050
+  subseccion: 6.c IAME e industria nacional
+  contexto_historico: Primer peronismo. ISI. IAME bajo dirección de Taravella.
+  estado_conservacion: Conservada en museos automotrices; documentación publicitaria dispersa
+  palabras_clave:
+  - identidad
+  - IAME
+  - peronismo
+  - marca
+  - Puma
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 5

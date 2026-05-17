@@ -1,0 +1,255 @@
+meta:
+  title: "Archivo de lo no conservado"
+
+# ═══════════════════════════════════════════════════════════════════════
+# Catalog content. Pages are computed from this structure by
+# `src/generate.py`. Page numbers are assigned sequentially in document
+# order — to remove a sala, delete its block under `salas:` and everything
+# renumbers. To swap two piezas, move their YAML blocks under `piezas:`.
+#
+# Auto-derived fields (don't set unless you want to override):
+#   - portada.piezas      ← sum of all sala.piezas counts
+#   - portada.salas       ← count of sala items
+#   - portadilla.piezas   ← count of that sala's piezas
+#   - indice.entradas     ← built from each sala's romano/nombre/periodo
+#   - ficha.pieza_id      ← L001…LN, numbered globally across all salas
+#   - ficha.cabecera_sub  ← "<sala nombre> (<periodo>)"
+# ═══════════════════════════════════════════════════════════════════════
+
+# ── Cover ──────────────────────────────────────────────────────────────
+portada:
+  volumen: "I"
+  rango: "1764 — 2010"
+  titulo: |-
+    Archivo
+    de lo no
+    conservado
+  subtitulo: "Catálogo del museo de diseño gráfico latinoamericano que no existe pero debería existir"
+
+# ── Epígrafe ───────────────────────────────────────────────────────────
+epigrafe:
+  label: "Epígrafe"
+  cita: >-
+    "Aunque de notable factura, estas obras, muy escasas y raras,
+    también sufrieron el descuido y el olvido."
+  fuente: |-
+    Daniel Silverman y Marina Garone Gravier
+    Laudationes Quinque (1766), Diseña Nº 18, 2021
+
+# ── Nota curatorial (one item per page) ───────────────────────────────
+nota_curatorial:
+  - label: "Nota curatorial"
+    titulo: "Sobre esta colección y el museo que no existe"
+    body: |
+      En 1994, Roger Chartier formuló una observación que con el tiempo
+      se volvió incómoda: la tasa de sobrevida de un impreso es
+      inversamente proporcional a la importancia de su producción. Dicho
+      de otro modo, cuanto más se imprimió y más manos pasó, menos
+      posibilidades tuvo de llegar hasta nosotros. Los objetos que una
+      cultura considera valiosos los guarda; los que considera menores
+      o utilitarios los consume hasta agotarlos. Esta colección existe,
+      en buena medida, para poner en cuestión ese mecanismo de selección.
+
+      Las piezas reunidas en este catálogo pertenecen a la historia del
+      diseño gráfico latinoamericano. Pertenecen a ella no como objetos
+      marginales o curiosidades de época, sino como documentos centrales
+      de una práctica que organizó la vida cotidiana, construyó
+      identidades colectivas, hizo circular ideas y configuró maneras
+      de ver durante siglos. Sin embargo, ninguna de estas piezas forma
+      parte de una colección museística permanente dedicada
+      específicamente al diseño gráfico latinoamericano. La razón es
+      simple: esa colección no existe.
+
+      El ensayista e investigador argentino Gustavo Valdés de León
+      señaló que el diseño latinoamericano carece todavía de una
+      historia escrita sistemática. Sus objetos han sido clasificados
+      de maneras que les restan especificidad: como arte, como
+      artesanía, como patrimonio histórico, como documento de época.
+      Rara vez como diseño. Esta operación clasificatoria no es
+      inocente.
+
+  - is_continuation: true
+    body: |
+      Este catálogo propone un ejercicio de restitución. No pretende
+      construir esa historia que falta. Pretende algo más acotado:
+      aplicar a un conjunto de objetos seleccionados el tratamiento
+      formal que merecen. Las fichas que componen esta colección
+      utilizan los mismos criterios descriptivos que cualquier museo
+      utilizaría para documentar una pintura del siglo XVIII o una
+      escultura colonial.
+
+      Una aclaración: el museo que respalda este catálogo no existe.
+      Lo que existe es la pregunta de por qué no existe. Este catálogo
+      es una propuesta de cómo podría empezar a verse esa historia.
+      Nada más, y nada menos.
+
+# ── Índice (entradas auto-derived from salas below) ───────────────────
+indice:
+  label: "Índice"
+  titulo: "Las siete salas"
+
+# ── Salas ──────────────────────────────────────────────────────────────
+# Each sala has a portadilla and a list of piezas. Each pieza becomes
+# two pages (imagen on the left, texto on the right).
+salas:
+
+  # ── Sala I ──────────────────────────────────────────────────────────
+  - romano: "I"
+    portadilla:
+      nombre: "Orígenes y sustratos prehispánicos"
+      periodo: "Pre-1764"
+      cita_curatorial: >-
+        "Los sistemas previos a la imprenta. Códices, glifos, quipus y
+        telares: dispositivos de información y memoria de las sociedades
+        originarias, parcialmente destruidos por la Conquista, transmitidos
+        en lo que sobrevivió."
+    piezas:
+      - imagen:
+          tipo: "Diseño textil tradicional"
+          titulo: "Tejidos populares andinos del NOA"
+          autor: "Tejedoras anónimas de Santiago del Estero y Catamarca"
+          datos: "Pre-hispánico - siglo XX · Santiago del Estero, Catamarca, Argentina"
+          categoria: "A"
+          caption: "imagen principal de la pieza"
+        texto:
+          descripcion: >-
+            Conjunto de patrones, técnicas y formas del tejido popular andino
+            producido en el Noroeste argentino desde el período prehispánico
+            hasta el siglo XX. En Santiago del Estero predominan los patrones
+            más codificados, repetitivos, transmitidos por línea materna; en
+            Catamarca las creaciones son más libres e iconoclastas. La tradición
+            se transmite oralmente, sin manuales ni academias: el telar es el
+            dispositivo de transmisión generacional. Cada pieza condensa la
+            línea genealógica de quien la teje. La operación cultural fue
+            invisibilizada durante siglos por la categorización europea
+            —'artesanía', 'folklore', 'artesanías populares'— pero, como
+            señala Valdés de León, esa misma categorización es la que impide
+            reconocer el carácter proyectual de la operación. El archivo
+            retiene la pieza como ejemplo de un diseño popular latinoamericano
+            que existió continuamente durante seis siglos y que el campo
+            disciplinar académico apenas empezó a estudiar en los últimos
+            cincuenta años.
+          cita_textual: >-
+            "En Santiago del Estero —por sus patrones— y Catamarca —creaciones
+            más iconoclastas—, el rol de las tejedoras es crucial"
+          fuente: "Texto 5"
+          estado: "En riesgo. Tradición viva en algunas comunidades; objetos dispersos en museos"
+
+      - imagen:
+          tipo: "Sistemas protoescriturales y de registro"
+          titulo: "Códices, glifos y quipus precolombinos"
+          autor: "Culturas mesoamericanas y andinas (anónimos)"
+          datos: "Antes del siglo XVI · Tenochtitlán, Cuzco, Petén, México, Perú, Guatemala"
+          categoria: "A"
+          caption: "imagen principal de la pieza"
+        texto:
+          descripcion: >-
+            Conjunto de sistemas de comunicación visual y registro de
+            información desarrollados por las sociedades originarias americanas:
+            los códices pintados mesoamericanos (mayas, mixtecos, aztecas), los
+            glifos epigráficos y los quipus incas, dispositivos de cordeles
+            anudados que codificaban información administrativa, contable y
+            posiblemente narrativa. Valdés de León los reivindica como
+            demostración material de la existencia de un Diseño originario
+            funcional a las demandas de sociedades complejas, frente a la
+            categoría museística de 'arte precolombino' que los desgaja de su
+            trama social y los reduce a objeto contemplativo. La mayor parte de
+            los códices fue quemada por los frailes de la Contrarreforma; el
+            conocimiento del quipu se perdió casi por completo y aún hoy se
+            discute si se trataba de un sistema completo de escritura.
+          cita_textual: >-
+            "los sistemas protoescriturales —glifos, códices, quipus—
+            constituyen la irrevocable demostración material de la existencia
+            de un Diseño originario"
+          fuente: "Texto 1 - Valdés de León"
+          estado: "Mayoritariamente destruidos en la Conquista; pocos códices sobreviven (Bodleian, Vaticana, etc.); quipus dispersos en museos"
+
+  # ── Sala II ─────────────────────────────────────────────────────────
+  - romano: "II"
+    portadilla:
+      nombre: "Imprenta y palabra en el Virreinato"
+      periodo: "1764-1810"
+      piezas: "12 piezas"   # explicit override until the YAML has the 12 piezas
+      cita_curatorial: >-
+        "De la imprenta jesuítica del Colegio Monserrat de Córdoba (1764) a
+        la prensa que precedió a la Revolución de Mayo. Cuarenta y seis años
+        de tipografía colonial con un solo taller en funcionamiento
+        simultáneo."
+    piezas: []
+
+  # ── Sala III ────────────────────────────────────────────────────────
+  - romano: "III"
+    portadilla:
+      nombre: "La gráfica de la Revolución"
+      periodo: "1810-1860"
+      piezas: "6 piezas"
+      cita_curatorial: >-
+        "Los periódicos y almanaques de la república naciente. La misma
+        imprenta colonial cambia de manos políticas y empieza a producir el
+        imaginario republicano: la Gazeta, el Correo de Comercio, la Marcha
+        Patriótica."
+    piezas: []
+
+  # ── Sala IV ─────────────────────────────────────────────────────────
+  - romano: "IV"
+    portadilla:
+      nombre: "Sátira, prensa y Centenario"
+      periodo: "1860-1910"
+      piezas: "11 piezas"
+      cita_curatorial: >-
+        "La caricatura política y la prensa ilustrada masiva. De El Mosquito
+        (1863) a Caras y Caretas (1898): el medio siglo en que la imagen
+        periodística se vuelve cultura común y la sátira política, lenguaje
+        cotidiano."
+    piezas: []
+
+  # ── Sala V ──────────────────────────────────────────────────────────
+  - romano: "V"
+    portadilla:
+      nombre: "Marcas, almanaques y modernismo"
+      periodo: "1910-1945"
+      piezas: "12 piezas"
+      cita_curatorial: >-
+        "La irrupción de la identidad de marca, la publicidad moderna y el
+        indigenismo cultural argentino. YPF, Siam Di Tella, Geniol, Plus
+        Ultra, Viracocha: el diseño se profesionaliza sin todavía nombrarse
+        a sí mismo."
+    piezas: []
+
+  # ── Sala VI ─────────────────────────────────────────────────────────
+  - romano: "VI"
+    portadilla:
+      nombre: "El Estado se hace ver"
+      periodo: "1946-1955"
+      piezas: "7 piezas"
+      cita_curatorial: >-
+        "Los nueve años del primer peronismo en que la propaganda gráfica
+        estatal alcanza una densidad sin precedentes. La SIPP centraliza un
+        corpus que será luego prohibido por decreto en 1956."
+    piezas: []
+
+  # ── Sala VII ────────────────────────────────────────────────────────
+  - romano: "VII"
+    portadilla:
+      nombre: "Diseño como disciplina"
+      periodo: "1956-2010"
+      piezas: "7 piezas"
+      cita_curatorial: >-
+        "Desde el Di Tella hasta la revista Tipográfica: el medio siglo en
+        que el diseño gráfico argentino se institucionaliza académicamente,
+        profesionalmente y disciplinarmente, no siempre con continuidad."
+    piezas: []
+
+# ── Bibliografía ──────────────────────────────────────────────────────
+bibliografia:
+  label: "Bibliografía"
+  titulo: "Referencias"
+  referencias:
+    - "Ares, F. (2009). Real Imprenta de Niños Expósitos: revalorización patrimonial tipográfica del Buenos Aires virreinal (1780-1810). Boletín del IIB, vol. XIV, núms. 1 y 2. UNAM, Instituto de Investigaciones Bibliográficas."
+    - "Chartier, R. (2006). Inscribir y borrar. Cultura escrita y literatura (siglos XI-XVIII). Buenos Aires: Katz."
+    - "Hernán, G. (2011). La propaganda gráfica peronista. En Subjetivación y conflicto a través de una propuesta estética."
+    - "Meggs, P. B. (2000). Historia del Diseño Gráfico. México: McGraw-Hill."
+    - "Mosqueda, A. (2012). Condiciones de producción, formas y contenidos de los almanaques porteños en las primeras décadas del siglo XX. Primer Coloquio Argentino de Estudios sobre el Libro y la Edición. Universidad Nacional de La Plata."
+    - "Rogers, G. (2008). Caras y Caretas: cultura, política y espectáculo en los inicios del siglo XX argentino. La Plata: EDULP."
+    - "Silverman, D. & Garone Gravier, M. (2021). Laudationes Quinque (1766): historia, materialidad y tecnología gráfica del primer impreso jesuítico de Córdoba, Argentina. Diseña, (18), Article 2."
+    - "Valdés de León, G. A. (2008). Latinoamérica en la trama del Diseño. Entre la utopía y la realidad. Cuadernos del Centro de Estudios en Diseño y Comunicación N° 26. Buenos Aires: Universidad de Palermo."

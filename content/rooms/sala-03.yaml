@@ -1,0 +1,161 @@
+# Sala III — La gráfica de la Revolución
+# 1810-1860 · 6 piezas
+# Generated from content/source.json. The portadilla_sala for this
+# room lives in content/catalog.yaml; this file holds only fichas.
+
+sala:
+  numero: 3
+  romano: III
+  nombre: La gráfica de la Revolución
+  nombre_completo: 3 — La gráfica de la Revolución (1810-1860)
+  periodo: 1810-1860
+  cantidad_piezas: 6
+  cita_curatorial: |-
+    Los periódicos y almanaques de la república naciente. La misma imprenta colonial cambia de manos políticas y empieza a producir el imaginario republicano: la Gazeta, el Correo de Comercio, la Marcha Patriótica.
+fichas:
+- cabecera_id: Sala III · Pieza 01
+  cabecera_sub: L015
+  tipo: Periódico revolucionario
+  titulo_pieza: El Correo de Comercio
+  autor: Manuel Belgrano (editor)
+  datos: 1810-1811 · Buenos Aires, Argentina
+  image: images/sala-03/pieza-01.jpg
+  descripcion: |-
+    Periódico fundado por Manuel Belgrano el 3 de marzo de 1810 —apenas dos meses antes de la Revolución de Mayo— y continuado hasta abril de 1811. Vehículo de las ideas económicas e ilustradas de Belgrano: industrialización, agricultura científica, educación pública, libertad de comercio. Cuando se produjo la Revolución, el periódico cambió de tono sin cambiar de imprenta: la Real Imprenta de Niños Expósitos siguió componiéndolo con las mismas letras gastadas y bajo el nuevo Cabildo. El Correo de Comercio condensa así un momento bisagra: usa el aparato técnico de la imprenta colonial para imprimir el contenido del orden que la está clausurando. El archivo retiene la pieza como demostración de que la materialidad gráfica resistió al cambio político: la misma tinta, el mismo papel, los mismos tipos —otro contenido.
+  cita_textual: se editarían los periódicos El Correo de Comercio, de Manuel Belgrano
+  fuente: BNA digitalizada; Museo Histórico Nacional
+  source_id: L015
+  subseccion: 3.a Periódicos revolucionarios
+  contexto_historico: Vísperas y comienzo de la Revolución de Mayo. Imprenta única monopolizada
+    por la Junta.
+  estado_conservacion: Conservada (Biblioteca Nacional Argentina, Museo Histórico Nacional)
+  palabras_clave:
+  - periódico
+  - revolución
+  - Belgrano
+  - mayo
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 3 - Fabio Ares
+- cabecera_id: Sala III · Pieza 02
+  cabecera_sub: L016
+  tipo: Periódico revolucionario
+  titulo_pieza: La Gazeta de Buenos Ayres
+  autor: Mariano Moreno (impulsor); Manuel Belgrano y Juan José Castelli (redactores iniciales)
+  datos: '1810 (primer número: 7 de junio) · Buenos Aires, Argentina'
+  image: images/sala-03/pieza-02.jpg
+  descripcion: |-
+    Órgano oficial de la Primera Junta de Gobierno, fundado por iniciativa de Mariano Moreno y publicado por primera vez el 7 de junio de 1810. Impreso en la Real Imprenta de Niños Expósitos, su número uno se convirtió en el documento gráfico más reproducido del repertorio revolucionario argentino: la Gazeta es la primera evidencia material de que la independencia rioplatense se hizo también con tinta de Buenos Aires. La fecha del primer número se conmemora hoy como Día del Periodismo en Argentina. Lo paradójico, para el archivo, es que el órgano fundacional del periodismo nacional se imprimió en la misma prensa que durante treinta años había impreso bandos virreinales: hasta 1815 no se permitió que ninguna otra imprenta operara en Buenos Aires.
+  cita_textual: La Gazeta de Buenos Ayres, órgano de difusión paradigmático del periodismo
+    argentino
+  fuente: BNA digitalizada (n° 1 del 7 de junio de 1810); Museo Saavedra
+  source_id: L016
+  subseccion: 3.a Periódicos revolucionarios
+  contexto_historico: Primera Junta de Gobierno. Fundación del periodismo argentino moderno.
+  estado_conservacion: Conservada (Biblioteca Nacional, Museo Saavedra)
+  palabras_clave:
+  - periódico
+  - revolución
+  - mayo
+  - Moreno
+  - Gazeta
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 3 - Fabio Ares
+- cabecera_id: Sala III · Pieza 03
+  cabecera_sub: L017
+  tipo: Libro político traducido
+  titulo_pieza: El Contrato Social (edición de Mariano Moreno)
+  autor: Jean-Jacques Rousseau (autor); traducción y prólogo de Mariano Moreno
+  datos: 1810 · Buenos Aires, Argentina
+  image: images/sala-03/pieza-03.jpg
+  descripcion: |-
+    Edición castellana del Contrato Social impresa en la Real Imprenta de Niños Expósitos por orden de Mariano Moreno, secretario de la Primera Junta. La operación es doble: por un lado, Moreno traduce y publica el texto rousseauniano para justificar la legitimidad del gobierno revolucionario; por otro, suprime los capítulos sobre religión, considerándolos ofensivos para una población católica recién liberada del orden colonial. El libro circuló profusamente en escuelas y juntas locales del interior, y se convirtió en uno de los pilares del imaginario constitucional rioplatense. Pocos ejemplares de la primera edición sobreviven en perfectas condiciones; la mayoría fueron leídos hasta el desgaste. El archivo lo retiene como ejemplo de la primera edición política latinoamericana que asumió explícitamente que traducir era reescribir.
+  cita_textual: |-
+    importantes obras como El Contrato Social de Jean-Jacques Rousseau, traducido por Mariano Moreno
+  fuente: BNA, Museo Histórico Nacional, facsimilares Imprenta de Mayo
+  source_id: L017
+  subseccion: 3.a Periódicos revolucionarios
+  contexto_historico: Revolución de Mayo. Difusión de las ideas iluministas. Censura selectiva.
+  estado_conservacion: Ejemplares dispersos en bibliotecas y archivos
+  palabras_clave:
+  - libro
+  - revolución
+  - Rousseau
+  - Moreno
+  - traducción
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 3 - Fabio Ares
+- cabecera_id: Sala III · Pieza 04
+  cabecera_sub: L018
+  tipo: Impreso patriótico / partitura
+  titulo_pieza: Marcha Patriótica (Himno Nacional Argentino, primera impresión)
+  autor: Vicente López y Planes (letra); Blas Parera (música); Real Imprenta de Niños Expósitos
+  datos: 1813 · Buenos Aires, Argentina
+  image: images/sala-03/pieza-04.jpg
+  descripcion: |-
+    Primera impresión tipográfica de los versos de la 'Marcha Patriótica' de Vicente López y Planes, aprobada por la Asamblea del Año XIII y consagrada después como Himno Nacional Argentino. La edición fue compuesta en la Real Imprenta de Niños Expósitos con las mismas letras gastadas que venían imprimiendo periódicos, bandos y proclamas desde 1780. La versión original tenía nueve estrofas; el uso oficial fue reduciéndolas hasta el extracto actual de una sola estrofa y el coro. La pieza archivada no es sólo el texto del himno: es la primera vez que un símbolo nacional argentino se materializa por la tipografía. El archivo la incluye como ejemplo de cómo la república naciente se imprime en la misma tipografía colonial: lo nuevo se publica con las letras de lo viejo.
+  cita_textual: |-
+    En 1813 se imprimiría otro hito dentro de los impresos de Expósitos, los versos de la Marcha Patriótica
+  fuente: BNA digitalizada; Museo Histórico Nacional
+  source_id: L018
+  subseccion: 3.a Periódicos revolucionarios
+  contexto_historico: Asamblea del Año XIII. Construcción de los símbolos nacionales.
+  estado_conservacion: Ejemplares conservados en archivos históricos
+  palabras_clave:
+  - himno
+  - patriótico
+  - primera edición
+  - López y Planes
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 3 - Fabio Ares
+- cabecera_id: Sala III · Pieza 05
+  cabecera_sub: L019
+  tipo: Almanaque cívico
+  titulo_pieza: Almanak patriótico de Buenos Ayres, para el año décimo de nuestra libertad
+  autor: Imprenta de la Independencia
+  datos: 1819 · Buenos Aires, Argentina
+  image: images/sala-03/pieza-05.jpg
+  descripcion: |-
+    Primer almanaque rioplatense en abandonar el régimen estrictamente religioso del calendario virreinal. Publicado en 1819 por la Imprenta de la Independencia para conmemorar el décimo año de la Revolución de Mayo, mantiene la estructura del almanaque colonial —festividades, santos, calendario lunar— pero incorpora un repertorio nuevo: nómina de edificios públicos y religiosos de Buenos Aires, fechas célebres patrias, número de habitantes de la ciudad y alrededores. La operación es notable: el género que durante tres décadas había servido para sincronizar a la sociedad colonial con el calendario eclesiástico se transforma en herramienta de inventario de la república recién nacida. El archivo lo conserva como la primera evidencia material de que la Revolución de Mayo no sólo cambió el gobierno: cambió el tipo de información que un libro doméstico necesitaba ofrecer.
+  cita_textual: |-
+    Almanak patriótico de Buenos Ayres, para el año décimo de nuestra libertad. Buenos Aires, Imprenta de la Independencia, 1819
+  fuente: Colección Dr. Alejandro Parada (único ejemplar conocido)
+  source_id: L019
+  subseccion: 3.b Almanaques cívicos y de comercio
+  contexto_historico: Década post-Mayo. Tránsito del almanaque colonial al republicano.
+  estado_conservacion: Ejemplar conservado (gentileza Dr. Alejandro Parada)
+  palabras_clave:
+  - almanaque
+  - patriótico
+  - post-revolución
+  - Independencia
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 4 - Mosqueda
+- cabecera_id: Sala III · Pieza 06
+  cabecera_sub: L020
+  tipo: Almanaque comercial / guía urbana
+  titulo_pieza: Almanaques de comercio Blondel
+  autor: Blondel (editor)
+  datos: 1826-1836 · Buenos Aires, Argentina
+  image: images/sala-03/pieza-06.jpg
+  descripcion: |-
+    Serie de almanaques comerciales publicados en Buenos Aires durante la década en que se consolidó el comercio porteño post-independencia. Combinaban la estructura tradicional del almanaque (calendario, festividades, fases lunares) con secciones publicitarias y guías de comercios, profesionales, librerías y servicios. Para los historiadores del libro como Alejandro Parada, los almanaques Blondel constituyen 'la fuente de información más importante para identificar las librerías de la época': una operación archivística involuntaria, donde una publicación pensada para uso cotidiano se vuelve siglo y medio más tarde el único registro disponible de un sector entero de la cultura impresa portenia. El archivo los retiene como ejemplo perfecto del valor patrimonial paradójico de los impresos utilitarios: lo que se imprimió para ser tirado a fin de año es lo que termina conservando la memoria de todo lo demás.
+  cita_textual: |-
+    los almanaques de comercio Blondel (1826-1836)... constituyen la fuente de información más importante para identificar las librerías de la época
+  fuente: Hemerotecas porteñas, BNA, Buonocore (1948), Parada (2007)
+  source_id: L020
+  subseccion: 3.b Almanaques cívicos y de comercio
+  contexto_historico: Rivadavianismo y federalismo temprano. Auge librero porteño.
+  estado_conservacion: Conservada parcialmente (bibliotecas, colecciones privadas)
+  palabras_clave:
+  - almanaque
+  - comercio
+  - publicidad
+  - guía urbana
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 4 - Mosqueda

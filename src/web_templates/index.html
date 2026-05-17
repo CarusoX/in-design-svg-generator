@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ title }} — Preview</title>
+  <style>
+    :root {
+      --bg: #2a2a2a;
+      --bg-rail: #1f1f1f;
+      --muted: #999;
+      --text: #ddd;
+      --accent: #A82A1F;
+      --rail-w: 64px;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0; height: 100%;
+      background: var(--bg); color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+      overflow: hidden;
+    }
+    body { display: flex; }
+
+    /* Vertical slider on the left edge. */
+    .slider {
+      width: var(--rail-w); flex: 0 0 var(--rail-w);
+      background: var(--bg-rail);
+      display: flex; flex-direction: column;
+      align-items: center; padding: 16px 0;
+      border-right: 1px solid #333;
+    }
+    .slider .cap {
+      font-size: 9px; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--muted);
+      margin: 4px 0;
+    }
+    .slider input[type="range"] {
+      -webkit-appearance: slider-vertical;
+      appearance: slider-vertical;
+      writing-mode: vertical-lr;
+      direction: rtl;             /* top of rail = first spread */
+      width: 24px;
+      height: calc(100vh - 140px);
+      margin: 8px 0;
+      accent-color: var(--accent);
+    }
+    .slider .pos {
+      font-size: 12px; color: #fff; margin-top: 6px;
+      font-variant-numeric: tabular-nums; text-align: center;
+      line-height: 1.3;
+    }
+    .slider .pos small {
+      display: block; font-size: 10px; color: var(--muted); margin-top: 2px;
+    }
+
+    /* Spread area. */
+    .stage {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 28px 32px 36px;
+      min-width: 0;
+    }
+    .page {
+      box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+      /* Fixed at A5 — matches the SVG's intrinsic mm dimensions so the
+         object fills the page edge-to-edge. The SVG paints its own
+         background; no need to set one on .page. */
+      width: 148mm;
+      height: 210mm;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    .page.blank { background: transparent; box-shadow: none; }
+    .page object {
+      width: 100%; height: 100%; display: block;
+    }
+    .page .pagenum {
+      position: absolute; bottom: -22px; left: 0; right: 0;
+      text-align: center; font-size: 11px; color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .header {
+      position: fixed; top: 8px; left: calc(var(--rail-w) + 16px);
+      font-size: 12px; color: var(--muted);
+    }
+    .header strong { color: #fff; font-weight: 600; }
+
+    .note {
+      position: fixed; bottom: 8px; right: 12px;
+      font-size: 11px; color: var(--muted);
+      max-width: 360px; text-align: right; line-height: 1.4;
+    }
+
+    /* Reticle toggle (top-right) and per-page overlay. */
+    .toggle-reticle {
+      position: fixed; top: 8px; right: 12px;
+      font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+      background: var(--bg-rail); color: var(--text);
+      border: 1px solid #444; padding: 5px 10px; border-radius: 4px;
+      cursor: pointer; font-family: inherit;
+    }
+    .toggle-reticle:hover { border-color: #666; }
+    .toggle-reticle.active {
+      background: var(--accent); color: #fff; border-color: var(--accent);
+    }
+    .page .reticle {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      display: none;
+      /* White lines + difference inverts whatever's behind, so the grid
+         stays visible on both cream and red pages with the same SVG. */
+      mix-blend-mode: difference;
+    }
+    body.reticle-on .page .reticle { display: block; }
+  </style>
+</head>
+<body>
+  <aside class="slider" title="Drag, scroll, or use arrow keys to navigate">
+    <div class="cap">Spread</div>
+    <input
+      type="range"
+      id="spread"
+      min="0"
+      max="{{ (spread_starts|length - 1) if spread_starts else 0 }}"
+      value="0"
+      step="1"
+    />
+    <div class="pos" id="pos">—<small id="posIdx">0 / 0</small></div>
+  </aside>
+
+  <div class="header"><strong>{{ title }}</strong> — preview</div>
+
+  <button id="reticleToggle" class="toggle-reticle" title="Toggle 6×9 grid overlay (G)">Grid</button>
+
+  <main class="stage" id="stage"></main>
+
+  <div class="note">
+    Justified body text renders ragged in preview — InDesign re-flows it on
+    import. Arrow keys / drag the slider to page through.
+  </div>
+
+  <script>
+    const SPREAD_STARTS = {{ spread_starts|tojson }};
+    const PAGE_IDS = {{ page_ids|tojson }};
+    const PAGE_SET = new Set(PAGE_IDS);
+
+    const stage = document.getElementById('stage');
+    const slider = document.getElementById('spread');
+    const pos = document.getElementById('pos');
+    const posIdx = document.getElementById('posIdx');
+
+    // Cache-bust on each render so livereload sees fresh SVG contents.
+    function pageUrl(id) {
+      const padded = String(id).padStart(3, '0');
+      return `/out/page-${padded}.svg?t=${Date.now()}`;
+    }
+
+    // Cache-busted reticle URL so livereload picks up regenerated overlays.
+    const RETICLE_URL = `/out/_reticle.svg?t=${Date.now()}`;
+
+    function makePage(id) {
+      const wrap = document.createElement('div');
+      if (id === null || !PAGE_SET.has(id)) {
+        wrap.className = 'page blank';
+        return wrap;
+      }
+      wrap.className = 'page';
+      const obj = document.createElement('object');
+      obj.type = 'image/svg+xml';
+      obj.data = pageUrl(id);
+      wrap.appendChild(obj);
+
+      // Reticle overlay (hidden unless body.reticle-on is set).
+      const reticle = document.createElement('img');
+      reticle.src = RETICLE_URL;
+      reticle.className = 'reticle';
+      reticle.alt = '';
+      wrap.appendChild(reticle);
+
+      const n = document.createElement('div');
+      n.className = 'pagenum';
+      n.textContent = id;
+      wrap.appendChild(n);
+      return wrap;
+    }
+
+    function renderSpread(idx) {
+      stage.innerHTML = '';
+      const start = SPREAD_STARTS[idx];
+      if (start === undefined) {
+        pos.firstChild.nodeValue = '—';
+        posIdx.textContent = '0 / 0';
+        return;
+      }
+      let left = null, right = null;
+      if (start === 1) {
+        // Opening spread: page 1 is the right page; left side is blank.
+        right = 1;
+      } else {
+        left = start;
+        right = start + 1;
+      }
+      stage.appendChild(makePage(left));
+      stage.appendChild(makePage(right));
+
+      const shownLeft = left !== null && PAGE_SET.has(left) ? left : null;
+      const shownRight = right !== null && PAGE_SET.has(right) ? right : null;
+      const label = (shownLeft && shownRight) ? `${shownLeft} – ${shownRight}`
+                  : (shownLeft ? `${shownLeft}` : (shownRight ? `${shownRight}` : '—'));
+      pos.firstChild.nodeValue = label;
+      posIdx.textContent = `${idx + 1} / ${SPREAD_STARTS.length}`;
+    }
+
+    slider.addEventListener('input', () => renderSpread(parseInt(slider.value, 10)));
+
+    document.addEventListener('keydown', (e) => {
+      // Grid toggle — 'g' anywhere outside form fields.
+      if ((e.key === 'g' || e.key === 'G') && !/^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) {
+        toggleReticle();
+        e.preventDefault();
+        return;
+      }
+      const cur = parseInt(slider.value, 10);
+      const max = parseInt(slider.max, 10);
+      if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === 'PageDown') {
+        slider.value = Math.min(cur + 1, max);
+      } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        slider.value = Math.max(cur - 1, 0);
+      } else if (e.key === 'Home') {
+        slider.value = 0;
+      } else if (e.key === 'End') {
+        slider.value = max;
+      } else {
+        return;
+      }
+      e.preventDefault();
+      renderSpread(parseInt(slider.value, 10));
+    });
+
+    // Reticle toggle — state persists across reloads.
+    const reticleBtn = document.getElementById('reticleToggle');
+    function applyReticle(on) {
+      document.body.classList.toggle('reticle-on', on);
+      reticleBtn.classList.toggle('active', on);
+    }
+    function toggleReticle() {
+      const on = !document.body.classList.contains('reticle-on');
+      applyReticle(on);
+      try { localStorage.setItem('reticle-on', on ? '1' : '0'); } catch (_) {}
+    }
+    reticleBtn.addEventListener('click', toggleReticle);
+    applyReticle(localStorage.getItem('reticle-on') === '1');
+
+    renderSpread(0);
+  </script>
+</body>
+</html>

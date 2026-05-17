@@ -1,0 +1,211 @@
+"""CLI: read content/catalog.yaml (section-based) and render each page to
+out/page-NNN.svg.
+
+The YAML is structured around the catalog's *sections* (portada, epigrafe,
+nota_curatorial, indice, salas, bibliografia). `load_catalog()` compiles
+that into a flat list of pages with sequential IDs — so removing a sala or
+reordering piezas is a single YAML edit, and page numbers shift
+automatically.
+
+The compiled `{"meta": …, "pages": [{id, template, data}, …]}` shape is
+kept stable so the preview server (and anything else that reads the
+catalog) doesn't need to change when the YAML structure does.
+"""
+
+from __future__ import annotations
+
+import argparse
+from pathlib import Path
+
+import yaml
+
+from . import templates
+
+from . import render
+
+ROOT = Path(__file__).resolve().parent.parent
+CONTENT_FILE = ROOT / "content" / "catalog.yaml"
+OUT_DIR = ROOT / "out"
+RETICLE_FILE = OUT_DIR / "_reticle.svg"
+
+
+# ── Catalog loading + section → pages compilation ────────────────────
+
+def load_catalog() -> dict:
+    """Read the YAML and return {meta, pages}. Pages are computed from the
+    section structure — see `_compile_pages` for the rules."""
+    with CONTENT_FILE.open("r", encoding="utf-8") as f:
+        raw = yaml.safe_load(f) or {}
+    return {
+        "meta": raw.get("meta") or {},
+        "pages": _compile_pages(raw),
+    }
+
+
+def _compile_pages(raw: dict) -> list[dict]:
+    """Walk the section-based catalog and emit a flat list of pages.
+
+    Page IDs are assigned sequentially in document order. Derivations:
+      - portada.piezas / portada.salas auto-filled from the salas section
+        when absent (so "57 piezas · 7 salas" stays in sync).
+      - portadilla.piezas auto-filled from len(sala.piezas) when absent.
+      - indice.entradas auto-filled from the salas list when absent.
+      - Every ficha gets pieza_id (L001…LN, global counter across salas)
+        and cabecera_sub (sala name + period) merged in — overridable per
+        pieza if the YAML sets them explicitly.
+    """
+    salas = raw.get("salas") or []
+    total_piezas = sum(len(s.get("piezas") or []) for s in salas)
+
+    pages: list[dict] = []
+    next_id = 1
+
+    def add(template: str, data: dict) -> None:
+        nonlocal next_id
+        pages.append({"id": next_id, "template": template, "data": data})
+        next_id += 1
+
+    # — Portada (cover)
+    if "portada" in raw:
+        portada = dict(raw["portada"])
+        portada.setdefault("piezas", f"{total_piezas} piezas")
+        portada.setdefault("salas", f"{len(salas)} salas")
+        add("portada", portada)
+
+    # — Epígrafe
+    if "epigrafe" in raw:
+        add("epigrafe", dict(raw["epigrafe"]))
+
+    # — Nota curatorial (multi-page essay; one YAML item per page)
+    for note_page in raw.get("nota_curatorial") or []:
+        add("nota_curatorial", dict(note_page))
+
+    # — Índice (auto-derive entradas if not provided)
+    if "indice" in raw:
+        indice = dict(raw["indice"])
+        indice.setdefault("entradas", [
+            {
+                "romano": s.get("romano", ""),
+                "nombre": (s.get("portadilla") or {}).get("nombre", ""),
+                "periodo": (s.get("portadilla") or {}).get("periodo", ""),
+            }
+            for s in salas
+        ])
+        add("indice", indice)
+
+    # — Salas: each one = a portadilla + N pieza spreads (imagen + texto)
+    pieza_counter = 0
+    for sala in salas:
+        romano = sala.get("romano", "")
+        sala_piezas = sala.get("piezas") or []
+
+        # Portadilla de sala
+        portadilla = dict(sala.get("portadilla") or {})
+        portadilla.setdefault("romano", romano)
+        portadilla.setdefault("piezas", f"{len(sala_piezas)} piezas")
+        add("portadilla_sala", portadilla)
+
+        # cabecera_sub auto-filled on every ficha in this sala
+        sala_nombre = portadilla.get("nombre", "")
+        sala_periodo = portadilla.get("periodo", "")
+        default_cabecera = (
+            f"{sala_nombre} ({sala_periodo})" if sala_nombre and sala_periodo
+            else sala_nombre or sala_periodo
+        )
+
+        for pieza in sala_piezas:
+            pieza_counter += 1
+            default_pieza_id = pieza.get("id") or f"L{pieza_counter:03d}"
+
+            imagen = dict(pieza.get("imagen") or {})
+            imagen.setdefault("pieza_id", default_pieza_id)
+            imagen.setdefault("cabecera_sub", default_cabecera)
+            add("ficha_imagen", imagen)
+
+            texto = dict(pieza.get("texto") or {})
+            texto.setdefault("pieza_id", default_pieza_id)
+            texto.setdefault("cabecera_sub", default_cabecera)
+            add("ficha_texto", texto)
+
+    # — Bibliografía
+    if "bibliografia" in raw:
+        add("bibliografia", dict(raw["bibliografia"]))
+
+    return pages
+
+
+# ── Rendering / writing ──────────────────────────────────────────────
+
+def render_page(page: dict) -> str:
+    template_name = page["template"]
+    renderer = templates.get(template_name)
+    data = dict(page.get("data") or {})
+    # Surface the requested template name so the placeholder fallback can
+    # show which real template still needs to be implemented.
+    data["__template__"] = template_name
+    return renderer(page["id"], data)
+
+
+def write_page(page: dict) -> Path:
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    svg = render_page(page)
+    path = OUT_DIR / f"page-{page['id']:03d}.svg"
+    path.write_text(svg, encoding="utf-8")
+    return path
+
+
+def _clear_out() -> None:
+    """Delete every page-*.svg in out/. Used by `regenerate_all` so that
+    pages dropped from the YAML (or shifted in numbering) don't leave
+    stale files behind. The reticle (_reticle.svg) is preserved because
+    its filename doesn't match the page-*.svg glob."""
+    if OUT_DIR.exists():
+        for svg in OUT_DIR.glob("page-*.svg"):
+            svg.unlink()
+
+
+def write_reticle() -> Path:
+    """Emit the preview-only grid overlay (out/_reticle.svg)."""
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    RETICLE_FILE.write_text(render.reticle_svg(), encoding="utf-8")
+    return RETICLE_FILE
+
+
+def regenerate_all() -> list[Path]:
+    catalog = load_catalog()
+    _clear_out()
+    paths = [write_page(p) for p in catalog["pages"]]
+    write_reticle()
+    return paths
+
+
+# ── CLI ──────────────────────────────────────────────────────────────
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Generate catalog SVGs.")
+    parser.add_argument(
+        "--page", type=int, default=None,
+        help="Regenerate only the page with this id (skips the out/ cleanup).",
+    )
+    args = parser.parse_args()
+
+    catalog = load_catalog()
+    pages = catalog["pages"]
+    if args.page is not None:
+        pages = [p for p in pages if p["id"] == args.page]
+        if not pages:
+            raise SystemExit(f"No page with id={args.page} in catalog.")
+    else:
+        _clear_out()
+
+    for p in pages:
+        path = write_page(p)
+        print(f"wrote {path.relative_to(ROOT)}")
+
+    if args.page is None:
+        path = write_reticle()
+        print(f"wrote {path.relative_to(ROOT)}")
+
+
+if __name__ == "__main__":
+    main()

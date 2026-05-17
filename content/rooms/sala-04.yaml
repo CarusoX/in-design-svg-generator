@@ -1,0 +1,285 @@
+# Sala IV — Sátira, prensa y Centenario
+# 1860-1910 · 11 piezas
+# Generated from content/source.json. The portadilla_sala for this
+# room lives in content/catalog.yaml; this file holds only fichas.
+
+sala:
+  numero: 4
+  romano: IV
+  nombre: Sátira, prensa y Centenario
+  nombre_completo: 4 — Sátira, prensa y Centenario (1860-1910)
+  periodo: 1860-1910
+  cantidad_piezas: 11
+  cita_curatorial: |-
+    La caricatura política y la prensa ilustrada masiva. De El Mosquito (1863) a Caras y Caretas (1898): el medio siglo en que la imagen periodística se vuelve cultura común y la sátira política, lenguaje cotidiano.
+fichas:
+- cabecera_id: Sala IV · Pieza 01
+  cabecera_sub: L021
+  tipo: Revista satírica de caricaturas
+  titulo_pieza: El Mosquito
+  autor: Henri Stein, Monriot, Advinent (dibujantes franceses)
+  datos: 1863-1893 · Buenos Aires, Argentina
+  image: images/sala-04/pieza-01.jpg
+  descripcion: |-
+    Revista de caricaturas políticas más longeva de la Argentina del siglo XIX, fundada por el dibujante francés Henri Stein en 1863 y publicada durante treinta años hasta 1893. El Mosquito instaló en Buenos Aires el modelo francés de la caricatura política semanal —Le Charivari, La Caricature— operando con dibujantes europeos formados en París y litografía como técnica principal. La revista atravesó toda la segunda mitad del siglo XIX argentino, desde los gobiernos liberales hasta la presidencia de Juárez Celman y la Revolución del Parque. Su cierre en 1893 dejó el espacio satírico libre para que Don Quijote (Sojo) y luego Caras y Caretas (Pellicer) lo ocuparan. El archivo retiene El Mosquito como matriz fundacional de la caricatura política argentina: el primer caso en que se importó masivamente el oficio europeo y se lo aplicó a la lucha política local.
+  cita_textual: Stein, Henri, Monriot, Advinent– creaban El Mosquito
+  fuente: BNA digitalizada. Colección completa 1863-1893
+  source_id: L021
+  subseccion: 4.a Prensa satírica del siglo XIX
+  contexto_historico: Generación del 80. Importación profesional francesa.
+  estado_conservacion: Conservada (Biblioteca Nacional, hemerotecas)
+  palabras_clave:
+  - caricatura
+  - sátira
+  - francesa
+  - Stein
+  - Buenos Aires
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 6 - Rogers
+- cabecera_id: Sala IV · Pieza 02
+  cabecera_sub: L022
+  tipo: Semanario satírico-político
+  titulo_pieza: Don Quijote (semanario)
+  autor: |-
+    Eduardo Sojo ('Demócrito'), con José María Cao ('Demócrito II') y Manuel Mayol ('Heráclito')
+  datos: 1884-1903 · Buenos Aires, Argentina
+  image: images/sala-04/pieza-02.jpg
+  descripcion: |-
+    Semanario satírico de caricaturas fundado por el español Eduardo Sojo en 1884 y publicado durante diecinueve años hasta 1903. Don Quijote llevó la caricatura política argentina a niveles inéditos de virulencia contra el régimen roquista; en su mejor momento, los gobiernos lo persiguieron, lo censuraron y lo demandaron sin lograr cerrarlo. El semanario formó la primera generación de caricaturistas profesionales del Río de la Plata: José María Cao ('Demócrito II') y Manuel Mayol ('Heráclito') aprendieron el oficio en sus páginas antes de pasar masivamente a Caras y Caretas en 1898. Don Quijote y Caras y Caretas funcionaron durante cinco años como las dos revistas-modelo del periodismo gráfico argentino, una más virulenta y otra más popular; el cierre de Don Quijote en 1903 dejó a Caras y Caretas como única heredera. El archivo lo retiene como pieza fundacional del periodismo satírico argentino.
+  cita_textual: el mecanismo de reemplazo entre Don Quijote (1884-1903) y Caras y Caretas
+  fuente: BNA digitalizada. Estudios de Rogers, Burgos, Romano
+  source_id: L022
+  subseccion: 4.a Prensa satírica del siglo XIX
+  contexto_historico: República conservadora argentina. Roquismo. Lucha política vía caricatura.
+  estado_conservacion: Conservada (Biblioteca Nacional, hemerotecas)
+  palabras_clave:
+  - caricatura
+  - sátira
+  - política
+  - Sojo
+  - Don Quijote
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 6 - Rogers
+- cabecera_id: Sala IV · Pieza 03
+  cabecera_sub: L023
+  tipo: Álbum institucional fotográfico
+  titulo_pieza: Galería de los ladrones de la Capital
+  autor: Imprenta policial / atribuido a José Sixto Álvarez ('Fray Mocho')
+  datos: 1887 · Buenos Aires, Argentina
+  image: images/sala-04/pieza-03.jpg
+  descripcion: |-
+    Publicación ilustrada producida por la imprenta policial de Buenos Aires en 1887, atribuida a José Sixto Álvarez ('Fray Mocho'), entonces subcomisario y luego fundador editorial de Caras y Caretas. La obra tenía un objetivo institucional concreto: fijar, mediante la fotografía y la descripción individualizada, los rostros y rasgos de los delincuentes registrados de la ciudad, para uso del personal policial y eventualmente del público. La 'Galería' es el primer compendio iconográfico argentino producido específicamente para vigilancia masiva: combina foto, texto y dispositivo de archivo en una operación editorial que anticipa los métodos del fichaje policial moderno. El archivo retiene la pieza como antecedente paradójico del propio Fray Mocho: el mismo hombre que organizó visualmente la vigilancia popular fue, una década después, el director de la revista que dio voz humorística a esa misma cultura popular vigilada.
+  cita_textual: |-
+    Galería de los ladrones de la Capital (1887), publicada por la imprenta policial con un objetivo institucional concreto
+  fuente: Archivo Policial de la Capital. Ediciones facsimilares
+  source_id: L023
+  subseccion: 4.a Prensa satírica del siglo XIX
+  contexto_historico: Higienismo. Disciplinamiento social. Pre-Caras y Caretas.
+  estado_conservacion: Conservada (Archivo Policial, ediciones facsimilares)
+  palabras_clave:
+  - institucional
+  - fotografía
+  - policial
+  - Fray Mocho
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 6 - Rogers
+- cabecera_id: Sala IV · Pieza 04
+  cabecera_sub: L024
+  tipo: Revista semanal ilustrada (versión inicial)
+  titulo_pieza: Caras y Caretas (Montevideo)
+  autor: Eustaquio Pellicer (director) con Charles Schultz (dibujante alsaciano)
+  datos: 1890-1897 · Montevideo, Uruguay
+  image: images/sala-04/pieza-04.jpg
+  descripcion: |-
+    Versión montevideana original de Caras y Caretas, fundada por Pellicer en 1890 ocho años antes que su par porteña. Operada con el dibujante alsaciano Charles Schultz, ensayó por primera vez la fórmula que después arrasaría en Buenos Aires: actualidad ilustrada, humor, sátira política suave, folletín, publicidad. Una de sus operaciones más interesantes fue la primera novela colectiva impresa del Río de la Plata, 'Por seguir a un galgo' (1890), escrita por siete autores rotativos —Daniel Muñoz, Alfredo Duhau, Ricardo Usher Blanco, Enrique Lemos, José Artal, Víctor Arreguine y el propio Pellicer— donde cada uno escribía un capítulo a partir del final del anterior, con el mandato explícito de complicarle la continuidad al siguiente. El archivo retiene la pieza como laboratorio uruguayo de la fórmula editorial argentina más exitosa.
+  cita_textual: a cargo de Pellicer y por el dibujante alsaciano Charles Schultz
+  fuente: Biblioteca Nacional del Uruguay. Ediciones facsimilares parciales
+  source_id: L024
+  subseccion: 4.a Prensa satírica del siglo XIX
+  contexto_historico: Prensa rioplatense de fin de siglo. Antecedente del éxito porteño.
+  estado_conservacion: Conservada parcialmente (Biblioteca Nacional del Uruguay)
+  palabras_clave:
+  - revista
+  - Montevideo
+  - ilustrada
+  - antecedente
+  - Pellicer
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 6 - Rogers
+- cabecera_id: Sala IV · Pieza 05
+  cabecera_sub: L025
+  tipo: Revista semanal ilustrada / industria gráfica
+  titulo_pieza: Caras y Caretas (Buenos Aires)
+  autor: |-
+    Fundada por Eustaquio Pellicer; con José Sixto Álvarez 'Fray Mocho' (director); Bartolomé Mitre y Vedia (administrador); Manuel Mayol (dibujante principal)
+  datos: 1898-1939 · Buenos Aires, Argentina
+  image: images/sala-04/pieza-05.jpg
+  descripcion: |-
+    'Revista festiva, literaria, artística y de actualidades' fundada en Buenos Aires en 1898. Durante cuatro décadas fue la publicación gráfica más leída del Río de la Plata: combinó actualidad fotográfica, humor satírico, folletín, publicidad, ilustración y caricatura en una fórmula que reinventó el periodismo masivo argentino. Sus dibujantes —José María Cao, Manuel Mayol, Aurelio Giménez, Mario Zabataro, Charles Schultz— formaron la primera generación de profesionales de la imagen argentinos. La revista se imprimía en la Compañía Sud-Americana de Billetes de Banco, una de las imprentas industriales más equipadas de la ciudad, con equipos completos de grabado, tipografía, encuadernación, litografía y fundición. El archivo retiene Caras y Caretas como pieza-sistema: no es un objeto individual sino la primera infraestructura gráfica modernizada del Río de la Plata, que durante cuatro décadas produjo semanalmente el imaginario visual del país.
+  cita_textual: |-
+    La revista Caras y caretas (1898-1939) fundada por Eustaquio Pellicer y José Sixto Álvarez 'Fray Mocho' marcó un hito
+  fuente: BNA digitalizada (Trapalanda, Hemeroteca Digital)
+  source_id: L025
+  subseccion: 4.b Caras y Caretas y la cultura impresa masiva
+  contexto_historico: Argentina del Centenario. Modernización editorial. Industria cultural
+    masiva.
+  estado_conservacion: Conservada (Biblioteca Nacional, hemerotecas)
+  palabras_clave:
+  - revista
+  - ilustrada
+  - humor
+  - masiva
+  - Centenario
+  - Pellicer
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 5 y Texto 6
+- cabecera_id: Sala IV · Pieza 06
+  cabecera_sub: L026
+  tipo: Tapa de revista / caricatura política
+  titulo_pieza: Tapa 'El nuevo Luis XIV' (Caras y Caretas N° 16)
+  autor: José María Cao
+  datos: 29 de octubre de 1898 · Buenos Aires, Argentina
+  image: images/sala-04/pieza-06.jpg
+  descripcion: |-
+    Tapa de Caras y Caretas N° 16, publicada el 29 de octubre de 1898 con dibujo de José María Cao. Caricatura del general Roca representado como Luis XIV, sentado en un trono con peluca y ropajes del rey francés, cortando con una tijera el mapa de la Puna de Atacama. La estrofa satírica al pie firma el mensaje: 'La cuestión de la Puna de Atacama / por su cuenta arregló, / diciendo lo que dijo Luis XIV: / El Estado soy yo'. La pieza es el primer ataque frontal de Caras y Caretas a Roca, lanzado apenas dos semanas después del primer número de la revista. Inaugura una operación que la revista practicaría durante toda la presidencia: critica al presidente vía iconografía europea —Luis XIV, Felipe II, papas, Napoleones— para vincular sus prácticas con el absolutismo. El archivo retiene la tapa como caso paradigmático del momento en que Caras y Caretas, recién nacida, se posiciona políticamente.
+  cita_textual: Cao, 'El nuevo Luis XIV', en Caras y Caretas, 29 de octubre de 1898
+  fuente: BNA, Caras y Caretas del 29 de octubre de 1898
+  source_id: L026
+  subseccion: 4.b Caras y Caretas y la cultura impresa masiva
+  contexto_historico: Inicio del segundo mandato de Roca. Disputa de límites con Chile.
+  estado_conservacion: Conservada (colecciones encuadernadas de Caras y Caretas)
+  palabras_clave:
+  - tapa
+  - caricatura
+  - Cao
+  - Roca
+  - Luis XIV
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 6 - Rogers
+- cabecera_id: Sala IV · Pieza 07
+  cabecera_sub: L027
+  tipo: Serie de caricaturas políticas
+  titulo_pieza: Serie 'Caricaturas contemporáneas' de Cao (Caras y Caretas)
+  autor: José María Cao
+  datos: 1900-1904 · Buenos Aires, Argentina
+  image: images/sala-04/pieza-07.jpg
+  descripcion: |-
+    Serie de caricaturas inaugurada por José María Cao en Caras y Caretas en enero de 1900: una galería de retratos satíricos de las personalidades eminentes de la política y la cultura argentina, publicada semana a semana en tapa o doble página interior. La operación editorial era nueva en el Río de la Plata: la caricatura política dejaba de ser ilustración suelta y se volvía colección sistemática. La primera entrega estuvo dedicada a Bartolomé Mitre (13 de enero de 1900); la segunda, a Julio A. Roca (20 de enero de 1900). El contraste era deliberado: Mitre apareció como prohombre de gloria militar, política y literaria; Roca, una semana después, ataviado con ropas eclesiásticas y rodeado de incondicionales. El archivo retiene la serie como pieza-sistema: la primera operación argentina de retrato político seriado, antecedente directo de la fotonovela y de las galerías de personajes del siglo XX.
+  cita_textual: |-
+    Caras y Caretas inauguró una serie de ilustraciones de Cao, 'Caricaturas contemporáneas' de personajes eminentes de la política y la cultura
+  fuente: BNA. Caras y Caretas enero 1900 (n° 67 y 68)
+  source_id: L027
+  subseccion: 4.b Caras y Caretas y la cultura impresa masiva
+  contexto_historico: Segundo mandato de Roca. Disputa Mitre-Roca. Galerización de la política.
+  estado_conservacion: Conservada
+  palabras_clave:
+  - caricatura
+  - Cao
+  - serie
+  - retrato político
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 6 - Rogers
+- cabecera_id: Sala IV · Pieza 08
+  cabecera_sub: L028
+  tipo: Caricatura política / nota gráfica
+  titulo_pieza: Caricatura 'Los ministros odontólogos' (Caras y Caretas, septiembre de 1902)
+  autor: Caricaturista no identificado del staff de Caras y Caretas
+  datos: 13 de septiembre de 1902 · Buenos Aires, Argentina
+  image: images/sala-04/pieza-08.jpg
+  descripcion: |-
+    Ilustración satírica publicada en Caras y Caretas el 13 de septiembre de 1902, a propósito del escándalo del traslado de los restos de Manuel Belgrano a una nueva sepultura. La crónica denunciaba que los ministros de Guerra e Interior, Pablo Riccheri y Joaquín V. González, se habían llevado piezas dentarias del prócer como recuerdo durante la ceremonia oficial. La página siguiente desarrollaba el hecho en clave gráfica: una ilustración mostraba a Belgrano levantándose de la tumba y reclamando a los dos ministros 'Hasta los dientes me llevan! ¿No tendrán bastante con los propios para comer del presupuesto?'. El archivo retiene la pieza como ejemplo paradigmático de la operación humorística de Caras y Caretas: convertir un episodio puntual en escándalo nacional vía dibujo satírico, generalizar la falta moral a todo el régimen.
+  cita_textual: |-
+    el hecho era retomado de modo satírico con una ilustración titulada 'Los ministros odontólogos'
+  fuente: BNA, Caras y Caretas del 13 de septiembre de 1902
+  source_id: L028
+  subseccion: 4.b Caras y Caretas y la cultura impresa masiva
+  contexto_historico: Escándalo del traslado de los restos de Belgrano. Crítica al régimen
+    roquista.
+  estado_conservacion: Conservada (Caras y Caretas, 13 de septiembre de 1902)
+  palabras_clave:
+  - caricatura
+  - escándalo
+  - Belgrano
+  - sátira
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 6 - Rogers
+- cabecera_id: Sala IV · Pieza 09
+  cabecera_sub: L029
+  tipo: Tapa de revista / caricatura política
+  titulo_pieza: Tapa 'Ley de Residencia' (Caras y Caretas, enero de 1903)
+  autor: Manuel Mayol
+  datos: Enero de 1903 · Buenos Aires, Argentina
+  image: images/sala-04/pieza-09.jpg
+  descripcion: |-
+    Tapa de Caras y Caretas de enero de 1903 dibujada por Manuel Mayol, crítica a la recientemente aprobada Ley de Residencia (4144), que facultaba al Poder Ejecutivo a expulsar del país a cualquier extranjero considerado peligroso para el orden público. La ley había sido sancionada en noviembre de 1902 en respuesta al conflicto obrero y a la presencia anarquista en los puertos. La tapa de Mayol —que la revista discutió ampliamente en sus páginas interiores— marcó la posición de Caras y Caretas frente a una de las herramientas represivas más duras del régimen conservador. El archivo retiene la tapa como momento bisagra: la revista, que durante sus primeros años había practicado la sátira política suave, se vio obligada a tomar posición frente a un conflicto que tocaba directamente a su público inmigrante.
+  cita_textual: enero de 1903 llevaba una tapa de Mayol titulada 'Ley de Residencia'
+  fuente: BNA, Caras y Caretas de enero de 1903 (Mayol)
+  source_id: L029
+  subseccion: 4.b Caras y Caretas y la cultura impresa masiva
+  contexto_historico: Conflicto obrero argentino. Ley 4144. Inmigración masiva.
+  estado_conservacion: Conservada (colecciones encuadernadas)
+  palabras_clave:
+  - tapa
+  - Mayol
+  - Ley Residencia
+  - conflicto obrero
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 6 - Rogers
+- cabecera_id: Sala IV · Pieza 10
+  cabecera_sub: L030
+  tipo: Fotomontaje político / foto trucada
+  titulo_pieza: Foto trucada del 'Cónclave electoral' (Caras y Caretas N° 253)
+  autor: Staff de Caras y Caretas
+  datos: 8 de agosto de 1903 · Buenos Aires, Argentina
+  image: images/sala-04/pieza-10.jpg
+  descripcion: |-
+    Doble página publicada en Caras y Caretas el 8 de agosto de 1903 contra la Convención de Notables que iba a elegir al sucesor de Roca. Foto trucada que presentaba a los electores con ropajes eclesiásticos, como si se tratara de la elección de un Papa. El epígrafe explicaba: 'Aquí tenemos también, como en Roma, un cónclave electoral, y estamos seguros de que en cada uno de los purpurados dormita un candidato presidencial, como en cada uno de los cardenales, un papa...'. La pieza es archivísticamente excepcional por dos razones: documenta una de las primeras operaciones de fotomontaje político en el Río de la Plata, y registra la posición editorial de Caras y Caretas frente a la maquinaria sucesoria del roquismo. El archivo retiene el fotomontaje como antecedente directo de las técnicas que medio siglo después adoptarían Grete Stern y la propaganda peronista.
+  cita_textual: |-
+    en agosto de 1903, una foto trucada había presentado a los electores con ropajes eclesiásticos, como si se tratara de la elección de un Papa
+  fuente: BNA, Caras y Caretas del 8 de agosto de 1903
+  source_id: L030
+  subseccion: 4.b Caras y Caretas y la cultura impresa masiva
+  contexto_historico: Convención de Notables. Sucesión de Roca. Manuel Quintana.
+  estado_conservacion: Conservada (Caras y Caretas N° 253)
+  palabras_clave:
+  - fotomontaje
+  - foto trucada
+  - Convención
+  - política
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 6 - Rogers
+- cabecera_id: Sala IV · Pieza 11
+  cabecera_sub: L031
+  tipo: Folletín ilustrado / diseño editorial seriado
+  titulo_pieza: Folletines de Caras y Caretas (serie 1904 en adelante)
+  autor: |-
+    Varios (Conan Doyle, Roberto Payró, Eduardo Holmberg, Mark Twain, Javier de Viana, Paul Groussac, Eduardo de la Barra, Rafael Barreda, Arthur Morrison)
+  datos: 1904-1910 · Buenos Aires, Argentina
+  image: images/sala-04/pieza-11.jpg
+  descripcion: |-
+    Inauguración del folletín en Caras y Caretas en agosto de 1904, en respuesta a la pérdida de exclusividad de la revista en la oferta fotográfica (los diarios habían empezado a incorporar fotos). La nueva sección consolidó un sistema editorial híbrido: novelas por entregas con ilustraciones específicas, traducidas, recicladas o de producción propia. Los títulos iniciales incluyeron 'La pesquisa', 'La última pesquisa' de Arthur Conan Doyle, 'El robo de los dos millones' de Rafael Barreda, 'El falso inca' de Roberto Payró, 'El teniente coronel Fray Luis Beltrán' de Eduardo de la Barra, 'El diario de Eva' de Mark Twain, 'La tapera del cuervo' de Javier de Viana. El archivo retiene el conjunto como ejemplo de la flexibilidad estructural de la revista masiva argentina: ante la presión competitiva, mutación inmediata del formato sin perder identidad.
+  cita_textual: |-
+    comenzó una nueva etapa con la publicación de su primer folletín, un género que había demostrado desde mucho antes su éxito en los periódicos
+  fuente: 'Paraguas. Sugerencia: tapa o página de ''El paraguas misterioso'' (1904)'
+  source_id: L031
+  subseccion: 4.b Caras y Caretas y la cultura impresa masiva
+  contexto_historico: Competencia con diarios fotográficos. Industria cultural masiva.
+  estado_conservacion: Conservada en hemerotecas
+  palabras_clave:
+  - folletín
+  - editorial
+  - Caras y Caretas
+  - serie
+  imagen_categoria: D
+  imagen_estado_busqueda: Pieza-paraguas — elegir representativa
+  texto_fuente: Texto 6 - Rogers

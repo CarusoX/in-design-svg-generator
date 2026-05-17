@@ -1,0 +1,315 @@
+# Sala V — Marcas, almanaques y modernismo
+# 1910-1945 · 12 piezas
+# Generated from content/source.json. The portadilla_sala for this
+# room lives in content/catalog.yaml; this file holds only fichas.
+
+sala:
+  numero: 5
+  romano: V
+  nombre: Marcas, almanaques y modernismo
+  nombre_completo: 5 — Marcas, almanaques y modernismo (1910-1945)
+  periodo: 1910-1945
+  cantidad_piezas: 12
+  cita_curatorial: |-
+    La irrupción de la identidad de marca, la publicidad moderna y el indigenismo cultural argentino. YPF, Siam Di Tella, Geniol, Plus Ultra, Viracocha: el diseño se profesionaliza sin todavía nombrarse a sí mismo.
+fichas:
+- cabecera_id: Sala V · Pieza 01
+  cabecera_sub: L032
+  tipo: Almanaque náutico-enciclopédico ilustrado
+  titulo_pieza: Almanaque del Mensajero
+  autor: |-
+    M. Sundt (fundador, 1901-1911); Viuda de Sundt (1912-1931); Editorial Peuser (a partir de los años 30)
+  datos: 1901-1931 (serie Sundt) · Buenos Aires, Argentina
+  image: images/sala-05/pieza-01.jpg
+  descripcion: |-
+    Almanaque fundado en 1901 por el austríaco M. Sundt como pequeño folleto de 80 páginas; llegó a las 356 páginas y se mantuvo en publicación hasta al menos 1931 bajo la editora 'Viuda de Sundt'. Combinaba calendario y almanaque, reseña de todos los Estados independientes del mundo, historia del año, guía oficial con datos estadísticos de población y educación, miscelánea, atlas, tarifas y fórmulas para distintos usos —desde calcular sueldos hasta convertir pesos y medidas. Premiado con diploma y medalla de oro en la Exposición de Artes Gráficas del Centenario (1916). Lüsebrink lo describiría como 'máquina textual': un dispositivo de orientación en el tiempo, el espacio, la historia y los saberes útiles. El archivo lo retiene como caso paradigmático del almanaque rioplatense del primer tercio del siglo XX: género popular, ilustrado, masivo y casi siempre descartado por sus propios lectores al terminar el año.
+  cita_textual: |-
+    El Almanaque del Mensajero salió por primera vez en 1901, y 1931 fue posiblemente el último año de publicación de esta serie por parte de la editora Sundt
+  fuente: 'Paraguas. Sugerencia: composición de tapas + lomo apilado'
+  source_id: L032
+  subseccion: 5.a Almanaques porteños masivos
+  contexto_historico: Argentina del Centenario. Industria cultural masiva. Inmigración alfabetizada.
+  estado_conservacion: Conservada (12 ejemplares estudiados por Mosqueda; serie incompleta
+    en bibliotecas)
+  palabras_clave:
+  - almanaque
+  - náutico
+  - enciclopédico
+  - Centenario
+  - Sundt
+  imagen_categoria: D
+  imagen_estado_busqueda: Pieza-paraguas — elegir representativa
+  texto_fuente: Texto 4 - Mosqueda
+- cabecera_id: Sala V · Pieza 02
+  cabecera_sub: L033
+  tipo: Almanaque literario y enciclopédico
+  titulo_pieza: El Pasatiempo. Almanaque literario, ilustrado, noticioso
+  autor: Editorial Peuser (Buenos Aires)
+  datos: 1904 y siguientes · Buenos Aires, Argentina
+  image: images/sala-05/pieza-02.jpg
+  descripcion: |-
+    Almanaque editado por la Editorial Peuser a partir de 1904, deliberadamente concebido como adaptación al mercado porteño de un homónimo español, El pasatiempo. Almanaque humorístico, literario y científico publicado desde 1869. La operación editorial es elocuente: la versión argentina suprime el tono humorístico del original español, elimina la firma del 'almanaquero' que en España firmaba el conjunto y se presenta como un producto editorial puro. Incluye cuentos, rimas, biografías, crónicas de viajes por la Argentina, fragmentos de novelas, prólogos y agenda mensual a doble página para que el lector escribiera. Las páginas internas funcionaban además como catálogo de la propia editorial Peuser: en la retiración de tapa y contratapa se promocionaban los libros disponibles como 'regalos esencialmente a propósito para Navidad y Año Nuevo'. El archivo lo retiene como muestra de la transición del almanaque-fórmula editorial al almanaque-catálogo comercial.
+  cita_textual: |-
+    El Pasatiempo (1904) ofrecía —luego de las secciones fijas— una miscelánea de cuentos, rimas, biografías, crónicas de viajes
+  fuente: Hemerotecas, archivos Peuser. Reproducido en Mosqueda (2012)
+  source_id: L033
+  subseccion: 5.a Almanaques porteños masivos
+  contexto_historico: Argentina del Centenario. Edición masiva. Editorial Peuser en su apogeo.
+  estado_conservacion: Conservada (ejemplares en bibliotecas)
+  palabras_clave:
+  - almanaque
+  - literario
+  - Peuser
+  - catálogo editorial
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 4 - Mosqueda
+- cabecera_id: Sala V · Pieza 03
+  cabecera_sub: L034
+  tipo: Página interior con espacios manuscritos
+  titulo_pieza: Página 'Tabla cronológica' del Almanaque del Mensajero
+  autor: M. Sundt (editor)
+  datos: 1909 y siguientes · Buenos Aires, Argentina
+  image: images/sala-05/pieza-03.jpg
+  descripcion: |-
+    Página interior del Almanaque del Mensajero diseñada para ser completada manualmente por el lector. Contenía corazones y escudos en blanco donde el comprador debía escribir los nombres de su genealogía familiar empezando por los bisabuelos; en la página siguiente, titulada 'Crónica de familia', se anotaban los acontecimientos familiares del año. La operación editorial es elocuente: el almanaque comprado en la librería se completaba en casa con la propia historia. Eso convirtió a cada ejemplar en pieza única una vez usada. Mosqueda documenta un caso conservado: el almanaque de 1917 lleva las anotaciones manuscritas de un tal Arturo Luna, argentino, con los nombres de sus bisabuelos, abuelos y la fecha de su boda (4 de octubre de 1916). La pieza es paradigmática del archivo: un objeto editorial pensado para volverse propiedad escrita del usuario, donde la línea entre editor y lector se vuelve porosa.
+  cita_textual: |-
+    el Almanaque incluía una tabla cronológica con corazones y escudos en blanco que el lector debía completar con los datos de su familia
+  fuente: Ejemplar manuscrito de Arturo Luna (1917) referenciado por Mosqueda
+  source_id: L034
+  subseccion: 5.a Almanaques porteños masivos
+  contexto_historico: Edición popular interactiva. Almanaque como diario familiar.
+  estado_conservacion: Conservada (ejemplar de Arturo Luna, 1917, entre otros)
+  palabras_clave:
+  - página
+  - manuscrito
+  - genealogía
+  - lector
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 4 - Mosqueda
+- cabecera_id: Sala V · Pieza 04
+  cabecera_sub: L035
+  tipo: Identidad corporativa / diseño industrial
+  titulo_pieza: Identidad Siam Di Tella (1910-1960)
+  autor: Siam Di Tella (Sociedad Italiana de Amasadoras Mecánicas)
+  datos: 1910-1960 · Buenos Aires (planta en Avellaneda), Argentina
+  image: images/sala-05/pieza-04.jpg
+  descripcion: |-
+    Sistema de identidad gráfica de Siam Di Tella, empresa fundada en 1910 como Sociedad Italiana de Amasadoras Mecánicas. La firma produjo el primer surtidor de nafta argentino (1912), bombas, motores eléctricos, las motocicletas Siambretta (c. 1954) y el automóvil Siam Di Tella 1500 (1960). En 1952 inauguró un local de venta en la calle Florida, en la misma cuadra donde seis años después se instalaría el Instituto Torcuato Di Tella. La operación gráfica de Siam fue ejemplar para una empresa privada argentina de la primera mitad del siglo XX: aplicaciones unificadas en surtidores YPF, fábricas, máquinas, motocicletas, automóviles, publicidad y puntos de venta. El archivo retiene la pieza como caso paradigmático del primer diseño corporativo argentino sistemático, y como antecedente directo del Di Tella institucional.
+  cita_textual: Siam Di Tella (1910) inició como Sociedad Italiana de Amasadoras Mecánicas
+  fuente: Archivos Di Tella, MNBA, museos automotrices
+  source_id: L035
+  subseccion: 5.b Identidades industriales y publicidad
+  contexto_historico: |-
+    Industria privada argentina. Apellido Di Tella como marca industrial antes de institución cultural.
+  estado_conservacion: Conservada parcialmente (archivos Di Tella y museos)
+  palabras_clave:
+  - identidad
+  - Di Tella
+  - industrial
+  - Siambretta
+  - Argentina
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 5
+- cabecera_id: Sala V · Pieza 05
+  cabecera_sub: L036
+  tipo: Identidad institucional / sistema gráfico de empresa pública
+  titulo_pieza: Identidad gráfica YPF (símbolo y aplicaciones tempranas)
+  autor: YPF (Yacimientos Petrolíferos Fiscales) con desarrollo gráfico colaborativo
+  datos: 1922-1955 · Buenos Aires, Argentina
+  image: images/sala-05/pieza-05.jpg
+  descripcion: |-
+    Sistema de identidad gráfica de YPF, primera empresa petrolera estatal del mundo, fundada en 1922. El símbolo gráfico fue aplicado en escalas múltiples —papelería institucional, surtidores, fachadas de estaciones, vehículos de reparto, publicidad en revistas— en lo que constituye una de las primeras operaciones argentinas de identidad corporativa sostenida. La pieza es archivísticamente compleja: las estaciones de servicio fueron construidas en estilos arquitectónicos diversos (racionalista, art deco, pintoresquista) según las regiones y décadas, pero todas exhibían el mismo símbolo gráfico. El archivo retiene la identidad como ejemplo del primer caso latinoamericano de sistema gráfico aplicado a una empresa pública de escala nacional, y como pieza que sigue mutando: cada actualización del logo borra la anterior, y la identidad histórica sobrevive sólo en fotografías y archivos publicitarios.
+  cita_textual: |-
+    El símbolo gráfico de YPF se aplicó a diversas escalas en publicidades y en los múltiples espacios de venta
+  fuente: Archivo corporativo YPF, AGN, fotos de estaciones art déco
+  source_id: L036
+  subseccion: 5.b Identidades industriales y publicidad
+  contexto_historico: Industrialización estatal argentina. Primera empresa petrolera estatal
+    del mundo.
+  estado_conservacion: En uso (logo actualizado); piezas históricas conservadas en archivo
+    YPF y privados
+  palabras_clave:
+  - identidad
+  - YPF
+  - marca
+  - estatal
+  - pública
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 5
+- cabecera_id: Sala V · Pieza 06
+  cabecera_sub: L037
+  tipo: Afiches publicitarios / cartelería
+  titulo_pieza: Campaña publicitaria 'Geniol' de Lucien Achille Mauzan
+  autor: Lucien Achille Mauzan
+  datos: c. 1925-1940 · Buenos Aires, Argentina (Mauzan nacido en Francia)
+  image: images/sala-05/pieza-06.jpg
+  descripcion: |-
+    Campaña publicitaria para el medicamento Geniol diseñada por el ilustrador francés Lucien Achille Mauzan, radicado en Buenos Aires durante los años 20 y 30. La iconografía —el rostro deformado por el dolor de cabeza, con la mano en la sien, en gran formato y colores saturados— se convirtió en una de las imágenes publicitarias más reconocibles de la Argentina del siglo XX. Mauzan había trabajado antes en Italia y Francia y aplicó al mercado porteño las técnicas del cartel europeo de gran formato (Cappiello, Cassandre). La pieza es un caso paradigmático del traslado tecnológico de la publicidad europea al Río de la Plata por vía de la inmigración profesional. El archivo retiene la campaña como ejemplo del momento en que la publicidad argentina dejó de ser texto y empezó a ser imagen.
+  cita_textual: figuras como Lucien Achille Mauzan (publicidad Geniol)
+  fuente: Corpus Mauzan ampliamente reproducido. Museo Nacional del Cartel
+  source_id: L037
+  subseccion: 5.b Identidades industriales y publicidad
+  contexto_historico: Inmigración italo-francesa profesional. Modernización publicitaria argentina.
+  estado_conservacion: Conservada (afiches dispersos en colecciones privadas y museos)
+  palabras_clave:
+  - afiche
+  - publicidad
+  - Mauzan
+  - Geniol
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 5
+- cabecera_id: Sala V · Pieza 07
+  cabecera_sub: L038
+  tipo: Identidades corporativas / sistemas de marca
+  titulo_pieza: Identidades de marcas iconográficas argentinas (1930-1950)
+  autor: Estudios y agencias varias (locales e internacionales)
+  datos: 1930-1950 · Buenos Aires, Argentina
+  image: images/sala-05/pieza-07.jpg
+  descripcion: |-
+    Conjunto de identidades visuales de las marcas que constituyeron el repertorio iconográfico cotidiano de la Argentina de la ISI: Philips, Siemens, cigarrillos Sublimes y París, Cinzano, Bols, Fernet Branca, Chocolate Águila, Canale, Bagley, Terrabusi. Algunas eran marcas internacionales adaptadas (Philips, Siemens, Cinzano), otras locales (Águila, Canale, Bagley, Terrabusi). El sistema publicitario de la época —afiches en estaciones de tren y vagones, avisos en revistas, concursos de carteles, jingles radiales— las hizo presentes en todos los hogares argentinos durante dos décadas. El archivo las retiene como conjunto porque la operación gráfica de identidad de marca a gran escala se consolidó en la Argentina de los años 30-40 antes de que existieran las primeras escuelas de diseño: el saber se transmitía por talleres y agencias, no por academias.
+  cita_textual: |-
+    la identidad de grandes empresas como Philips, Siemens, cigarrillos Sublimes y París, Cinzano, Bols, Fernet Branca, Chocolate Águila, Canale, Bagley, Terrabusi
+  fuente: Corpus reproducido en libros sobre publicidad argentina (Chiozza, Borrini)
+  source_id: L038
+  subseccion: 5.b Identidades industriales y publicidad
+  contexto_historico: ISI argentina. Industria cultural masiva. Pre-institucionalización del
+    diseño.
+  estado_conservacion: |-
+    Conservada parcialmente; muchas identidades originales reemplazadas por rediseños posteriores
+  palabras_clave:
+  - marca
+  - publicidad
+  - identidad
+  - ISI
+  - masivo
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 5
+- cabecera_id: Sala V · Pieza 08
+  cabecera_sub: L039
+  tipo: Ilustración editorial integral
+  titulo_pieza: Ilustraciones y diseño editorial de Alejandro Sirio
+  autor: Alejandro Sirio
+  datos: 1910-1953 · Buenos Aires, Argentina (nacido en España)
+  image: images/sala-05/pieza-08.jpg
+  descripcion: |-
+    Obra ilustrativa del español Alejandro Sirio (1890-1953), llegado a Buenos Aires en 1910 y considerado por la historiografía del diseño argentino como uno de los pocos ilustradores de la primera mitad del siglo XX que practicó una operación verdaderamente integral: combinó dibujo, tipografía y puesta en página en una unidad de diseño, en una época en que esas tareas las hacían profesionales distintos. Trabajó para Caras y Caretas, Plus Ultra, Mundo Argentino, La Nación y para editoriales como Atlántida y Peuser. Sus ilustraciones para los cuentos de Horacio Quiroga y para crónicas de viajes son hoy referencias canónicas. El archivo retiene la obra como ejemplo paradigmático del ilustrador que opera como diseñador gráfico antes de que la disciplina exista institucionalmente en Argentina.
+  cita_textual: se destaca la obra artística del eximio ilustrador Alejandro Sirio
+  fuente: BNA digitalizada (Caras y Caretas, Plus Ultra, Mundo Argentino)
+  source_id: L039
+  subseccion: 5.c Indigenismo cultural y modernismo gráfico
+  contexto_historico: Edad de oro de la ilustración portenia. Migración española.
+  estado_conservacion: Conservada (originales y reproducciones en revistas y libros)
+  palabras_clave:
+  - ilustración
+  - art deco
+  - editorial
+  - Sirio
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 5
+- cabecera_id: Sala V · Pieza 09
+  cabecera_sub: L040
+  tipo: Revista mensual ilustrada
+  titulo_pieza: Plus Ultra (suplemento mensual de Caras y Caretas)
+  autor: Staff de Caras y Caretas (Pellicer, Cao, Mayol, Giménez)
+  datos: 1916-1930 · Buenos Aires, Argentina
+  image: images/sala-05/pieza-09.jpg
+  descripcion: |-
+    Suplemento mensual de Caras y Caretas publicado entre 1916 y 1930. A diferencia del semanario, que privilegiaba la actualidad y el humor satírico, Plus Ultra apuntó al diseño editorial cuidado, la identidad gráfica propia y la reproducción de obras del Museo Nacional de Bellas Artes y de colecciones privadas argentinas. La revista funcionó como puente entre la cultura impresa masiva y el circuito artístico legitimado: usó la misma infraestructura industrial de Caras y Caretas (Compañía Sud-Americana de Billetes de Banco) pero compuso un objeto de circulación más lenta, más pesado, más caro y destinado a un público con mayor capital cultural. El archivo lo retiene como ejemplo de la primera operación argentina de diferenciación editorial dentro de una misma empresa: la industria gráfica empezando a segmentar audiencias.
+  cita_textual: |-
+    Plus Ultra (1916-1930) fue un suplemento mensual de la revista donde colaboraba todo el staff del semanario
+  fuente: BNA digitalizada. Tapas art-decó de alta calidad
+  source_id: L040
+  subseccion: 5.c Indigenismo cultural y modernismo gráfico
+  contexto_historico: Argentina del Centenario tardío. Diferenciación editorial.
+  estado_conservacion: Conservada
+  palabras_clave:
+  - revista
+  - suplemento
+  - art deco
+  - MNBA
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 5
+- cabecera_id: Sala V · Pieza 10
+  cabecera_sub: L041
+  tipo: Manual escolar ilustrado
+  titulo_pieza: Viracocha (manual escolar)
+  autor: |-
+    Editado por Curt Berger y Cía.; diseño del escultor Gonzalo Leguizamón Pondal y el arquitecto Alberto Gelly Cantilo
+  datos: 1923 · Buenos Aires, Argentina
+  image: images/sala-05/pieza-10.jpg
+  descripcion: |-
+    Manual escolar publicado por Curt Berger y Cía. en 1923, con diseño del escultor Gonzalo Leguizamón Pondal y el arquitecto Alberto Gelly Cantilo. Sistematizó el dibujo decorativo americano para ser enseñado en las escuelas primarias argentinas. Recibió la Medalla de Oro del VI Salón Nacional de Arte Decorativo y, por decisión del Consejo Nacional de Educación, fue adoptado para la enseñanza de la plástica. La operación es notable: un manual de circulación masiva escolar puso en manos de cada chico argentino, durante varios años, un repertorio iconográfico precolombino transformado en propuesta pedagógica nacional. La pieza materializa en formato escolar el programa que Rojas había anunciado en Eurindia un año antes. El archivo lo conserva como prueba de que el indigenismo cultural argentino no fue sólo un debate de élite: efectivamente bajó a las aulas, en cuadernos ornamentados con grecas calchaquíes y motivos diaguitas.
+  cita_textual: |-
+    el manual escolar Viracocha, editado por Curt Berger y Cía en 1923, el hito educativo que permite sistematizar el dibujo decorativo americano
+  fuente: Bibliotecas universitarias (poco frecuente); Salones Nacional de Arte Decorativo
+  source_id: L041
+  subseccion: 5.c Indigenismo cultural y modernismo gráfico
+  contexto_historico: Indigenismo de Estado. Pedagogía visual. Salón Nacional de Arte Decorativo.
+  estado_conservacion: Conservada parcialmente (escasos ejemplares completos en bibliotecas)
+  palabras_clave:
+  - manual
+  - escolar
+  - decoración
+  - indigenismo
+  - Leguizamón Pondal
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 5
+- cabecera_id: Sala V · Pieza 11
+  cabecera_sub: L042
+  tipo: Libro ilustrado / repertorio decorativo
+  titulo_pieza: Silabario de la decoración americana
+  autor: Ricardo Rojas
+  datos: 1930 · Buenos Aires, Argentina
+  image: images/sala-05/pieza-11.jpg
+  descripcion: |-
+    Libro publicado por Ricardo Rojas en 1930 como sistematización gráfica de los motivos decorativos americanos derivados del arte precolombino. La obra cataloga, clasifica y reproduce greca por greca el repertorio iconográfico de las culturas originarias del continente, con el objetivo declarado de poner a disposición de diseñadores, artistas, arquitectos y maestros un alfabeto visual americano alternativo al repertorio decorativo europeo. La publicación dialoga con el Silabario de Manuel Antonio Carreño y con los catálogos ornamentales de Owen Jones y Ernst Haeckel, pero opera con materiales que esos catálogos europeos habían omitido. El archivo lo retiene como ejemplo paradigmático de operación archivística desde adentro: Rojas no espera que un museo conserve el repertorio americano, lo cataloga él mismo en formato editorial.
+  cita_textual: Silabario de la decoración americana (1930)
+  fuente: Bibliotecas universitarias, librerías de viejo. Ediciones de 1930
+  source_id: L042
+  subseccion: 5.c Indigenismo cultural y modernismo gráfico
+  contexto_historico: Indigenismo cultural argentino. Pedagogía visual.
+  estado_conservacion: Conservada
+  palabras_clave:
+  - libro
+  - decoración
+  - indigenismo
+  - repertorio
+  - Rojas
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 5
+- cabecera_id: Sala V · Pieza 12
+  cabecera_sub: L043
+  tipo: Estudio fotográfico / agencia de publicidad
+  titulo_pieza: Estudio fotográfico y publicitario 'Grete y Horacio Coppola'
+  autor: |-
+    Grete Stern (Alemania, 1904 - Buenos Aires, 1999) y Horacio Coppola (Buenos Aires, 1906 - 2012)
+  datos: 1935-c. 1955 · Buenos Aires, Argentina
+  image: images/sala-05/pieza-12.jpg
+  descripcion: |-
+    Estudio fotográfico y publicitario abierto en Buenos Aires por Grete Stern y Horacio Coppola tras su llegada al país en 1935, escapando del régimen nazi. La pareja se había conocido en 1932 en las clases de fotografía de la Bauhaus de Berlín bajo Walter Peterhans; trabajaron primero en Londres y arribaron a Buenos Aires con todo el bagaje técnico y conceptual de la última Bauhaus. El estudio aplicó al mercado publicitario porteño técnicas que en Buenos Aires no se habían visto: fotomontaje constructivista, 'foto-tipo' (combinación de fotografía y tipografía), tipografía sans-serif moderna, retícula. El archivo retiene el estudio como punto exacto de llegada de la Bauhaus al Río de la Plata: no a través de un manual ni una escuela, sino a través de un matrimonio de fotógrafos que abrió oficina y empezó a trabajar.
+  cita_textual: Inauguran el estudio fotográfico y publicitario 'Grete y Horacio Coppola'
+  fuente: MALBA (col. Costantini); archivos Coppola; libros publicados sobre Stern
+  source_id: L043
+  subseccion: 5.c Indigenismo cultural y modernismo gráfico
+  contexto_historico: Migración antinazi profesional. Llegada de la Bauhaus al Río de la Plata.
+  estado_conservacion: Conservada (archivos en MALBA, Eduardo F. Costantini; colecciones públicas
+    y privadas)
+  palabras_clave:
+  - fotografía
+  - publicidad
+  - Bauhaus
+  - Stern
+  - Coppola
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 5

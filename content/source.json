@@ -1,0 +1,2030 @@
+{
+  "catalogo": {
+    "titulo": "Archivo de lo no conservado",
+    "subtitulo": "Catálogo del museo de diseño gráfico latinoamericano que no existe pero debería existir",
+    "volumen": "I",
+    "rango_temporal": "1764 - 2010",
+    "total_piezas": 57,
+    "total_salas": 7,
+    "version": "v3",
+    "fecha_generacion": "2026-05-17"
+  },
+  "epigrafe": {
+    "cita": "Aunque de notable factura, estas obras, muy escasas y raras, también sufrieron el descuido y el olvido.",
+    "autores": [
+      "Daniel Silverman",
+      "Marina Garone Gravier"
+    ],
+    "obra": "Laudationes Quinque (1766): historia, materialidad y tecnología gráfica del primer impreso jesuítico de Córdoba, Argentina",
+    "publicacion": "Diseña",
+    "numero": 18,
+    "anio": 2021
+  },
+  "nota_curatorial": {
+    "label": "Nota curatorial",
+    "titulo": "Sobre esta colección y el museo que no existe",
+    "parrafos": [
+      "En 1994, Roger Chartier formuló una observación que con el tiempo se volvió incómoda: la tasa de sobrevida de un impreso es inversamente proporcional a la importancia de su producción. Dicho de otro modo, cuanto más se imprimió y más manos pasó, menos posibilidades tuvo de llegar hasta nosotros. Los objetos que una cultura considera valiosos los guarda; los que considera menores o utilitarios los consume hasta agotarlos. Esta colección existe, en buena medida, para poner en cuestión ese mecanismo de selección.",
+      "Las piezas reunidas en este catálogo pertenecen a la historia del diseño gráfico latinoamericano. Pertenecen a ella no como objetos marginales o curiosidades de época, sino como documentos centrales de una práctica que organizó la vida cotidiana, construyó identidades colectivas, hizo circular ideas y configuró maneras de ver durante siglos. Sin embargo, ninguna de estas piezas forma parte de una colección museística permanente dedicada específicamente al diseño gráfico latinoamericano. La razón es simple: esa colección no existe.",
+      "El ensayista e investigador argentino Gustavo Valdés de León señaló que el diseño latinoamericano carece todavía de una historia escrita sistemática. Sus objetos han sido clasificados de maneras que les restan especificidad: como arte, como artesanía, como patrimonio histórico, como documento de época. Rara vez como diseño. Esta operación clasificatoria no es inocente.",
+      "Este catálogo propone un ejercicio de restitución. No pretende construir esa historia que falta. Pretende algo más acotado: aplicar a un conjunto de objetos seleccionados el tratamiento formal que merecen. Las fichas que componen esta colección utilizan los mismos criterios descriptivos que cualquier museo utilizaría para documentar una pintura del siglo XVIII o una escultura colonial.",
+      "Una aclaración: el museo que respalda este catálogo no existe. Lo que existe es la pregunta de por qué no existe. Este catálogo es una propuesta de cómo podría empezar a verse esa historia. Nada más, y nada menos."
+    ]
+  },
+  "indice_salas": [
+    {
+      "numero": 1,
+      "romano": "I",
+      "nombre": "Orígenes y sustratos prehispánicos",
+      "periodo": "pre-1764",
+      "cantidad_piezas": 2
+    },
+    {
+      "numero": 2,
+      "romano": "II",
+      "nombre": "Imprenta y palabra en el Virreinato",
+      "periodo": "1764-1810",
+      "cantidad_piezas": 12
+    },
+    {
+      "numero": 3,
+      "romano": "III",
+      "nombre": "La gráfica de la Revolución",
+      "periodo": "1810-1860",
+      "cantidad_piezas": 6
+    },
+    {
+      "numero": 4,
+      "romano": "IV",
+      "nombre": "Sátira, prensa y Centenario",
+      "periodo": "1860-1910",
+      "cantidad_piezas": 11
+    },
+    {
+      "numero": 5,
+      "romano": "V",
+      "nombre": "Marcas, almanaques y modernismo",
+      "periodo": "1910-1945",
+      "cantidad_piezas": 12
+    },
+    {
+      "numero": 6,
+      "romano": "VI",
+      "nombre": "El Estado se hace ver",
+      "periodo": "1946-1955",
+      "cantidad_piezas": 7
+    },
+    {
+      "numero": 7,
+      "romano": "VII",
+      "nombre": "Diseño como disciplina",
+      "periodo": "1956-2010",
+      "cantidad_piezas": 7
+    }
+  ],
+  "salas": [
+    {
+      "numero": 1,
+      "romano": "I",
+      "nombre": "Orígenes y sustratos prehispánicos",
+      "nombre_completo": "1 — Orígenes y sustratos prehispánicos (pre-1764)",
+      "periodo": "pre-1764",
+      "cita_curatorial": "Los sistemas previos a la imprenta. Códices, glifos, quipus y telares: dispositivos de información y memoria de las sociedades originarias, parcialmente destruidos por la Conquista, transmitidos en lo que sobrevivió.",
+      "cantidad_piezas": 2,
+      "piezas": [
+        {
+          "id": "L001",
+          "titulo": "Tejidos populares andinos del NOA",
+          "autor": "Tejedoras anónimas de Santiago del Estero y Catamarca",
+          "anio_periodo": "Pre-hispánico - siglo XX",
+          "pais": "Argentina",
+          "ciudad": "Santiago del Estero, Catamarca",
+          "tipo": "Diseño textil tradicional",
+          "descripcion_curatorial": "Conjunto de patrones, técnicas y formas del tejido popular andino producido en el Noroeste argentino desde el período prehispánico hasta el siglo XX. En Santiago del Estero predominan los patrones más codificados, repetitivos, transmitidos por línea materna; en Catamarca las creaciones son más libres e iconoclastas. La tradición se transmite oralmente, sin manuales ni academias: el telar es el dispositivo de transmisión generacional. Cada pieza condensa la línea genealógica de quien la teje. La operación cultural fue invisibilizada durante siglos por la categorización europea —'artesanía', 'folklore', 'artesanías populares'— pero, como señala Valdés de León, esa misma categorización es la que impide reconocer el carácter proyectual de la operación. El archivo retiene la pieza como ejemplo de un diseño popular latinoamericano que existió continuamente durante seis siglos y que el campo disciplinar académico apenas empezó a estudiar en los últimos cincuenta años.",
+          "contexto_historico": "Cultura material andina. Tensión entre lo autóctono y la modernización.",
+          "sala": {
+            "numero": 1,
+            "romano": "I",
+            "nombre": "Orígenes y sustratos prehispánicos"
+          },
+          "subseccion": "",
+          "estado_conservacion": "En riesgo. Tradición viva en algunas comunidades; objetos dispersos en museos",
+          "palabras_clave": [
+            "textil",
+            "andino",
+            "popular",
+            "patrimonio",
+            "NOA"
+          ],
+          "texto_fuente": "Texto 5",
+          "cita_referencia": "En Santiago del Estero —por sus patrones— y Catamarca —creaciones más iconoclastas—, el rol de las tejedoras es crucial",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "Libro Corcuera (1987); MNAD Argentina; archivos etnográficos"
+          }
+        },
+        {
+          "id": "L002",
+          "titulo": "Códices, glifos y quipus precolombinos",
+          "autor": "Culturas mesoamericanas y andinas (anónimos)",
+          "anio_periodo": "Antes del siglo XVI",
+          "pais": "México, Perú, Guatemala",
+          "ciudad": "Tenochtitlán, Cuzco, Petén",
+          "tipo": "Sistemas protoescriturales y de registro",
+          "descripcion_curatorial": "Conjunto de sistemas de comunicación visual y registro de información desarrollados por las sociedades originarias americanas: los códices pintados mesoamericanos (mayas, mixtecos, aztecas), los glifos epigráficos y los quipus incas, dispositivos de cordeles anudados que codificaban información administrativa, contable y posiblemente narrativa. Valdés de León los reivindica como demostración material de la existencia de un Diseño originario funcional a las demandas de sociedades complejas, frente a la categoría museística de 'arte precolombino' que los desgaja de su trama social y los reduce a objeto contemplativo. La mayor parte de los códices fue quemada por los frailes de la Contrarreforma; el conocimiento del quipu se perdió casi por completo y aún hoy se discute si se trataba de un sistema completo de escritura.",
+          "contexto_historico": "Mesoamérica clásica y postclásica; Tawantinsuyu. Conquista española.",
+          "sala": {
+            "numero": 1,
+            "romano": "I",
+            "nombre": "Orígenes y sustratos prehispánicos"
+          },
+          "subseccion": "",
+          "estado_conservacion": "Mayoritariamente destruidos en la Conquista; pocos códices sobreviven (Bodleian, Vaticana, etc.); quipus dispersos en museos",
+          "palabras_clave": [
+            "precolombino",
+            "escritura",
+            "información",
+            "códice",
+            "quipu"
+          ],
+          "texto_fuente": "Texto 1 - Valdés de León",
+          "cita_referencia": "los sistemas protoescriturales —glifos, códices, quipus— constituyen la irrevocable demostración material de la existencia de un Diseño originario",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "Codex Mendoza (Bodleian); Códice Florentino (Laurenziana); quipus en Museo Larco"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "romano": "II",
+      "nombre": "Imprenta y palabra en el Virreinato",
+      "nombre_completo": "2 — Imprenta y palabra en el Virreinato (1764-1810)",
+      "periodo": "1764-1810",
+      "cita_curatorial": "De la imprenta jesuítica del Colegio Monserrat de Córdoba (1764) a la prensa que precedió a la Revolución de Mayo. Cuarenta y seis años de tipografía colonial con un solo taller en funcionamiento simultáneo.",
+      "cantidad_piezas": 12,
+      "piezas": [
+        {
+          "id": "L003",
+          "titulo": "Filigrana del papel del Laudationes Quinque",
+          "autor": "Molino papelero europeo (no identificado con certeza)",
+          "anio_periodo": "c. 1760",
+          "pais": "Italia o España (origen probable)",
+          "ciudad": "Capellades, La Riba, Valencia o Génova",
+          "tipo": "Filigrana / marca de agua",
+          "descripcion_curatorial": "Marca de agua identificable en el papel utilizado para la edición del Laudationes Quinque, único impreso conservado de la imprenta jesuítica de Córdoba. La filigrana —rasgo identitario del molino que produjo el papel y, probablemente, del comercio que lo distribuyó hasta el Río de la Plata— fue reconstruida por Silverman y Garone Gravier mediante fotomontaje a partir de varias fotografías del ejemplar conocido. Representa a un caballero con lanza montando un caballo, motivo conocido como 'rejoneador', muy difundido en el mundo hispánico entre mediados del siglo XVIII y el primer cuarto del XIX. Los molinos que producían este tipo de papel se encontraban en el sur de Europa, lo que confirma la dependencia material absoluta de las primeras imprentas americanas respecto de los circuitos comerciales transatlánticos.",
+          "contexto_historico": "Comercio papelero hispano-italiano. Suministro a imprentas americanas.",
+          "sala": {
+            "numero": 2,
+            "romano": "II",
+            "nombre": "Imprenta y palabra en el Virreinato"
+          },
+          "subseccion": "2.a La imprenta jesuítica de Córdoba",
+          "estado_conservacion": "Reconstruida por fotomontaje a partir del único ejemplar conocido",
+          "palabras_clave": [
+            "filigrana",
+            "papel",
+            "rejoneador",
+            "materialidad",
+            "reconstrucción"
+          ],
+          "texto_fuente": "Texto 2 - Silverman y Garone Gravier",
+          "cita_referencia": "se modificó el brillo y contraste de las imágenes y se realizó un fotomontaje para reconstruir el diseño del modo más completo posible",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "Diseña N° 18 (2021), figs. 4-5"
+          }
+        },
+        {
+          "id": "L004",
+          "titulo": "Tipos romanos antiguos de la Imprenta de Niños Expósitos",
+          "autor": "Punzonistas y fundidores europeos no identificados (probablemente españoles: Juan Merlo, Francisco Rongel, Antonio Rojo)",
+          "anio_periodo": "Antes de 1764",
+          "pais": "España (origen)",
+          "ciudad": "Madrid (origen probable)",
+          "tipo": "Conjunto de tipos móviles",
+          "descripcion_curatorial": "Conjunto de tipos móviles utilizados durante los primeros años del único taller tipográfico que funcionó en el virreinato del Río de la Plata. Importados desde Europa y ya usados al momento de su llegada, los caracteres se desgastaron progresivamente al ser sometidos al clima húmedo de Buenos Aires, a tintas artesanales y a los apuros productivos del taller único. Cuando la Imprenta cerró en 1824, ningún ejemplar físico de estos tipos sobrevivió: solo los conocemos a través de la huella que dejaron sobre el papel. La reconstrucción digital realizada por Fabio Ares en 2010 —compuesta por una romana redonda, una cursiva y un conjunto de viñetas— recupera esa materialidad ausente trabajando sobre escaneos de impresos originales. La fuente conserva deliberadamente las marcas del desgaste, las irregularidades y los empastamientos, en una operación que asume la imperfección como rasgo identitario de la primera tipografía rioplatense.",
+          "contexto_historico": "Importación tipográfica española siglo XVIII. Imprenta Real de Madrid bajo Carlos III.",
+          "sala": {
+            "numero": 2,
+            "romano": "II",
+            "nombre": "Imprenta y palabra en el Virreinato"
+          },
+          "subseccion": "2.a La imprenta jesuítica de Córdoba",
+          "estado_conservacion": "Tipos físicos perdidos; reconstrucción digital disponible",
+          "palabras_clave": [
+            "tipos",
+            "romanas",
+            "desgaste",
+            "materialidad ausente",
+            "reconstrucción"
+          ],
+          "texto_fuente": "Texto 3 - Fabio Ares",
+          "cita_referencia": "este establecimiento adopta como modelo... la letra que se usa no hay la necesaria y está gastada",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "Ares, Boletín IIB UNAM (2009): escaneos comparativos"
+          }
+        },
+        {
+          "id": "L005",
+          "titulo": "Laudationes Quinque (ejemplar único de la Abadía de Montserrat)",
+          "autor": "Atribuido a Josep Manuel Peramàs; impreso por el P. Pablo Karer",
+          "anio_periodo": "1766",
+          "pais": "Argentina",
+          "ciudad": "Córdoba",
+          "tipo": "Libro impreso colonial",
+          "descripcion_curatorial": "Primer libro impreso íntegramente en territorio rioplatense, producido por la imprenta jesuítica instalada en el Colegio de Monserrat de Córdoba a mediados del siglo XVIII. La obra reúne cinco panegíricos en latín dedicados a Ignacio Duarte y Quirós, fundador del colegio, y constituye un testimonio excepcional de la sofisticación tipográfica alcanzada en una imprenta periférica del imperio español. Tras la expulsión de los jesuitas en 1767 la imprenta fue desmantelada, y solo un ejemplar de esta edición sobrevive hoy en la Abadía de Montserrat (Cataluña), donde fue localizado en 2019 por Silverman y Garone Gravier. Los dos ejemplares que habían pertenecido a Córdoba —uno en el Colegio Monserrat, otro entre los franciscanos— desaparecieron sin rastro; el del Museo Mitre fue robado y reemplazado por un facsímil; el de la Biblioteca Nacional de Chile no aparece disponible.",
+          "contexto_historico": "Imprenta jesuítica del Colegio Monserrat. Expulsión de la Compañía en 1767.",
+          "sala": {
+            "numero": 2,
+            "romano": "II",
+            "nombre": "Imprenta y palabra en el Virreinato"
+          },
+          "subseccion": "2.a La imprenta jesuítica de Córdoba",
+          "estado_conservacion": "Único ejemplar conocido (Biblioteca de la Abadía de Montserrat, Cataluña)",
+          "palabras_clave": [
+            "colonial",
+            "jesuita",
+            "libro",
+            "primer impreso",
+            "único ejemplar"
+          ],
+          "texto_fuente": "Texto 2 - Silverman y Garone Gravier",
+          "cita_referencia": "primer libro impreso en la ciudad de Córdoba (1766) durante el periodo colonial",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "Diseña N° 18 (2021), figs. 1-2"
+          }
+        },
+        {
+          "id": "L006",
+          "titulo": "Página interior del Laudationes Quinque",
+          "autor": "P. Pablo Karer (impresor)",
+          "anio_periodo": "1766",
+          "pais": "Argentina",
+          "ciudad": "Córdoba",
+          "tipo": "Composición tipográfica / arquitectura de página",
+          "descripcion_curatorial": "Página interior del Laudationes Quinque, primer libro impreso íntegramente en territorio rioplatense. La composición revela una sofisticación inesperada para un taller de tan corta vida: las páginas dedicatorias siguen una proporción áurea (caja de 178 × 111 mm) con márgenes iguales superior e inferior, según los preceptos de Alonso Víctor de Paredes; las páginas del prólogo y las laudaciones adoptan en cambio un rectángulo raíz de dos, manteniendo la regla de duplicar el margen exterior respecto del interior. El registro entre recto y verso es prácticamente perfecto, dato imposible de notar en el facsímil de 1937. Las imágenes en alta resolución obtenidas en 2019 permiten estudiar por primera vez la composición y el detalle ornamental del libro, evidenciando que su impresor —probablemente con experiencia previa— operaba con criterios proyectuales explícitos.",
+          "contexto_historico": "Tradición tipográfica europea aplicada en imprenta jesuítica americana.",
+          "sala": {
+            "numero": 2,
+            "romano": "II",
+            "nombre": "Imprenta y palabra en el Virreinato"
+          },
+          "subseccion": "2.a La imprenta jesuítica de Córdoba",
+          "estado_conservacion": "Conservada en el único ejemplar conocido (Montserrat)",
+          "palabras_clave": [
+            "composición",
+            "áurea",
+            "raíz de dos",
+            "página",
+            "Karer"
+          ],
+          "texto_fuente": "Texto 2 - Silverman y Garone Gravier",
+          "cita_referencia": "verificamos proporciones áureas, una tradición compositiva de la imprenta manual que se remonta a los tiempos de Gutenberg",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "Diseña N° 18 (2021), figs. 7-8, 11"
+          }
+        },
+        {
+          "id": "L007",
+          "titulo": "Tipos Garamond del Laudationes Quinque",
+          "autor": "Punzonista no identificado (estilo Claude Garamond, c. 1530)",
+          "anio_periodo": "Antes de 1766",
+          "pais": "Probablemente Francia, Países Bajos o España",
+          "ciudad": "Origen incierto",
+          "tipo": "Conjunto de tipos móviles",
+          "descripcion_curatorial": "Letras de imprenta usadas para la composición del primer libro impreso en Córdoba, identificadas por Silverman y Garone Gravier como del estilo Garamond, comparables con la muestra de Conrad Berner de 1592, considerada la más fiel al diseño original del tipógrafo francés. El conjunto incluía un Texto gordo (c. 16 pt) para el prólogo, una Parangona chica (18 pt) para las felicitaciones y un Texto (14 pt) para las laudaciones. Los tipos no estaban gastados, lo que sugiere fundición reciente al momento del impreso, pero su llegada al taller cordobés —vía la Compañía de Jesús, no por los circuitos comerciales habituales— es imposible de reconstruir con precisión. Un detalle inquietante para el archivo: ni los punzones, ni las matrices, ni un solo tipo físico del taller cordobés sobrevivió a la expulsión jesuítica.",
+          "contexto_historico": "Tradición tipográfica humanista de Garamond. Suministro jesuítico.",
+          "sala": {
+            "numero": 2,
+            "romano": "II",
+            "nombre": "Imprenta y palabra en el Virreinato"
+          },
+          "subseccion": "2.a La imprenta jesuítica de Córdoba",
+          "estado_conservacion": "Documentada únicamente por la huella sobre el papel del único ejemplar conocido",
+          "palabras_clave": [
+            "Garamond",
+            "tipos",
+            "jesuita",
+            "materialidad ausente"
+          ],
+          "texto_fuente": "Texto 2 - Silverman y Garone Gravier",
+          "cita_referencia": "las letras podían caracterizarse como una letra de estilo Garamond, dato que se cotejó con distintas muestras de letra",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "Diseña N° 18 (2021), fig. 12"
+          }
+        },
+        {
+          "id": "L008",
+          "titulo": "Catones, cartillas y catecismos virreinales",
+          "autor": "Real Imprenta de Niños Expósitos (con licencias eclesiásticas)",
+          "anio_periodo": "1780-1810",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Impresos educativos y religiosos",
+          "descripcion_curatorial": "Material escolar y catequístico producido en serie por la Real Imprenta de Niños Expósitos para abastecer al virreinato. Cuando se otorgó la concesión a Silva y Aguiar en 1780, una de las condiciones del contrato fue la recolección obligatoria de todos los catones, cartillas y catecismos en circulación, para luego venderse por cuenta de la Casa de Expósitos. Esa operación —combinación de censura, monopolio fiscal y alfabetización— produjo durante tres décadas los textos con los que aprendieron a leer las primeras generaciones porteñas. Los impresos eran baratos, mal compuestos por la urgencia y descuidados en la lectura; pocos sobrevivieron. El archivo los retiene no por su excepcionalidad gráfica sino por lo contrario: son el grueso silencioso de una producción que casi nadie pensó digno de conservar y que, sin embargo, fue lo más leído del virreinato.",
+          "contexto_historico": "Iluminismo borbónico. Monopolio educativo. Castellanización.",
+          "sala": {
+            "numero": 2,
+            "romano": "II",
+            "nombre": "Imprenta y palabra en el Virreinato"
+          },
+          "subseccion": "2.b Real Imprenta de Niños Expósitos",
+          "estado_conservacion": "Ejemplares dispersos; mayor parte perdida",
+          "palabras_clave": [
+            "educativo",
+            "religioso",
+            "virreinato",
+            "monopolio"
+          ],
+          "texto_fuente": "Texto 3 - Fabio Ares",
+          "cita_referencia": "sus cartillas y catones educaron a los más jóvenes, sus obras de corte litúrgico instruyeron en la fe religiosa",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "Ejemplares en BNA, Museo Mitre, DGPeIH, Museo Saavedra"
+          }
+        },
+        {
+          "id": "L009",
+          "titulo": "Prensa de hierro de la 'Imprenta de la Patria' (Museo del Vino de Cafayate)",
+          "autor": "Manufactura indeterminada (siglo XIX)",
+          "anio_periodo": "siglo XIX (no s. XVIII como suele atribuirse)",
+          "pais": "Argentina",
+          "ciudad": "Cafayate, Salta",
+          "tipo": "Prensa tipográfica manual / objeto industrial",
+          "descripcion_curatorial": "Prensa tipográfica manual conocida popularmente como 'Imprenta de la Patria'. Durante más de ocho décadas se sostuvo que era la prensa traída por los jesuitas al Colegio de Monserrat en 1764, trasladada a Buenos Aires por el virrey Vértiz en 1780 para fundar la Real Imprenta de Niños Expósitos y enviada finalmente a Salta en 1824. Sin embargo, en el siglo XVIII no existían aún las prensas de hierro, lo que vuelve materialmente imposible la atribución original. La pieza condensa así una doble condición de ausencia: la del objeto efectivamente fundacional —perdido o nunca conservado— y la del relato que durante décadas la nombró como tal. Permanece como uno de los pocos restos físicos vinculados a la primera imprenta porteña, y como testimonio de los modos en que el patrimonio gráfico latinoamericano se construye también a partir de atribuciones inciertas.",
+          "contexto_historico": "Mitología patrimonial argentina del siglo XIX-XX. Pampeanización del relato fundacional.",
+          "sala": {
+            "numero": 2,
+            "romano": "II",
+            "nombre": "Imprenta y palabra en el Virreinato"
+          },
+          "subseccion": "2.b Real Imprenta de Niños Expósitos",
+          "estado_conservacion": "Conservada (Museo del Vino de Cafayate, Salta); atribución material descartada",
+          "palabras_clave": [
+            "prensa",
+            "mito",
+            "atribución",
+            "Cafayate",
+            "ausencia"
+          ],
+          "texto_fuente": "Texto 3 - Fabio Ares",
+          "cita_referencia": "Apenas podemos encontrar una prensa de hierro —que según los historiadores salteños fue la primera del taller de Expósitos",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "Fotografías del Museo del Vino de Cafayate, Salta"
+          }
+        },
+        {
+          "id": "L010",
+          "titulo": "El Telégrafo Mercantil, Rural, Político, Económico e Historiográfico",
+          "autor": "Francisco Antonio Cabello y Mesa (editor)",
+          "anio_periodo": "1801-1802",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Periódico fundacional",
+          "descripcion_curatorial": "Primer periódico publicado en Buenos Aires. Apareció el 1 de abril de 1801 bajo la dirección del peruano Cabello y Mesa, con formato de pliego en cuartos de aparición semanal y una tirada que alcanzó los 110 números antes de su cierre por orden virreinal en octubre de 1802. Sus colaboradores fueron los protagonistas del clima ilustrado prerevolucionario: Manuel Belgrano, Domingo de Azcuénaga, Manuel José de Lavardén, Juan José Castelli. El periódico inauguró en Buenos Aires el debate público impreso sobre economía, agricultura, educación y derechos —exactamente los temas que cinco años después se convertirían en agenda revolucionaria. El archivo lo conserva como pieza arqueológica: el primer momento en que la imprenta porteña dejó de servir sólo al virreinato y a la Iglesia y comenzó a producir un espacio de opinión.",
+          "contexto_historico": "Iluminismo rioplatense. Antesala de Mayo. Censura borbónica.",
+          "sala": {
+            "numero": 2,
+            "romano": "II",
+            "nombre": "Imprenta y palabra en el Virreinato"
+          },
+          "subseccion": "2.c Prensa pre-revolucionaria del Río de la Plata",
+          "estado_conservacion": "Conservada (Biblioteca Nacional Argentina, hemerotecas)",
+          "palabras_clave": [
+            "periódico",
+            "ilustración",
+            "primer periódico",
+            "Cabello y Mesa"
+          ],
+          "texto_fuente": "Texto 3 - Fabio Ares",
+          "cita_referencia": "El Telégrafo Mercantil, Rural, Político, Económico e Historiográfico, de Francisco Antonio Cabello y Mesa",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "BNA digitalizada (Trapalanda). Primer número del 1 de abril de 1801"
+          }
+        },
+        {
+          "id": "L011",
+          "titulo": "Semanario de Agricultura, Industria y Comercio",
+          "autor": "Juan Hipólito Vieytes (editor)",
+          "anio_periodo": "1802-1807",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Periódico ilustrado de tema económico",
+          "descripcion_curatorial": "Periódico semanal fundado por Juan Hipólito Vieytes en septiembre de 1802 y publicado durante cinco años, hasta su interrupción definitiva por las Invasiones Inglesas. Alcanzó 218 números, lo que lo convierte en la publicación periódica de mayor continuidad del período colonial rioplatense. Difundió ideas iluministas avanzadas: fisiocracia, libre comercio, integración indígena, supresión del comercio de esclavos, educación de las masas, asistencia social. Cuando llegó la escasez tipográfica en 1805, Vieytes denunció públicamente que 'la escasez de letra con que se halla nuestra única imprenta hace imposible la edición de las noticias publicadas en pliego separado': una declaración que confirma que el cuello de botella material de la imprenta era, en sí mismo, una cuestión política. El archivo lo retiene como antecedente directo de la prensa revolucionaria.",
+          "contexto_historico": "Tarde colonial rioplatense. Crisis tipográfica de 1805.",
+          "sala": {
+            "numero": 2,
+            "romano": "II",
+            "nombre": "Imprenta y palabra en el Virreinato"
+          },
+          "subseccion": "2.c Prensa pre-revolucionaria del Río de la Plata",
+          "estado_conservacion": "Conservada (Biblioteca Nacional Argentina)",
+          "palabras_clave": [
+            "periódico",
+            "ilustración",
+            "fisiocracia",
+            "Vieytes"
+          ],
+          "texto_fuente": "Texto 3 - Fabio Ares",
+          "cita_referencia": "el Semanario de Agricultura, Industria y Comercio, de Juan Hipólito Vieytes, con igual formato y un total de 218 números",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "BNA digitalizada (Hemeroteca Digital)"
+          }
+        },
+        {
+          "id": "L012",
+          "titulo": "Bandos y proclamas de las Invasiones Inglesas",
+          "autor": "Real Imprenta de Niños Expósitos",
+          "anio_periodo": "1806-1807",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Impreso suelto / propaganda militar",
+          "descripcion_curatorial": "Conjunto de bandos, cartas y proclamas impresos por la Real Imprenta de Niños Expósitos durante las dos Invasiones Inglesas. La actividad fue inusualmente intensa para el taller: los pocos meses de 1806 y 1807 produjeron más material que en cualquier período comparable anterior, lo que llevó a Juan José Pérez (entonces administrador) a denunciar que las letras se habían desgastado más en ese intervalo que en las dos décadas previas. La pieza tiene un valor archivístico singular: el desgaste tipográfico es huella física de un episodio bélico. Cada papel impreso durante las Invasiones lleva inscripta en sus caracteres irregulares la prisa de un taller único bajo presión política. Los pliegos físicos sobreviven dispersos en archivos militares y privados; muchos circularon como objetos efímeros de propaganda y fueron descartados al día siguiente.",
+          "contexto_historico": "Invasiones Inglesas (1806-1807). Crisis tipográfica y bélica.",
+          "sala": {
+            "numero": 2,
+            "romano": "II",
+            "nombre": "Imprenta y palabra en el Virreinato"
+          },
+          "subseccion": "2.c Prensa pre-revolucionaria del Río de la Plata",
+          "estado_conservacion": "Conservada parcialmente en archivos militares y bibliotecas",
+          "palabras_clave": [
+            "bando",
+            "proclama",
+            "invasiones",
+            "propaganda",
+            "desgaste"
+          ],
+          "texto_fuente": "Texto 3 - Fabio Ares",
+          "cita_referencia": "bandos, cartas y proclamas llegan a nuestros días como una muestra de su extensa actividad",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "Archivos militares, BNA, AGN. Reproducidos en estudios sobre las Invasiones"
+          }
+        },
+        {
+          "id": "L013",
+          "titulo": "The Southern Star / La Estrella del Sur",
+          "autor": "Thomas Bradford (editor); imprenta inglesa",
+          "anio_periodo": "23 de mayo - 1 de septiembre de 1807",
+          "pais": "Uruguay (en territorio bajo ocupación británica)",
+          "ciudad": "Montevideo",
+          "tipo": "Periódico bilingüe / propaganda imperial",
+          "descripcion_curatorial": "Primer periódico bilingüe inglés-español del Río de la Plata, impreso en Montevideo durante la ocupación británica de 1807. Su contenido combinaba avisos comerciales, noticias militares y artículos propagandísticos que prometían a los lectores locales las ventajas de la 'protección inglesa' frente a la 'opresión monárquica española'. Bradford instaló una imprenta moderna en hierro, una rareza absoluta para el Río de la Plata. Tras la capitulación inglesa, vendió todo el equipo a la Casa de Expósitos de Buenos Aires, que lo trasladó en la balandra Copiango el 29 de septiembre de 1807. La pieza tiene una doble vida archivística: como periódico —de circulación brevísima, alarmante para la Audiencia de Buenos Aires— y como prensa y tipos, que se convirtieron en el aparato productivo de la imprenta porteña durante la Revolución de Mayo.",
+          "contexto_historico": "Segunda Invasión Inglesa al Río de la Plata. Botín de guerra tipográfico.",
+          "sala": {
+            "numero": 2,
+            "romano": "II",
+            "nombre": "Imprenta y palabra en el Virreinato"
+          },
+          "subseccion": "2.c Prensa pre-revolucionaria del Río de la Plata",
+          "estado_conservacion": "Conservada (Biblioteca Nacional del Uruguay y Argentina; facsímil 2007)",
+          "palabras_clave": [
+            "periódico",
+            "bilingüe",
+            "invasión",
+            "Bradford",
+            "Montevideo"
+          ],
+          "texto_fuente": "Texto 3 - Fabio Ares",
+          "cita_referencia": "el periódico bilingüe The Southern Star o La Estrella del Sur",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "Facsímil Biblioteca Nacional Uruguay (2007) y Biblioteca Nacional Argentina"
+          }
+        },
+        {
+          "id": "L014",
+          "titulo": "El Triunfo Argentino. Poema Heroico",
+          "autor": "Real Imprenta de Niños Expósitos",
+          "anio_periodo": "1808",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Impreso patriótico breve",
+          "descripcion_curatorial": "Poema heroico compuesto e impreso en la Real Imprenta de Niños Expósitos en 1808 para celebrar el triunfo de la reconquista de Buenos Aires sobre las tropas inglesas. Formato in 8º, tres folios, tinta negra sobre papel. La pieza condensa el papel de la imprenta porteña como aparato propagandístico autorizado: tras la reconquista, el taller publicó folletos, bandos y proclamas que celebraban a los héroes de la defensa —Liniers, Pueyrredón, el Regimiento de Patricios— y consolidaban una mitología de la victoria que pocos años más tarde serviría también para legitimar la ruptura con España. El archivo lo conserva como ejemplo del primer género propagandístico militar-patriótico rioplatense, que ya en 1808 había aprendido a usar la imprenta como instrumento de construcción simbólica del Estado.",
+          "contexto_historico": "Post-Reconquista. Pre-Revolución de Mayo. Construcción de héroes locales.",
+          "sala": {
+            "numero": 2,
+            "romano": "II",
+            "nombre": "Imprenta y palabra en el Virreinato"
+          },
+          "subseccion": "2.c Prensa pre-revolucionaria del Río de la Plata",
+          "estado_conservacion": "Conservada (DGPeIH, Buenos Aires)",
+          "palabras_clave": [
+            "poema",
+            "patriótico",
+            "reconquista",
+            "propaganda"
+          ],
+          "texto_fuente": "Texto 3 - Fabio Ares",
+          "cita_referencia": "El Triunfo Argentino. Poema Heroico. Poema, textual impreso... Real Imprenta de Niños Expósitos, 1808",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "DGPeIH Buenos Aires (Colección Patrimonio del Gobierno)"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "romano": "III",
+      "nombre": "La gráfica de la Revolución",
+      "nombre_completo": "3 — La gráfica de la Revolución (1810-1860)",
+      "periodo": "1810-1860",
+      "cita_curatorial": "Los periódicos y almanaques de la república naciente. La misma imprenta colonial cambia de manos políticas y empieza a producir el imaginario republicano: la Gazeta, el Correo de Comercio, la Marcha Patriótica.",
+      "cantidad_piezas": 6,
+      "piezas": [
+        {
+          "id": "L015",
+          "titulo": "El Correo de Comercio",
+          "autor": "Manuel Belgrano (editor)",
+          "anio_periodo": "1810-1811",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Periódico revolucionario",
+          "descripcion_curatorial": "Periódico fundado por Manuel Belgrano el 3 de marzo de 1810 —apenas dos meses antes de la Revolución de Mayo— y continuado hasta abril de 1811. Vehículo de las ideas económicas e ilustradas de Belgrano: industrialización, agricultura científica, educación pública, libertad de comercio. Cuando se produjo la Revolución, el periódico cambió de tono sin cambiar de imprenta: la Real Imprenta de Niños Expósitos siguió componiéndolo con las mismas letras gastadas y bajo el nuevo Cabildo. El Correo de Comercio condensa así un momento bisagra: usa el aparato técnico de la imprenta colonial para imprimir el contenido del orden que la está clausurando. El archivo retiene la pieza como demostración de que la materialidad gráfica resistió al cambio político: la misma tinta, el mismo papel, los mismos tipos —otro contenido.",
+          "contexto_historico": "Vísperas y comienzo de la Revolución de Mayo. Imprenta única monopolizada por la Junta.",
+          "sala": {
+            "numero": 3,
+            "romano": "III",
+            "nombre": "La gráfica de la Revolución"
+          },
+          "subseccion": "3.a Periódicos revolucionarios",
+          "estado_conservacion": "Conservada (Biblioteca Nacional Argentina, Museo Histórico Nacional)",
+          "palabras_clave": [
+            "periódico",
+            "revolución",
+            "Belgrano",
+            "mayo"
+          ],
+          "texto_fuente": "Texto 3 - Fabio Ares",
+          "cita_referencia": "se editarían los periódicos El Correo de Comercio, de Manuel Belgrano",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "BNA digitalizada; Museo Histórico Nacional"
+          }
+        },
+        {
+          "id": "L016",
+          "titulo": "La Gazeta de Buenos Ayres",
+          "autor": "Mariano Moreno (impulsor); Manuel Belgrano y Juan José Castelli (redactores iniciales)",
+          "anio_periodo": "1810 (primer número: 7 de junio)",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Periódico revolucionario",
+          "descripcion_curatorial": "Órgano oficial de la Primera Junta de Gobierno, fundado por iniciativa de Mariano Moreno y publicado por primera vez el 7 de junio de 1810. Impreso en la Real Imprenta de Niños Expósitos, su número uno se convirtió en el documento gráfico más reproducido del repertorio revolucionario argentino: la Gazeta es la primera evidencia material de que la independencia rioplatense se hizo también con tinta de Buenos Aires. La fecha del primer número se conmemora hoy como Día del Periodismo en Argentina. Lo paradójico, para el archivo, es que el órgano fundacional del periodismo nacional se imprimió en la misma prensa que durante treinta años había impreso bandos virreinales: hasta 1815 no se permitió que ninguna otra imprenta operara en Buenos Aires.",
+          "contexto_historico": "Primera Junta de Gobierno. Fundación del periodismo argentino moderno.",
+          "sala": {
+            "numero": 3,
+            "romano": "III",
+            "nombre": "La gráfica de la Revolución"
+          },
+          "subseccion": "3.a Periódicos revolucionarios",
+          "estado_conservacion": "Conservada (Biblioteca Nacional, Museo Saavedra)",
+          "palabras_clave": [
+            "periódico",
+            "revolución",
+            "mayo",
+            "Moreno",
+            "Gazeta"
+          ],
+          "texto_fuente": "Texto 3 - Fabio Ares",
+          "cita_referencia": "La Gazeta de Buenos Ayres, órgano de difusión paradigmático del periodismo argentino",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "BNA digitalizada (n° 1 del 7 de junio de 1810); Museo Saavedra"
+          }
+        },
+        {
+          "id": "L017",
+          "titulo": "El Contrato Social (edición de Mariano Moreno)",
+          "autor": "Jean-Jacques Rousseau (autor); traducción y prólogo de Mariano Moreno",
+          "anio_periodo": "1810",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Libro político traducido",
+          "descripcion_curatorial": "Edición castellana del Contrato Social impresa en la Real Imprenta de Niños Expósitos por orden de Mariano Moreno, secretario de la Primera Junta. La operación es doble: por un lado, Moreno traduce y publica el texto rousseauniano para justificar la legitimidad del gobierno revolucionario; por otro, suprime los capítulos sobre religión, considerándolos ofensivos para una población católica recién liberada del orden colonial. El libro circuló profusamente en escuelas y juntas locales del interior, y se convirtió en uno de los pilares del imaginario constitucional rioplatense. Pocos ejemplares de la primera edición sobreviven en perfectas condiciones; la mayoría fueron leídos hasta el desgaste. El archivo lo retiene como ejemplo de la primera edición política latinoamericana que asumió explícitamente que traducir era reescribir.",
+          "contexto_historico": "Revolución de Mayo. Difusión de las ideas iluministas. Censura selectiva.",
+          "sala": {
+            "numero": 3,
+            "romano": "III",
+            "nombre": "La gráfica de la Revolución"
+          },
+          "subseccion": "3.a Periódicos revolucionarios",
+          "estado_conservacion": "Ejemplares dispersos en bibliotecas y archivos",
+          "palabras_clave": [
+            "libro",
+            "revolución",
+            "Rousseau",
+            "Moreno",
+            "traducción"
+          ],
+          "texto_fuente": "Texto 3 - Fabio Ares",
+          "cita_referencia": "importantes obras como El Contrato Social de Jean-Jacques Rousseau, traducido por Mariano Moreno",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "BNA, Museo Histórico Nacional, facsimilares Imprenta de Mayo"
+          }
+        },
+        {
+          "id": "L018",
+          "titulo": "Marcha Patriótica (Himno Nacional Argentino, primera impresión)",
+          "autor": "Vicente López y Planes (letra); Blas Parera (música); Real Imprenta de Niños Expósitos",
+          "anio_periodo": "1813",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Impreso patriótico / partitura",
+          "descripcion_curatorial": "Primera impresión tipográfica de los versos de la 'Marcha Patriótica' de Vicente López y Planes, aprobada por la Asamblea del Año XIII y consagrada después como Himno Nacional Argentino. La edición fue compuesta en la Real Imprenta de Niños Expósitos con las mismas letras gastadas que venían imprimiendo periódicos, bandos y proclamas desde 1780. La versión original tenía nueve estrofas; el uso oficial fue reduciéndolas hasta el extracto actual de una sola estrofa y el coro. La pieza archivada no es sólo el texto del himno: es la primera vez que un símbolo nacional argentino se materializa por la tipografía. El archivo la incluye como ejemplo de cómo la república naciente se imprime en la misma tipografía colonial: lo nuevo se publica con las letras de lo viejo.",
+          "contexto_historico": "Asamblea del Año XIII. Construcción de los símbolos nacionales.",
+          "sala": {
+            "numero": 3,
+            "romano": "III",
+            "nombre": "La gráfica de la Revolución"
+          },
+          "subseccion": "3.a Periódicos revolucionarios",
+          "estado_conservacion": "Ejemplares conservados en archivos históricos",
+          "palabras_clave": [
+            "himno",
+            "patriótico",
+            "primera edición",
+            "López y Planes"
+          ],
+          "texto_fuente": "Texto 3 - Fabio Ares",
+          "cita_referencia": "En 1813 se imprimiría otro hito dentro de los impresos de Expósitos, los versos de la Marcha Patriótica",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "BNA digitalizada; Museo Histórico Nacional"
+          }
+        },
+        {
+          "id": "L019",
+          "titulo": "Almanak patriótico de Buenos Ayres, para el año décimo de nuestra libertad",
+          "autor": "Imprenta de la Independencia",
+          "anio_periodo": "1819",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Almanaque cívico",
+          "descripcion_curatorial": "Primer almanaque rioplatense en abandonar el régimen estrictamente religioso del calendario virreinal. Publicado en 1819 por la Imprenta de la Independencia para conmemorar el décimo año de la Revolución de Mayo, mantiene la estructura del almanaque colonial —festividades, santos, calendario lunar— pero incorpora un repertorio nuevo: nómina de edificios públicos y religiosos de Buenos Aires, fechas célebres patrias, número de habitantes de la ciudad y alrededores. La operación es notable: el género que durante tres décadas había servido para sincronizar a la sociedad colonial con el calendario eclesiástico se transforma en herramienta de inventario de la república recién nacida. El archivo lo conserva como la primera evidencia material de que la Revolución de Mayo no sólo cambió el gobierno: cambió el tipo de información que un libro doméstico necesitaba ofrecer.",
+          "contexto_historico": "Década post-Mayo. Tránsito del almanaque colonial al republicano.",
+          "sala": {
+            "numero": 3,
+            "romano": "III",
+            "nombre": "La gráfica de la Revolución"
+          },
+          "subseccion": "3.b Almanaques cívicos y de comercio",
+          "estado_conservacion": "Ejemplar conservado (gentileza Dr. Alejandro Parada)",
+          "palabras_clave": [
+            "almanaque",
+            "patriótico",
+            "post-revolución",
+            "Independencia"
+          ],
+          "texto_fuente": "Texto 4 - Mosqueda",
+          "cita_referencia": "Almanak patriótico de Buenos Ayres, para el año décimo de nuestra libertad. Buenos Aires, Imprenta de la Independencia, 1819",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "Colección Dr. Alejandro Parada (único ejemplar conocido)"
+          }
+        },
+        {
+          "id": "L020",
+          "titulo": "Almanaques de comercio Blondel",
+          "autor": "Blondel (editor)",
+          "anio_periodo": "1826-1836",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Almanaque comercial / guía urbana",
+          "descripcion_curatorial": "Serie de almanaques comerciales publicados en Buenos Aires durante la década en que se consolidó el comercio porteño post-independencia. Combinaban la estructura tradicional del almanaque (calendario, festividades, fases lunares) con secciones publicitarias y guías de comercios, profesionales, librerías y servicios. Para los historiadores del libro como Alejandro Parada, los almanaques Blondel constituyen 'la fuente de información más importante para identificar las librerías de la época': una operación archivística involuntaria, donde una publicación pensada para uso cotidiano se vuelve siglo y medio más tarde el único registro disponible de un sector entero de la cultura impresa portenia. El archivo los retiene como ejemplo perfecto del valor patrimonial paradójico de los impresos utilitarios: lo que se imprimió para ser tirado a fin de año es lo que termina conservando la memoria de todo lo demás.",
+          "contexto_historico": "Rivadavianismo y federalismo temprano. Auge librero porteño.",
+          "sala": {
+            "numero": 3,
+            "romano": "III",
+            "nombre": "La gráfica de la Revolución"
+          },
+          "subseccion": "3.b Almanaques cívicos y de comercio",
+          "estado_conservacion": "Conservada parcialmente (bibliotecas, colecciones privadas)",
+          "palabras_clave": [
+            "almanaque",
+            "comercio",
+            "publicidad",
+            "guía urbana"
+          ],
+          "texto_fuente": "Texto 4 - Mosqueda",
+          "cita_referencia": "los almanaques de comercio Blondel (1826-1836)... constituyen la fuente de información más importante para identificar las librerías de la época",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "Hemerotecas porteñas, BNA, Buonocore (1948), Parada (2007)"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "romano": "IV",
+      "nombre": "Sátira, prensa y Centenario",
+      "nombre_completo": "4 — Sátira, prensa y Centenario (1860-1910)",
+      "periodo": "1860-1910",
+      "cita_curatorial": "La caricatura política y la prensa ilustrada masiva. De El Mosquito (1863) a Caras y Caretas (1898): el medio siglo en que la imagen periodística se vuelve cultura común y la sátira política, lenguaje cotidiano.",
+      "cantidad_piezas": 11,
+      "piezas": [
+        {
+          "id": "L021",
+          "titulo": "El Mosquito",
+          "autor": "Henri Stein, Monriot, Advinent (dibujantes franceses)",
+          "anio_periodo": "1863-1893",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Revista satírica de caricaturas",
+          "descripcion_curatorial": "Revista de caricaturas políticas más longeva de la Argentina del siglo XIX, fundada por el dibujante francés Henri Stein en 1863 y publicada durante treinta años hasta 1893. El Mosquito instaló en Buenos Aires el modelo francés de la caricatura política semanal —Le Charivari, La Caricature— operando con dibujantes europeos formados en París y litografía como técnica principal. La revista atravesó toda la segunda mitad del siglo XIX argentino, desde los gobiernos liberales hasta la presidencia de Juárez Celman y la Revolución del Parque. Su cierre en 1893 dejó el espacio satírico libre para que Don Quijote (Sojo) y luego Caras y Caretas (Pellicer) lo ocuparan. El archivo retiene El Mosquito como matriz fundacional de la caricatura política argentina: el primer caso en que se importó masivamente el oficio europeo y se lo aplicó a la lucha política local.",
+          "contexto_historico": "Generación del 80. Importación profesional francesa.",
+          "sala": {
+            "numero": 4,
+            "romano": "IV",
+            "nombre": "Sátira, prensa y Centenario"
+          },
+          "subseccion": "4.a Prensa satírica del siglo XIX",
+          "estado_conservacion": "Conservada (Biblioteca Nacional, hemerotecas)",
+          "palabras_clave": [
+            "caricatura",
+            "sátira",
+            "francesa",
+            "Stein",
+            "Buenos Aires"
+          ],
+          "texto_fuente": "Texto 6 - Rogers",
+          "cita_referencia": "Stein, Henri, Monriot, Advinent– creaban El Mosquito",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "BNA digitalizada. Colección completa 1863-1893"
+          }
+        },
+        {
+          "id": "L022",
+          "titulo": "Don Quijote (semanario)",
+          "autor": "Eduardo Sojo ('Demócrito'), con José María Cao ('Demócrito II') y Manuel Mayol ('Heráclito')",
+          "anio_periodo": "1884-1903",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Semanario satírico-político",
+          "descripcion_curatorial": "Semanario satírico de caricaturas fundado por el español Eduardo Sojo en 1884 y publicado durante diecinueve años hasta 1903. Don Quijote llevó la caricatura política argentina a niveles inéditos de virulencia contra el régimen roquista; en su mejor momento, los gobiernos lo persiguieron, lo censuraron y lo demandaron sin lograr cerrarlo. El semanario formó la primera generación de caricaturistas profesionales del Río de la Plata: José María Cao ('Demócrito II') y Manuel Mayol ('Heráclito') aprendieron el oficio en sus páginas antes de pasar masivamente a Caras y Caretas en 1898. Don Quijote y Caras y Caretas funcionaron durante cinco años como las dos revistas-modelo del periodismo gráfico argentino, una más virulenta y otra más popular; el cierre de Don Quijote en 1903 dejó a Caras y Caretas como única heredera. El archivo lo retiene como pieza fundacional del periodismo satírico argentino.",
+          "contexto_historico": "República conservadora argentina. Roquismo. Lucha política vía caricatura.",
+          "sala": {
+            "numero": 4,
+            "romano": "IV",
+            "nombre": "Sátira, prensa y Centenario"
+          },
+          "subseccion": "4.a Prensa satírica del siglo XIX",
+          "estado_conservacion": "Conservada (Biblioteca Nacional, hemerotecas)",
+          "palabras_clave": [
+            "caricatura",
+            "sátira",
+            "política",
+            "Sojo",
+            "Don Quijote"
+          ],
+          "texto_fuente": "Texto 6 - Rogers",
+          "cita_referencia": "el mecanismo de reemplazo entre Don Quijote (1884-1903) y Caras y Caretas",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "BNA digitalizada. Estudios de Rogers, Burgos, Romano"
+          }
+        },
+        {
+          "id": "L023",
+          "titulo": "Galería de los ladrones de la Capital",
+          "autor": "Imprenta policial / atribuido a José Sixto Álvarez ('Fray Mocho')",
+          "anio_periodo": "1887",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Álbum institucional fotográfico",
+          "descripcion_curatorial": "Publicación ilustrada producida por la imprenta policial de Buenos Aires en 1887, atribuida a José Sixto Álvarez ('Fray Mocho'), entonces subcomisario y luego fundador editorial de Caras y Caretas. La obra tenía un objetivo institucional concreto: fijar, mediante la fotografía y la descripción individualizada, los rostros y rasgos de los delincuentes registrados de la ciudad, para uso del personal policial y eventualmente del público. La 'Galería' es el primer compendio iconográfico argentino producido específicamente para vigilancia masiva: combina foto, texto y dispositivo de archivo en una operación editorial que anticipa los métodos del fichaje policial moderno. El archivo retiene la pieza como antecedente paradójico del propio Fray Mocho: el mismo hombre que organizó visualmente la vigilancia popular fue, una década después, el director de la revista que dio voz humorística a esa misma cultura popular vigilada.",
+          "contexto_historico": "Higienismo. Disciplinamiento social. Pre-Caras y Caretas.",
+          "sala": {
+            "numero": 4,
+            "romano": "IV",
+            "nombre": "Sátira, prensa y Centenario"
+          },
+          "subseccion": "4.a Prensa satírica del siglo XIX",
+          "estado_conservacion": "Conservada (Archivo Policial, ediciones facsimilares)",
+          "palabras_clave": [
+            "institucional",
+            "fotografía",
+            "policial",
+            "Fray Mocho"
+          ],
+          "texto_fuente": "Texto 6 - Rogers",
+          "cita_referencia": "Galería de los ladrones de la Capital (1887), publicada por la imprenta policial con un objetivo institucional concreto",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "Archivo Policial de la Capital. Ediciones facsimilares"
+          }
+        },
+        {
+          "id": "L024",
+          "titulo": "Caras y Caretas (Montevideo)",
+          "autor": "Eustaquio Pellicer (director) con Charles Schultz (dibujante alsaciano)",
+          "anio_periodo": "1890-1897",
+          "pais": "Uruguay",
+          "ciudad": "Montevideo",
+          "tipo": "Revista semanal ilustrada (versión inicial)",
+          "descripcion_curatorial": "Versión montevideana original de Caras y Caretas, fundada por Pellicer en 1890 ocho años antes que su par porteña. Operada con el dibujante alsaciano Charles Schultz, ensayó por primera vez la fórmula que después arrasaría en Buenos Aires: actualidad ilustrada, humor, sátira política suave, folletín, publicidad. Una de sus operaciones más interesantes fue la primera novela colectiva impresa del Río de la Plata, 'Por seguir a un galgo' (1890), escrita por siete autores rotativos —Daniel Muñoz, Alfredo Duhau, Ricardo Usher Blanco, Enrique Lemos, José Artal, Víctor Arreguine y el propio Pellicer— donde cada uno escribía un capítulo a partir del final del anterior, con el mandato explícito de complicarle la continuidad al siguiente. El archivo retiene la pieza como laboratorio uruguayo de la fórmula editorial argentina más exitosa.",
+          "contexto_historico": "Prensa rioplatense de fin de siglo. Antecedente del éxito porteño.",
+          "sala": {
+            "numero": 4,
+            "romano": "IV",
+            "nombre": "Sátira, prensa y Centenario"
+          },
+          "subseccion": "4.a Prensa satírica del siglo XIX",
+          "estado_conservacion": "Conservada parcialmente (Biblioteca Nacional del Uruguay)",
+          "palabras_clave": [
+            "revista",
+            "Montevideo",
+            "ilustrada",
+            "antecedente",
+            "Pellicer"
+          ],
+          "texto_fuente": "Texto 6 - Rogers",
+          "cita_referencia": "a cargo de Pellicer y por el dibujante alsaciano Charles Schultz",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "Biblioteca Nacional del Uruguay. Ediciones facsimilares parciales"
+          }
+        },
+        {
+          "id": "L025",
+          "titulo": "Caras y Caretas (Buenos Aires)",
+          "autor": "Fundada por Eustaquio Pellicer; con José Sixto Álvarez 'Fray Mocho' (director); Bartolomé Mitre y Vedia (administrador); Manuel Mayol (dibujante principal)",
+          "anio_periodo": "1898-1939",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Revista semanal ilustrada / industria gráfica",
+          "descripcion_curatorial": "'Revista festiva, literaria, artística y de actualidades' fundada en Buenos Aires en 1898. Durante cuatro décadas fue la publicación gráfica más leída del Río de la Plata: combinó actualidad fotográfica, humor satírico, folletín, publicidad, ilustración y caricatura en una fórmula que reinventó el periodismo masivo argentino. Sus dibujantes —José María Cao, Manuel Mayol, Aurelio Giménez, Mario Zabataro, Charles Schultz— formaron la primera generación de profesionales de la imagen argentinos. La revista se imprimía en la Compañía Sud-Americana de Billetes de Banco, una de las imprentas industriales más equipadas de la ciudad, con equipos completos de grabado, tipografía, encuadernación, litografía y fundición. El archivo retiene Caras y Caretas como pieza-sistema: no es un objeto individual sino la primera infraestructura gráfica modernizada del Río de la Plata, que durante cuatro décadas produjo semanalmente el imaginario visual del país.",
+          "contexto_historico": "Argentina del Centenario. Modernización editorial. Industria cultural masiva.",
+          "sala": {
+            "numero": 4,
+            "romano": "IV",
+            "nombre": "Sátira, prensa y Centenario"
+          },
+          "subseccion": "4.b Caras y Caretas y la cultura impresa masiva",
+          "estado_conservacion": "Conservada (Biblioteca Nacional, hemerotecas)",
+          "palabras_clave": [
+            "revista",
+            "ilustrada",
+            "humor",
+            "masiva",
+            "Centenario",
+            "Pellicer"
+          ],
+          "texto_fuente": "Texto 5 y Texto 6",
+          "cita_referencia": "La revista Caras y caretas (1898-1939) fundada por Eustaquio Pellicer y José Sixto Álvarez 'Fray Mocho' marcó un hito",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "BNA digitalizada (Trapalanda, Hemeroteca Digital)"
+          }
+        },
+        {
+          "id": "L026",
+          "titulo": "Tapa 'El nuevo Luis XIV' (Caras y Caretas N° 16)",
+          "autor": "José María Cao",
+          "anio_periodo": "29 de octubre de 1898",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Tapa de revista / caricatura política",
+          "descripcion_curatorial": "Tapa de Caras y Caretas N° 16, publicada el 29 de octubre de 1898 con dibujo de José María Cao. Caricatura del general Roca representado como Luis XIV, sentado en un trono con peluca y ropajes del rey francés, cortando con una tijera el mapa de la Puna de Atacama. La estrofa satírica al pie firma el mensaje: 'La cuestión de la Puna de Atacama / por su cuenta arregló, / diciendo lo que dijo Luis XIV: / El Estado soy yo'. La pieza es el primer ataque frontal de Caras y Caretas a Roca, lanzado apenas dos semanas después del primer número de la revista. Inaugura una operación que la revista practicaría durante toda la presidencia: critica al presidente vía iconografía europea —Luis XIV, Felipe II, papas, Napoleones— para vincular sus prácticas con el absolutismo. El archivo retiene la tapa como caso paradigmático del momento en que Caras y Caretas, recién nacida, se posiciona políticamente.",
+          "contexto_historico": "Inicio del segundo mandato de Roca. Disputa de límites con Chile.",
+          "sala": {
+            "numero": 4,
+            "romano": "IV",
+            "nombre": "Sátira, prensa y Centenario"
+          },
+          "subseccion": "4.b Caras y Caretas y la cultura impresa masiva",
+          "estado_conservacion": "Conservada (colecciones encuadernadas de Caras y Caretas)",
+          "palabras_clave": [
+            "tapa",
+            "caricatura",
+            "Cao",
+            "Roca",
+            "Luis XIV"
+          ],
+          "texto_fuente": "Texto 6 - Rogers",
+          "cita_referencia": "Cao, 'El nuevo Luis XIV', en Caras y Caretas, 29 de octubre de 1898",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "BNA, Caras y Caretas del 29 de octubre de 1898"
+          }
+        },
+        {
+          "id": "L027",
+          "titulo": "Serie 'Caricaturas contemporáneas' de Cao (Caras y Caretas)",
+          "autor": "José María Cao",
+          "anio_periodo": "1900-1904",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Serie de caricaturas políticas",
+          "descripcion_curatorial": "Serie de caricaturas inaugurada por José María Cao en Caras y Caretas en enero de 1900: una galería de retratos satíricos de las personalidades eminentes de la política y la cultura argentina, publicada semana a semana en tapa o doble página interior. La operación editorial era nueva en el Río de la Plata: la caricatura política dejaba de ser ilustración suelta y se volvía colección sistemática. La primera entrega estuvo dedicada a Bartolomé Mitre (13 de enero de 1900); la segunda, a Julio A. Roca (20 de enero de 1900). El contraste era deliberado: Mitre apareció como prohombre de gloria militar, política y literaria; Roca, una semana después, ataviado con ropas eclesiásticas y rodeado de incondicionales. El archivo retiene la serie como pieza-sistema: la primera operación argentina de retrato político seriado, antecedente directo de la fotonovela y de las galerías de personajes del siglo XX.",
+          "contexto_historico": "Segundo mandato de Roca. Disputa Mitre-Roca. Galerización de la política.",
+          "sala": {
+            "numero": 4,
+            "romano": "IV",
+            "nombre": "Sátira, prensa y Centenario"
+          },
+          "subseccion": "4.b Caras y Caretas y la cultura impresa masiva",
+          "estado_conservacion": "Conservada",
+          "palabras_clave": [
+            "caricatura",
+            "Cao",
+            "serie",
+            "retrato político"
+          ],
+          "texto_fuente": "Texto 6 - Rogers",
+          "cita_referencia": "Caras y Caretas inauguró una serie de ilustraciones de Cao, 'Caricaturas contemporáneas' de personajes eminentes de la política y la cultura",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "BNA. Caras y Caretas enero 1900 (n° 67 y 68)"
+          }
+        },
+        {
+          "id": "L028",
+          "titulo": "Caricatura 'Los ministros odontólogos' (Caras y Caretas, septiembre de 1902)",
+          "autor": "Caricaturista no identificado del staff de Caras y Caretas",
+          "anio_periodo": "13 de septiembre de 1902",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Caricatura política / nota gráfica",
+          "descripcion_curatorial": "Ilustración satírica publicada en Caras y Caretas el 13 de septiembre de 1902, a propósito del escándalo del traslado de los restos de Manuel Belgrano a una nueva sepultura. La crónica denunciaba que los ministros de Guerra e Interior, Pablo Riccheri y Joaquín V. González, se habían llevado piezas dentarias del prócer como recuerdo durante la ceremonia oficial. La página siguiente desarrollaba el hecho en clave gráfica: una ilustración mostraba a Belgrano levantándose de la tumba y reclamando a los dos ministros 'Hasta los dientes me llevan! ¿No tendrán bastante con los propios para comer del presupuesto?'. El archivo retiene la pieza como ejemplo paradigmático de la operación humorística de Caras y Caretas: convertir un episodio puntual en escándalo nacional vía dibujo satírico, generalizar la falta moral a todo el régimen.",
+          "contexto_historico": "Escándalo del traslado de los restos de Belgrano. Crítica al régimen roquista.",
+          "sala": {
+            "numero": 4,
+            "romano": "IV",
+            "nombre": "Sátira, prensa y Centenario"
+          },
+          "subseccion": "4.b Caras y Caretas y la cultura impresa masiva",
+          "estado_conservacion": "Conservada (Caras y Caretas, 13 de septiembre de 1902)",
+          "palabras_clave": [
+            "caricatura",
+            "escándalo",
+            "Belgrano",
+            "sátira"
+          ],
+          "texto_fuente": "Texto 6 - Rogers",
+          "cita_referencia": "el hecho era retomado de modo satírico con una ilustración titulada 'Los ministros odontólogos'",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "BNA, Caras y Caretas del 13 de septiembre de 1902"
+          }
+        },
+        {
+          "id": "L029",
+          "titulo": "Tapa 'Ley de Residencia' (Caras y Caretas, enero de 1903)",
+          "autor": "Manuel Mayol",
+          "anio_periodo": "Enero de 1903",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Tapa de revista / caricatura política",
+          "descripcion_curatorial": "Tapa de Caras y Caretas de enero de 1903 dibujada por Manuel Mayol, crítica a la recientemente aprobada Ley de Residencia (4144), que facultaba al Poder Ejecutivo a expulsar del país a cualquier extranjero considerado peligroso para el orden público. La ley había sido sancionada en noviembre de 1902 en respuesta al conflicto obrero y a la presencia anarquista en los puertos. La tapa de Mayol —que la revista discutió ampliamente en sus páginas interiores— marcó la posición de Caras y Caretas frente a una de las herramientas represivas más duras del régimen conservador. El archivo retiene la tapa como momento bisagra: la revista, que durante sus primeros años había practicado la sátira política suave, se vio obligada a tomar posición frente a un conflicto que tocaba directamente a su público inmigrante.",
+          "contexto_historico": "Conflicto obrero argentino. Ley 4144. Inmigración masiva.",
+          "sala": {
+            "numero": 4,
+            "romano": "IV",
+            "nombre": "Sátira, prensa y Centenario"
+          },
+          "subseccion": "4.b Caras y Caretas y la cultura impresa masiva",
+          "estado_conservacion": "Conservada (colecciones encuadernadas)",
+          "palabras_clave": [
+            "tapa",
+            "Mayol",
+            "Ley Residencia",
+            "conflicto obrero"
+          ],
+          "texto_fuente": "Texto 6 - Rogers",
+          "cita_referencia": "enero de 1903 llevaba una tapa de Mayol titulada 'Ley de Residencia'",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "BNA, Caras y Caretas de enero de 1903 (Mayol)"
+          }
+        },
+        {
+          "id": "L030",
+          "titulo": "Foto trucada del 'Cónclave electoral' (Caras y Caretas N° 253)",
+          "autor": "Staff de Caras y Caretas",
+          "anio_periodo": "8 de agosto de 1903",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Fotomontaje político / foto trucada",
+          "descripcion_curatorial": "Doble página publicada en Caras y Caretas el 8 de agosto de 1903 contra la Convención de Notables que iba a elegir al sucesor de Roca. Foto trucada que presentaba a los electores con ropajes eclesiásticos, como si se tratara de la elección de un Papa. El epígrafe explicaba: 'Aquí tenemos también, como en Roma, un cónclave electoral, y estamos seguros de que en cada uno de los purpurados dormita un candidato presidencial, como en cada uno de los cardenales, un papa...'. La pieza es archivísticamente excepcional por dos razones: documenta una de las primeras operaciones de fotomontaje político en el Río de la Plata, y registra la posición editorial de Caras y Caretas frente a la maquinaria sucesoria del roquismo. El archivo retiene el fotomontaje como antecedente directo de las técnicas que medio siglo después adoptarían Grete Stern y la propaganda peronista.",
+          "contexto_historico": "Convención de Notables. Sucesión de Roca. Manuel Quintana.",
+          "sala": {
+            "numero": 4,
+            "romano": "IV",
+            "nombre": "Sátira, prensa y Centenario"
+          },
+          "subseccion": "4.b Caras y Caretas y la cultura impresa masiva",
+          "estado_conservacion": "Conservada (Caras y Caretas N° 253)",
+          "palabras_clave": [
+            "fotomontaje",
+            "foto trucada",
+            "Convención",
+            "política"
+          ],
+          "texto_fuente": "Texto 6 - Rogers",
+          "cita_referencia": "en agosto de 1903, una foto trucada había presentado a los electores con ropajes eclesiásticos, como si se tratara de la elección de un Papa",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "BNA, Caras y Caretas del 8 de agosto de 1903"
+          }
+        },
+        {
+          "id": "L031",
+          "titulo": "Folletines de Caras y Caretas (serie 1904 en adelante)",
+          "autor": "Varios (Conan Doyle, Roberto Payró, Eduardo Holmberg, Mark Twain, Javier de Viana, Paul Groussac, Eduardo de la Barra, Rafael Barreda, Arthur Morrison)",
+          "anio_periodo": "1904-1910",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Folletín ilustrado / diseño editorial seriado",
+          "descripcion_curatorial": "Inauguración del folletín en Caras y Caretas en agosto de 1904, en respuesta a la pérdida de exclusividad de la revista en la oferta fotográfica (los diarios habían empezado a incorporar fotos). La nueva sección consolidó un sistema editorial híbrido: novelas por entregas con ilustraciones específicas, traducidas, recicladas o de producción propia. Los títulos iniciales incluyeron 'La pesquisa', 'La última pesquisa' de Arthur Conan Doyle, 'El robo de los dos millones' de Rafael Barreda, 'El falso inca' de Roberto Payró, 'El teniente coronel Fray Luis Beltrán' de Eduardo de la Barra, 'El diario de Eva' de Mark Twain, 'La tapera del cuervo' de Javier de Viana. El archivo retiene el conjunto como ejemplo de la flexibilidad estructural de la revista masiva argentina: ante la presión competitiva, mutación inmediata del formato sin perder identidad.",
+          "contexto_historico": "Competencia con diarios fotográficos. Industria cultural masiva.",
+          "sala": {
+            "numero": 4,
+            "romano": "IV",
+            "nombre": "Sátira, prensa y Centenario"
+          },
+          "subseccion": "4.b Caras y Caretas y la cultura impresa masiva",
+          "estado_conservacion": "Conservada en hemerotecas",
+          "palabras_clave": [
+            "folletín",
+            "editorial",
+            "Caras y Caretas",
+            "serie"
+          ],
+          "texto_fuente": "Texto 6 - Rogers",
+          "cita_referencia": "comenzó una nueva etapa con la publicación de su primer folletín, un género que había demostrado desde mucho antes su éxito en los periódicos",
+          "imagen": {
+            "categoria": "D",
+            "estado_busqueda": "Pieza-paraguas — elegir representativa",
+            "fuente_sugerida": "Paraguas. Sugerencia: tapa o página de 'El paraguas misterioso' (1904)"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "romano": "V",
+      "nombre": "Marcas, almanaques y modernismo",
+      "nombre_completo": "5 — Marcas, almanaques y modernismo (1910-1945)",
+      "periodo": "1910-1945",
+      "cita_curatorial": "La irrupción de la identidad de marca, la publicidad moderna y el indigenismo cultural argentino. YPF, Siam Di Tella, Geniol, Plus Ultra, Viracocha: el diseño se profesionaliza sin todavía nombrarse a sí mismo.",
+      "cantidad_piezas": 12,
+      "piezas": [
+        {
+          "id": "L032",
+          "titulo": "Almanaque del Mensajero",
+          "autor": "M. Sundt (fundador, 1901-1911); Viuda de Sundt (1912-1931); Editorial Peuser (a partir de los años 30)",
+          "anio_periodo": "1901-1931 (serie Sundt)",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Almanaque náutico-enciclopédico ilustrado",
+          "descripcion_curatorial": "Almanaque fundado en 1901 por el austríaco M. Sundt como pequeño folleto de 80 páginas; llegó a las 356 páginas y se mantuvo en publicación hasta al menos 1931 bajo la editora 'Viuda de Sundt'. Combinaba calendario y almanaque, reseña de todos los Estados independientes del mundo, historia del año, guía oficial con datos estadísticos de población y educación, miscelánea, atlas, tarifas y fórmulas para distintos usos —desde calcular sueldos hasta convertir pesos y medidas. Premiado con diploma y medalla de oro en la Exposición de Artes Gráficas del Centenario (1916). Lüsebrink lo describiría como 'máquina textual': un dispositivo de orientación en el tiempo, el espacio, la historia y los saberes útiles. El archivo lo retiene como caso paradigmático del almanaque rioplatense del primer tercio del siglo XX: género popular, ilustrado, masivo y casi siempre descartado por sus propios lectores al terminar el año.",
+          "contexto_historico": "Argentina del Centenario. Industria cultural masiva. Inmigración alfabetizada.",
+          "sala": {
+            "numero": 5,
+            "romano": "V",
+            "nombre": "Marcas, almanaques y modernismo"
+          },
+          "subseccion": "5.a Almanaques porteños masivos",
+          "estado_conservacion": "Conservada (12 ejemplares estudiados por Mosqueda; serie incompleta en bibliotecas)",
+          "palabras_clave": [
+            "almanaque",
+            "náutico",
+            "enciclopédico",
+            "Centenario",
+            "Sundt"
+          ],
+          "texto_fuente": "Texto 4 - Mosqueda",
+          "cita_referencia": "El Almanaque del Mensajero salió por primera vez en 1901, y 1931 fue posiblemente el último año de publicación de esta serie por parte de la editora Sundt",
+          "imagen": {
+            "categoria": "D",
+            "estado_busqueda": "Pieza-paraguas — elegir representativa",
+            "fuente_sugerida": "Paraguas. Sugerencia: composición de tapas + lomo apilado"
+          }
+        },
+        {
+          "id": "L033",
+          "titulo": "El Pasatiempo. Almanaque literario, ilustrado, noticioso",
+          "autor": "Editorial Peuser (Buenos Aires)",
+          "anio_periodo": "1904 y siguientes",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Almanaque literario y enciclopédico",
+          "descripcion_curatorial": "Almanaque editado por la Editorial Peuser a partir de 1904, deliberadamente concebido como adaptación al mercado porteño de un homónimo español, El pasatiempo. Almanaque humorístico, literario y científico publicado desde 1869. La operación editorial es elocuente: la versión argentina suprime el tono humorístico del original español, elimina la firma del 'almanaquero' que en España firmaba el conjunto y se presenta como un producto editorial puro. Incluye cuentos, rimas, biografías, crónicas de viajes por la Argentina, fragmentos de novelas, prólogos y agenda mensual a doble página para que el lector escribiera. Las páginas internas funcionaban además como catálogo de la propia editorial Peuser: en la retiración de tapa y contratapa se promocionaban los libros disponibles como 'regalos esencialmente a propósito para Navidad y Año Nuevo'. El archivo lo retiene como muestra de la transición del almanaque-fórmula editorial al almanaque-catálogo comercial.",
+          "contexto_historico": "Argentina del Centenario. Edición masiva. Editorial Peuser en su apogeo.",
+          "sala": {
+            "numero": 5,
+            "romano": "V",
+            "nombre": "Marcas, almanaques y modernismo"
+          },
+          "subseccion": "5.a Almanaques porteños masivos",
+          "estado_conservacion": "Conservada (ejemplares en bibliotecas)",
+          "palabras_clave": [
+            "almanaque",
+            "literario",
+            "Peuser",
+            "catálogo editorial"
+          ],
+          "texto_fuente": "Texto 4 - Mosqueda",
+          "cita_referencia": "El Pasatiempo (1904) ofrecía —luego de las secciones fijas— una miscelánea de cuentos, rimas, biografías, crónicas de viajes",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "Hemerotecas, archivos Peuser. Reproducido en Mosqueda (2012)"
+          }
+        },
+        {
+          "id": "L034",
+          "titulo": "Página 'Tabla cronológica' del Almanaque del Mensajero",
+          "autor": "M. Sundt (editor)",
+          "anio_periodo": "1909 y siguientes",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Página interior con espacios manuscritos",
+          "descripcion_curatorial": "Página interior del Almanaque del Mensajero diseñada para ser completada manualmente por el lector. Contenía corazones y escudos en blanco donde el comprador debía escribir los nombres de su genealogía familiar empezando por los bisabuelos; en la página siguiente, titulada 'Crónica de familia', se anotaban los acontecimientos familiares del año. La operación editorial es elocuente: el almanaque comprado en la librería se completaba en casa con la propia historia. Eso convirtió a cada ejemplar en pieza única una vez usada. Mosqueda documenta un caso conservado: el almanaque de 1917 lleva las anotaciones manuscritas de un tal Arturo Luna, argentino, con los nombres de sus bisabuelos, abuelos y la fecha de su boda (4 de octubre de 1916). La pieza es paradigmática del archivo: un objeto editorial pensado para volverse propiedad escrita del usuario, donde la línea entre editor y lector se vuelve porosa.",
+          "contexto_historico": "Edición popular interactiva. Almanaque como diario familiar.",
+          "sala": {
+            "numero": 5,
+            "romano": "V",
+            "nombre": "Marcas, almanaques y modernismo"
+          },
+          "subseccion": "5.a Almanaques porteños masivos",
+          "estado_conservacion": "Conservada (ejemplar de Arturo Luna, 1917, entre otros)",
+          "palabras_clave": [
+            "página",
+            "manuscrito",
+            "genealogía",
+            "lector"
+          ],
+          "texto_fuente": "Texto 4 - Mosqueda",
+          "cita_referencia": "el Almanaque incluía una tabla cronológica con corazones y escudos en blanco que el lector debía completar con los datos de su familia",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "Ejemplar manuscrito de Arturo Luna (1917) referenciado por Mosqueda"
+          }
+        },
+        {
+          "id": "L035",
+          "titulo": "Identidad Siam Di Tella (1910-1960)",
+          "autor": "Siam Di Tella (Sociedad Italiana de Amasadoras Mecánicas)",
+          "anio_periodo": "1910-1960",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires (planta en Avellaneda)",
+          "tipo": "Identidad corporativa / diseño industrial",
+          "descripcion_curatorial": "Sistema de identidad gráfica de Siam Di Tella, empresa fundada en 1910 como Sociedad Italiana de Amasadoras Mecánicas. La firma produjo el primer surtidor de nafta argentino (1912), bombas, motores eléctricos, las motocicletas Siambretta (c. 1954) y el automóvil Siam Di Tella 1500 (1960). En 1952 inauguró un local de venta en la calle Florida, en la misma cuadra donde seis años después se instalaría el Instituto Torcuato Di Tella. La operación gráfica de Siam fue ejemplar para una empresa privada argentina de la primera mitad del siglo XX: aplicaciones unificadas en surtidores YPF, fábricas, máquinas, motocicletas, automóviles, publicidad y puntos de venta. El archivo retiene la pieza como caso paradigmático del primer diseño corporativo argentino sistemático, y como antecedente directo del Di Tella institucional.",
+          "contexto_historico": "Industria privada argentina. Apellido Di Tella como marca industrial antes de institución cultural.",
+          "sala": {
+            "numero": 5,
+            "romano": "V",
+            "nombre": "Marcas, almanaques y modernismo"
+          },
+          "subseccion": "5.b Identidades industriales y publicidad",
+          "estado_conservacion": "Conservada parcialmente (archivos Di Tella y museos)",
+          "palabras_clave": [
+            "identidad",
+            "Di Tella",
+            "industrial",
+            "Siambretta",
+            "Argentina"
+          ],
+          "texto_fuente": "Texto 5",
+          "cita_referencia": "Siam Di Tella (1910) inició como Sociedad Italiana de Amasadoras Mecánicas",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "Archivos Di Tella, MNBA, museos automotrices"
+          }
+        },
+        {
+          "id": "L036",
+          "titulo": "Identidad gráfica YPF (símbolo y aplicaciones tempranas)",
+          "autor": "YPF (Yacimientos Petrolíferos Fiscales) con desarrollo gráfico colaborativo",
+          "anio_periodo": "1922-1955",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Identidad institucional / sistema gráfico de empresa pública",
+          "descripcion_curatorial": "Sistema de identidad gráfica de YPF, primera empresa petrolera estatal del mundo, fundada en 1922. El símbolo gráfico fue aplicado en escalas múltiples —papelería institucional, surtidores, fachadas de estaciones, vehículos de reparto, publicidad en revistas— en lo que constituye una de las primeras operaciones argentinas de identidad corporativa sostenida. La pieza es archivísticamente compleja: las estaciones de servicio fueron construidas en estilos arquitectónicos diversos (racionalista, art deco, pintoresquista) según las regiones y décadas, pero todas exhibían el mismo símbolo gráfico. El archivo retiene la identidad como ejemplo del primer caso latinoamericano de sistema gráfico aplicado a una empresa pública de escala nacional, y como pieza que sigue mutando: cada actualización del logo borra la anterior, y la identidad histórica sobrevive sólo en fotografías y archivos publicitarios.",
+          "contexto_historico": "Industrialización estatal argentina. Primera empresa petrolera estatal del mundo.",
+          "sala": {
+            "numero": 5,
+            "romano": "V",
+            "nombre": "Marcas, almanaques y modernismo"
+          },
+          "subseccion": "5.b Identidades industriales y publicidad",
+          "estado_conservacion": "En uso (logo actualizado); piezas históricas conservadas en archivo YPF y privados",
+          "palabras_clave": [
+            "identidad",
+            "YPF",
+            "marca",
+            "estatal",
+            "pública"
+          ],
+          "texto_fuente": "Texto 5",
+          "cita_referencia": "El símbolo gráfico de YPF se aplicó a diversas escalas en publicidades y en los múltiples espacios de venta",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "Archivo corporativo YPF, AGN, fotos de estaciones art déco"
+          }
+        },
+        {
+          "id": "L037",
+          "titulo": "Campaña publicitaria 'Geniol' de Lucien Achille Mauzan",
+          "autor": "Lucien Achille Mauzan",
+          "anio_periodo": "c. 1925-1940",
+          "pais": "Argentina (Mauzan nacido en Francia)",
+          "ciudad": "Buenos Aires",
+          "tipo": "Afiches publicitarios / cartelería",
+          "descripcion_curatorial": "Campaña publicitaria para el medicamento Geniol diseñada por el ilustrador francés Lucien Achille Mauzan, radicado en Buenos Aires durante los años 20 y 30. La iconografía —el rostro deformado por el dolor de cabeza, con la mano en la sien, en gran formato y colores saturados— se convirtió en una de las imágenes publicitarias más reconocibles de la Argentina del siglo XX. Mauzan había trabajado antes en Italia y Francia y aplicó al mercado porteño las técnicas del cartel europeo de gran formato (Cappiello, Cassandre). La pieza es un caso paradigmático del traslado tecnológico de la publicidad europea al Río de la Plata por vía de la inmigración profesional. El archivo retiene la campaña como ejemplo del momento en que la publicidad argentina dejó de ser texto y empezó a ser imagen.",
+          "contexto_historico": "Inmigración italo-francesa profesional. Modernización publicitaria argentina.",
+          "sala": {
+            "numero": 5,
+            "romano": "V",
+            "nombre": "Marcas, almanaques y modernismo"
+          },
+          "subseccion": "5.b Identidades industriales y publicidad",
+          "estado_conservacion": "Conservada (afiches dispersos en colecciones privadas y museos)",
+          "palabras_clave": [
+            "afiche",
+            "publicidad",
+            "Mauzan",
+            "Geniol"
+          ],
+          "texto_fuente": "Texto 5",
+          "cita_referencia": "figuras como Lucien Achille Mauzan (publicidad Geniol)",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "Corpus Mauzan ampliamente reproducido. Museo Nacional del Cartel"
+          }
+        },
+        {
+          "id": "L038",
+          "titulo": "Identidades de marcas iconográficas argentinas (1930-1950)",
+          "autor": "Estudios y agencias varias (locales e internacionales)",
+          "anio_periodo": "1930-1950",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Identidades corporativas / sistemas de marca",
+          "descripcion_curatorial": "Conjunto de identidades visuales de las marcas que constituyeron el repertorio iconográfico cotidiano de la Argentina de la ISI: Philips, Siemens, cigarrillos Sublimes y París, Cinzano, Bols, Fernet Branca, Chocolate Águila, Canale, Bagley, Terrabusi. Algunas eran marcas internacionales adaptadas (Philips, Siemens, Cinzano), otras locales (Águila, Canale, Bagley, Terrabusi). El sistema publicitario de la época —afiches en estaciones de tren y vagones, avisos en revistas, concursos de carteles, jingles radiales— las hizo presentes en todos los hogares argentinos durante dos décadas. El archivo las retiene como conjunto porque la operación gráfica de identidad de marca a gran escala se consolidó en la Argentina de los años 30-40 antes de que existieran las primeras escuelas de diseño: el saber se transmitía por talleres y agencias, no por academias.",
+          "contexto_historico": "ISI argentina. Industria cultural masiva. Pre-institucionalización del diseño.",
+          "sala": {
+            "numero": 5,
+            "romano": "V",
+            "nombre": "Marcas, almanaques y modernismo"
+          },
+          "subseccion": "5.b Identidades industriales y publicidad",
+          "estado_conservacion": "Conservada parcialmente; muchas identidades originales reemplazadas por rediseños posteriores",
+          "palabras_clave": [
+            "marca",
+            "publicidad",
+            "identidad",
+            "ISI",
+            "masivo"
+          ],
+          "texto_fuente": "Texto 5",
+          "cita_referencia": "la identidad de grandes empresas como Philips, Siemens, cigarrillos Sublimes y París, Cinzano, Bols, Fernet Branca, Chocolate Águila, Canale, Bagley, Terrabusi",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "Corpus reproducido en libros sobre publicidad argentina (Chiozza, Borrini)"
+          }
+        },
+        {
+          "id": "L039",
+          "titulo": "Ilustraciones y diseño editorial de Alejandro Sirio",
+          "autor": "Alejandro Sirio",
+          "anio_periodo": "1910-1953",
+          "pais": "Argentina (nacido en España)",
+          "ciudad": "Buenos Aires",
+          "tipo": "Ilustración editorial integral",
+          "descripcion_curatorial": "Obra ilustrativa del español Alejandro Sirio (1890-1953), llegado a Buenos Aires en 1910 y considerado por la historiografía del diseño argentino como uno de los pocos ilustradores de la primera mitad del siglo XX que practicó una operación verdaderamente integral: combinó dibujo, tipografía y puesta en página en una unidad de diseño, en una época en que esas tareas las hacían profesionales distintos. Trabajó para Caras y Caretas, Plus Ultra, Mundo Argentino, La Nación y para editoriales como Atlántida y Peuser. Sus ilustraciones para los cuentos de Horacio Quiroga y para crónicas de viajes son hoy referencias canónicas. El archivo retiene la obra como ejemplo paradigmático del ilustrador que opera como diseñador gráfico antes de que la disciplina exista institucionalmente en Argentina.",
+          "contexto_historico": "Edad de oro de la ilustración portenia. Migración española.",
+          "sala": {
+            "numero": 5,
+            "romano": "V",
+            "nombre": "Marcas, almanaques y modernismo"
+          },
+          "subseccion": "5.c Indigenismo cultural y modernismo gráfico",
+          "estado_conservacion": "Conservada (originales y reproducciones en revistas y libros)",
+          "palabras_clave": [
+            "ilustración",
+            "art deco",
+            "editorial",
+            "Sirio"
+          ],
+          "texto_fuente": "Texto 5",
+          "cita_referencia": "se destaca la obra artística del eximio ilustrador Alejandro Sirio",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "BNA digitalizada (Caras y Caretas, Plus Ultra, Mundo Argentino)"
+          }
+        },
+        {
+          "id": "L040",
+          "titulo": "Plus Ultra (suplemento mensual de Caras y Caretas)",
+          "autor": "Staff de Caras y Caretas (Pellicer, Cao, Mayol, Giménez)",
+          "anio_periodo": "1916-1930",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Revista mensual ilustrada",
+          "descripcion_curatorial": "Suplemento mensual de Caras y Caretas publicado entre 1916 y 1930. A diferencia del semanario, que privilegiaba la actualidad y el humor satírico, Plus Ultra apuntó al diseño editorial cuidado, la identidad gráfica propia y la reproducción de obras del Museo Nacional de Bellas Artes y de colecciones privadas argentinas. La revista funcionó como puente entre la cultura impresa masiva y el circuito artístico legitimado: usó la misma infraestructura industrial de Caras y Caretas (Compañía Sud-Americana de Billetes de Banco) pero compuso un objeto de circulación más lenta, más pesado, más caro y destinado a un público con mayor capital cultural. El archivo lo retiene como ejemplo de la primera operación argentina de diferenciación editorial dentro de una misma empresa: la industria gráfica empezando a segmentar audiencias.",
+          "contexto_historico": "Argentina del Centenario tardío. Diferenciación editorial.",
+          "sala": {
+            "numero": 5,
+            "romano": "V",
+            "nombre": "Marcas, almanaques y modernismo"
+          },
+          "subseccion": "5.c Indigenismo cultural y modernismo gráfico",
+          "estado_conservacion": "Conservada",
+          "palabras_clave": [
+            "revista",
+            "suplemento",
+            "art deco",
+            "MNBA"
+          ],
+          "texto_fuente": "Texto 5",
+          "cita_referencia": "Plus Ultra (1916-1930) fue un suplemento mensual de la revista donde colaboraba todo el staff del semanario",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "BNA digitalizada. Tapas art-decó de alta calidad"
+          }
+        },
+        {
+          "id": "L041",
+          "titulo": "Viracocha (manual escolar)",
+          "autor": "Editado por Curt Berger y Cía.; diseño del escultor Gonzalo Leguizamón Pondal y el arquitecto Alberto Gelly Cantilo",
+          "anio_periodo": "1923",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Manual escolar ilustrado",
+          "descripcion_curatorial": "Manual escolar publicado por Curt Berger y Cía. en 1923, con diseño del escultor Gonzalo Leguizamón Pondal y el arquitecto Alberto Gelly Cantilo. Sistematizó el dibujo decorativo americano para ser enseñado en las escuelas primarias argentinas. Recibió la Medalla de Oro del VI Salón Nacional de Arte Decorativo y, por decisión del Consejo Nacional de Educación, fue adoptado para la enseñanza de la plástica. La operación es notable: un manual de circulación masiva escolar puso en manos de cada chico argentino, durante varios años, un repertorio iconográfico precolombino transformado en propuesta pedagógica nacional. La pieza materializa en formato escolar el programa que Rojas había anunciado en Eurindia un año antes. El archivo lo conserva como prueba de que el indigenismo cultural argentino no fue sólo un debate de élite: efectivamente bajó a las aulas, en cuadernos ornamentados con grecas calchaquíes y motivos diaguitas.",
+          "contexto_historico": "Indigenismo de Estado. Pedagogía visual. Salón Nacional de Arte Decorativo.",
+          "sala": {
+            "numero": 5,
+            "romano": "V",
+            "nombre": "Marcas, almanaques y modernismo"
+          },
+          "subseccion": "5.c Indigenismo cultural y modernismo gráfico",
+          "estado_conservacion": "Conservada parcialmente (escasos ejemplares completos en bibliotecas)",
+          "palabras_clave": [
+            "manual",
+            "escolar",
+            "decoración",
+            "indigenismo",
+            "Leguizamón Pondal"
+          ],
+          "texto_fuente": "Texto 5",
+          "cita_referencia": "el manual escolar Viracocha, editado por Curt Berger y Cía en 1923, el hito educativo que permite sistematizar el dibujo decorativo americano",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "Bibliotecas universitarias (poco frecuente); Salones Nacional de Arte Decorativo"
+          }
+        },
+        {
+          "id": "L042",
+          "titulo": "Silabario de la decoración americana",
+          "autor": "Ricardo Rojas",
+          "anio_periodo": "1930",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Libro ilustrado / repertorio decorativo",
+          "descripcion_curatorial": "Libro publicado por Ricardo Rojas en 1930 como sistematización gráfica de los motivos decorativos americanos derivados del arte precolombino. La obra cataloga, clasifica y reproduce greca por greca el repertorio iconográfico de las culturas originarias del continente, con el objetivo declarado de poner a disposición de diseñadores, artistas, arquitectos y maestros un alfabeto visual americano alternativo al repertorio decorativo europeo. La publicación dialoga con el Silabario de Manuel Antonio Carreño y con los catálogos ornamentales de Owen Jones y Ernst Haeckel, pero opera con materiales que esos catálogos europeos habían omitido. El archivo lo retiene como ejemplo paradigmático de operación archivística desde adentro: Rojas no espera que un museo conserve el repertorio americano, lo cataloga él mismo en formato editorial.",
+          "contexto_historico": "Indigenismo cultural argentino. Pedagogía visual.",
+          "sala": {
+            "numero": 5,
+            "romano": "V",
+            "nombre": "Marcas, almanaques y modernismo"
+          },
+          "subseccion": "5.c Indigenismo cultural y modernismo gráfico",
+          "estado_conservacion": "Conservada",
+          "palabras_clave": [
+            "libro",
+            "decoración",
+            "indigenismo",
+            "repertorio",
+            "Rojas"
+          ],
+          "texto_fuente": "Texto 5",
+          "cita_referencia": "Silabario de la decoración americana (1930)",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "Bibliotecas universitarias, librerías de viejo. Ediciones de 1930"
+          }
+        },
+        {
+          "id": "L043",
+          "titulo": "Estudio fotográfico y publicitario 'Grete y Horacio Coppola'",
+          "autor": "Grete Stern (Alemania, 1904 - Buenos Aires, 1999) y Horacio Coppola (Buenos Aires, 1906 - 2012)",
+          "anio_periodo": "1935-c. 1955",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Estudio fotográfico / agencia de publicidad",
+          "descripcion_curatorial": "Estudio fotográfico y publicitario abierto en Buenos Aires por Grete Stern y Horacio Coppola tras su llegada al país en 1935, escapando del régimen nazi. La pareja se había conocido en 1932 en las clases de fotografía de la Bauhaus de Berlín bajo Walter Peterhans; trabajaron primero en Londres y arribaron a Buenos Aires con todo el bagaje técnico y conceptual de la última Bauhaus. El estudio aplicó al mercado publicitario porteño técnicas que en Buenos Aires no se habían visto: fotomontaje constructivista, 'foto-tipo' (combinación de fotografía y tipografía), tipografía sans-serif moderna, retícula. El archivo retiene el estudio como punto exacto de llegada de la Bauhaus al Río de la Plata: no a través de un manual ni una escuela, sino a través de un matrimonio de fotógrafos que abrió oficina y empezó a trabajar.",
+          "contexto_historico": "Migración antinazi profesional. Llegada de la Bauhaus al Río de la Plata.",
+          "sala": {
+            "numero": 5,
+            "romano": "V",
+            "nombre": "Marcas, almanaques y modernismo"
+          },
+          "subseccion": "5.c Indigenismo cultural y modernismo gráfico",
+          "estado_conservacion": "Conservada (archivos en MALBA, Eduardo F. Costantini; colecciones públicas y privadas)",
+          "palabras_clave": [
+            "fotografía",
+            "publicidad",
+            "Bauhaus",
+            "Stern",
+            "Coppola"
+          ],
+          "texto_fuente": "Texto 5",
+          "cita_referencia": "Inauguran el estudio fotográfico y publicitario 'Grete y Horacio Coppola'",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "MALBA (col. Costantini); archivos Coppola; libros publicados sobre Stern"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "romano": "VI",
+      "nombre": "El Estado se hace ver",
+      "nombre_completo": "6 — El Estado se hace ver: peronismo gráfico (1946-1955)",
+      "periodo": "1946-1955",
+      "cita_curatorial": "Los nueve años del primer peronismo en que la propaganda gráfica estatal alcanza una densidad sin precedentes. La SIPP centraliza un corpus que será luego prohibido por decreto en 1956.",
+      "cantidad_piezas": 7,
+      "piezas": [
+        {
+          "id": "L044",
+          "titulo": "Identidades gráficas de las empresas estatales peronistas",
+          "autor": "Estado argentino (varios diseñadores anónimos)",
+          "anio_periodo": "1941-1952",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Identidades institucionales / sistema simbólico estatal",
+          "descripcion_curatorial": "Conjunto de emblemas y aplicaciones gráficas de las empresas estatales creadas o estatizadas durante el primer peronismo: Fabricaciones Militares (1941), Acindar (1942), Techint (1945), Gas del Estado (1945), Agua y Energía (1947), Ferrocarriles Argentinos (1948), Teléfonos del Estado (1948), Aerolíneas Argentinas (1949), IAME (1952), Dirección Nacional de Industrias del Estado (DINIE). Los emblemas exhiben reminiscencias de los escudos militares: ovalado, simétrico, jerárquico, con tipografía mayúscula sólida y elementos heráldicos simplificados. La operación gráfica era coherente: cada empresa tenía un emblema propio, pero todos compartían un código visual que las identificaba como pertenecientes al programa del Estado nacional. El archivo retiene la pieza como sistema: la primera vez en la historia argentina que el Estado opera con coherencia gráfica explícita en su patrimonio empresario.",
+          "contexto_historico": "Industrialización estatal peronista. Identidad de Estado.",
+          "sala": {
+            "numero": 6,
+            "romano": "VI",
+            "nombre": "El Estado se hace ver"
+          },
+          "subseccion": "6.a Identidades de empresas estatales",
+          "estado_conservacion": "Conservada parcialmente / algunas marcas actualizadas, otras desaparecidas",
+          "palabras_clave": [
+            "identidad",
+            "estatal",
+            "peronismo",
+            "ISI",
+            "escudo"
+          ],
+          "texto_fuente": "Texto 5",
+          "cita_referencia": "se crean nuevas: Gas del Estado (1945), Agua y Energía (1947), Teléfonos del Estado (1948), y Aerolíneas Argentinas (1949)",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "AGN, archivos públicos. Logos históricos de Ferrocarriles, Gas, Aerolíneas, Acindar"
+          }
+        },
+        {
+          "id": "L045",
+          "titulo": "Corpus de afiches de la SIPP (Subsecretaría de Información, Prensa y Propaganda)",
+          "autor": "Anónimos / SIPP del Estado Argentino",
+          "anio_periodo": "1946-1955",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Corpus propagandístico estatal",
+          "descripcion_curatorial": "Conjunto de afiches producidos por la Subsecretaría de Información, Prensa y Propaganda durante los dos primeros gobiernos de Perón. La SIPP centralizó la producción propagandística no sólo de todos los ministerios del gobierno nacional sino también de entidades autárquicas y de la Fundación Eva Perón a través de cinco direcciones: Espectáculos Públicos (área cinematográfica), Difusión, Publicidad, Prensa y Radiodifusión. La operación gráfica del corpus combinó la estética del realismo socialista, el muralismo mexicano y la caricatura popular en una sintaxis novedosa que recuperaba prácticas y costumbres de los sectores populares previamente estigmatizadas. Tras la caída del peronismo, el Decreto 4161/56 del 5 de marzo de 1956 prohibió la circulación de todo el material gráfico del régimen depuesto. El archivo retiene el corpus como caso paradigmático de patrimonio gráfico legalmente prohibido: las piezas que sobreviven hoy lo hacen porque alguien las escondió antes de ser destruidas.",
+          "contexto_historico": "Primer y segundo gobierno peronista. Decreto 4161/56.",
+          "sala": {
+            "numero": 6,
+            "romano": "VI",
+            "nombre": "El Estado se hace ver"
+          },
+          "subseccion": "6.b Afiches de la SIPP",
+          "estado_conservacion": "Conservada (Archivo General de la Nación; pocas piezas con autoría identificable)",
+          "palabras_clave": [
+            "afiche",
+            "peronismo",
+            "propaganda",
+            "estatal",
+            "SIPP"
+          ],
+          "texto_fuente": "Texto 7 - Gabriel Hernán",
+          "cita_referencia": "afiches generados desde la Subsecretaría de Información, Prensa y Propaganda (SIPP) durante el período comprendido por los años 1946 y 1955",
+          "imagen": {
+            "categoria": "D",
+            "estado_busqueda": "Pieza-paraguas — elegir representativa",
+            "fuente_sugerida": "Paraguas. Sugerencia: composición o logo SIPP + 2-3 afiches emblemáticos"
+          }
+        },
+        {
+          "id": "L046",
+          "titulo": "Afiche 'Campesino rompiendo las cadenas' (SIPP)",
+          "autor": "Anónimo / SIPP",
+          "anio_periodo": "c. 1946-1948",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Afiche político / propaganda visual",
+          "descripcion_curatorial": "Afiche del primer peronismo donde un campesino aparece en una demostración de fuerza y destreza física rompiendo cadenas, con la mano derecha empuñando una tacuara que sostiene la bandera argentina. La composición rompe la perspectiva moderna: el pie del personaje avanza sobre el espectador, apoyándose sobre la leyenda del afiche; el cuerpo se proyecta hacia afuera del cuadro. En segundo plano, un jinete con atuendos tradicionales monta un caballo presto a saltar. La estética anticipa por una década el trabajo del pintor Ricardo Carpani y dialoga directamente con el muralismo mexicano de Siqueiros y el realismo socialista soviético. El gesto de romper las cadenas remite explícitamente a un verso central del Himno Nacional Argentino. El archivo retiene la pieza como afiche emblema de la primera fase peronista: justicia social y modernización industrial fundidas en una iconografía de fuerza popular.",
+          "contexto_historico": "Primera fase peronista (1946-1948). Justicia social. Iconografía libertaria.",
+          "sala": {
+            "numero": 6,
+            "romano": "VI",
+            "nombre": "El Estado se hace ver"
+          },
+          "subseccion": "6.b Afiches de la SIPP",
+          "estado_conservacion": "Conservada (AGN); autor no identificado",
+          "palabras_clave": [
+            "afiche",
+            "peronismo",
+            "campesino",
+            "realismo socialista",
+            "Carpani"
+          ],
+          "texto_fuente": "Texto 7 - Gabriel Hernán",
+          "cita_referencia": "un campesino en una demostración de fuerza y destreza física... rompe las cadenas que lo ataban",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "Archivo Fotográfico del Archivo Intermedio (AGN)"
+          }
+        },
+        {
+          "id": "L047",
+          "titulo": "Afiche 'Obrero-campesino cargando una locomotora' (SIPP, nacionalización ferroviaria)",
+          "autor": "Anónimo / SIPP",
+          "anio_periodo": "c. 1948",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Afiche político / propaganda visual",
+          "descripcion_curatorial": "Afiche producido alrededor de 1948, año de la nacionalización de los ferrocarriles. La imagen presenta una hibridación estética y de vestimenta entre un obrero y un campesino —tez morena, fisonomía no europea— cargando sobre sus hombros el peso de una locomotora. La iconografía es deliberada: el sujeto que sostiene la nueva propiedad estatal del sistema ferroviario no es el inmigrante europeo blanco asociado al ferrocarril privado británico, sino el 'cabecita' criollo que el peronismo había incorporado a la escena política. El archivo retiene la pieza como ejemplo paradigmático del programa simbólico de la propaganda peronista: la nacionalización de un activo material (los ferrocarriles) se acompaña de una nacionalización del cuerpo del trabajador en la iconografía oficial. La fisonomía propuesta no replica las prescripciones estéticas europeizantes; las disputa.",
+          "contexto_historico": "Nacionalización de los ferrocarriles (1948). Política de incorporación de los 'cabecitas' al imaginario nacional.",
+          "sala": {
+            "numero": 6,
+            "romano": "VI",
+            "nombre": "El Estado se hace ver"
+          },
+          "subseccion": "6.b Afiches de la SIPP",
+          "estado_conservacion": "Conservada (AGN); autor no identificado",
+          "palabras_clave": [
+            "afiche",
+            "ferrocarriles",
+            "peronismo",
+            "nacionalización",
+            "cabecita"
+          ],
+          "texto_fuente": "Texto 7 - Gabriel Hernán",
+          "cita_referencia": "hibridación estética y de vestimentas entre un obrero y un campesino... cargando el peso de una locomotora",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "AGN. Reproducido en Gené (2005)"
+          }
+        },
+        {
+          "id": "L048",
+          "titulo": "Afiche 'Familia rural y perfil apoteótico de Perón'",
+          "autor": "Anónimo / SIPP",
+          "anio_periodo": "c. 1950-1955",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Afiche político / propaganda visual",
+          "descripcion_curatorial": "Afiche de la segunda fase peronista donde una familia rural ocupa el primer plano (hombre sosteniendo una pala) y el perfil del líder aparece al fondo en tono apoteótico con tonos amarillos. La elección iconográfica es deliberada: el perfil presidencial —y no el rostro frontal— sugiere cercanía con el espectador y con la familia, integrándolo a la escena en lugar de imponerse desde arriba. El crítico Gabriel Hernán describe la operación como 'plebeyización' conceptual de la imagen presidencial: la figura del Jefe de Estado se acerca al nivel de la familia trabajadora y del trabajo físico. La pieza sintetiza el cambio de la propaganda peronista hacia 1950: menos retórica movimientista de masas, más composición intimista del régimen como tutela paternal sobre la familia popular.",
+          "contexto_historico": "Segundo gobierno peronista. Estabilización del régimen.",
+          "sala": {
+            "numero": 6,
+            "romano": "VI",
+            "nombre": "El Estado se hace ver"
+          },
+          "subseccion": "6.b Afiches de la SIPP",
+          "estado_conservacion": "Conservada (AGN)",
+          "palabras_clave": [
+            "afiche",
+            "Perón",
+            "peronismo",
+            "familia",
+            "perfil"
+          ],
+          "texto_fuente": "Texto 7 - Gabriel Hernán",
+          "cita_referencia": "aparece el perfil de Perón en tono apoteótico y con tonos amarillos... lo que se supone es una familia rural",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "AGN. Reproducido en Gabriel Hernán (2011), Gené (2005)"
+          }
+        },
+        {
+          "id": "L049",
+          "titulo": "Afiche 'Tocando el sol' (turismo social peronista)",
+          "autor": "Anónimo / SIPP",
+          "anio_periodo": "c. 1950-1955",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Afiche político / propaganda visual",
+          "descripcion_curatorial": "Afiche caricaturizado donde una figura humana estira el brazo hasta casi tocar el sol, sonriendo de manera jocosa y guiñando un ojo en gesto de complicidad. La operación rompe con la solemnidad de los afiches anteriores y entra en el registro del humor popular. La iconografía es leve pero el mensaje es radical: el acceso de los sectores populares al derecho a las vacaciones y a los enclaves geográficos antes reservados a las élites. La caricatura mira hacia abajo y hacia atrás —no al espectador— en una operación de complicidad horizontal entre pares. Al fondo, un edificio en el estilo arquitectónico clásico del peronismo (hoteles sindicales, sanatorios sociales) da solidez material al mensaje. El archivo retiene la pieza como ejemplo del momento en que la propaganda peronista deja la épica y entra al humor: el régimen ya estabilizado puede burlarse de los códigos pasados de las élites.",
+          "contexto_historico": "Política de turismo social. Hoteles sindicales. Vacaciones obreras.",
+          "sala": {
+            "numero": 6,
+            "romano": "VI",
+            "nombre": "El Estado se hace ver"
+          },
+          "subseccion": "6.b Afiches de la SIPP",
+          "estado_conservacion": "Conservada (AGN)",
+          "palabras_clave": [
+            "afiche",
+            "peronismo",
+            "vacaciones",
+            "caricatura",
+            "Ícaro"
+          ],
+          "texto_fuente": "Texto 7 - Gabriel Hernán",
+          "cita_referencia": "presenta una imagen caricaturizada, al parecer ingenua y risueña... la caricatura de una figura humana estira su brazo hasta casi tocar el sol",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "AGN. Reproducido en Gabriel Hernán (2011)"
+          }
+        },
+        {
+          "id": "L050",
+          "titulo": "Identidad de marca IAME (motocicleta Puma)",
+          "autor": "IAME (Industrias Aeronáuticas y Mecánicas del Estado), Córdoba",
+          "anio_periodo": "c. 1952",
+          "pais": "Argentina",
+          "ciudad": "Córdoba",
+          "tipo": "Identidad de producto / diseño industrial peronista",
+          "descripcion_curatorial": "Motocicleta Puma producida por IAME a partir de c. 1952, junto a un programa completo de identidad de producto: logo, denominación, publicidad, manuales y postventa. El nombre 'Puma' integraba el programa simbólico del peronismo industrial, que daba a sus productos nombres telúricos (Pampa, Justicialista, Rastrojero, Puma) para inscribirlos en un imaginario nacional vinculado al territorio y la fauna. La marca circuló masivamente en la Argentina de los 50 y luego desapareció cuando la planta IAME fue cerrada en 1980 por la dictadura militar. El archivo retiene la identidad como pieza paradigmática del diseño de producto peronista: no sólo el objeto industrial sino el sistema gráfico que lo nombraba, lo presentaba al consumidor y lo inscribía en el imaginario soberano del Estado productor.",
+          "contexto_historico": "Primer peronismo. ISI. IAME bajo dirección de Taravella.",
+          "sala": {
+            "numero": 6,
+            "romano": "VI",
+            "nombre": "El Estado se hace ver"
+          },
+          "subseccion": "6.c IAME e industria nacional",
+          "estado_conservacion": "Conservada en museos automotrices; documentación publicitaria dispersa",
+          "palabras_clave": [
+            "identidad",
+            "IAME",
+            "peronismo",
+            "marca",
+            "Puma"
+          ],
+          "texto_fuente": "Texto 5",
+          "cita_referencia": "fabricó las motocicletas 'Puma' (c. 1952), los tractores 'Pampa' (c. 1952) y los automóviles deportivos 'Justicialista' (1953)",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "Archivos automotrices argentinos, AGN, museos del automóvil"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "romano": "VII",
+      "nombre": "Diseño como disciplina",
+      "nombre_completo": "7 — Diseño como disciplina (1956-2010)",
+      "periodo": "1956-2010",
+      "cita_curatorial": "Desde el Di Tella hasta la revista Tipográfica: el medio siglo en que el diseño gráfico argentino se institucionaliza académicamente, profesionalmente y disciplinarmente, no siempre con continuidad.",
+      "cantidad_piezas": 7,
+      "piezas": [
+        {
+          "id": "L051",
+          "titulo": "Identidad y comunicación visual del Instituto Torcuato Di Tella",
+          "autor": "Juan Carlos Distéfano y equipo de diseño del Di Tella",
+          "anio_periodo": "1958-1970",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Identidad institucional, catálogos, afiches culturales",
+          "descripcion_curatorial": "Conjunto de catálogos, afiches, programas y materiales gráficos del Instituto Torcuato Di Tella, especialmente del Centro de Artes Visuales y del Centro de Experimentación Audiovisual, dirigido en gran parte por el diseñador y escultor Juan Carlos Distéfano. Entre 1958 y su cierre forzado en 1970, el Di Tella fue el laboratorio de la vanguardia argentina: por ahí pasaron Marta Minujín, Roberto Plate, Oscar Bony, Alberto Greco, las experiencias del pop, el happening y el video. Su comunicación visual definió un lenguaje moderno argentino: tipografía suiza, geometría, blanco y negro, escala internacional. El archivo retiene la pieza como el caso paradigmático del 'Ulmismo' rioplatense, pero también como ejemplo de que la modernidad gráfica argentina existió, y fue cancelada cuando la política y el mercado dejaron de tolerarla.",
+          "contexto_historico": "Argentina desarrollista. Vanguardia artística de los 60. Cierre del Di Tella en 1970.",
+          "sala": {
+            "numero": 7,
+            "romano": "VII",
+            "nombre": "Diseño como disciplina"
+          },
+          "subseccion": "7.a Vanguardia institucional",
+          "estado_conservacion": "Conservada parcialmente (archivo Di Tella en UTDT, MNBA, colecciones privadas)",
+          "palabras_clave": [
+            "identidad",
+            "Di Tella",
+            "moderno",
+            "vanguardia",
+            "Distéfano"
+          ],
+          "texto_fuente": "Texto 1 - Valdés de León",
+          "cita_referencia": "Félix Beltrán y Juan Carlos Distéfano",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "Archivo Di Tella en UTDT, MNBA, libros publicados"
+          }
+        },
+        {
+          "id": "L052",
+          "titulo": "Tapas de libros del Centro Editor de América Latina (CEAL)",
+          "autor": "Centro Editor de América Latina (dirección editorial de Boris Spivacow)",
+          "anio_periodo": "1966-1995",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Diseño editorial / tapas y colecciones de libros populares",
+          "descripcion_curatorial": "Conjunto de tapas y diseños de colecciones producidos por el Centro Editor de América Latina, editorial fundada por Boris Spivacow en 1966 tras su renuncia a EUDEBA. CEAL publicó fascículos baratos, colecciones de literatura universal y argentina, historias visuales, capítulos de historia argentina y un sistema editorial que llegó a kioscos, escuelas y barrios donde nunca había llegado un libro. El diseño —firmado por equipos rotativos de jóvenes diseñadores— sostuvo durante tres décadas una idea radical: que el libro popular podía tener calidad gráfica sin disfrazarse de objeto de lujo. La dictadura militar incineró parte del fondo en 1980 (el famoso 'tendal de Sarandí') y el cierre llegó en 1995 por quiebra. El archivo conserva las tapas como testigos de un proyecto editorial que la dictadura no logró aniquilar pero sí mutilar.",
+          "contexto_historico": "Argentina post-1955. Dictaduras y democracia. Quema de libros de 1980.",
+          "sala": {
+            "numero": 7,
+            "romano": "VII",
+            "nombre": "Diseño como disciplina"
+          },
+          "subseccion": "7.b Diseño editorial popular",
+          "estado_conservacion": "Conservada parcialmente (bibliotecas, hemerotecas); fondo editorial parcialmente quemado por la dictadura",
+          "palabras_clave": [
+            "editorial",
+            "popular",
+            "libro",
+            "Spivacow",
+            "CEAL"
+          ],
+          "texto_fuente": "Texto 1 - Valdés de León",
+          "cita_referencia": "las tapas de los libros del Centro Editor de América Latina de la década de los 80",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "Bibliotecas, archivos personales de Spivacow, libros (de Diego, Soifer)"
+          }
+        },
+        {
+          "id": "L053",
+          "titulo": "Señalética urbana de Buenos Aires (Estudio Shakespeare)",
+          "autor": "Raúl Shakespeare y Ronald Shakespeare",
+          "anio_periodo": "1971-1990",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Sistema de señalización urbana",
+          "descripcion_curatorial": "Sistema de señalización urbana de la Ciudad de Buenos Aires diseñado por el estudio Shakespeare a partir de 1971, y posteriormente extendido a autopistas, hospitales, aeropuertos y subterráneos. Los Shakespeare —hermanos de origen británico— resolvieron por primera vez en escala metropolitana sudamericana el problema de la legibilidad a velocidad: tipografía sans-serif normalizada, pictogramas reducidos a su esquema mínimo, sistema cromático estable. Buena parte de las señales todavía en uso hoy en Buenos Aires son herederas directas de ese diseño. El archivo la incluye como una pieza paradójica: está literalmente en la calle, sometida al desgaste cotidiano y al recambio inadvertido, y precisamente por eso es de las menos conservadas. Cada vez que un cartel se reemplaza, una versión del Buenos Aires gráfico moderno desaparece sin que nadie tome nota.",
+          "contexto_historico": "Modernización urbana de Buenos Aires bajo intendencias militares y democráticas.",
+          "sala": {
+            "numero": 7,
+            "romano": "VII",
+            "nombre": "Diseño como disciplina"
+          },
+          "subseccion": "7.c Sistema, gremio y profesión",
+          "estado_conservacion": "En uso urbano; pieza expuesta a desgaste y reemplazo continuo",
+          "palabras_clave": [
+            "señalética",
+            "urbano",
+            "sistema",
+            "Shakespeare",
+            "Argentina"
+          ],
+          "texto_fuente": "Texto 1 - Valdés de León",
+          "cita_referencia": "Eduardo Giménez y Raúl y Ronald Shakespeare",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "Fotografías urbanas + archivos del Estudio Shakespeare"
+          }
+        },
+        {
+          "id": "L054",
+          "titulo": "Anuarios de la ADG (Asociación de Diseñadores Gráficos de Buenos Aires)",
+          "autor": "ADG",
+          "anio_periodo": "1980-1985",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Anuario gremial / publicación profesional",
+          "descripcion_curatorial": "Cinco ediciones consecutivas del Anuario de la Asociación de Diseñadores Gráficos de Buenos Aires, autoeditadas por sus socios entre 1980 y 1985, en plena dictadura militar y luego en los primeros años democráticos. Los anuarios documentan la producción gráfica argentina del momento —identidades, editorial, afiches, ilustración— en una operación de autoarchivo gremial que no se había intentado antes y que no se repitió después. La ADG se disolvió 'corroída por mezquinas rencillas intestinas', según Valdés de León, y con ella desaparecieron tanto el anuario como la única exposición nacional e internacional de diseño gráfico que se montó en el MAMBA. El archivo guarda los cinco volúmenes como retrato de una institución que no sobrevivió a sí misma.",
+          "contexto_historico": "Dictadura militar argentina. Transición democrática. Profesionalización del diseño.",
+          "sala": {
+            "numero": 7,
+            "romano": "VII",
+            "nombre": "Diseño como disciplina"
+          },
+          "subseccion": "7.c Sistema, gremio y profesión",
+          "estado_conservacion": "Conservada (rarezas en bibliotecas especializadas)",
+          "palabras_clave": [
+            "anuario",
+            "gremial",
+            "dictadura",
+            "ADG"
+          ],
+          "texto_fuente": "Texto 1 - Valdés de León",
+          "cita_referencia": "la publicación de Anuarios financiados por sus socios —que alcanzaron 5 ediciones consecutivas",
+          "imagen": {
+            "categoria": "B",
+            "estado_busqueda": "Búsqueda específica",
+            "fuente_sugerida": "Rarezas en bibliotecas especializadas (FADU, IUNA)"
+          }
+        },
+        {
+          "id": "L055",
+          "titulo": "Revista Tipográfica",
+          "autor": "Rubén Fontana (director y editor)",
+          "anio_periodo": "1987-2007",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Revista especializada en tipografía y diseño editorial",
+          "descripcion_curatorial": "Revista fundada y dirigida por Rubén Fontana entre 1987 y 2007, considerada hoy la publicación más influyente sobre tipografía en el mundo iberoamericano. Sus 67 números desplegaron debates sobre diseño tipográfico, historia, identidad, autores latinoamericanos y europeos, y formaron a una generación entera de diseñadores rioplatenses. La pregunta de Valdés de León sobre su 'destino final' —escrita justo cuando la revista estaba terminando su ciclo— condensa una verdad incómoda: en el campo del diseño latinoamericano, las publicaciones rara vez duran más allá del impulso de su director, y cuando se apagan dejan un vacío que ninguna institución viene a llenar. El archivo conserva la colección completa como excepción confirmadora de la regla.",
+          "contexto_historico": "Argentina democrática post-1983. Renacimiento tipográfico latinoamericano.",
+          "sala": {
+            "numero": 7,
+            "romano": "VII",
+            "nombre": "Diseño como disciplina"
+          },
+          "subseccion": "7.d Reconstrucciones tipográficas y archivo",
+          "estado_conservacion": "Conservada (colección completa accesible en bibliotecas universitarias)",
+          "palabras_clave": [
+            "revista",
+            "tipografía",
+            "Argentina",
+            "Fontana"
+          ],
+          "texto_fuente": "Texto 1 - Valdés de León",
+          "cita_referencia": "¿Cuál fue el destino final de Tipográfica?",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "Colección completa en bibliotecas universitarias (FADU UBA, IUNA, FAUD UNC)"
+          }
+        },
+        {
+          "id": "L056",
+          "titulo": "Herencia textil andina (libro de Ruth Corcuera)",
+          "autor": "Ruth Corcuera",
+          "anio_periodo": "1987",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Libro de investigación etnográfica",
+          "descripcion_curatorial": "Libro publicado por Ruth Corcuera en 1987, pionero en la investigación sistemática del tejido popular andino argentino y sus vínculos con producciones contemporáneas. Corcuera trabajó durante décadas con tejedoras del NOA registrando técnicas, motivos, simbología y cosmogonías textiles. La operación de su libro es de archivo en sentido estricto: documenta, cataloga y conserva textualmente lo que el campo material estaba perdiendo. El archivo lo retiene como ejemplo de operación archivística femenina argentina del siglo XX: una mujer investigadora documenta la producción de mujeres tejedoras, en un sistema disciplinar que durante décadas no se interesó por ninguna de las dos. La obra abrió camino a la inclusión del textil andino en discusiones internacionales sobre diseño y forma; sus categorías siguen siendo de referencia.",
+          "contexto_historico": "Recuperación patrimonial textil. Etnografía argentina de los 80.",
+          "sala": {
+            "numero": 7,
+            "romano": "VII",
+            "nombre": "Diseño como disciplina"
+          },
+          "subseccion": "7.d Reconstrucciones tipográficas y archivo",
+          "estado_conservacion": "Conservada",
+          "palabras_clave": [
+            "libro",
+            "textil",
+            "investigación",
+            "andino",
+            "Corcuera"
+          ],
+          "texto_fuente": "Texto 5",
+          "cita_referencia": "cristalizado en el libro Herencia textil andina (1987)",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "Libro publicado por Ediciones Verlap (1987). Reediciones posteriores"
+          }
+        },
+        {
+          "id": "L057",
+          "titulo": "Tipografía digital Expósitos (reconstrucción de Fabio Ares)",
+          "autor": "Fabio Ares / Dirección General Patrimonio e Instituto Histórico (Gobierno CABA)",
+          "anio_periodo": "2010 (en el marco del Bicentenario)",
+          "pais": "Argentina",
+          "ciudad": "Buenos Aires",
+          "tipo": "Familia tipográfica digital de patrimonio",
+          "descripcion_curatorial": "Reconstrucción digital de los tipos romanos antiguos, cursivos y vinetas usados durante el período virreinal por la Real Imprenta de Niños Expósitos. Producida por Fabio Ares en el marco del Bicentenario de la Revolución de Mayo, la familia se compone de una romana redonda, una cursiva y un conjunto de viñetas tipográficas y filetes. El método partió de los impresos producidos entre 1780 y 1810: escaneo a 600-1200 dpi, retoque manual, vectorización, edición tipográfica y empaquetado en formatos PostScript y TrueType. Las letras conservan deliberadamente las marcas del desgaste, los empastamientos y la irregularidad del color tipográfico que caracterizaban a los originales. La fuente se distribuye gratuitamente para usos educativos y culturales, con la única condición de mencionar la fuente. El archivo la conserva como ejemplo paradigmático de reconstrucción digital del patrimonio gráfico latinoamericano.",
+          "contexto_historico": "Bicentenario argentino. Política patrimonial del Gobierno de CABA.",
+          "sala": {
+            "numero": 7,
+            "romano": "VII",
+            "nombre": "Diseño como disciplina"
+          },
+          "subseccion": "7.d Reconstrucciones tipográficas y archivo",
+          "estado_conservacion": "Disponible digitalmente con licencia abierta",
+          "palabras_clave": [
+            "reconstrucción",
+            "tipografía",
+            "digital",
+            "patrimonio",
+            "Ares"
+          ],
+          "texto_fuente": "Texto 3 - Fabio Ares",
+          "cita_referencia": "reconstrucción digital de los primeros caracteres y ornamentos utilizados",
+          "imagen": {
+            "categoria": "A",
+            "estado_busqueda": "Imagen pública directa",
+            "fuente_sugerida": "Especímenes publicados por Ares; DGPeIH GCBA; descarga libre"
+          }
+        }
+      ]
+    }
+  ],
+  "bibliografia": [
+    {
+      "autor": "Ares, F.",
+      "anio": 2009,
+      "titulo": "Real Imprenta de Niños Expósitos: revalorización patrimonial tipográfica del Buenos Aires virreinal (1780-1810)",
+      "publicacion": "Boletín del IIB, vol. XIV, núms. 1 y 2",
+      "editorial": "Universidad Nacional Autónoma de México, Instituto de Investigaciones Bibliográficas"
+    },
+    {
+      "autor": "Chartier, R.",
+      "anio": 2006,
+      "titulo": "Inscribir y borrar. Cultura escrita y literatura (siglos XI-XVIII)",
+      "ciudad": "Buenos Aires",
+      "editorial": "Katz"
+    },
+    {
+      "autor": "Hernán, G.",
+      "anio": 2011,
+      "titulo": "La propaganda gráfica peronista",
+      "publicacion": "Subjetivación y conflicto a través de una propuesta estética"
+    },
+    {
+      "autor": "Meggs, P. B.",
+      "anio": 2000,
+      "titulo": "Historia del Diseño Gráfico",
+      "ciudad": "México",
+      "editorial": "McGraw-Hill"
+    },
+    {
+      "autor": "Mosqueda, A.",
+      "anio": 2012,
+      "titulo": "Condiciones de producción, formas y contenidos de los almanaques porteños en las primeras décadas del siglo XX",
+      "publicacion": "Primer Coloquio Argentino de Estudios sobre el Libro y la Edición",
+      "editorial": "Universidad Nacional de La Plata"
+    },
+    {
+      "autor": "Rogers, G.",
+      "anio": 2008,
+      "titulo": "Caras y Caretas: cultura, política y espectáculo en los inicios del siglo XX argentino",
+      "ciudad": "La Plata",
+      "editorial": "Editorial de la Universidad Nacional de La Plata (EDULP)"
+    },
+    {
+      "autores": [
+        "Silverman, D.",
+        "Garone Gravier, M."
+      ],
+      "anio": 2021,
+      "titulo": "Laudationes Quinque (1766): historia, materialidad y tecnología gráfica del primer impreso jesuítico de Córdoba, Argentina",
+      "publicacion": "Diseña",
+      "numero": 18,
+      "articulo": 2,
+      "doi": "10.7764/disena.18.Article.2"
+    },
+    {
+      "autor": "Valdés de León, G. A.",
+      "anio": 2008,
+      "titulo": "Latinoamérica en la trama del Diseño. Entre la utopía y la realidad",
+      "publicacion": "Cuadernos del Centro de Estudios en Diseño y Comunicación N° 26",
+      "ciudad": "Buenos Aires",
+      "editorial": "Universidad de Palermo"
+    }
+  ]
+}

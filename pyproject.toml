@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "in-design-svg-generator"
+version = "0.1.0"
+description = "Generate A5 SVG pages for a catalog and preview them in the browser."
+requires-python = ">=3.11"
+dependencies = [
+    "Flask>=3.0",
+    "PyYAML>=6.0",
+    "livereload>=2.6.3",
+]
+
+[project.scripts]
+catalog-generate = "src.generate:main"
+catalog-serve = "src.server:main"
+
+[tool.setuptools.packages.find]
+include = ["src*"]

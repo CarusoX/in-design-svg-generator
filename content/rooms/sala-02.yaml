@@ -1,0 +1,315 @@
+# Sala II — Imprenta y palabra en el Virreinato
+# 1764-1810 · 12 piezas
+# Generated from content/source.json. The portadilla_sala for this
+# room lives in content/catalog.yaml; this file holds only fichas.
+
+sala:
+  numero: 2
+  romano: II
+  nombre: Imprenta y palabra en el Virreinato
+  nombre_completo: 2 — Imprenta y palabra en el Virreinato (1764-1810)
+  periodo: 1764-1810
+  cantidad_piezas: 12
+  cita_curatorial: |-
+    De la imprenta jesuítica del Colegio Monserrat de Córdoba (1764) a la prensa que precedió a la Revolución de Mayo. Cuarenta y seis años de tipografía colonial con un solo taller en funcionamiento simultáneo.
+fichas:
+- cabecera_id: Sala II · Pieza 01
+  cabecera_sub: L003
+  tipo: Filigrana / marca de agua
+  titulo_pieza: Filigrana del papel del Laudationes Quinque
+  autor: Molino papelero europeo (no identificado con certeza)
+  datos: c. 1760 · Capellades, La Riba, Valencia o Génova, Italia o España (origen probable)
+  image: images/sala-02/pieza-01.jpg
+  descripcion: |-
+    Marca de agua identificable en el papel utilizado para la edición del Laudationes Quinque, único impreso conservado de la imprenta jesuítica de Córdoba. La filigrana —rasgo identitario del molino que produjo el papel y, probablemente, del comercio que lo distribuyó hasta el Río de la Plata— fue reconstruida por Silverman y Garone Gravier mediante fotomontaje a partir de varias fotografías del ejemplar conocido. Representa a un caballero con lanza montando un caballo, motivo conocido como 'rejoneador', muy difundido en el mundo hispánico entre mediados del siglo XVIII y el primer cuarto del XIX. Los molinos que producían este tipo de papel se encontraban en el sur de Europa, lo que confirma la dependencia material absoluta de las primeras imprentas americanas respecto de los circuitos comerciales transatlánticos.
+  cita_textual: |-
+    se modificó el brillo y contraste de las imágenes y se realizó un fotomontaje para reconstruir el diseño del modo más completo posible
+  fuente: Diseña N° 18 (2021), figs. 4-5
+  source_id: L003
+  subseccion: 2.a La imprenta jesuítica de Córdoba
+  contexto_historico: Comercio papelero hispano-italiano. Suministro a imprentas americanas.
+  estado_conservacion: Reconstruida por fotomontaje a partir del único ejemplar conocido
+  palabras_clave:
+  - filigrana
+  - papel
+  - rejoneador
+  - materialidad
+  - reconstrucción
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 2 - Silverman y Garone Gravier
+- cabecera_id: Sala II · Pieza 02
+  cabecera_sub: L004
+  tipo: Conjunto de tipos móviles
+  titulo_pieza: Tipos romanos antiguos de la Imprenta de Niños Expósitos
+  autor: |-
+    Punzonistas y fundidores europeos no identificados (probablemente españoles: Juan Merlo, Francisco Rongel, Antonio Rojo)
+  datos: Antes de 1764 · Madrid (origen probable), España (origen)
+  image: images/sala-02/pieza-02.jpg
+  descripcion: |-
+    Conjunto de tipos móviles utilizados durante los primeros años del único taller tipográfico que funcionó en el virreinato del Río de la Plata. Importados desde Europa y ya usados al momento de su llegada, los caracteres se desgastaron progresivamente al ser sometidos al clima húmedo de Buenos Aires, a tintas artesanales y a los apuros productivos del taller único. Cuando la Imprenta cerró en 1824, ningún ejemplar físico de estos tipos sobrevivió: solo los conocemos a través de la huella que dejaron sobre el papel. La reconstrucción digital realizada por Fabio Ares en 2010 —compuesta por una romana redonda, una cursiva y un conjunto de viñetas— recupera esa materialidad ausente trabajando sobre escaneos de impresos originales. La fuente conserva deliberadamente las marcas del desgaste, las irregularidades y los empastamientos, en una operación que asume la imperfección como rasgo identitario de la primera tipografía rioplatense.
+  cita_textual: |-
+    este establecimiento adopta como modelo... la letra que se usa no hay la necesaria y está gastada
+  fuente: 'Ares, Boletín IIB UNAM (2009): escaneos comparativos'
+  source_id: L004
+  subseccion: 2.a La imprenta jesuítica de Córdoba
+  contexto_historico: Importación tipográfica española siglo XVIII. Imprenta Real de Madrid
+    bajo Carlos III.
+  estado_conservacion: Tipos físicos perdidos; reconstrucción digital disponible
+  palabras_clave:
+  - tipos
+  - romanas
+  - desgaste
+  - materialidad ausente
+  - reconstrucción
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 3 - Fabio Ares
+- cabecera_id: Sala II · Pieza 03
+  cabecera_sub: L005
+  tipo: Libro impreso colonial
+  titulo_pieza: Laudationes Quinque (ejemplar único de la Abadía de Montserrat)
+  autor: Atribuido a Josep Manuel Peramàs; impreso por el P. Pablo Karer
+  datos: 1766 · Córdoba, Argentina
+  image: images/sala-02/pieza-03.jpg
+  descripcion: |-
+    Primer libro impreso íntegramente en territorio rioplatense, producido por la imprenta jesuítica instalada en el Colegio de Monserrat de Córdoba a mediados del siglo XVIII. La obra reúne cinco panegíricos en latín dedicados a Ignacio Duarte y Quirós, fundador del colegio, y constituye un testimonio excepcional de la sofisticación tipográfica alcanzada en una imprenta periférica del imperio español. Tras la expulsión de los jesuitas en 1767 la imprenta fue desmantelada, y solo un ejemplar de esta edición sobrevive hoy en la Abadía de Montserrat (Cataluña), donde fue localizado en 2019 por Silverman y Garone Gravier. Los dos ejemplares que habían pertenecido a Córdoba —uno en el Colegio Monserrat, otro entre los franciscanos— desaparecieron sin rastro; el del Museo Mitre fue robado y reemplazado por un facsímil; el de la Biblioteca Nacional de Chile no aparece disponible.
+  cita_textual: primer libro impreso en la ciudad de Córdoba (1766) durante el periodo colonial
+  fuente: Diseña N° 18 (2021), figs. 1-2
+  source_id: L005
+  subseccion: 2.a La imprenta jesuítica de Córdoba
+  contexto_historico: Imprenta jesuítica del Colegio Monserrat. Expulsión de la Compañía en
+    1767.
+  estado_conservacion: Único ejemplar conocido (Biblioteca de la Abadía de Montserrat, Cataluña)
+  palabras_clave:
+  - colonial
+  - jesuita
+  - libro
+  - primer impreso
+  - único ejemplar
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 2 - Silverman y Garone Gravier
+- cabecera_id: Sala II · Pieza 04
+  cabecera_sub: L006
+  tipo: Composición tipográfica / arquitectura de página
+  titulo_pieza: Página interior del Laudationes Quinque
+  autor: P. Pablo Karer (impresor)
+  datos: 1766 · Córdoba, Argentina
+  image: images/sala-02/pieza-04.jpg
+  descripcion: |-
+    Página interior del Laudationes Quinque, primer libro impreso íntegramente en territorio rioplatense. La composición revela una sofisticación inesperada para un taller de tan corta vida: las páginas dedicatorias siguen una proporción áurea (caja de 178 × 111 mm) con márgenes iguales superior e inferior, según los preceptos de Alonso Víctor de Paredes; las páginas del prólogo y las laudaciones adoptan en cambio un rectángulo raíz de dos, manteniendo la regla de duplicar el margen exterior respecto del interior. El registro entre recto y verso es prácticamente perfecto, dato imposible de notar en el facsímil de 1937. Las imágenes en alta resolución obtenidas en 2019 permiten estudiar por primera vez la composición y el detalle ornamental del libro, evidenciando que su impresor —probablemente con experiencia previa— operaba con criterios proyectuales explícitos.
+  cita_textual: |-
+    verificamos proporciones áureas, una tradición compositiva de la imprenta manual que se remonta a los tiempos de Gutenberg
+  fuente: Diseña N° 18 (2021), figs. 7-8, 11
+  source_id: L006
+  subseccion: 2.a La imprenta jesuítica de Córdoba
+  contexto_historico: Tradición tipográfica europea aplicada en imprenta jesuítica americana.
+  estado_conservacion: Conservada en el único ejemplar conocido (Montserrat)
+  palabras_clave:
+  - composición
+  - áurea
+  - raíz de dos
+  - página
+  - Karer
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 2 - Silverman y Garone Gravier
+- cabecera_id: Sala II · Pieza 05
+  cabecera_sub: L007
+  tipo: Conjunto de tipos móviles
+  titulo_pieza: Tipos Garamond del Laudationes Quinque
+  autor: Punzonista no identificado (estilo Claude Garamond, c. 1530)
+  datos: Antes de 1766 · Origen incierto, Probablemente Francia, Países Bajos o España
+  image: images/sala-02/pieza-05.jpg
+  descripcion: |-
+    Letras de imprenta usadas para la composición del primer libro impreso en Córdoba, identificadas por Silverman y Garone Gravier como del estilo Garamond, comparables con la muestra de Conrad Berner de 1592, considerada la más fiel al diseño original del tipógrafo francés. El conjunto incluía un Texto gordo (c. 16 pt) para el prólogo, una Parangona chica (18 pt) para las felicitaciones y un Texto (14 pt) para las laudaciones. Los tipos no estaban gastados, lo que sugiere fundición reciente al momento del impreso, pero su llegada al taller cordobés —vía la Compañía de Jesús, no por los circuitos comerciales habituales— es imposible de reconstruir con precisión. Un detalle inquietante para el archivo: ni los punzones, ni las matrices, ni un solo tipo físico del taller cordobés sobrevivió a la expulsión jesuítica.
+  cita_textual: |-
+    las letras podían caracterizarse como una letra de estilo Garamond, dato que se cotejó con distintas muestras de letra
+  fuente: Diseña N° 18 (2021), fig. 12
+  source_id: L007
+  subseccion: 2.a La imprenta jesuítica de Córdoba
+  contexto_historico: Tradición tipográfica humanista de Garamond. Suministro jesuítico.
+  estado_conservacion: Documentada únicamente por la huella sobre el papel del único ejemplar
+    conocido
+  palabras_clave:
+  - Garamond
+  - tipos
+  - jesuita
+  - materialidad ausente
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 2 - Silverman y Garone Gravier
+- cabecera_id: Sala II · Pieza 06
+  cabecera_sub: L008
+  tipo: Impresos educativos y religiosos
+  titulo_pieza: Catones, cartillas y catecismos virreinales
+  autor: Real Imprenta de Niños Expósitos (con licencias eclesiásticas)
+  datos: 1780-1810 · Buenos Aires, Argentina
+  image: images/sala-02/pieza-06.jpg
+  descripcion: |-
+    Material escolar y catequístico producido en serie por la Real Imprenta de Niños Expósitos para abastecer al virreinato. Cuando se otorgó la concesión a Silva y Aguiar en 1780, una de las condiciones del contrato fue la recolección obligatoria de todos los catones, cartillas y catecismos en circulación, para luego venderse por cuenta de la Casa de Expósitos. Esa operación —combinación de censura, monopolio fiscal y alfabetización— produjo durante tres décadas los textos con los que aprendieron a leer las primeras generaciones porteñas. Los impresos eran baratos, mal compuestos por la urgencia y descuidados en la lectura; pocos sobrevivieron. El archivo los retiene no por su excepcionalidad gráfica sino por lo contrario: son el grueso silencioso de una producción que casi nadie pensó digno de conservar y que, sin embargo, fue lo más leído del virreinato.
+  cita_textual: |-
+    sus cartillas y catones educaron a los más jóvenes, sus obras de corte litúrgico instruyeron en la fe religiosa
+  fuente: Ejemplares en BNA, Museo Mitre, DGPeIH, Museo Saavedra
+  source_id: L008
+  subseccion: 2.b Real Imprenta de Niños Expósitos
+  contexto_historico: Iluminismo borbónico. Monopolio educativo. Castellanización.
+  estado_conservacion: Ejemplares dispersos; mayor parte perdida
+  palabras_clave:
+  - educativo
+  - religioso
+  - virreinato
+  - monopolio
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 3 - Fabio Ares
+- cabecera_id: Sala II · Pieza 07
+  cabecera_sub: L009
+  tipo: Prensa tipográfica manual / objeto industrial
+  titulo_pieza: Prensa de hierro de la 'Imprenta de la Patria' (Museo del Vino de Cafayate)
+  autor: Manufactura indeterminada (siglo XIX)
+  datos: siglo XIX (no s. XVIII como suele atribuirse) · Cafayate, Salta, Argentina
+  image: images/sala-02/pieza-07.jpg
+  descripcion: |-
+    Prensa tipográfica manual conocida popularmente como 'Imprenta de la Patria'. Durante más de ocho décadas se sostuvo que era la prensa traída por los jesuitas al Colegio de Monserrat en 1764, trasladada a Buenos Aires por el virrey Vértiz en 1780 para fundar la Real Imprenta de Niños Expósitos y enviada finalmente a Salta en 1824. Sin embargo, en el siglo XVIII no existían aún las prensas de hierro, lo que vuelve materialmente imposible la atribución original. La pieza condensa así una doble condición de ausencia: la del objeto efectivamente fundacional —perdido o nunca conservado— y la del relato que durante décadas la nombró como tal. Permanece como uno de los pocos restos físicos vinculados a la primera imprenta porteña, y como testimonio de los modos en que el patrimonio gráfico latinoamericano se construye también a partir de atribuciones inciertas.
+  cita_textual: |-
+    Apenas podemos encontrar una prensa de hierro —que según los historiadores salteños fue la primera del taller de Expósitos
+  fuente: Fotografías del Museo del Vino de Cafayate, Salta
+  source_id: L009
+  subseccion: 2.b Real Imprenta de Niños Expósitos
+  contexto_historico: Mitología patrimonial argentina del siglo XIX-XX. Pampeanización del
+    relato fundacional.
+  estado_conservacion: Conservada (Museo del Vino de Cafayate, Salta); atribución material
+    descartada
+  palabras_clave:
+  - prensa
+  - mito
+  - atribución
+  - Cafayate
+  - ausencia
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 3 - Fabio Ares
+- cabecera_id: Sala II · Pieza 08
+  cabecera_sub: L010
+  tipo: Periódico fundacional
+  titulo_pieza: El Telégrafo Mercantil, Rural, Político, Económico e Historiográfico
+  autor: Francisco Antonio Cabello y Mesa (editor)
+  datos: 1801-1802 · Buenos Aires, Argentina
+  image: images/sala-02/pieza-08.jpg
+  descripcion: |-
+    Primer periódico publicado en Buenos Aires. Apareció el 1 de abril de 1801 bajo la dirección del peruano Cabello y Mesa, con formato de pliego en cuartos de aparición semanal y una tirada que alcanzó los 110 números antes de su cierre por orden virreinal en octubre de 1802. Sus colaboradores fueron los protagonistas del clima ilustrado prerevolucionario: Manuel Belgrano, Domingo de Azcuénaga, Manuel José de Lavardén, Juan José Castelli. El periódico inauguró en Buenos Aires el debate público impreso sobre economía, agricultura, educación y derechos —exactamente los temas que cinco años después se convertirían en agenda revolucionaria. El archivo lo conserva como pieza arqueológica: el primer momento en que la imprenta porteña dejó de servir sólo al virreinato y a la Iglesia y comenzó a producir un espacio de opinión.
+  cita_textual: |-
+    El Telégrafo Mercantil, Rural, Político, Económico e Historiográfico, de Francisco Antonio Cabello y Mesa
+  fuente: BNA digitalizada (Trapalanda). Primer número del 1 de abril de 1801
+  source_id: L010
+  subseccion: 2.c Prensa pre-revolucionaria del Río de la Plata
+  contexto_historico: Iluminismo rioplatense. Antesala de Mayo. Censura borbónica.
+  estado_conservacion: Conservada (Biblioteca Nacional Argentina, hemerotecas)
+  palabras_clave:
+  - periódico
+  - ilustración
+  - primer periódico
+  - Cabello y Mesa
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 3 - Fabio Ares
+- cabecera_id: Sala II · Pieza 09
+  cabecera_sub: L011
+  tipo: Periódico ilustrado de tema económico
+  titulo_pieza: Semanario de Agricultura, Industria y Comercio
+  autor: Juan Hipólito Vieytes (editor)
+  datos: 1802-1807 · Buenos Aires, Argentina
+  image: images/sala-02/pieza-09.jpg
+  descripcion: |-
+    Periódico semanal fundado por Juan Hipólito Vieytes en septiembre de 1802 y publicado durante cinco años, hasta su interrupción definitiva por las Invasiones Inglesas. Alcanzó 218 números, lo que lo convierte en la publicación periódica de mayor continuidad del período colonial rioplatense. Difundió ideas iluministas avanzadas: fisiocracia, libre comercio, integración indígena, supresión del comercio de esclavos, educación de las masas, asistencia social. Cuando llegó la escasez tipográfica en 1805, Vieytes denunció públicamente que 'la escasez de letra con que se halla nuestra única imprenta hace imposible la edición de las noticias publicadas en pliego separado': una declaración que confirma que el cuello de botella material de la imprenta era, en sí mismo, una cuestión política. El archivo lo retiene como antecedente directo de la prensa revolucionaria.
+  cita_textual: |-
+    el Semanario de Agricultura, Industria y Comercio, de Juan Hipólito Vieytes, con igual formato y un total de 218 números
+  fuente: BNA digitalizada (Hemeroteca Digital)
+  source_id: L011
+  subseccion: 2.c Prensa pre-revolucionaria del Río de la Plata
+  contexto_historico: Tarde colonial rioplatense. Crisis tipográfica de 1805.
+  estado_conservacion: Conservada (Biblioteca Nacional Argentina)
+  palabras_clave:
+  - periódico
+  - ilustración
+  - fisiocracia
+  - Vieytes
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 3 - Fabio Ares
+- cabecera_id: Sala II · Pieza 10
+  cabecera_sub: L012
+  tipo: Impreso suelto / propaganda militar
+  titulo_pieza: Bandos y proclamas de las Invasiones Inglesas
+  autor: Real Imprenta de Niños Expósitos
+  datos: 1806-1807 · Buenos Aires, Argentina
+  image: images/sala-02/pieza-10.jpg
+  descripcion: |-
+    Conjunto de bandos, cartas y proclamas impresos por la Real Imprenta de Niños Expósitos durante las dos Invasiones Inglesas. La actividad fue inusualmente intensa para el taller: los pocos meses de 1806 y 1807 produjeron más material que en cualquier período comparable anterior, lo que llevó a Juan José Pérez (entonces administrador) a denunciar que las letras se habían desgastado más en ese intervalo que en las dos décadas previas. La pieza tiene un valor archivístico singular: el desgaste tipográfico es huella física de un episodio bélico. Cada papel impreso durante las Invasiones lleva inscripta en sus caracteres irregulares la prisa de un taller único bajo presión política. Los pliegos físicos sobreviven dispersos en archivos militares y privados; muchos circularon como objetos efímeros de propaganda y fueron descartados al día siguiente.
+  cita_textual: bandos, cartas y proclamas llegan a nuestros días como una muestra de su extensa
+    actividad
+  fuente: Archivos militares, BNA, AGN. Reproducidos en estudios sobre las Invasiones
+  source_id: L012
+  subseccion: 2.c Prensa pre-revolucionaria del Río de la Plata
+  contexto_historico: Invasiones Inglesas (1806-1807). Crisis tipográfica y bélica.
+  estado_conservacion: Conservada parcialmente en archivos militares y bibliotecas
+  palabras_clave:
+  - bando
+  - proclama
+  - invasiones
+  - propaganda
+  - desgaste
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 3 - Fabio Ares
+- cabecera_id: Sala II · Pieza 11
+  cabecera_sub: L013
+  tipo: Periódico bilingüe / propaganda imperial
+  titulo_pieza: The Southern Star / La Estrella del Sur
+  autor: Thomas Bradford (editor); imprenta inglesa
+  datos: |-
+    23 de mayo - 1 de septiembre de 1807 · Montevideo, Uruguay (en territorio bajo ocupación británica)
+  image: images/sala-02/pieza-11.jpg
+  descripcion: |-
+    Primer periódico bilingüe inglés-español del Río de la Plata, impreso en Montevideo durante la ocupación británica de 1807. Su contenido combinaba avisos comerciales, noticias militares y artículos propagandísticos que prometían a los lectores locales las ventajas de la 'protección inglesa' frente a la 'opresión monárquica española'. Bradford instaló una imprenta moderna en hierro, una rareza absoluta para el Río de la Plata. Tras la capitulación inglesa, vendió todo el equipo a la Casa de Expósitos de Buenos Aires, que lo trasladó en la balandra Copiango el 29 de septiembre de 1807. La pieza tiene una doble vida archivística: como periódico —de circulación brevísima, alarmante para la Audiencia de Buenos Aires— y como prensa y tipos, que se convirtieron en el aparato productivo de la imprenta porteña durante la Revolución de Mayo.
+  cita_textual: el periódico bilingüe The Southern Star o La Estrella del Sur
+  fuente: Facsímil Biblioteca Nacional Uruguay (2007) y Biblioteca Nacional Argentina
+  source_id: L013
+  subseccion: 2.c Prensa pre-revolucionaria del Río de la Plata
+  contexto_historico: Segunda Invasión Inglesa al Río de la Plata. Botín de guerra tipográfico.
+  estado_conservacion: Conservada (Biblioteca Nacional del Uruguay y Argentina; facsímil 2007)
+  palabras_clave:
+  - periódico
+  - bilingüe
+  - invasión
+  - Bradford
+  - Montevideo
+  imagen_categoria: A
+  imagen_estado_busqueda: Imagen pública directa
+  texto_fuente: Texto 3 - Fabio Ares
+- cabecera_id: Sala II · Pieza 12
+  cabecera_sub: L014
+  tipo: Impreso patriótico breve
+  titulo_pieza: El Triunfo Argentino. Poema Heroico
+  autor: Real Imprenta de Niños Expósitos
+  datos: 1808 · Buenos Aires, Argentina
+  image: images/sala-02/pieza-12.jpg
+  descripcion: |-
+    Poema heroico compuesto e impreso en la Real Imprenta de Niños Expósitos en 1808 para celebrar el triunfo de la reconquista de Buenos Aires sobre las tropas inglesas. Formato in 8º, tres folios, tinta negra sobre papel. La pieza condensa el papel de la imprenta porteña como aparato propagandístico autorizado: tras la reconquista, el taller publicó folletos, bandos y proclamas que celebraban a los héroes de la defensa —Liniers, Pueyrredón, el Regimiento de Patricios— y consolidaban una mitología de la victoria que pocos años más tarde serviría también para legitimar la ruptura con España. El archivo lo conserva como ejemplo del primer género propagandístico militar-patriótico rioplatense, que ya en 1808 había aprendido a usar la imprenta como instrumento de construcción simbólica del Estado.
+  cita_textual: |-
+    El Triunfo Argentino. Poema Heroico. Poema, textual impreso... Real Imprenta de Niños Expósitos, 1808
+  fuente: DGPeIH Buenos Aires (Colección Patrimonio del Gobierno)
+  source_id: L014
+  subseccion: 2.c Prensa pre-revolucionaria del Río de la Plata
+  contexto_historico: Post-Reconquista. Pre-Revolución de Mayo. Construcción de héroes locales.
+  estado_conservacion: Conservada (DGPeIH, Buenos Aires)
+  palabras_clave:
+  - poema
+  - patriótico
+  - reconquista
+  - propaganda
+  imagen_categoria: B
+  imagen_estado_busqueda: Búsqueda específica
+  texto_fuente: Texto 3 - Fabio Ares
