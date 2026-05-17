@@ -41,24 +41,23 @@ class TextStyle:
 # same as this registry.
 TEXT_STYLES: dict[str, TextStyle] = {
     # — Portada (cover) —
+    # Full-bleed rojo_tinta background; text prints in papel_crema.
     "01-Portada-Label": TextStyle(
-        # Reference uses gris_texto, not rojo_tinta (the red rule on the
-        # cover already carries the brand color; labels stay neutral).
         font_family="Lato", font_weight=900,
         size_pt=8, leading_pt=11,
         tracking_per1000=200,
-        color="gris_texto", uppercase=True,
+        color="papel_crema", uppercase=True,
     ),
     "02-Portada-Titulo": TextStyle(
-        font_family="Lato", font_weight=900,
+        font_family="Lato", font_weight=700,
         size_pt=42, leading_pt=40,
         tracking_per1000=-20,
-        color="negro_tinta",
+        color="papel_crema",
     ),
     "03-Portada-Subtitulo": TextStyle(
         font_family="EB Garamond", font_style="italic",
-        size_pt=12, leading_pt=16,
-        color="gris_texto",
+        size_pt=14, leading_pt=18,
+        color="papel_crema",
         space_before_mm=10,
     ),
 
