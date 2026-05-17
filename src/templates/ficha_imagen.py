@@ -75,8 +75,17 @@ TITLE_Y_MM = (
 _TIPO_CAP_RATIO = 0.685     # EB Garamond Italic
 _TITLE_DESC_RATIO = 0.27    # generous descender allowance
 
-AUTOR_Y_MM = 68
-DATOS_Y_MM = 75
+# Autor sits at the TOP-LEFT corner of cell (row 3, col 1): cap-top on
+# the row's top line so the text rides inside the row.
+AUTOR_X_MM = _RETICLE_LEFT_X_MM                                       # 15.4
+_AUTOR_STYLE = TEXT_STYLES["21-Ficha-Subtitulo-Autor"]
+_AUTOR_CAP_HEIGHT_MM = _AUTOR_STYLE.size_pt * 0.685 * r.MM_PER_PT      # EB Gar. Italic
+AUTOR_Y_MM = _row_top(3) + _AUTOR_CAP_HEIGHT_MM
+
+# Datos sits at the BOTTOM-LEFT corner of cell (row 3, col 1): baseline
+# on the row's bottom line, same x as autor.
+DATOS_X_MM = _RETICLE_LEFT_X_MM                                       # 15.4
+DATOS_Y_MM = _row_bottom(3)
 
 # Image frame: 6×4 reticle squares — all 6 columns (full reticle width)
 # × rows 4–7 (4 squares tall, sharing 3 internal row gutters).
@@ -139,12 +148,12 @@ def render(page_id: int, data: dict) -> str:
 
     if autor:
         parts.append(r.text("21-Ficha-Subtitulo-Autor", autor,
-                            x_mm=r.MARGIN_MM, y_mm=AUTOR_Y_MM,
-                            max_width_mm=r.CONTENT_W_MM))
+                            x_mm=AUTOR_X_MM, y_mm=AUTOR_Y_MM,
+                            max_width_mm=_RETICLE_RIGHT_X_MM - AUTOR_X_MM))
     if datos:
         parts.append(r.text("22-Ficha-Subtitulo-Datos", datos,
-                            x_mm=r.MARGIN_MM, y_mm=DATOS_Y_MM,
-                            max_width_mm=r.CONTENT_W_MM))
+                            x_mm=DATOS_X_MM, y_mm=DATOS_Y_MM,
+                            max_width_mm=_RETICLE_RIGHT_X_MM - DATOS_X_MM))
 
     # — Image: real <image> when provided, otherwise the placeholder
     if image_href:
