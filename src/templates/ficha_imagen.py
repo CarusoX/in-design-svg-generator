@@ -73,8 +73,11 @@ FRAME_W_MM = r.CONTENT_W_MM         # 120
 FRAME_H_MM = 100
 FRAME_INSET_MM = 4                  # padding for internal labels
 
-# Caption row.
-CAPTION_Y_MM = FRAME_Y_MM + FRAME_H_MM + 8   # 8mm below the frame
+# Caption row — caption STARTS flush against the first vertical reticle
+# line (left edge of col 1), baseline at the bottom of the last row. The
+# caption flows rightward from there.
+CAPTION_ANCHOR_X_MM = r.MARGIN_MM + r.RETICLE_INSET_MM                # 15.4
+CAPTION_ANCHOR_Y_MM = r.TRIM_H_MM - r.MARGIN_MM - r.RETICLE_INSET_MM  # 194.6
 
 
 def render(page_id: int, data: dict) -> str:
@@ -86,7 +89,7 @@ def render(page_id: int, data: dict) -> str:
     datos = str(data.get("datos", "")).strip()
     image_href = str(data.get("image", "")).strip()
     categoria = str(data.get("categoria", "A")).strip()
-    caption = str(data.get("caption", "imagen principal de la pieza")).strip()
+    caption = str(data.get("caption", "nota al pie")).strip()
 
     parts = [r.svg_open(r.PALETTE["papel_crema"])]
 
@@ -135,7 +138,7 @@ def render(page_id: int, data: dict) -> str:
         parts.extend(_image_placeholder(pieza_id, categoria))
 
     # — Caption with red curly bracket
-    parts.extend(_caption(pieza_id, caption))
+    parts.extend(_caption(caption))
 
     # — Bottom chrome
     parts.append(r.folio(page_id))
@@ -187,33 +190,14 @@ def _image_placeholder(pieza_id: str, categoria: str) -> list[str]:
     return out
 
 
-def _caption(pieza_id: str, caption: str) -> list[str]:
-    """Red curly bracket followed by italic gray caption."""
-    # Bracket is ~10pt EB Garamond regular in rojo_tinta. Caption is 7.5pt
-    # italic gray (style 23). Spec: bracket 2-3pt larger than caption, with
-    # 1.5mm right margin before the caption.
-    bracket_size_pt = 10
-    bracket_x = r.MARGIN_MM
-    text_x = r.MARGIN_MM + 3  # ~1.5mm after the bracket glyph
-
-    out = [
-        # Bracket glyph
-        f'<text x="{bracket_x}" y="{CAPTION_Y_MM}" '
-        f'font-family="{r.font_family_css("EB Garamond")}" font-weight="400" '
-        f'font-size="{bracket_size_pt * r.MM_PER_PT:.4f}" '
-        f'fill="{r.PALETTE["rojo_tinta"]}" text-anchor="start">{{</text>',
-    ]
-
-    # Caption text (with the pieza_id prepended automatically)
-    body = caption
-    if pieza_id:
-        body = f"{pieza_id}  ·  {caption}"
-    out.append(r.text(
-        "23-Ficha-Epigrafe-Imagen", body,
-        x_mm=text_x, y_mm=CAPTION_Y_MM,
-        max_width_mm=r.CONTENT_W_MM - 3,
-    ))
-    return out
+def _caption(caption: str) -> list[str]:
+    """Italic gray caption, starting flush against the first vertical
+    reticle line and flowing rightward, baseline at the bottom row."""
+    return [r.text(
+        "23-Ficha-Epigrafe-Imagen", caption,
+        x_mm=CAPTION_ANCHOR_X_MM, y_mm=CAPTION_ANCHOR_Y_MM,
+        align="start",
+    )]
 
 
 # — Small inline SVG helpers for the placeholder internals —
