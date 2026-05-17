@@ -243,11 +243,49 @@ def write_reticle() -> Path:
     return RETICLE_FILE
 
 
+_JPG_SUFFIXES = {".jpg", ".jpeg"}
+
+
+def _copy_image(src: Path, dst: Path) -> None:
+    """Copy `src` to `dst`. For JPGs with a non-default EXIF
+    orientation, transpose the pixels first and drop the EXIF tag so
+    the saved file's pixel orientation matches its visual orientation.
+
+    Why: rsvg-convert (used by `src.build_pdf`) ignores EXIF
+    orientation when embedding JPGs into the PDF — JPGs with
+    orientation 6/8 etc. show up sideways in the PDF even though they
+    look upright in the browser preview (which honours EXIF). Saving
+    the transposed pixels with no orientation tag gives the same
+    visual result in both pipelines."""
+    if src.suffix.lower() in _JPG_SUFFIXES:
+        try:
+            from PIL import Image, ImageOps
+        except ImportError:
+            Image = ImageOps = None        # type: ignore[assignment]
+        if Image is not None:
+            with Image.open(src) as im:
+                oriented = ImageOps.exif_transpose(im)
+                if oriented is not im:
+                    # Drop EXIF entirely so no downstream reader re-rotates.
+                    oriented.save(dst, "JPEG", quality=95, optimize=True)
+                    return
+    shutil.copy2(src, dst)
+
+
 def sync_images() -> int:
     """Mirror reference/imagenes/ into out/images/ so the InDesign
     handoff bundle (just out/) contains every linked image. Skips
-    files already present at the same size; returns the count copied.
-    """
+    files already present and not older than the source; returns the
+    count copied. JPGs with EXIF rotation are normalised in transit —
+    see `_copy_image`.
+
+    Mtime-based (not size-based) cache check, because `_copy_image`
+    re-encodes EXIF-rotated JPGs and the saved file is a different
+    size than the source — a size check would re-encode every regen,
+    which on a server.watch(IMAGES_DIR) hook becomes an infinite
+    reload loop. `shutil.copy2` preserves the source mtime, and
+    `_copy_image` stamps re-encoded JPGs with the source mtime too,
+    so on a clean re-run dst.mtime == src.mtime and we skip."""
     if not SOURCE_IMAGES_DIR.exists():
         return 0
     OUT_IMAGES_DIR.mkdir(parents=True, exist_ok=True)
@@ -256,9 +294,9 @@ def sync_images() -> int:
         if not src.is_file() or src.name.startswith("."):
             continue
         dst = OUT_IMAGES_DIR / src.name
-        if dst.exists() and dst.stat().st_size == src.stat().st_size:
+        if dst.exists() and dst.stat().st_mtime >= src.stat().st_mtime:
             continue
-        shutil.copy2(src, dst)
+        _copy_image(src, dst)
         copied += 1
     return copied
 

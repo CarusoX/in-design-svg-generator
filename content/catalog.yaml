@@ -1091,8 +1091,11 @@ salas:
           autor: "Estado argentino (varios diseñadores anónimos)"
           datos: "1941-1952 · Buenos Aires, Argentina"
           images:
-            - L038.png
-            - L038-1.png
+            # L038.png (Agua y Energía logo) anclado al slot grande del
+            # fondo; L038-1.png arriba en un slot chico. Sin estos slot
+            # overrides el packer asigna lo contrario.
+            - {file: L038-1.png, slot: [2, 1, 4, 4]}
+            - {file: L038.png,   slot: [2, 6, 4, 4]}
         texto:
           descripcion: >-
             Conjunto de emblemas y aplicaciones gráficas de las empresas
