@@ -82,8 +82,7 @@ nota_curatorial:
 
 # ── Índice (entradas auto-derived from salas below) ───────────────────
 indice:
-  label: "Índice"
-  titulo: "Las seis salas"
+  titulo: "Índice"
 
 # ── Salas ──────────────────────────────────────────────────────────────
 # Each sala has a portadilla and a list of piezas. Each pieza becomes

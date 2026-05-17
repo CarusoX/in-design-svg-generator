@@ -109,6 +109,16 @@ TEXT_STYLES: dict[str, TextStyle] = {
     ),
 
     # — Índice —
+    # Title for the índice page — identical to 08-Seccion-Titulo (Lato
+    # Black 22pt) but in rojo_tinta instead of negro_tinta. Used only
+    # by the índice template.
+    "Indice-Titulo": TextStyle(
+        font_family="Lato", font_weight=900,
+        size_pt=22, leading_pt=23,
+        tracking_per1000=-10,
+        color="rojo_tinta",
+        space_after_mm=12,
+    ),
     "10-Indice-Romano": TextStyle(
         font_family="EB Garamond",
         size_pt=16,

@@ -88,16 +88,25 @@ def _compile_pages(raw: dict) -> list[dict]:
     for note_page in raw.get("nota_curatorial") or []:
         add("nota_curatorial", dict(note_page))
 
-    # — Índice (auto-derive entradas if not provided)
+    # — Índice (auto-derive entradas if not provided). Each entry gets
+    # the sala portadilla's page number, pre-computed: the índice
+    # precedes the salas, so next_id+1 IS the first sala portadilla,
+    # and each subsequent sala adds 2 (portadilla+blank) + 2*N piezas.
     if "indice" in raw:
         indice = dict(raw["indice"])
+        sala_pages: list[int] = []
+        p = next_id + 1
+        for s in salas:
+            sala_pages.append(p)
+            p += 2 + 2 * len(s.get("piezas") or [])
         indice.setdefault("entradas", [
             {
-                "romano": s.get("romano", ""),
-                "nombre": (s.get("portadilla") or {}).get("nombre", ""),
+                "romano":  s.get("romano", ""),
+                "nombre":  (s.get("portadilla") or {}).get("nombre", ""),
                 "periodo": (s.get("portadilla") or {}).get("periodo", ""),
+                "pagina":  sala_pages[i],
             }
-            for s in salas
+            for i, s in enumerate(salas)
         ])
         add("indice", indice)
 
