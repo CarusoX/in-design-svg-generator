@@ -142,16 +142,19 @@ def _compile_pages(raw: dict) -> list[dict]:
             imagen = imagen_raw
             imagen.setdefault("pieza_id", default_pieza_id)
             imagen.setdefault("cabecera_sub", default_cabecera)
-            # Bridge: estado lives in the texto block (it's part of the
-            # artwork's record), but renders on the imagen page (row 8 /
-            # col 4). Copy it across unless imagen sets its own.
-            if "estado" in texto_raw:
-                imagen.setdefault("estado", texto_raw["estado"])
             add("ficha_imagen", imagen)
 
             texto = texto_raw
             texto.setdefault("pieza_id", default_pieza_id)
             texto.setdefault("cabecera_sub", default_cabecera)
+            # Bridge: autor / datos are authored under `imagen:` (the
+            # catalog record for the artwork), but render on the text
+            # page now. `tipo` stays on the image page (eyebrow above
+            # the title) — it is NOT bridged. `estado` already lives
+            # under `texto:` and renders here directly — no bridge.
+            for key in ("autor", "datos"):
+                if key in imagen_raw:
+                    texto.setdefault(key, imagen_raw[key])
             add("ficha_texto", texto)
 
     # — Bibliografía

@@ -223,6 +223,15 @@ TEXT_STYLES: dict[str, TextStyle] = {
         hanging_indent_mm=5,
     ),
 
+    # — Auxiliary: ficha metadata VALUE (used in ficha_texto's stack
+    # under each AUTOR / ESTADO / FECHA / ORIGEN label). Plain regular
+    # Garamond, black, not italic — wraps with hyphenation. —
+    "Ficha-Meta-Value": TextStyle(
+        font_family="EB Garamond",
+        size_pt=9, leading_pt=12,
+        color="negro_tinta",
+    ),
+
     # — Auxiliary: page numbers (folios). Not in the original spec — added
     # so templates can place the page number without inlining font/size. —
     "Folio-Light": TextStyle(
