@@ -2,7 +2,7 @@
 
 - No top label (volumen / rango removed at user's request).
 - Mid-page: 3-line title (Lato Black) + italic serif subtitle, both in
-  papel_crema for contrast against the red field.
+  blanco for contrast against the red field.
 - Bottom label: "X PIEZAS  ·  N SALAS" in tracked Lato Black caps.
 - No folio.
 
@@ -56,14 +56,14 @@ BOTTOM_LABEL_BASELINE_Y_MM = ch.row_bottom(8)
 
 
 def render(page_id: int, data: dict) -> str:
-    parts = [r.svg_open(r.PALETTE["rojo_tinta"])]
+    parts = [r.svg_open(r.PALETTE["blanco"])]
 
-    # — Vertical hairline next to the title, in papel_crema on the
-    # rojo_tinta background.
+    # — Vertical accent rule next to the title, in rojo_tinta on the
+    # white field.
     parts.append(
         f'<rect x="{RULE_X_MM}" y="{RULE_Y_MM}" '
         f'width="{RULE_W_MM}" height="{RULE_H_MM}" '
-        f'fill="{r.PALETTE["papel_crema"]}"/>'
+        f'fill="{r.PALETTE["rojo_tinta"]}"/>'
     )
 
     # — Title (manual line breaks via "\n" in YAML). LAST line baseline

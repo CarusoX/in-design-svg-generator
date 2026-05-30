@@ -30,9 +30,9 @@ RULE_LENGTH_MM = RIGHT_X_MM - LEFT_X_MM                            # 117.2
 # the rojo_tinta expanse (full background on the image page + the spine
 # bleed strip on the text page). A pieza can override it with `fondo:` in
 # YAML — a PALETTE key, a raw "#rrggbb" hex, or the shortcut "negro"
-# (pure black #000000, distinct from negro_tinta #1A1A1A). Authored under
+# (maps to negro_tinta #1A1A1A, the catalog's ink black). Authored under
 # `imagen:`; generate.py bridges it to the text page so both match.
-_FONDO_NAMED = {"negro": "#000000", "black": "#000000"}
+_FONDO_NAMED = {"negro": "#1A1A1A", "black": "#1A1A1A"}
 
 
 def resolve_fondo(data: dict) -> str:

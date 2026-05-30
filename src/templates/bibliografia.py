@@ -298,7 +298,7 @@ def render(page_id: int, data: dict) -> str:
     refs = data.get("refs") or []
     is_continuation = bool(data.get("is_continuation", False))
 
-    parts = [r.svg_open(r.PALETTE["papel_crema"])]
+    parts = [r.svg_open(r.PALETTE["blanco"])]
 
     if titulo and not is_continuation:
         parts.append(r.text(

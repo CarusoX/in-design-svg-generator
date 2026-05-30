@@ -80,8 +80,10 @@ def _compile_pages(raw: dict) -> list[dict]:
         portada.setdefault("salas", f"{len(salas)} salas")
         add("portada", portada)
 
-    # — Epígrafe
+    # — Epígrafe: a blank (paper-white) verso (left) facing the quote on the
+    # recto (right), so the quote sits on a right-hand page per print convention.
     if "epigrafe" in raw:
+        add("blank_white", {})
         add("epigrafe", dict(raw["epigrafe"]))
 
     # — Nota curatorial: a single body string in YAML; the template
@@ -98,7 +100,7 @@ def _compile_pages(raw: dict) -> list[dict]:
         for page_data in nota_pages:
             add("nota_curatorial", page_data)
         if len(nota_pages) % 2 == 1:
-            add("blank_cream", {})
+            add("blank_white", {})
 
     # — Índice (auto-derive entradas if not provided). Each entry gets
     # the sala portadilla's page number, pre-computed: the índice
@@ -106,12 +108,18 @@ def _compile_pages(raw: dict) -> list[dict]:
     # and each subsequent sala adds 2 (portadilla+blank) + 2*N piezas.
     if "indice" in raw:
         indice = dict(raw["indice"])
+        per_page = 6                       # salas per índice page
+        provided = indice.get("entradas")
+        n_entries = len(provided) if provided else len(salas)
+        n_index_pages = max(1, (n_entries + per_page - 1) // per_page)
+        # The salas begin after ALL índice pages, so the first portadilla
+        # is next_id + n_index_pages (was +1 when the índice was a single page).
         sala_pages: list[int] = []
-        p = next_id + 1
+        p = next_id + n_index_pages
         for s in salas:
             sala_pages.append(p)
             p += 2 + 2 * len(s.get("piezas") or [])
-        indice.setdefault("entradas", [
+        entradas = provided or [
             {
                 "romano":  s.get("romano", ""),
                 "nombre":  (s.get("portadilla") or {}).get("nombre", ""),
@@ -119,8 +127,14 @@ def _compile_pages(raw: dict) -> list[dict]:
                 "pagina":  sala_pages[i],
             }
             for i, s in enumerate(salas)
-        ])
-        add("indice", indice)
+        ]
+        # Split into pages of `per_page` salas; título only on the first.
+        for chunk_i, start in enumerate(range(0, len(entradas), per_page)):
+            page_data = dict(indice)
+            page_data["entradas"] = entradas[start:start + per_page]
+            if chunk_i > 0:
+                page_data["titulo"] = ""
+            add("indice", page_data)
 
     # — Salas: each one = a portadilla + N pieza spreads (imagen + texto)
     pieza_counter = 0

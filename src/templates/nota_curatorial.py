@@ -416,7 +416,7 @@ def render(page_id: int, data: dict) -> str:
     colophon = data.get("colophon") or []
     is_continuation = bool(data.get("is_continuation", False))
 
-    parts = [r.svg_open(r.PALETTE["papel_crema"])]
+    parts = [r.svg_open(r.PALETTE["blanco"])]
 
     # — Title (first page only). First line's baseline sits at
     # row_bottom(1); wrapped lines stack downward into row 2.

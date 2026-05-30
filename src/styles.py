@@ -9,9 +9,9 @@ from dataclasses import dataclass
 
 PALETTE: dict[str, str] = {
     "rojo_tinta":   "#A92A20",   # matches tests/ground-truth/Section1.svg
-    "papel_crema":  "#F5F2EB",
+    "blanco":       "#FFFFFF",   # plain white (blank pages, cover)
     "negro_tinta":  "#1A1A1A",
-    "gris_texto":   "#555555",
+    "gris_texto":   "#1A1A1A",   # was #555555 — unified to ink black
     "gris_claro":   "#999999",
     "frame_fill":   "#EBE7DD",
     "frame_stroke": "#C8C1B0",
@@ -41,23 +41,23 @@ class TextStyle:
 # same as this registry.
 TEXT_STYLES: dict[str, TextStyle] = {
     # — Portada (cover) —
-    # Full-bleed rojo_tinta background; text prints in papel_crema.
+    # Full-bleed rojo_tinta background; text prints in blanco.
     "01-Portada-Label": TextStyle(
         font_family="Lato", font_weight=900,
         size_pt=8, leading_pt=11,
         tracking_per1000=200,
-        color="papel_crema", uppercase=True,
+        color="negro_tinta", uppercase=True,
     ),
     "02-Portada-Titulo": TextStyle(
         font_family="Lato", font_weight=700,
         size_pt=42, leading_pt=40,
         tracking_per1000=-20,
-        color="papel_crema",
+        color="negro_tinta",
     ),
     "03-Portada-Subtitulo": TextStyle(
         font_family="EB Garamond", font_style="italic",
         size_pt=14, leading_pt=18,
-        color="papel_crema",
+        color="negro_tinta",
         space_before_mm=10,
     ),
 
@@ -66,21 +66,21 @@ TEXT_STYLES: dict[str, TextStyle] = {
         font_family="Lato", font_weight=900,
         size_pt=7, leading_pt=9,
         tracking_per1000=200,
-        color="papel_crema", uppercase=True,
+        color="blanco", uppercase=True,
         align="middle",
     ),
     "05-Epigrafe-Cita": TextStyle(
         # Regular weight 500 (not italic). Centered on the page.
         font_family="EB Garamond", font_weight=500,
         size_pt=22, leading_pt=26,
-        color="papel_crema",
+        color="blanco",
         align="middle",
     ),
     "06-Epigrafe-Fuente": TextStyle(
         # Reference centers the source line, not right-aligns (spec was wrong).
         font_family="EB Garamond", font_style="italic",
         size_pt=10, leading_pt=14,
-        color="papel_crema",
+        color="blanco",
         align="middle",
     ),
 
@@ -138,13 +138,13 @@ TEXT_STYLES: dict[str, TextStyle] = {
         # Size 156.71pt to match tests/ground-truth/Section1.svg.
         font_family="EB Garamond",
         size_pt=156.71, leading_pt=155,
-        color="papel_crema",
+        color="blanco",
     ),
     "14-Portadilla-Nombre": TextStyle(
         font_family="Lato", font_weight=900,
         size_pt=20, leading_pt=22,
         tracking_per1000=-10,
-        color="papel_crema",
+        color="blanco",
         space_before_mm=6,
         justified=True,
     ),
@@ -152,12 +152,12 @@ TEXT_STYLES: dict[str, TextStyle] = {
         font_family="Lato", font_weight=900,
         size_pt=8, leading_pt=10,
         tracking_per1000=200,
-        color="papel_crema", uppercase=True,
+        color="blanco", uppercase=True,
     ),
     "16-Portadilla-CitaCurato": TextStyle(
         font_family="EB Garamond", font_style="italic",
         size_pt=13, leading_pt=18,
-        color="papel_crema",
+        color="blanco",
         justified=True,
     ),
 
@@ -255,7 +255,7 @@ TEXT_STYLES: dict[str, TextStyle] = {
     "Folio-Light": TextStyle(
         font_family="Lato", font_weight=400,
         size_pt=8,
-        color="papel_crema",
+        color="blanco",
     ),
     "Folio-Dark": TextStyle(
         font_family="Lato", font_weight=400,

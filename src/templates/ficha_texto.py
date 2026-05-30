@@ -130,7 +130,7 @@ def render(page_id: int, data: dict) -> str:
     #   odd page  (right of spread): spine = left edge  → bleed left
     bleed_x = 0.0 if (page_id % 2 == 1) else (r.TRIM_W_MM - BLEED_W_MM)
 
-    parts = [r.svg_open(r.PALETTE["papel_crema"])]
+    parts = [r.svg_open(r.PALETTE["blanco"])]
 
     # — Bleed strip on the spine side (matches the facing image page's
     #   background, including any per-artwork `fondo:` override)

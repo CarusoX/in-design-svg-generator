@@ -63,7 +63,7 @@ def render(page_id: int, data: dict) -> str:
     titulo = str(data.get("titulo", "Índice")).strip()
     entradas = data.get("entradas") or []
 
-    parts = [r.svg_open(r.PALETTE["papel_crema"])]
+    parts = [r.svg_open(r.PALETTE["blanco"])]
 
     if titulo:
         parts.append(r.text(

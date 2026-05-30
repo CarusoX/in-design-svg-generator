@@ -15,7 +15,7 @@ def render(page_id: int, data: dict) -> str:
     cx = r.TRIM_W_MM / 2
     cy = r.TRIM_H_MM / 2
 
-    parts = [r.svg_open(PALETTE["papel_crema"])]
+    parts = [r.svg_open(PALETTE["blanco"])]
 
     # Trim guide (preview only — not for print output).
     parts.append(
