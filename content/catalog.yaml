@@ -216,7 +216,9 @@ salas:
           titulo: "Tipos Garamond del Laudationes Quinque"
           autor: "Punzonista no identificado (estilo Claude Garamond, c. 1530)"
           datos: "Antes de 1766 · Origen incierto, Probablemente Francia, Países Bajos o España"
-          images: [L003-02.png, L003-01.png]
+          images:
+            - {file: L003.png,   slot: [1, 1, 6, 4]}
+            - {file: L003-1.png, slot: [1, 6, 6, 4]}
         texto:
           descripcion: >-
             Letras de imprenta usadas para la composición del primer libro
@@ -295,8 +297,7 @@ salas:
           titulo: "Prensa de hierro de la 'Imprenta de la Patria' (Museo del Vino de Cafayate)"
           autor: "Manufactura indeterminada (siglo XIX)"
           datos: "siglo XIX (no s. XVIII como suele atribuirse) · Cafayate, Salta, Argentina"
-          images:
-            - {file: L006.jpeg, slot: [1, 1, 6, 9]}
+          images: [L006.jpeg]
         texto:
           descripcion: >-
             Prensa tipográfica manual conocida popularmente como 'Imprenta de la
@@ -788,8 +789,8 @@ salas:
             - {file: L023-3.png, slot: [1, 1, 2, 3]}
             - {file: L023-4.png, slot: [1, 4, 2, 3]}
             - {file: L023-5.png, slot: [1, 7, 2, 3]}
-            - {file: L023-2.png, slot: [4, 1, 3, 4]}
-            - {file: L023.jpg,   slot: [4, 6, 3, 4]}
+            - {file: L023-2.png, slot: [3, 1, 4, 4.5], halign: right}
+            - {file: L023.jpg,   slot: [3, 5.5, 4, 4.5], halign: right}
         texto:
           descripcion: >-
             Almanaque fundado en 1901 por el austríaco M. Sundt como pequeño
@@ -924,7 +925,11 @@ salas:
           titulo: "Identidades de marcas iconográficas argentinas (1930-1950)"
           autor: "Estudios y agencias varias (locales e internacionales)"
           datos: "1930-1950 · Buenos Aires, Argentina"
-          images: [L028.jpg, L028-1.png, L028-2.png, L028-3.jpg, L028-4.png]
+          images:
+            - {file: L028.jpg,   slot: [1, 1, 3, 4]}
+            - {file: L028-2.png, slot: [4, 1, 3, 4]}
+            - {file: L028-4.png, slot: [1, 5, 3, 5], valign: bottom}
+            - {file: L028-3.jpg, slot: [4, 5, 3, 5], halign: right, valign: bottom}
         texto:
           descripcion: >-
             Conjunto de identidades visuales de las marcas que constituyeron el
@@ -1001,7 +1006,9 @@ salas:
           titulo: "Viracocha (manual escolar)"
           autor: "Editado por Curt Berger y Cía.; diseño del escultor Gonzalo Leguizamón Pondal y el arquitecto Alberto Gelly Cantilo"
           datos: "1923 · Buenos Aires, Argentina"
-          images: [L031-1.jpg, L031-2.jpg]
+          images:
+            - {file: L031-1.jpg, slot: [1, 1, 6, 4]}
+            - {file: L031-2.jpg, slot: [1, 6, 6, 4]}
         texto:
           descripcion: >-
             Manual escolar publicado por Curt Berger y Cía. en 1923, con diseño
@@ -1068,7 +1075,11 @@ salas:
           titulo: "Identidades gráficas de las empresas estatales peronistas"
           autor: "Estado argentino (varios diseñadores anónimos)"
           datos: "1941-1952 · Buenos Aires, Argentina"
-          images: [L033.png, L033-1.png, L033-2.jpg, L033-3.jpg]
+          images:
+            - {file: L033.png,   slot: [1, 1, 3, 3]}
+            - {file: L033-1.png, slot: [4, 1, 3, 3]}
+            - {file: L033-2.jpg, slot: [1, 7, 6, 3]}
+            - {file: L033-3.jpg, slot: [1, 4, 6, 3]}
         texto:
           descripcion: >-
             Conjunto de emblemas y aplicaciones gráficas de las empresas
@@ -1327,7 +1338,11 @@ salas:
           titulo: "Revista nueva visión"
           autor: "Grupo axis (Tomás Maldonado, Alfredo Hlito, Carlos Méndez Mosquera) y Jorge Grisetti"
           datos: "1951-1957 · Buenos Aires, Argentina"
-          images: [L042-1.jpg, "L042-2,3.jpg", L042-4.jpg, L042-5.jpg, L042-6.jpg]
+          images:
+            - {file: L042-1.jpg, slot: [1, 1, 3, 4]}
+            - {file: L042-6.jpg, slot: [4, 1, 3, 4]}
+            - {file: L042-4.jpg, slot: [1, 6, 3, 4]}
+            - {file: L042-5.jpg, slot: [4, 6, 3, 4]}
         texto:
           descripcion: >-
             Revista cuyo título homenajea a Moholy-Nagy, llevada adelante por
@@ -1356,7 +1371,10 @@ salas:
           titulo: "Sistema de identidad visual de la Feria de América"
           autor: "Tomás Maldonado (módulo gráfico) y Santiago Barbuy (desarrollo y aplicaciones)"
           datos: "1954 · Mendoza, Argentina"
-          images: [L043-1.png, L043-2.png, L043-3.png, L043-4.png, L043-5.png]
+          images:
+            - {file: L043-1.png, slot: [1, 1, 3, 4]}
+            - {file: L043-9.png, slot: [4, 1, 3, 4]}
+            - {file: L043-3.png, slot: [1, 6, 6, 3]}
         texto:
           descripcion: >-
             Programa gráfico integral de la Feria de América, exposición
@@ -1471,10 +1489,9 @@ salas:
           autor: "Rubén Fontana y Roberto Alvarado (dirección) / Ediciones de Diseño"
           datos: "1987-1989 · Buenos Aires, Argentina"
           images:
-            - {file: L047-2.jpg,  slot: [1, 1, 3, 3]}
-            - {file: L047-6.jpg,  slot: [4, 1, 3, 3]}
-            - {file: L047-10.png, slot: [1, 4, 6, 3]}
-            - {file: L047-11.png, slot: [1, 7, 6, 3]}
+            - {file: L047-2.jpg,  slot: [1, 1, 3, 4]}
+            - {file: L047-6.jpg,  slot: [4, 1, 3, 4]}
+            - {file: L047-10.png, slot: [1, 6, 6, 4]}
         texto:
           descripcion: >-
             Con el subtítulo «comunicación para diseñadores» y la definición
@@ -2324,7 +2341,11 @@ salas:
           titulo: "Serie «Próceres y Riquezas Nacionales»"
           autor: "Correo Argentino (equipo de diseño filatélico, autores no identificados individualmente)"
           datos: "1954-1958 · Buenos Aires, Argentina"
-          images: [L077.webp, L077-1.jpg, L077-2.webp, L077-3.webp, L077-4.webp]
+          images:
+            - {file: L077.webp,  slot: [1, 1, 6, 5], valign: bottom}
+            - {file: L077-2.png, slot: [1, 6, 2, 2.25], valign: top}
+            - {file: L077-3.png, slot: [3, 6, 2, 2.25], valign: top}
+            - {file: L077-4.png, slot: [5, 6, 2, 2.25], valign: top}
         texto:
           descripcion: >-
             Programa filatélico desplegado durante el segundo peronismo que usó
@@ -2386,7 +2407,10 @@ salas:
           titulo: "Series Eva Perón en estampillas"
           autor: "Correo Argentino (equipos de diseño filatélico)"
           datos: "1960-2002 · Buenos Aires, Argentina"
-          images: [L079-1.jpg, L079-3.jpg, L079-4.png]
+          images:
+            - {file: L079-1.jpg, slot: [1, 1, 3, 4], valign: bottom}
+            - {file: L079-3.jpg, slot: [4, 1, 3, 4], valign: bottom}
+            - {file: L079-4.png, slot: [2, 5, 4, 5], valign: top}
         texto:
           descripcion: >-
             Conjunto de programas filatélicos dedicados a la figura de María Eva

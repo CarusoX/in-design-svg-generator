@@ -86,7 +86,9 @@ def _coerce_images(data: dict) -> list[dict]:
             if not f:
                 continue
             slot_raw = item.get("slot")
-            slot = tuple(int(n) for n in slot_raw) if slot_raw else None
+            # Floats allowed so a slot can land on a sub-row boundary
+            # (e.g. rspan 4.5) — slot_mm() is pure arithmetic.
+            slot = tuple(float(n) for n in slot_raw) if slot_raw else None
             # fit: "contain" (default, meet — whole image, may leave cream)
             #   or "cover" (slice — fill the slot edge-to-edge, cropping).
             fit = str(item.get("fit", "contain")).strip().lower()
@@ -123,6 +125,11 @@ def _render_images(images: list[dict], pieza_id: str, categoria: str) -> list[st
 
     if all(item["slot"] is not None for item in images):
         slots = [item["slot"] for item in images]
+    elif len(images) == 1:
+        # A lone image always fills the entire image zone, contained and
+        # centered — as large as possible until it meets the reticle
+        # bounds (horizontal or vertical edge, whichever it reaches first).
+        slots = [layouts.IMAGE_ZONE]
     else:
         aspects = [layouts.image_aspect(p, PROJECT_ROOT) for p in source_rel]
         slots = layouts.best_layout(len(images), aspects)
