@@ -1,0 +1,13 @@
+# Generated output (regenerate with `python -m src.generate`)
+out/
+
+# Build/handoff artifacts
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# macOS
+.DS_Store
