@@ -174,7 +174,7 @@ def _compile_pages(raw: dict) -> list[dict]:
             texto = texto_raw
             texto.setdefault("pieza_id", default_pieza_id)
             texto.setdefault("cabecera_sub", default_cabecera)
-            for key in ("autor", "datos", "tipo", "titulo"):
+            for key in ("autor", "datos", "tipo", "titulo", "fondo"):
                 if key in imagen_raw:
                     texto.setdefault(key, imagen_raw[key])
 

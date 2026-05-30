@@ -60,7 +60,10 @@ BODY_COL_W_MM = (
 )
 BODY_GUTTER_MM = r.RETICLE_GUTTER_MM
 
-BLEED_W_MM = 7.0                                # half the 14mm margin
+# Half the content inset (trim edge → where the columns start), not half
+# the bare page margin — so the strip lines up with the text block.
+#   (MARGIN_MM + RETICLE_INSET_MM) / 2 = (14 + 1.4) / 2 = 7.7
+BLEED_W_MM = (r.MARGIN_MM + r.RETICLE_INSET_MM) / 2
 BLEED_Y_MM = 0.0
 BLEED_H_MM = r.TRIM_H_MM
 
@@ -129,11 +132,12 @@ def render(page_id: int, data: dict) -> str:
 
     parts = [r.svg_open(r.PALETTE["papel_crema"])]
 
-    # — Bleed strip on the spine side
+    # — Bleed strip on the spine side (matches the facing image page's
+    #   background, including any per-artwork `fondo:` override)
     parts.append(
         f'<rect x="{bleed_x}" y="{BLEED_Y_MM}" '
         f'width="{BLEED_W_MM}" height="{BLEED_H_MM}" '
-        f'fill="{r.PALETTE["rojo_tinta"]}"/>'
+        f'fill="{ch.resolve_fondo(data)}"/>'
     )
 
     # — Metadata stack (4 unlabeled lines, left-anchored at col 1)

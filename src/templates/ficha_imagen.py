@@ -59,7 +59,7 @@ def render(page_id: int, data: dict) -> str:
     categoria = str(data.get("categoria", "A")).strip()
     images = _coerce_images(data)
 
-    parts = [r.svg_open(r.PALETTE["rojo_tinta"])]
+    parts = [r.svg_open(ch.resolve_fondo(data))]
     parts.extend(_render_images(images, pieza_id, categoria))
     parts.append(r.folio(page_id, light=True))
     parts.append(r.svg_close())
@@ -87,11 +87,21 @@ def _coerce_images(data: dict) -> list[dict]:
                 continue
             slot_raw = item.get("slot")
             slot = tuple(int(n) for n in slot_raw) if slot_raw else None
-            out.append({"file": f, "slot": slot})
+            # fit: "contain" (default, meet — whole image, may leave cream)
+            #   or "cover" (slice — fill the slot edge-to-edge, cropping).
+            fit = str(item.get("fit", "contain")).strip().lower()
+            # valign / halign: where a contained image sits in its slot
+            #   when it doesn't fill the slot. valign "top"|"middle"
+            #   (default)|"bottom"; halign "left"|"center" (default)|"right".
+            valign = str(item.get("valign", "middle")).strip().lower()
+            halign = str(item.get("halign", "center")).strip().lower()
+            out.append({"file": f, "slot": slot, "fit": fit,
+                        "valign": valign, "halign": halign})
         else:
             s = str(item).strip()
             if s:
-                out.append({"file": s, "slot": None})
+                out.append({"file": s, "slot": None, "fit": "contain",
+                            "valign": "middle", "halign": "center"})
     if len(out) > MAX_IMAGES:
         raise ValueError(
             f"ficha_imagen supports up to {MAX_IMAGES} images, got {len(out)}"
@@ -119,15 +129,27 @@ def _render_images(images: list[dict], pieza_id: str, categoria: str) -> list[st
         if slots is None:                # shouldn't happen — guarded by MAX
             return _empty_placeholder(pieza_id, categoria)
 
+    fits = [item.get("fit", "contain") for item in images]
+    valigns = [item.get("valign", "middle") for item in images]
+    haligns = [item.get("halign", "center") for item in images]
+    _Y = {"top": "Min", "middle": "Mid", "bottom": "Max"}
+    _X = {"left": "Min", "center": "Mid", "right": "Max"}
     out: list[str] = []
-    for name, src_rel, slot in zip(basenames, source_rel, slots):
+    for name, src_rel, slot, fit, valign, halign in zip(
+        basenames, source_rel, slots, fits, valigns, haligns
+    ):
         x, y, w, h = layouts.slot_mm(slot)
         if (PROJECT_ROOT / src_rel).exists():
             href = f"{HREF_IMAGES_DIR}/{name}"
+            # "slice" scales to cover and clips to the image's own viewport
+            # (the x/y/width/height box); "meet" contains the whole image.
+            # The X/Y tokens set where a contained image sits in its slot.
+            mode = "slice" if fit == "cover" else "meet"
+            par = f"x{_X.get(halign, 'Mid')}Y{_Y.get(valign, 'Mid')} {mode}"
             out.append(
                 f'<image x="{x:.4f}" y="{y:.4f}" '
                 f'width="{w:.4f}" height="{h:.4f}" '
-                f'href="{href}" preserveAspectRatio="xMidYMid meet"/>'
+                f'href="{href}" preserveAspectRatio="{par}"/>'
             )
         else:
             out.append(r.image_placeholder(x, y, w, h))

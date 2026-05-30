@@ -39,14 +39,18 @@ OUT_DIR = ROOT / "out"
 VENDOR_FONTS_DIR = ROOT / "vendor" / "fonts"
 DEFAULT_PDF_OUT = OUT_DIR / "catalog.pdf"
 
-# A4 landscape = two A5 portraits side by side, with 1mm of slack
-# (296 vs 297) split evenly into 0.5mm margins on the outer edges.
-A4_LAND_W_MM = 297
-A4_LAND_H_MM = 210
+# Spread sheet = two A5 portraits flush side by side. We deliberately
+# do NOT center inside a 297×210 A4 frame anymore — the 0.5mm of slack
+# on each outer edge rendered as a white strip on rojo_tinta pages,
+# which read as "noise" against the red bleed. 296×210 is 1mm
+# narrower than true A4 but every consumer printer auto-scales /
+# centers the page anyway, so the print proof is unaffected.
 A5_W_MM = 148
 A5_H_MM = 210
-LEFT_PAGE_X_MM = (A4_LAND_W_MM - 2 * A5_W_MM) / 2          # 0.5
-RIGHT_PAGE_X_MM = LEFT_PAGE_X_MM + A5_W_MM                  # 148.5
+SPREAD_W_MM = 2 * A5_W_MM                                   # 296
+SPREAD_H_MM = A5_H_MM                                       # 210
+LEFT_PAGE_X_MM = 0                                          # flush left
+RIGHT_PAGE_X_MM = A5_W_MM                                   # flush against the spine
 
 
 def _inner_svg(svg_path: Path) -> str:
@@ -70,11 +74,13 @@ def composite_spread_svg(
         '<?xml version="1.0" encoding="UTF-8"?>',
         f'<svg xmlns="http://www.w3.org/2000/svg" '
         f'xmlns:xlink="http://www.w3.org/1999/xlink" '
-        f'width="{A4_LAND_W_MM}mm" height="{A4_LAND_H_MM}mm" '
-        f'viewBox="0 0 {A4_LAND_W_MM} {A4_LAND_H_MM}">',
+        f'width="{SPREAD_W_MM}mm" height="{SPREAD_H_MM}mm" '
+        f'viewBox="0 0 {SPREAD_W_MM} {SPREAD_H_MM}">',
         # White paper background — anything not covered by a page reads
-        # as the sheet itself.
-        f'<rect width="{A4_LAND_W_MM}" height="{A4_LAND_H_MM}" fill="white"/>',
+        # as the sheet itself. With pages flush to both outer edges,
+        # this only shows on the opening / closing spread where one
+        # side is intentionally blank.
+        f'<rect width="{SPREAD_W_MM}" height="{SPREAD_H_MM}" fill="white"/>',
     ]
     if left_path is not None:
         parts.append(

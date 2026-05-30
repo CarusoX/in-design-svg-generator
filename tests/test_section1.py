@@ -67,7 +67,7 @@ def generated_svg() -> Path:
         [sys.executable, "-m", "src.generate", "--page", str(page_id)],
         cwd=ROOT, check=True,
     )
-    path = ROOT / "out" / f"page-{page_id:03d}.svg"
+    path = ROOT / "out" / f"page-{page_id:04d}.svg"
     assert path.exists(), f"generator did not produce {path}"
     return path
 

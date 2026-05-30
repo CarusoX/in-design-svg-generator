@@ -25,6 +25,28 @@ LEFT_X_MM = r.MARGIN_MM + r.RETICLE_INSET_MM                       # 15.4
 RIGHT_X_MM = r.MARGIN_MM + r.CONTENT_W_MM - r.RETICLE_INSET_MM     # 132.6
 RULE_LENGTH_MM = RIGHT_X_MM - LEFT_X_MM                            # 117.2
 
+
+# Per-artwork background override. By default both pages of a ficha carry
+# the rojo_tinta expanse (full background on the image page + the spine
+# bleed strip on the text page). A pieza can override it with `fondo:` in
+# YAML — a PALETTE key, a raw "#rrggbb" hex, or the shortcut "negro"
+# (pure black #000000, distinct from negro_tinta #1A1A1A). Authored under
+# `imagen:`; generate.py bridges it to the text page so both match.
+_FONDO_NAMED = {"negro": "#000000", "black": "#000000"}
+
+
+def resolve_fondo(data: dict) -> str:
+    """Background/bleed color for a ficha. Falls back to rojo_tinta when
+    no `fondo` override is present."""
+    f = str(data.get("fondo", "")).strip()
+    if not f:
+        return r.PALETTE["rojo_tinta"]
+    if f.startswith("#"):
+        return f
+    if f in r.PALETTE:
+        return r.PALETTE[f]
+    return _FONDO_NAMED.get(f.lower(), f)
+
 # Reticle row math (mirrors src/render.py). All derived from
 # r.RETICLE_ROW_H_MM so positions stay in sync if the grid is retuned.
 _RETICLE_TOP_Y_MM = r.MARGIN_MM + r.RETICLE_INSET_MM      # 15.4
