@@ -217,8 +217,8 @@ salas:
           autor: "Punzonista no identificado (estilo Claude Garamond, c. 1530)"
           datos: "Antes de 1766 · Origen incierto, Probablemente Francia, Países Bajos o España"
           images:
-            - {file: L003.png,   slot: [1, 1, 6, 4]}
-            - {file: L003-1.png, slot: [1, 6, 6, 4]}
+            - {file: L003.png,   slot: [1, 1.5, 6, 4]}
+            - {file: L003-1.png, slot: [1, 5.5, 6, 4]}
         texto:
           descripcion: >-
             Letras de imprenta usadas para la composición del primer libro
@@ -786,9 +786,9 @@ salas:
           autor: "M. Sundt (fundador, 1901-1911); Viuda de Sundt (1912-1931); Editorial Peuser (a partir de los años 30)"
           datos: "1901-1931 (serie Sundt) · Buenos Aires, Argentina"
           images:
-            - {file: L023-3.png, slot: [1, 1, 2, 3]}
+            - {file: L023-3.png, slot: [1, 1, 2, 3], valign: top}
             - {file: L023-4.png, slot: [1, 4, 2, 3]}
-            - {file: L023-5.png, slot: [1, 7, 2, 3]}
+            - {file: L023-5.png, slot: [1, 7, 2, 3], valign: bottom}
             - {file: L023-2.png, slot: [3, 1, 4, 4.5], halign: right}
             - {file: L023.jpg,   slot: [3, 5.5, 4, 4.5], halign: right}
         texto:
@@ -1007,8 +1007,8 @@ salas:
           autor: "Editado por Curt Berger y Cía.; diseño del escultor Gonzalo Leguizamón Pondal y el arquitecto Alberto Gelly Cantilo"
           datos: "1923 · Buenos Aires, Argentina"
           images:
-            - {file: L031-1.jpg, slot: [1, 1, 6, 4]}
-            - {file: L031-2.jpg, slot: [1, 6, 6, 4]}
+            - {file: L031-1.jpg, slot: [1, 1.5, 6, 4]}
+            - {file: L031-2.jpg, slot: [1, 5.5, 6, 4]}
         texto:
           descripcion: >-
             Manual escolar publicado por Curt Berger y Cía. en 1923, con diseño
@@ -1339,10 +1339,10 @@ salas:
           autor: "Grupo axis (Tomás Maldonado, Alfredo Hlito, Carlos Méndez Mosquera) y Jorge Grisetti"
           datos: "1951-1957 · Buenos Aires, Argentina"
           images:
-            - {file: L042-1.jpg, slot: [1, 1, 3, 4]}
-            - {file: L042-6.jpg, slot: [4, 1, 3, 4]}
-            - {file: L042-4.jpg, slot: [1, 6, 3, 4]}
-            - {file: L042-5.jpg, slot: [4, 6, 3, 4]}
+            - {file: L042-1.jpg, slot: [1, 1.5, 3, 4], halign: right, valign: bottom}
+            - {file: L042-6.jpg, slot: [4, 1.5, 3, 4], halign: left,  valign: bottom}
+            - {file: L042-4.jpg, slot: [1, 5.5, 3, 4], halign: right, valign: top}
+            - {file: L042-5.jpg, slot: [4, 5.5, 3, 4], halign: left,  valign: top}
         texto:
           descripcion: >-
             Revista cuyo título homenajea a Moholy-Nagy, llevada adelante por
@@ -1372,9 +1372,9 @@ salas:
           autor: "Tomás Maldonado (módulo gráfico) y Santiago Barbuy (desarrollo y aplicaciones)"
           datos: "1954 · Mendoza, Argentina"
           images:
-            - {file: L043-1.png, slot: [1, 1, 3, 4]}
-            - {file: L043-9.png, slot: [4, 1, 3, 4]}
-            - {file: L043-3.png, slot: [1, 6, 6, 3]}
+            - {file: L043-1.png, slot: [1, 1.5, 3, 4], halign: left,  valign: bottom}
+            - {file: L043-9.png, slot: [4, 1.5, 3, 4], halign: right, valign: bottom}
+            - {file: L043-3.png, slot: [1, 5.5, 6, 4.5], valign: top}
         texto:
           descripcion: >-
             Programa gráfico integral de la Feria de América, exposición
@@ -1405,8 +1405,8 @@ salas:
           autor: "Juan Carlos Distéfano y equipo de diseño del Di Tella"
           datos: "1958-1970 · Buenos Aires, Argentina"
           images:
-            - {file: L044.jpg,   slot: [2, 1, 4, 4]}
-            - {file: L044-1.jpg, slot: [2, 6, 4, 4]}
+            - {file: L044.jpg,   slot: [2, 1.5, 4, 4], valign: bottom}
+            - {file: L044-1.jpg, slot: [2, 5.5, 4, 4], valign: top}
         texto:
           descripcion: >-
             Conjunto de catálogos, afiches, programas y materiales gráficos del
@@ -1432,9 +1432,9 @@ salas:
           autor: "Centro Editor de América Latina (dirección editorial de Boris Spivacow)"
           datos: "1966-1995 · Buenos Aires, Argentina"
           images:
-            - {file: L045.jpg,   slot: [1, 6, 3, 4]}
-            - {file: L045-1.jpg, slot: [4, 6, 3, 4]}
-            - {file: L045-2.jpg, slot: [2, 1, 4, 5]}
+            - {file: L045.jpg,   slot: [1, 6, 3, 4], valign: top}
+            - {file: L045-1.jpg, slot: [4, 6, 3, 4], valign: top}
+            - {file: L045-2.jpg, slot: [2, 1, 4, 5], valign: bottom}
         texto:
           descripcion: >-
             Conjunto de tapas y diseños de colecciones producidos por el Centro
@@ -1489,9 +1489,9 @@ salas:
           autor: "Rubén Fontana y Roberto Alvarado (dirección) / Ediciones de Diseño"
           datos: "1987-1989 · Buenos Aires, Argentina"
           images:
-            - {file: L047-2.jpg,  slot: [1, 1, 3, 4]}
-            - {file: L047-6.jpg,  slot: [4, 1, 3, 4]}
-            - {file: L047-10.png, slot: [1, 6, 6, 4]}
+            - {file: L047-2.jpg,  slot: [1, 1.5, 3, 4], halign: left,  valign: bottom}
+            - {file: L047-6.jpg,  slot: [4, 1.5, 3, 4], halign: right, valign: bottom}
+            - {file: L047-10.png, slot: [1, 5.5, 6, 4.5], valign: top}
         texto:
           descripcion: >-
             Con el subtítulo «comunicación para diseñadores» y la definición
@@ -1521,7 +1521,7 @@ salas:
           autor: "Raúl Shakespeare y Ronald Shakespeare"
           datos: "1971-1990 · Buenos Aires, Argentina"
           images:
-            - {file: L048.jpg,   slot: [1, 1, 6, 5]}
+            - {file: L048.jpg,   slot: [1, 1, 6, 5], valign: bottom}
             - {file: L048-1.jpg, slot: [1, 6, 4, 4], fit: cover}
             - {file: L048-2.jpg, slot: [5, 6, 2, 4], fit: cover}
         texto:
@@ -1685,8 +1685,8 @@ salas:
           images:
             - {file: L053-1.jpg, slot: [1, 1, 3, 3]}
             - {file: L053-2.jpg, slot: [4, 1, 3, 3]}
-            - {file: L053-4.jpg, slot: [2, 4, 4, 4]}
-            - {file: L053.jpg,   slot: [1, 8, 6, 2]}
+            - {file: L053-4.jpg, slot: [2, 4, 4, 4], valign: bottom}
+            - {file: L053.jpg,   slot: [1, 8, 6, 2], valign: top}
         texto:
           descripcion: >-
             El Grupo Onda, ganador del concurso de 1960, desarrolló el logotipo
@@ -1901,8 +1901,8 @@ salas:
           autor: "Rubén Fontana (FontanaDiseño)"
           datos: "1995-2007 · Buenos Aires, Argentina"
           images:
-            - {file: L062-1.webp, slot: [1, 1, 6, 4], fit: cover}
-            - {file: L062.jpg,    slot: [1, 6, 6, 4], fit: cover}
+            - {file: L062-1.webp, slot: [1, 1.5, 6, 4], fit: cover}
+            - {file: L062.jpg,    slot: [1, 5.5, 6, 4], fit: cover}
         texto:
           descripcion: >-
             Familia tipográfica diseñada por Rubén Fontana y aplicada desde 1995
@@ -1957,7 +1957,10 @@ salas:
           titulo: "Marca de campaña presidencial de Raúl Alfonsín («RA»)"
           autor: "Guillermo González Ruiz (marca) / David Ratto Publicidad (campaña)"
           datos: "1983 · Buenos Aires, Argentina"
-          images: [L064.jpg, L064-1.jpg, L064-2.jpg]
+          images:
+            - {file: L064-1.jpg, slot: [1, 1, 3, 4], halign: left,  valign: bottom}
+            - {file: L064-2.jpg, slot: [4, 1, 3, 4], halign: right, valign: bottom}
+            - {file: L064.jpg,   slot: [1, 5, 6, 4.5], valign: top}
         texto:
           descripcion: >-
             Marca de la campaña presidencial de Raúl Alfonsín en 1983, diseñada
@@ -2045,7 +2048,9 @@ salas:
           titulo: "Identidad de marca de YPF (FontanaDiseño)"
           autor: "FontanaDiseño (Rubén Fontana y Zalma Jalluf)"
           datos: "2004-2012 · Buenos Aires, Argentina"
-          images: [L067.png, L067-1.png]
+          images:
+            - {file: L067-1.png, slot: [1, 1, 6, 4], valign: bottom}
+            - {file: L067.png,   slot: [1, 5, 6, 5], valign: top}
         texto:
           descripcion: >-
             Programa de identidad de marca de YPF desarrollado por
@@ -2073,8 +2078,8 @@ salas:
           autor: "Departamento de Infografía de Clarín (dir. Jaime Serra, 1994-2001; Alejandro Tumas y Pablo Loscri desde 2001)"
           datos: "1993-2001 · Buenos Aires, Argentina"
           images:
-            - {file: L068-1.png, slot: [1, 1, 6, 4], valign: bottom}
-            - {file: L068-4.png, slot: [1, 6, 6, 4], valign: top}
+            - {file: L068-1.png, slot: [1, 1.5, 6, 4], valign: bottom}
+            - {file: L068-4.png, slot: [1, 5.5, 6, 4], valign: top}
         texto:
           descripcion: >-
             Producción del Departamento de Infografía del diario Clarín, creado
@@ -2146,9 +2151,9 @@ salas:
           autor: "OSPAAAL — Organización de Solidaridad de los Pueblos de Asia, África y América Latina (entre otros, Alfredo Rostgaard)"
           datos: "1966-1990 · La Habana, Cuba"
           images:
-            - {file: L070.png,   slot: [1, 5, 3, 5]}
+            - {file: L070.png,   slot: [1, 5, 3, 5], valign: top}
             - {file: L070-1.png, slot: [1, 1, 6, 4]}
-            - {file: L070-2.png, slot: [4, 5, 3, 5]}
+            - {file: L070-2.png, slot: [4, 5, 3, 5], valign: top}
         texto:
           descripcion: >-
             Corpus de carteles producidos por la OSPAAAL, la Organización de
@@ -2234,8 +2239,8 @@ salas:
           autor: "Colectivos de bordadoras de México, El Salvador, Colombia, Chile y Argentina (autoras múltiples y anónimas)"
           datos: "2010-2020 · varias, México / El Salvador / Colombia / Chile / Argentina"
           images:
-            - {file: L073.png,   slot: [2, 1, 4, 4], valign: bottom}
-            - {file: L073-1.png, slot: [2, 6, 4, 4], valign: top}
+            - {file: L073.png,   slot: [2, 1.5, 4, 4], valign: bottom}
+            - {file: L073-1.png, slot: [2, 5.5, 4, 4], valign: top}
         texto:
           descripcion: >-
             Red de colectivos de bordadoras de cinco países latinoamericanos que
@@ -2272,7 +2277,7 @@ salas:
           images:
             - {file: L074-2.jpg, slot: [1, 1, 3, 9]}
             - {file: L074-1.jpg, slot: [4, 1, 3, 4], fit: cover}
-            - {file: L074.jpg,   slot: [4, 5, 3, 5]}
+            - {file: L074.jpg,   slot: [4, 5, 3, 5], halign: left, valign: top}
         texto:
           descripcion: >-
             Experiencia gráfica realizada entre 2012 y 2014 a partir del
@@ -2343,9 +2348,9 @@ salas:
           datos: "1954-1958 · Buenos Aires, Argentina"
           images:
             - {file: L077.webp,  slot: [1, 1, 6, 5], valign: bottom}
-            - {file: L077-2.png, slot: [1, 6, 2, 2.25], valign: top}
-            - {file: L077-3.png, slot: [3, 6, 2, 2.25], valign: top}
-            - {file: L077-4.png, slot: [5, 6, 2, 2.25], valign: top}
+            - {file: L077-2.png, slot: [1, 6, 2, 2.37], valign: top, halign: left}
+            - {file: L077-3.png, slot: [3, 6, 2, 2.37], valign: top}
+            - {file: L077-4.png, slot: [5, 6, 2, 2.37], valign: top, halign: right}
         texto:
           descripcion: >-
             Programa filatélico desplegado durante el segundo peronismo que usó
@@ -2376,8 +2381,8 @@ salas:
           autor: "Correo Argentino (equipos de diseño filatélico)"
           datos: "1971-2004 · Buenos Aires, Argentina"
           images:
-            - {file: L078-1.png, slot: [1, 1, 6, 4], valign: bottom}
-            - {file: L078.png,   slot: [1, 6, 6, 3], valign: top}
+            - {file: L078-1.png, slot: [1, 1.5, 6, 4], valign: bottom}
+            - {file: L078.png,   slot: [1, 5.5, 6, 3], valign: top}
         texto:
           descripcion: >-
             Conjunto de programas filatélicos que continuaron la operación de
@@ -2442,7 +2447,11 @@ salas:
           titulo: "Sellos conmemorativos críticos y meta-diseño"
           autor: "Correo Argentino (equipos de diseño filatélico)"
           datos: "1986-2005 · Buenos Aires, Argentina"
-          images: [L080.png, L080-1.png, L080-2.png, L080-4.png]
+          images:
+            - {file: L080-2.png, slot: [1, 1, 6, 4]}
+            - {file: L080-4.png, slot: [1, 5, 2, 2.5], halign: left, valign: top}
+            - {file: L080-1.png, slot: [1, 7, 2, 3], halign: left, valign: bottom}
+            - {file: L080.png,   slot: [3, 5, 4, 5]}
         texto:
           descripcion: >-
             Tres emisiones que Ochoa identifica como ejemplos del «conmemorativo
