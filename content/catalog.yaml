@@ -26,6 +26,32 @@ portada:
     conservado
   subtitulo: "Catálogo del museo de diseño gráfico latinoamericano que no existe pero debería existir"
 
+# ── Créditos / colofón (page 2 — imprint, authorship, source-use note) ──
+creditos:
+  titulo: "Archivo de lo no conservado"
+  subtitulo: "Catálogo del museo de diseño gráfico latinoamericano que no existe pero debería existir"
+  volumen: "1764–2020"
+  creditos:
+    - "Autoras: D'Elia, Sofía Belén · Cristino, Ángeles"
+    - "Investigación, curaduría y diseño: Sofía Belén D'Elia · Ángeles Cristino"
+  contexto:
+    - >-
+      Este catálogo se desarrolló en el marco de un trabajo práctico de la
+      materia Historia del Diseño Gráfico Latinoamericano, de la Tecnicatura
+      Universitaria en Diseño Gráfico de la Universidad Provincial de Córdoba
+      — Comisión 2B.
+    - "Profesora: Fabiana Navarta Bianco"
+    - "Tipografías: Lato, EB Garamond y Caveat."
+  nota_legal: >-
+    Este catálogo es un trabajo de carácter exclusivamente académico, sin
+    fines de lucro ni de reproducción comercial, realizado con propósitos
+    educativos en el marco de la cátedra. El museo que respalda estas páginas
+    no existe. Las imágenes que ilustran las fichas pertenecen a sus
+    respectivos autores, archivos e instituciones, y se reproducen únicamente
+    con fines de estudio y de análisis, citando en todos los casos su fuente
+    en las referencias al final del volumen.
+  lugar: "Córdoba, Argentina · 2026"
+
 # ── Epígrafe ───────────────────────────────────────────────────────────
 epigrafe:
   label: "Epígrafe"
@@ -42,8 +68,8 @@ nota_curatorial:
   body: >-
     En 1994, Roger Chartier formuló una observación que con el tiempo se
     volvió incómoda: la tasa de sobrevida de un impreso es inversamente
-    proporcional a la importancia de su producción (Chartier, R., 2006,
-    p. 55). Dicho de otro modo, cuanto más se imprimió y más manos pasó,
+    proporcional a la importancia de su producción (Chartier, R., 2006). 
+    Dicho de otro modo, cuanto más se imprimió y más manos pasó,
     menos posibilidades tuvo de llegar hasta nosotros. Los objetos que
     una cultura considera valiosos los guarda; los que considera menores
     o utilitarios los consume hasta agotarlos. Esta colección existe, en
@@ -59,7 +85,7 @@ nota_curatorial:
     gráfico latinoamericano. La razón es simple y es también el problema
     que este proyecto intenta nombrar: esa colección no existe.
 
-    El ensayista e investigador argentino Gustavo Valdés de León señaló
+    Siguiendo esta linea, el ensayista e investigador argentino Gustavo Valdés de León señaló
     que el diseño latinoamericano carece todavía de una historia escrita
     sistemática (Valdés de León, G., 2008). Sus objetos han sido
     clasificados de maneras que les restan especificidad: como arte,
@@ -69,7 +95,7 @@ nota_curatorial:
     precolombino, por ejemplo, se lo traslada de un campo de análisis
     funcional y proyectual a uno de contemplación estética, vaciándolo
     de la trama social que le dio origen, uso y sentido (Valdés de León,
-    2008, p. 57). El resultado es una historia del diseño latinoamericano
+    2008). El resultado es una historia del diseño latinoamericano
     que en los grandes libros de referencia internacional casi no existe:
     en la obra de Philip B. Meggs, con cerca de novecientas entradas en
     su índice, apenas media docena refieren a autores latinoamericanos
@@ -78,27 +104,22 @@ nota_curatorial:
     Este catálogo propone un ejercicio de restitución. No pretende
     construir esa historia que falta, tarea que requeriría esfuerzos
     colectivos y programas de investigación de largo plazo (Valdés de
-    León, 2008, p. 60). Pretende algo más acotado y más concreto:
+    León, 2008). Pretende algo más acotado y más concreto:
     aplicar a un conjunto de objetos seleccionados el tratamiento
     formal que merecen. Las fichas que componen esta colección utilizan
     los mismos criterios descriptivos que cualquier museo utilizaría
     para documentar una pintura del siglo XVIII o una escultura
-    colonial: técnica, materiales, dimensiones, procedencia, estado de
+    colonial: técnica, materiales, procedencia, estado de
     conservación, notas curatoriales, bibliografía de referencia.
 
     La decisión de aplicar ese sistema a una página de libro tipográfico
-    de 1766 (Silverman, D. & Garone Gravier, M., 2021), a una filigrana
-    de papel de procedencia incierta (Silverman & Garone Gravier, 2021),
-    a la arquitectura editorial de una revista de 1902 (Rogers, G.,
-    2008), o a una tabla cronológica familiar en un almanaque de 1917
-    (Mosqueda, A., 2012), es, en sí misma, una toma de posición. Afirma
+    de 1766, a una filigranade papel de procedencia incierta,
+    a la arquitectura editorial de una revista de 1902, o a una tabla cronológica familiar en un almanaque de 1917, es, en sí misma, una toma de posición. Afirma
     que estos objetos son dignos del mismo rigor analítico y del mismo
     cuidado documental que cualquier otra expresión de la cultura
     material de su tiempo.
 
-    La colección está organizada cronológicamente y abarca desde los
-    primeros impresos producidos en el actual territorio argentino
-    durante el período colonial hasta las primeras décadas del siglo XX.
+    La colección combina un eje cronológico —de los primeros impresos coloniales a las primeras décadas del siglo XXI— con algunas salas de organización temática, cuyos períodos en consecuencia se superponen.
     Este recorte no implica una jerarquía: no se afirma que los objetos
     más antiguos sean más importantes que los más recientes, ni que
     Buenos Aires sea el centro desde el cual deba leerse el diseño
@@ -128,15 +149,10 @@ nota_curatorial:
     Este catálogo es una propuesta de cómo podría empezar a verse esa
     historia. Nada más, y nada menos.
 
-    Las piezas de esta colección han sido documentadas a partir de
-    fuentes académicas especializadas en historia del libro, tipografía
-    colonial y diseño gráfico latinoamericano. Las imágenes que
+    Las piezas de esta colección han sido documentadas a partir de fuentes académicas especializadas en historia del diseño gráfico, la tipografía y la cultura impresa latinoamericana. Las imágenes que
     acompañan cada ficha corresponden a reproducciones de los originales
     o de sus facsímiles, obtenidas de archivos públicos, repositorios
-    digitales y publicaciones académicas de referencia. En los casos en
-    que el original no ha sido localizado, se indica explícitamente en
-    la ficha correspondiente el estado de conservación y la fuente de la
-    imagen utilizada.
+    digitales y publicaciones académicas de referencia.
 
 # ── Índice (entradas auto-derived from salas below) ───────────────────
 indice:
@@ -153,9 +169,11 @@ salas:
       nombre: "Imprenta y palabra en el Virreinato"
       periodo: "1764-1809"
       cita_curatorial: >-
-        De la imprenta jesuítica del Colegio Monserrat de Córdoba (1764) a la
-        prensa que precedió a la Revolución de Mayo. Cuarenta y seis años de
-        tipografía colonial con un solo taller en funcionamiento simultáneo.
+        Durante casi medio siglo funcionó una sola imprenta a la vez en el 
+        Río de la Plata: la jesuítica de Córdoba (1764) y luego la Real 
+        Imprenta de Niños Expósitos. De esos talleres salieron el primer 
+        libro impreso del país —el Laudationes Quinque (1766)— y los 
+        primeros periódicos, con tipos importados, gastados y nunca conservados.
     piezas:
       - imagen:
           tipo: "Libro impreso colonial"
@@ -282,11 +300,7 @@ salas:
             censura, monopolio fiscal y alfabetización— produjo durante tres
             décadas los textos con los que aprendieron a leer las primeras
             generaciones porteñas. Los impresos eran baratos, mal compuestos por
-            la urgencia y descuidados en la lectura; pocos sobrevivieron. El
-            archivo los retiene no por su excepcionalidad gráfica sino por lo
-            contrario: son el grueso silencioso de una producción que casi nadie
-            pensó digno de conservar y que, sin embargo, fue lo más leído del
-            virreinato.
+            la urgencia y descuidados en la lectura; pocos sobrevivieron. Importan no por su excepcionalidad gráfica sino por lo contrario. Son el grueso silencioso de una producción que casi nadie pensó digno de conservar y que, sin embargo, fue lo más leído del virreinato.
           cita_textual: >-
             sus cartillas y catones educaron a los más jóvenes, sus obras de
             corte litúrgico instruyeron en la fe religiosa
@@ -336,10 +350,7 @@ salas:
             José de Lavardén, Juan José Castelli. El periódico inauguró en
             Buenos Aires el debate público impreso sobre economía, agricultura,
             educación y derechos —exactamente los temas que cinco años después
-            se convertirían en agenda revolucionaria. El archivo lo conserva
-            como pieza arqueológica: el primer momento en que la imprenta
-            porteña dejó de servir sólo al virreinato y a la Iglesia y comenzó a
-            producir un espacio de opinión.
+            se convertirían en agenda revolucionaria. Marca el primer momento en que la imprenta porteña dejó de servir sólo al virreinato y a la Iglesia y empezó a producir un espacio de opinión pública.
           cita_textual: >-
             El Telégrafo Mercantil, Rural, Político, Económico e
             Historiográfico, de Francisco Antonio Cabello y Mesa
@@ -365,8 +376,7 @@ salas:
             imprenta hace imposible la edición de las noticias publicadas en
             pliego separado': una declaración que confirma que el cuello de
             botella material de la imprenta era, en sí mismo, una cuestión
-            política. El archivo lo retiene como antecedente directo de la
-            prensa revolucionaria.
+            política. Es un antecedente directo de la prensa revolucionaria.
           cita_textual: >-
             el Semanario de Agricultura, Industria y Comercio, de Juan Hipólito
             Vieytes, con igual formato y un total de 218 números
@@ -389,10 +399,7 @@ salas:
             celebraban a los héroes de la defensa —Liniers, Pueyrredón, el
             Regimiento de Patricios— y consolidaban una mitología de la victoria
             que pocos años más tarde serviría también para legitimar la ruptura
-            con España. El archivo lo conserva como ejemplo del primer género
-            propagandístico militar-patriótico rioplatense, que ya en 1808 había
-            aprendido a usar la imprenta como instrumento de construcción
-            simbólica del Estado.
+            con España. Es un ejemplo del primer género propagandístico militar-patriótico rioplatense, que ya en 1808 había aprendido a usar la imprenta como instrumento de construcción simbólica del Estado.
           cita_textual: >-
             El Triunfo Argentino. Poema Heroico. Poema, textual impreso... Real
             Imprenta de Niños Expósitos, 1808
@@ -430,9 +437,10 @@ salas:
       nombre: "La gráfica de la Revolución"
       periodo: "1810-1859"
       cita_curatorial: >-
-        Los periódicos y almanaques de la república naciente. La misma imprenta
-        colonial cambia de manos políticas y empieza a producir el imaginario
-        republicano: la Gazeta, el Correo de Comercio, la Marcha Patriótica.
+        Con la Revolución de Mayo la imprenta se vuelve instrumento político: 
+        La Gazeta de Buenos Ayres (1810), impulsada por Mariano Moreno, inaugura 
+        la prensa revolucionaria. Junto a los primeros almanaques cívicos, estas 
+        piezas acompañan la construcción de un Estado naciente.
     piezas:
       - imagen:
           tipo: "Libro político traducido"
@@ -452,9 +460,7 @@ salas:
             escuelas y juntas locales del interior, y se convirtió en uno de los
             pilares del imaginario constitucional rioplatense. Pocos ejemplares
             de la primera edición sobreviven en perfectas condiciones; la
-            mayoría fueron leídos hasta el desgaste. El archivo lo retiene como
-            ejemplo de la primera edición política latinoamericana que asumió
-            explícitamente que traducir era reescribir.
+            mayoría fueron leídos hasta el desgaste. Es un ejemplo de la primera edición política latinoamericana que asumió explícitamente que traducir era reescribir.
           cita_textual: >-
             importantes obras como El Contrato Social de Jean-Jacques Rousseau,
             traducido por Mariano Moreno
@@ -475,11 +481,7 @@ salas:
             repertorio revolucionario argentino: la Gazeta es la primera
             evidencia material de que la independencia rioplatense se hizo
             también con tinta de Buenos Aires. La fecha del primer número se
-            conmemora hoy como Día del Periodismo en Argentina. Lo paradójico,
-            para el archivo, es que el órgano fundacional del periodismo
-            nacional se imprimió en la misma prensa que durante treinta años
-            había impreso bandos virreinales: hasta 1815 no se permitió que
-            ninguna otra imprenta operara en Buenos Aires.
+            conmemora hoy como Día del Periodismo en Argentina. Lo paradójico es que el órgano fundacional del periodismo nacional se imprimió en la misma prensa que durante treinta años había impreso bandos virreinales; hasta 1815 no se permitió que ninguna otra imprenta operara en Buenos Aires.
           cita_textual: >-
             La Gazeta de Buenos Ayres, órgano de difusión paradigmático del
             periodismo argentino
@@ -503,10 +505,7 @@ salas:
             ciudad y alrededores. La operación es notable: el género que durante
             tres décadas había servido para sincronizar a la sociedad colonial
             con el calendario eclesiástico se transforma en herramienta de
-            inventario de la república recién nacida. El archivo lo conserva
-            como la primera evidencia material de que la Revolución de Mayo no
-            sólo cambió el gobierno: cambió el tipo de información que un libro
-            doméstico necesitaba ofrecer.
+            inventario de la república recién nacida. Es la primera evidencia material de que la Revolución de Mayo no sólo cambió el gobierno, sino el tipo de información que un libro doméstico necesitaba ofrecer.
           cita_textual: >-
             Almanak patriótico de Buenos Ayres, para el año décimo de nuestra
             libertad. Buenos Aires, Imprenta de la Independencia, 1819
@@ -533,10 +532,7 @@ salas:
             operación archivística involuntaria, donde una publicación pensada
             para uso cotidiano se vuelve siglo y medio más tarde el único
             registro disponible de un sector entero de la cultura impresa
-            portenia. El archivo los retiene como ejemplo perfecto del valor
-            patrimonial paradójico de los impresos utilitarios: lo que se
-            imprimió para ser tirado a fin de año es lo que termina conservando
-            la memoria de todo lo demás.
+            portenia. Son un ejemplo perfecto del valor patrimonial paradójico de los impresos utilitarios. Lo que se imprimió para ser tirado a fin de año es lo que termina conservando la memoria de todo lo demás.
           cita_textual: >-
             los almanaques de comercio Blondel (1826-1836)... constituyen la
             fuente de información más importante para identificar las librerías
@@ -550,10 +546,10 @@ salas:
       nombre: "Sátira, prensa y Centenario"
       periodo: "1860-1909"
       cita_curatorial: >-
-        La caricatura política y la prensa ilustrada masiva. De El Mosquito
-        (1863) a Caras y Caretas (1898): el medio siglo en que la imagen
-        periodística se vuelve cultura común y la sátira política, lenguaje
-        cotidiano.
+        La prensa satírica ilustrada —El Mosquito, Don Quijote— y, con el cambio 
+        de siglo, Caras y Caretas (1898) inauguran una cultura visual de masas 
+        que combina fotografía, caricatura y publicidad. En el clima del 
+        Centenario, la ilustración se vuelve el principal lenguaje gráfico del país.
     piezas:
       - imagen:
           tipo: "Revista satírica de caricaturas"
@@ -573,10 +569,7 @@ salas:
             liberales hasta la presidencia de Juárez Celman y la Revolución del
             Parque. Su cierre en 1893 dejó el espacio satírico libre para que
             Don Quijote (Sojo) y luego Caras y Caretas (Pellicer) lo ocuparan.
-            El archivo retiene El Mosquito como matriz fundacional de la
-            caricatura política argentina: el primer caso en que se importó
-            masivamente el oficio europeo y se lo aplicó a la lucha política
-            local.
+            Es la matriz fundacional de la caricatura política argentina, el primer caso en que se importó masivamente el oficio europeo y se lo aplicó a la lucha política local.
           cita_textual: >-
             Stein, Henri, Monriot, Advinent– creaban El Mosquito
           estado: "Conservada (Biblioteca Nacional, hemerotecas)"
@@ -601,8 +594,7 @@ salas:
             Caras y Caretas funcionaron durante cinco años como las dos
             revistas-modelo del periodismo gráfico argentino, una más virulenta
             y otra más popular; el cierre de Don Quijote en 1903 dejó a Caras y
-            Caretas como única heredera. El archivo lo retiene como pieza
-            fundacional del periodismo satírico argentino.
+            Caretas como única heredera. Es una pieza fundacional del periodismo satírico argentino.
           cita_textual: >-
             el mecanismo de reemplazo entre Don Quijote (1884-1903) y Caras y
             Caretas
@@ -626,11 +618,7 @@ salas:
             compendio iconográfico argentino producido específicamente para
             vigilancia masiva: combina foto, texto y dispositivo de archivo en
             una operación editorial que anticipa los métodos del fichaje
-            policial moderno. El archivo retiene la pieza como antecedente
-            paradójico del propio Fray Mocho: el mismo hombre que organizó
-            visualmente la vigilancia popular fue, una década después, el
-            director de la revista que dio voz humorística a esa misma cultura
-            popular vigilada.
+            policial moderno. El mismo hombre que organizó visualmente la vigilancia popular fue, una década después, el director de la revista que dio voz humorística a esa misma cultura popular vigilada.
           cita_textual: >-
             Galería de los ladrones de la Capital (1887), publicada por la
             imprenta policial con un objetivo institucional concreto
@@ -655,8 +643,7 @@ salas:
             Blanco, Enrique Lemos, José Artal, Víctor Arreguine y el propio
             Pellicer— donde cada uno escribía un capítulo a partir del final del
             anterior, con el mandato explícito de complicarle la continuidad al
-            siguiente. El archivo retiene la pieza como laboratorio uruguayo de
-            la fórmula editorial argentina más exitosa.
+            siguiente. Es el laboratorio uruguayo de la fórmula editorial argentina más exitosa.
           cita_textual: >-
             a cargo de Pellicer y por el dibujante alsaciano Charles Schultz
           estado: "Conservada parcialmente (Biblioteca Nacional del Uruguay)"
@@ -680,10 +667,7 @@ salas:
             imprimía en la Compañía Sud-Americana de Billetes de Banco, una de
             las imprentas industriales más equipadas de la ciudad, con equipos
             completos de grabado, tipografía, encuadernación, litografía y
-            fundición. El archivo retiene Caras y Caretas como pieza-sistema: no
-            es un objeto individual sino la primera infraestructura gráfica
-            modernizada del Río de la Plata, que durante cuatro décadas produjo
-            semanalmente el imaginario visual del país.
+            fundición. Es una pieza-sistema. No es un objeto individual sino la primera infraestructura gráfica modernizada del Río de la Plata, que durante cuatro décadas produjo semanalmente el imaginario visual del país.
           cita_textual: >-
             La revista Caras y caretas (1898-1939) fundada por Eustaquio
             Pellicer y José Sixto Álvarez 'Fray Mocho' marcó un hito
@@ -708,9 +692,7 @@ salas:
             después del primer número de la revista. Inaugura una operación que
             la revista practicaría durante toda la presidencia: critica al
             presidente vía iconografía europea —Luis XIV, Felipe II, papas,
-            Napoleones— para vincular sus prácticas con el absolutismo. El
-            archivo retiene la tapa como caso paradigmático del momento en que
-            Caras y Caretas, recién nacida, se posiciona políticamente.
+            Napoleones— para vincular sus prácticas con el absolutismo. Es un caso emblemático del momento en que Caras y Caretas, recién nacida, se posiciona políticamente.
           cita_textual: >-
             Cao, 'El nuevo Luis XIV', en Caras y Caretas, 29 de octubre de 1898
           estado: "Conservada (colecciones encuadernadas de Caras y Caretas)"
@@ -732,10 +714,7 @@ salas:
             desarrollaba el hecho en clave gráfica: una ilustración mostraba a
             Belgrano levantándose de la tumba y reclamando a los dos ministros
             'Hasta los dientes me llevan! ¿No tendrán bastante con los propios
-            para comer del presupuesto?'. El archivo retiene la pieza como
-            ejemplo paradigmático de la operación humorística de Caras y
-            Caretas: convertir un episodio puntual en escándalo nacional vía
-            dibujo satírico, generalizar la falta moral a todo el régimen.
+            para comer del presupuesto?'. Es un ejemplo representativo de la operación humorística de Caras y Caretas, que convierte un episodio puntual en escándalo nacional vía dibujo satírico y generaliza la falta moral a todo el régimen.
           cita_textual: >-
             el hecho era retomado de modo satírico con una ilustración titulada
             'Los ministros odontólogos'
@@ -759,10 +738,7 @@ salas:
             millones' de Rafael Barreda, 'El falso inca' de Roberto Payró, 'El
             teniente coronel Fray Luis Beltrán' de Eduardo de la Barra, 'El
             diario de Eva' de Mark Twain, 'La tapera del cuervo' de Javier de
-            Viana. El archivo retiene el conjunto como ejemplo de la
-            flexibilidad estructural de la revista masiva argentina: ante la
-            presión competitiva, mutación inmediata del formato sin perder
-            identidad.
+            Viana. Es un ejemplo de la flexibilidad estructural de la revista masiva argentina, que ante la presión competitiva muta de inmediato el formato sin perder identidad.
           cita_textual: >-
             comenzó una nueva etapa con la publicación de su primer folletín, un
             género que había demostrado desde mucho antes su éxito en los
@@ -803,10 +779,7 @@ salas:
             pesos y medidas. Premiado con diploma y medalla de oro en la
             Exposición de Artes Gráficas del Centenario (1916). Lüsebrink lo
             describiría como 'máquina textual': un dispositivo de orientación en
-            el tiempo, el espacio, la historia y los saberes útiles. El archivo
-            lo retiene como caso paradigmático del almanaque rioplatense del
-            primer tercio del siglo XX: género popular, ilustrado, masivo y casi
-            siempre descartado por sus propios lectores al terminar el año.
+            el tiempo, el espacio, la historia y los saberes útiles. Es un caso representativo del almanaque rioplatense del primer tercio del siglo XX, un género popular, ilustrado, masivo y casi siempre descartado por sus propios lectores al terminar el año.
           cita_textual: >-
             El Almanaque del Mensajero salió por primera vez en 1901, y 1931 fue
             posiblemente el último año de publicación de esta serie por parte de
@@ -862,8 +835,7 @@ salas:
             funcionaban además como catálogo de la propia editorial Peuser: en
             la retiración de tapa y contratapa se promocionaban los libros
             disponibles como 'regalos esencialmente a propósito para Navidad y
-            Año Nuevo'. El archivo lo retiene como muestra de la transición del
-            almanaque-fórmula editorial al almanaque-catálogo comercial.
+            Año Nuevo'. Es una muestra de la transición del almanaque-fórmula editorial al almanaque-catálogo comercial.
           cita_textual: >-
             El Pasatiempo (1904) ofrecía —luego de las secciones fijas— una
             miscelánea de cuentos, rimas, biografías, crónicas de viajes
@@ -886,11 +858,7 @@ salas:
             compleja: las estaciones de servicio fueron construidas en estilos
             arquitectónicos diversos (racionalista, art deco, pintoresquista)
             según las regiones y décadas, pero todas exhibían el mismo símbolo
-            gráfico. El archivo retiene la identidad como ejemplo del primer
-            caso latinoamericano de sistema gráfico aplicado a una empresa
-            pública de escala nacional, y como pieza que sigue mutando: cada
-            actualización del logo borra la anterior, y la identidad histórica
-            sobrevive sólo en fotografías y archivos publicitarios.
+            gráfico. Es el primer caso latinoamericano de sistema gráfico aplicado a una empresa pública de escala nacional, y una pieza que sigue mutando. Cada actualización del logo borra la anterior, y la identidad histórica sobrevive sólo en fotografías y archivos publicitarios.
           cita_textual: >-
             El símbolo gráfico de YPF se aplicó a diversas escalas en
             publicidades y en los múltiples espacios de venta
@@ -912,10 +880,8 @@ salas:
             reconocibles de la Argentina del siglo XX. Mauzan había trabajado
             antes en Italia y Francia y aplicó al mercado porteño las técnicas
             del cartel europeo de gran formato (Cappiello, Cassandre). La pieza
-            es un caso paradigmático del traslado tecnológico de la publicidad
-            europea al Río de la Plata por vía de la inmigración profesional. El
-            archivo retiene la campaña como ejemplo del momento en que la
-            publicidad argentina dejó de ser texto y empezó a ser imagen.
+            es un caso representativo del traslado tecnológico de la publicidad
+            europea al Río de la Plata por vía de la inmigración profesional. Es un ejemplo del momento en que la publicidad argentina dejó de ser texto y empezó a ser imagen.
           cita_textual: >-
             figuras como Lucien Achille Mauzan (publicidad Geniol)
           estado: "Conservada (afiches dispersos en colecciones privadas y museos)"
@@ -941,10 +907,7 @@ salas:
             publicitario de la época —afiches en estaciones de tren y vagones,
             avisos en revistas, concursos de carteles, jingles radiales— las
             hizo presentes en todos los hogares argentinos durante dos décadas.
-            El archivo las retiene como conjunto porque la operación gráfica de
-            identidad de marca a gran escala se consolidó en la Argentina de los
-            años 30-40 antes de que existieran las primeras escuelas de diseño:
-            el saber se transmitía por talleres y agencias, no por academias.
+            Se reúnen como conjunto porque la operación gráfica de identidad de marca a gran escala se consolidó en la Argentina de los años 30-40 antes de que existieran las primeras escuelas de diseño, cuando el saber se transmitía por talleres y agencias, no por academias.
           cita_textual: >-
             la identidad de grandes empresas como Philips, Siemens, cigarrillos
             Sublimes y París, Cinzano, Bols, Fernet Branca, Chocolate Águila,
@@ -968,9 +931,7 @@ salas:
             Trabajó para Caras y Caretas, Plus Ultra, Mundo Argentino, La Nación
             y para editoriales como Atlántida y Peuser. Sus ilustraciones para
             los cuentos de Horacio Quiroga y para crónicas de viajes son hoy
-            referencias canónicas. El archivo retiene la obra como ejemplo
-            paradigmático del ilustrador que opera como diseñador gráfico antes
-            de que la disciplina exista institucionalmente en Argentina.
+            referencias canónicas. Es un ejemplo paradigmático del ilustrador que opera como diseñador gráfico antes de que la disciplina exista institucionalmente en Argentina.
           cita_textual: >-
             se destaca la obra artística del eximio ilustrador Alejandro Sirio
           estado: "Conservada (originales y reproducciones en revistas y libros)"
@@ -992,10 +953,7 @@ salas:
             circuito artístico legitimado: usó la misma infraestructura
             industrial de Caras y Caretas (Compañía Sud-Americana de Billetes de
             Banco) pero compuso un objeto de circulación más lenta, más pesado,
-            más caro y destinado a un público con mayor capital cultural. El
-            archivo lo retiene como ejemplo de la primera operación argentina de
-            diferenciación editorial dentro de una misma empresa: la industria
-            gráfica empezando a segmentar audiencias.
+            más caro y destinado a un público con mayor capital cultural. Es un ejemplo de la primera operación argentina de diferenciación editorial dentro de una misma empresa, la industria gráfica empezando a segmentar audiencias.
           cita_textual: >-
             Plus Ultra (1916-1930) fue un suplemento mensual de la revista donde
             colaboraba todo el staff del semanario
@@ -1021,11 +979,7 @@ salas:
             escolar puso en manos de cada chico argentino, durante varios años,
             un repertorio iconográfico precolombino transformado en propuesta
             pedagógica nacional. La pieza materializa en formato escolar el
-            programa que Rojas había anunciado en Eurindia un año antes. El
-            archivo lo conserva como prueba de que el indigenismo cultural
-            argentino no fue sólo un debate de élite: efectivamente bajó a las
-            aulas, en cuadernos ornamentados con grecas calchaquíes y motivos
-            diaguitas.
+            programa que Rojas había anunciado en Eurindia un año antes. Es una prueba de que el indigenismo cultural argentino no fue sólo un debate de élite. Efectivamente bajó a las aulas, en cuadernos ornamentados con grecas calchaquíes y motivos diaguitas.
           cita_textual: >-
             el manual escolar Viracocha, editado por Curt Berger y Cía en 1923,
             el hito educativo que permite sistematizar el dibujo decorativo
@@ -1051,10 +1005,7 @@ salas:
             americano alternativo al repertorio decorativo europeo. La
             publicación dialoga con el Silabario de Manuel Antonio Carreño y con
             los catálogos ornamentales de Owen Jones y Ernst Haeckel, pero opera
-            con materiales que esos catálogos europeos habían omitido. El
-            archivo lo retiene como ejemplo paradigmático de operación
-            archivística desde adentro: Rojas no espera que un museo conserve el
-            repertorio americano, lo cataloga él mismo en formato editorial.
+            con materiales que esos catálogos europeos habían omitido. Es un ejemplo paradigmático de operación archivística desde adentro. Rojas no espera que un museo conserve el repertorio americano, sino que lo cataloga él mismo en formato editorial.
           cita_textual: >-
             Silabario de la decoración americana (1930)
           estado: "Conservada"
@@ -1066,9 +1017,11 @@ salas:
       nombre: "Peronismo gráfico"
       periodo: "1946-1955"
       cita_curatorial: >-
-        Los nueve años del primer peronismo en que la propaganda gráfica estatal
-        alcanza una densidad sin precedentes. La SIPP centraliza un corpus que
-        será luego prohibido por decreto en 1956.
+        Entre 1946 y 1955, el Estado peronista alcanza una densidad gráfica 
+        sin precedentes: la SIPP centraliza los afiches y las empresas estatales 
+        estrenan identidades visuales. Tras 1955, el Decreto 4161/56 manda 
+        destruir ese material: muchas piezas sobreviven solo porque alguien 
+        las escondió.
     piezas:
       - imagen:
           tipo: "Identidades institucionales / sistema simbólico estatal"
@@ -1093,9 +1046,7 @@ salas:
             elementos heráldicos simplificados. La operación gráfica era
             coherente: cada empresa tenía un emblema propio, pero todos
             compartían un código visual que las identificaba como pertenecientes
-            al programa del Estado nacional. El archivo retiene la pieza como
-            sistema: la primera vez en la historia argentina que el Estado opera
-            con coherencia gráfica explícita en su patrimonio empresario.
+            al programa del Estado nacional. Funciona como sistema, la primera vez en la historia argentina que el Estado opera con coherencia gráfica explícita en su patrimonio empresario.
           cita_textual: >-
             se crean nuevas: Gas del Estado (1945), Agua y Energía (1947),
             Teléfonos del Estado (1948), y Aerolíneas Argentinas (1949)
@@ -1121,10 +1072,7 @@ salas:
             prácticas y costumbres de los sectores populares previamente
             estigmatizadas. Tras la caída del peronismo, el Decreto 4161/56 del
             5 de marzo de 1956 prohibió la circulación de todo el material
-            gráfico del régimen depuesto. El archivo retiene el corpus como caso
-            paradigmático de patrimonio gráfico legalmente prohibido: las piezas
-            que sobreviven hoy lo hacen porque alguien las escondió antes de ser
-            destruidas.
+            gráfico del régimen depuesto. Es un caso paradigmático de patrimonio gráfico legalmente prohibido. Las piezas que sobreviven hoy lo hacen porque alguien las escondió antes de ser destruidas.
           cita_textual: >-
             afiches generados desde la Subsecretaría de Información, Prensa y
             Propaganda (SIPP) durante el período comprendido por los años 1946 y
@@ -1150,9 +1098,7 @@ salas:
             pintor Ricardo Carpani y dialoga directamente con el muralismo
             mexicano de Siqueiros y el realismo socialista soviético. El gesto
             de romper las cadenas remite explícitamente a un verso central del
-            Himno Nacional Argentino. El archivo retiene la pieza como afiche
-            emblema de la primera fase peronista: justicia social y
-            modernización industrial fundidas en una iconografía de fuerza
+            Himno Nacional Argentino. Es el afiche emblema de la primera fase peronista, con la justicia social y la modernización industrial fundidas en una iconografía de fuerza popular.
             popular.
           cita_textual: >-
             un campesino en una demostración de fuerza y destreza física...
@@ -1174,13 +1120,7 @@ salas:
             iconografía es deliberada: el sujeto que sostiene la nueva propiedad
             estatal del sistema ferroviario no es el inmigrante europeo blanco
             asociado al ferrocarril privado británico, sino el 'cabecita'
-            criollo que el peronismo había incorporado a la escena política. El
-            archivo retiene la pieza como ejemplo paradigmático del programa
-            simbólico de la propaganda peronista: la nacionalización de un
-            activo material (los ferrocarriles) se acompaña de una
-            nacionalización del cuerpo del trabajador en la iconografía oficial.
-            La fisonomía propuesta no replica las prescripciones estéticas
-            europeizantes; las disputa.
+            criollo que el peronismo había incorporado a la escena política. Es un ejemplo del programa simbólico de la propaganda peronista. La nacionalización de un activo material —los ferrocarriles— se acompaña de una nacionalización del cuerpo del trabajador en la iconografía oficial, con una fisonomía que no replica las prescripciones estéticas europeizantes sino que las disputa.
           cita_textual: >-
             hibridación estética y de vestimentas entre un obrero y un
             campesino... cargando el peso de una locomotora
@@ -1229,10 +1169,7 @@ salas:
             abajo y hacia atrás —no al espectador— en una operación de
             complicidad horizontal entre pares. Al fondo, un edificio en el
             estilo arquitectónico clásico del peronismo (hoteles sindicales,
-            sanatorios sociales) da solidez material al mensaje. El archivo
-            retiene la pieza como ejemplo del momento en que la propaganda
-            peronista deja la épica y entra al humor: el régimen ya estabilizado
-            puede burlarse de los códigos pasados de las élites.
+            sanatorios sociales) da solidez material al mensaje. Es un ejemplo del momento en que la propaganda peronista deja la épica y entra al humor. El régimen ya estabilizado puede burlarse de los códigos pasados de las élites.
           cita_textual: >-
             presenta una imagen caricaturizada, al parecer ingenua y risueña...
             la caricatura de una figura humana estira su brazo hasta casi tocar
@@ -1255,11 +1192,7 @@ salas:
             para inscribirlos en un imaginario nacional vinculado al territorio
             y la fauna. La marca circuló masivamente en la Argentina de los 50 y
             luego desapareció cuando la planta IAME fue cerrada en 1980 por la
-            dictadura militar. El archivo retiene la identidad como pieza
-            paradigmática del diseño de producto peronista: no sólo el objeto
-            industrial sino el sistema gráfico que lo nombraba, lo presentaba al
-            consumidor y lo inscribía en el imaginario soberano del Estado
-            productor.
+            dictadura militar. 
           cita_textual: >-
             fabricó las motocicletas 'Puma' (c. 1952), los tractores 'Pampa' (c.
             1952) y los automóviles deportivos 'Justicialista' (1953)
@@ -1284,10 +1217,7 @@ salas:
             complejos datos económicos, productivos y geo-políticos en
             infografías y coreografías visuales inéditas para la época. El
             objetivo declarado era el acceso popular a la información,
-            incluyendo a lectores no especializados y analfabetos. El archivo
-            retiene la pieza como uno de los primeros grandes ejercicios de
-            diseño de información de Estado en la Argentina: el dato estadístico
-            convertido en imagen pedagógica de masas.
+            incluyendo a lectores no especializados y analfabetos. Es uno de los primeros grandes ejercicios de diseño de información de Estado en la Argentina, el dato estadístico convertido en imagen pedagógica de masas.
           cita_textual: >-
             permiten analizar a lo largo de las 800 páginas el macro-proyecto
             del Primer Plan Quinquenal... los complejos datos económicos,
@@ -1300,7 +1230,7 @@ salas:
   - romano: "VI"
     portadilla:
       nombre: "Diseño como disciplina"
-      periodo: "1956-1990"
+      periodo: "1949-1990"
       cita_curatorial: >-
         Desde el Boletín del CEA de 1949 hasta la revista tipoGráfica: el medio
         siglo en que el diseño gráfico argentino se nombra a sí mismo —en
@@ -1323,10 +1253,7 @@ salas:
             diseño funcional como modo social de manifestarse la nueva visión— y
             por su materialidad, ya que Maldonado aplicó en ella las primeras
             tipografías sans serif (de palo seco) que había traído de su viaje a
-            Suiza y Alemania en 1948. El archivo retiene el Boletín como el
-            documento de origen del discurso del diseño en el país: el momento
-            exacto en que una práctica empieza a nombrarse a sí misma, antes
-            incluso de tener escuelas, carreras o profesión.
+            Suiza y Alemania en 1948. Es el documento de origen del discurso del diseño en el país, el momento exacto en que una práctica empieza a nombrarse a sí misma, antes incluso de tener escuelas, carreras o profesión.
           cita_textual: >-
             la aparición del primer artículo sobre Diseño publicado en el
             Boletín N° 2 del Centro de Estudiantes de Arquitectura escrito por
@@ -1357,9 +1284,7 @@ salas:
             números configuró la primera voz pública y editorial del Proyecto
             Moderno en el país, y el uso de los primeros tipos de palo seco
             traídos por Maldonado la vuelve un gesto editorial absolutamente
-            fundante. El archivo retiene la revista como la pieza que abre, en
-            clave editorial, la reflexión sobre la visualidad sin precedentes en
-            Latinoamérica.
+            fundante. Es la pieza que abre, en clave editorial, una reflexión sobre la visualidad sin precedentes en Latinoamérica.
           cita_textual: >-
             La revista nueva visión (1951-1957) –título que homenajea a
             Moholy-Nagy– fue un dispositivo cultural... que inauguró la «nueva
@@ -1387,10 +1312,7 @@ salas:
             carnet de autoridades. Por su magnitud, complejidad y coherencia, la
             Feria constituyó un planteo inédito en el continente y uno de los
             principales hitos interdisciplinarios del Movimiento Moderno en
-            Argentina. El archivo retiene el sistema —y no la feria— como una de
-            las primeras identidades visuales completas de Latinoamérica: un
-            módulo gráfico generador desplegado con consistencia sobre decenas
-            de aplicaciones.
+            Argentina. Es una de las primeras identidades visuales completas de Latinoamérica —el sistema, no la feria—, un módulo gráfico generador desplegado con consistencia sobre diferentes de aplicaciones.
           cita_textual: >-
             Maldonado para el planteo del módulo gráfico que sentó las bases del
             desarrollo visual implementado por Barbuy en diversos soportes
@@ -1418,10 +1340,7 @@ salas:
             Plate, Oscar Bony, Alberto Greco, las experiencias del pop, el
             happening y el video. Su comunicación visual definió un lenguaje
             moderno argentino: tipografía suiza, geometría, blanco y negro,
-            escala internacional. El archivo retiene la pieza como el caso
-            paradigmático del 'Ulmismo' rioplatense, pero también como ejemplo
-            de que la modernidad gráfica argentina existió, y fue cancelada
-            cuando la política y el mercado dejaron de tolerarla.
+            escala internacional. Es el caso paradigmático del «Ulmismo» rioplatense y, a la vez, una prueba de que la modernidad gráfica argentina existió.
           cita_textual: >-
             Félix Beltrán y Juan Carlos Distéfano
           estado: "Conservada parcialmente (archivo Di Tella en UTDT, MNBA, colecciones privadas)"
@@ -1447,9 +1366,7 @@ salas:
             sostuvo durante tres décadas una idea radical: que el libro popular
             podía tener calidad gráfica sin disfrazarse de objeto de lujo. La
             dictadura militar incineró parte del fondo en 1980 (el famoso
-            'tendal de Sarandí') y el cierre llegó en 1995 por quiebra. El
-            archivo conserva las tapas como testigos de un proyecto editorial
-            que la dictadura no logró aniquilar pero sí mutilar.
+            'tendal de Sarandí') y el cierre llegó en 1995 por quiebra.
           cita_textual: >-
             las tapas de los libros del Centro Editor de América Latina de la
             década de los 80
@@ -1472,10 +1389,7 @@ salas:
             distinción incipiente entre Diseño Industrial y Diseño Gráfico. Sus
             decisiones de diseño —formato, puesta en página, articulación
             texto/imagen, a cargo del diseño editorial de Sara Torossian— eran
-            parte esencial de sus contenidos. El archivo retiene la revista —en
-            el recorte 1963-1989— como pieza clave de un campo que empieza a
-            pensarse a sí mismo: la publicación donde el diseño deja de ser
-            subsidiario de la arquitectura y reclama un territorio propio.
+            parte esencial de sus contenidos. En el recorte 1963-1989, es una pieza clave de un campo que empieza a pensarse a sí mismo, la publicación donde el diseño deja de ser subsidiario de la arquitectura y reclama un territorio propio.
           cita_textual: >-
             Fundada por el Arq. Carlos Méndez Mosquera en abril de 1963, Summa
             nace con la intención primordial de suplir la carencia, a nivel
@@ -1506,9 +1420,7 @@ salas:
             alfabeto Frutiger—, la organización visual de la información, el
             manejo de blancos, el papel y la impresión eran funcionales a la
             idea de diseño y de diseñador con la que se identificaba su editor.
-            El archivo retiene la pieza como emblema del momento en que el
-            diseño gráfico argentino se piensa, se enseña y se nombra como
-            disciplina autónoma.
+            Es el emblema del momento en que el diseño gráfico argentino se piensa, se enseña y se nombra como disciplina autónoma.
           cita_textual: >-
             Con el subtítulo comunicación para diseñadores y la definición
             revista de diseño, aparece, en julio de 1987, el primer número de
@@ -1534,12 +1446,7 @@ salas:
             legibilidad a velocidad: tipografía sans-serif normalizada,
             pictogramas reducidos a su esquema mínimo, sistema cromático
             estable. Buena parte de las señales todavía en uso hoy en Buenos
-            Aires son herederas directas de ese diseño. El archivo la incluye
-            como una pieza paradójica: está literalmente en la calle, sometida
-            al desgaste cotidiano y al recambio inadvertido, y precisamente por
-            eso es de las menos conservadas. Cada vez que un cartel se
-            reemplaza, una versión del Buenos Aires gráfico moderno desaparece
-            sin que nadie tome nota.
+            Aires son herederas directas de ese diseño. Es una pieza paradójica. Está literalmente en la calle, sometida al desgaste cotidiano y al recambio inadvertido, y precisamente por eso es de las menos conservadas. Cada vez que un cartel se reemplaza, una versión del Buenos Aires gráfico moderno desaparece sin que nadie tome nota.
           cita_textual: >-
             Eduardo Giménez y Raúl y Ronald Shakespeare
           estado: "En uso urbano; pieza expuesta a desgaste y reemplazo continuo"
@@ -1551,10 +1458,11 @@ salas:
       nombre: "Gráfica, música y contracultura"
       periodo: "1969-1972"
       cita_curatorial: >-
-        El rock nacional irrumpe a fines de los años sesenta y, con él, una
-        gráfica de tapa que oscila entre el artista amateur y el diseñador
-        profesional. Un núcleo mínimo de tapas fundacionales —de Mandioca a la
-        psicodelia— para una sala que el archivo apenas comienza a reunir.
+        Con la irrupción del rock nacional nace una gráfica de tapa que 
+        oscila entre el músico-artista y el diseñador profesional. De la 
+        ilustración críptica de Spinetta para Almendra al sello de 
+        vanguardia Mandioca, el disco se vuelve soporte de 
+        experimentación visual.
     piezas:
       - imagen:
           tipo: "Diseño discográfico / tapa de disco"
@@ -1573,10 +1481,7 @@ salas:
             personaje «Fermín». La discográfica RCA Vik se opuso y pretendía
             continuar con el clásico uso fotográfico de la banda para asegurar
             ventas; los músicos insistieron con el dibujo precisamente para
-            romper el estándar de cubiertas de la época. El archivo retiene la
-            pieza como acta de nacimiento de la gráfica del rock nacional: la
-            primera vez que un músico-autor impone una ilustración propia contra
-            el criterio comercial del sello.
+            romper el estándar de cubiertas de la época. Es el acta de nacimiento de la gráfica del rock nacional, la primera vez que un músico-autor impone una ilustración propia contra el criterio comercial del sello.
           cita_textual: >-
             La ilustración de carpeta de Almendra fue un dibujo de Spinetta que
             no se entendía a simple vista y que los especialistas... llaman
@@ -1601,10 +1506,7 @@ salas:
             animador autodidacta. A diferencia de las grandes discográficas,
             Mandioca había dado total libertad de acción y una especial
             valoración por el «arte de tapa», lo que la posicionó pronto como el
-            sello de vanguardia. El archivo retiene la pieza como ejemplo del
-            lenguaje persuasivo y político del collage rockero, captando —según
-            sus autores— el «clima opresivo» de fines de los sesenta bajo la
-            dictadura de Onganía.
+            sello de vanguardia. Es un ejemplo del lenguaje persuasivo y político del collage rockero, que captó —según sus autores— el «clima opresivo» de fines de los sesenta bajo la dictadura de Onganía.
           cita_textual: >-
             La tapa era una bomba de tiempo realizada con técnicas de collage
             con las fotografías de los músicos, un trabajo de Daniel Melgarejo y
@@ -1628,10 +1530,7 @@ salas:
             sutileza desde la tapa. Bond y Melgarejo pensaron una fruta resuelta
             con tipografía manuscrita: la apropiación opera tanto en lo
             morfológico —una fruta en la zona central— como en lo tipográfico
-            —el recurso a la letra script—. El archivo retiene la pieza como
-            caso paradigmático de apropiación local del pop art: el rock
-            argentino retomando a Warhol para decir, en clave cifrada, lo que la
-            censura no permitía decir.
+            —el recurso a la letra script—. Es un caso paradigmático de apropiación local del pop art, el rock argentino retomando a Warhol para decir, en clave cifrada, lo que la censura no permitía decir.
           cita_textual: >-
             Pidamos peras a Mandioca es una clara apropiación de la banana de
             Warhol, pero con condimentos locales
@@ -1655,10 +1554,7 @@ salas:
             nouveau —sus curvas sinuosas y fluidas— y en el op art —sus bloques
             de color y efectos de ilusión óptica—; si en su origen
             estadounidense tenía un fuerte componente político, la apropiación
-            local vació ese sentido para quedar como pura estética. El archivo
-            retiene la pieza como ejemplo de la psicodelia rioplatense: una
-            contracultura visual que llega importada y se reescribe en clave
-            local.
+            local vació ese sentido para quedar como pura estética. Es un ejemplo de la psicodelia rioplatense, una contracultura visual que llega importada y se reescribe en clave local.
           cita_textual: >-
             Creada por la artista plástica y escenógrafa Cristina Villamor,
             muestra a un mago-hechicero en medio de un sueño alucinógeno de
@@ -1697,11 +1593,7 @@ salas:
             interdisciplinario que reunió redactores, fotógrafos, diseñadores y
             arquitectos para planear campañas publicitarias, packagings,
             productos, stands y pabellones feriales. Inédita para el medio,
-            Agens funcionó además como una escuela para sus integrantes. El
-            archivo retiene la pieza como caso temprano de identidad corporativa
-            argentina concebida con manual de normas, y como ejemplo de la
-            articulación —pionera en el país— entre producción industrial y
-            diseño de comunicación dentro de una misma empresa.
+            Agens funcionó además como una escuela para sus integrantes.  Es un caso temprano de identidad corporativa argentina concebida con manual de normas, y de la articulación pionera entre producción industrial y diseño de comunicación dentro de una misma empresa.
           cita_textual: >-
             el Grupo Onda —ganador del concurso de 1960— quien desarrolló el
             logotipo Siam y su manual de aplicaciones... En 1962 se creó la
@@ -1726,12 +1618,7 @@ salas:
             asesoría de Carlos Fracchia; la diseñadora gráfica María Luisa
             Facorro de Colmenero desarrolló entre 1967 y 1972 la imagen integral
             del centro: papelería institucional, afiches, catálogos y un sistema
-            de exposiciones de aplicación constante. El archivo retiene la pieza
-            porque documenta uno de los primeros sistemas de identidad de una
-            institución argentina dedicada al propio diseño: el CIDI puso la
-            disciplina en la agenda de empresarios y consumidores, y su
-            comunicación visual fue, en sí misma, un argumento a favor de la
-            profesión.
+            de exposiciones de aplicación constante. Documenta uno de los primeros sistemas de identidad de una institución argentina dedicada al propio diseño. El CIDI puso la disciplina en la agenda de empresarios y consumidores, y su comunicación visual fue, en sí misma, un argumento a favor de la profesión.
           cita_textual: >-
             El isologotipo fue diseñado por Basilio Uribe, con la asesoría de
             Carlos Fracchia. María Luisa Facorro de Colmenero fue la diseñadora
@@ -1755,13 +1642,7 @@ salas:
             América Latina— requirió un soporte expositivo a medida: el estudio
             Diseño Buenos Aires resolvió la panelería modular y los arquitectos
             Rodolfo Möller, Augusto Brengio y Antonio Gache se encargaron del
-            diseño expositivo. El archivo retiene la pieza como uno de los
-            primeros casos documentados de diseño expositivo argentino concebido
-            como sistema modular, capaz de itinerar entre ciudades y de albergar
-            una gráfica de origen tan diverso como la historieta internacional
-            reunida en la muestra: dispositivo gráfico-arquitectónico en el que
-            el diseño deja la página y la marca para convertirse en organizador
-            del espacio cultural.
+            diseño expositivo. Es uno de los primeros casos documentados de diseño expositivo argentino concebido como sistema modular, un dispositivo en el que el diseño deja la página y la marca para organizar el espacio cultural.
           cita_textual: >-
             se diseñó un sistema de panelería modular (ideado por el estudio
             Diseño Buenos Aires) y un diseño expositivo por Rodolfo Möller,
@@ -1787,11 +1668,7 @@ salas:
             exhibición de la 1ª Bienal de Arte de Vanguardia en Rosario y Buenos
             Aires —clausurada el mismo día de su inauguración—. Entre sus
             integrantes estuvieron León Ferrari, Roberto Jacoby, Graciela
-            Carnevale y Margarita Paksa. El archivo retiene la pieza como
-            antecedente fundamental de la gráfica de activismo argentina: el
-            momento en que el lenguaje del diseño y la comunicación se pone al
-            servicio de una contrainformación, por fuera del circuito del arte y
-            contra el relato oficial.
+            Carnevale y Margarita Paksa.
           cita_textual: >-
             El proyecto incluyó afiches urbanos, anuncios en los medios, y la
             exhibición de la 1º Bienal de Arte de Vanguardia en Rosario y en
@@ -1827,10 +1704,7 @@ salas:
             rematada por dos bandas que rodean la pelota. Riera pensó esas
             bandas como un ícono de la cartografía moderna, pero López Rega las
             leía como los brazos de Perón. Con la última dictadura, el Ente
-            Autárquico Mundial '78 adoptó el isologotipo sin modificarlo. El
-            archivo retiene la pieza como un caso denso del diseño argentino:
-            una marca de origen democrático apropiada por la dictadura como
-            herramienta de su política de imagen.
+            Autárquico Mundial '78 adoptó el isologotipo sin modificarlo. Es un caso denso del diseño argentino, una marca de origen democrático que la dictadura se apropió como herramienta de su política de imagen.
           cita_textual: >-
             En 1973, bajo la órbita de López Rega... el joven Juan Riera diseñó
             la marca representativa que circuló internacionalmente
@@ -1850,14 +1724,7 @@ salas:
             al cuello, fusta-banderín y la pelota junto al pie. La mascota pobló
             los álbumes de figuritas Panini, el merchandising oficial del torneo
             y la cultura visual cotidiana del campeonato, circulando masivamente
-            en los hogares argentinos durante 1978. El archivo retiene la pieza
-            como contrapunto del isologotipo abstracto de Riera y de la
-            señalética Puntograma del Estudio MMB: si esos dos eran la cara
-            internacional y técnica del torneo, el Gauchito fue su rostro
-            doméstico, dirigido a la circulación popular y al consumo masivo del
-            recuerdo. Un personaje que circuló por fuera del control proyectual
-            del diseño moderno y se instaló en la memoria afectiva del país,
-            todavía hoy.
+            en los hogares argentinos durante 1978. El Gauchito fue su rostro doméstico, un personaje que circuló por fuera del control proyectual del diseño moderno y se instaló en la memoria afectiva del país.
           cita_textual: >-
             También se creó la «mascota» del mundial: un gauchito del dibujante
             Néstor Córdoba, jugador criollo que pobló los álbumes de figuritas y
@@ -1872,23 +1739,7 @@ salas:
           images: [L061.jpeg]
         texto:
           descripcion: >-
-            Familia tipográfica diseñada por el tipógrafo Víctor García cuyo
-            germen fue el logotipo de la campaña ecológica «Por Toda La Vida»
-            (1984), creado para Diners Club junto a la Fundación Vida Silvestre
-            Argentina: las letras estaban conformadas con especímenes
-            estilizados de fauna autóctona. De ese trabajo derivó Zootype, donde
-            se ven con claridad las influencias del pensamiento «no alfabético»
-            y pictográfico de García. Fue la primera fuente tipográfica
-            latinoamericana premiada en el 2° Concurso Internacional de Diseño
-            Tipográfico de Linotype (1997). García —director de arte en agencias
-            de publicidad porteñas durante dos décadas— se especializó luego en
-            el diseño de fuentes tipográficas e iconográficas (MotionBats,
-            GarciaToons, Olé Flamenco, Tangomaniacs) y fue corresponsal en
-            Argentina de la revista alemana Novum Gebrauchsgraphik. El archivo
-            retiene la pieza como hito de la tipografía latinoamericana: un
-            diseño que reclama un lugar propio para la producción tipográfica de
-            la región y que convierte la fauna del territorio en sistema de
-            escritura.
+            Familia tipográfica diseñada por el tipógrafo Víctor García cuyo germen fue el logotipo de la campaña ecológica «Por Toda La Vida» (1984), creado para Diners Club junto a la Fundación Vida Silvestre Argentina: las letras estaban conformadas con especímenes estilizados de fauna autóctona. De ese trabajo derivó Zootype, donde se ven las influencias del pensamiento «no alfabético» y pictográfico de García, y que fue la primera fuente tipográfica latinoamericana premiada en el 2.º Concurso Internacional de Diseño Tipográfico de Linotype (1997). Es un hito de la tipografía latinoamericana, un diseño que reclama un lugar propio para la producción tipográfica de la región y convierte la fauna del territorio en sistema de escritura.
           cita_textual: >-
             constituyeron el germen de los diseños de la familia tipográfica
             «Zootype», la primera fuente latinoamericana premiada en el 2º
@@ -1916,12 +1767,7 @@ salas:
             Jalluf del estudio FontanaDiseño, fue uno de los referentes
             centrales del diseño tipográfico argentino contemporáneo
             —responsable también del rediseño de la marca YPF (2007) y de
-            campañas para grandes instituciones del país—. El archivo retiene la
-            pieza como caso paradigmático del diseño tipográfico al servicio de
-            un proyecto editorial: la tipografía no como recurso instrumental
-            sino como rasgo identitario de la publicación, en una operación que
-            solo es posible cuando la disciplina alcanza el grado de autonomía
-            necesario para diseñar sus propias herramientas.
+            campañas para grandes instituciones del país—. Es un caso paradigmático del diseño tipográfico al servicio de un proyecto editorial. La tipografía funciona como rasgo identitario de la publicación, una operación posible solo cuando la disciplina alcanza la autonomía para diseñar sus propias herramientas.
           cita_textual: >-
             Desde 1995, utilizó su propia tipografía (Fontana tpG), evolucionó
             hasta encuadernación con lomo e impresión a todo color
@@ -1941,11 +1787,7 @@ salas:
             triunfalista que dominaba los medios —que titulaban «¡Estamos
             ganando!» mientras se perdía la guerra—, Malofiej optó por la
             información técnica y una visión documentalista, traduciendo el
-            conflicto en cartografía y datos. El archivo retiene la pieza como
-            antecedente fundacional de la infografía periodística argentina y
-            latinoamericana: tan determinante fue su aporte que el premio
-            internacional más importante del género —considerado los Pulitzer de
-            la infografía— lleva hoy su nombre.
+            conflicto en cartografía y datos. Es un antecedente fundacional de la infografía periodística argentina y latinoamericana. Tan determinante fue su aporte que el premio internacional más importante del género —considerado los Pulitzer de la infografía— lleva hoy su nombre.
           cita_textual: >-
             el cartógrafo Alejandro Malofiej (Buenos Aires, 1938-1987) realizó
             para Tiempo Argentino mapas e infografías, incorporando una visión
@@ -1969,11 +1811,7 @@ salas:
             Alfonsín. El hombre que hace falta». La sigla «RA» asociaba las
             iniciales del candidato con las de la República Argentina, en una
             operación de identificación entre la figura política y la nación
-            recién recuperada para la democracia. El archivo retiene la pieza
-            como ejemplo temprano y eficaz del diseño aplicado a la comunicación
-            política argentina: una marca sintética y memorable que opera por
-            condensación de sentidos, en el umbral de la «primavera
-            democrática».
+            recién recuperada para la democracia. Es un ejemplo temprano y eficaz del diseño aplicado a la comunicación política argentina, una marca sintética y memorable que opera por condensación de sentidos, en el umbral de la «primavera democrática».
           cita_textual: >-
             La marca del candidato fue diseñada por Guillermo González Ruiz,
             cuya sigla «RA» asociaba sus iniciales con las de la República
@@ -1994,12 +1832,7 @@ salas:
             libro —una síntesis de 500 páginas de los testimonios recopilados
             durante nueve meses, presidida la comisión por Ernesto Sábato— se
             editó en una tirada inicial de 40.000 ejemplares que se agotó en las
-            primeras 48 horas de venta. El archivo retiene la pieza como uno de
-            los libros más decisivos de la historia argentina reciente: un
-            objeto editorial cuyo diseño —sobrio, urgente, de circulación
-            masiva— estuvo al servicio de hacer pública e irreversible la verdad
-            sobre el terrorismo de Estado. Documenta el papel del diseño
-            editorial en la construcción de la memoria colectiva.
+            primeras 48 horas de venta. Es uno de los libros más decisivos de la historia argentina reciente, un objeto editorial cuyo diseño —sobrio, urgente, de circulación masiva— estuvo al servicio de hacer pública e irreversible la verdad sobre el terrorismo de Estado, y un testimonio del papel del diseño editorial en la construcción de la memoria.
           cita_textual: >-
             Eudeba publicó el libro Nunca más, una síntesis de 500 páginas de
             los testimonios en una tirada de 40.000 ejemplares agotados en las
@@ -2032,11 +1865,7 @@ salas:
             cara del candidato para posar toda la comunicación en el logotipo,
             una banda presidencial que atravesaba la letra «N» en el centro del
             apellido. La operación apuntaba a captar al electorado independiente
-            no peronista. El archivo retiene la pieza como contrapunto de la
-            marca «RA» de Alfonsín: dos campañas presidenciales sucesivas
-            resueltas por la vía de una marca abstracta y memorable, indicio de
-            la consolidación del diseño de comunicación política como una
-            práctica profesional en la Argentina.
+            no peronista. Funciona como contrapunto de la marca «RA» de Alfonsín. Dos campañas presidenciales sucesivas resueltas por una marca abstracta y memorable, indicio de la consolidación del diseño de comunicación política en la Argentina.
           cita_textual: >-
             El sistema gráfico se apoyó en una marca sintética y pregnante
             diseñada por Martín Mazzei... una banda presidencial que atravesaba
@@ -2063,9 +1892,7 @@ salas:
             optimizó la reproducción del sistema y quitó la comunicación
             compartida con Repsol para preservar los rasgos más valorados de la
             identidad; la intervención había comenzado en 2004 con el rediseño
-            de las tiendas Full. El archivo retiene la pieza como caso testigo
-            del ciclo argentino de privatización, extranjerización y
-            reestatización leído a través de una marca.
+            de las tiendas Full. Un caso testigo del ciclo argentino de privatización, extranjerización y reestatización leído a través de una marca.
           cita_textual: >-
             La actual identidad marcaria de YPF fue diseñada en 2007 por
             FontanaDiseño de Rubén Fontana & Zalma Jalluf... la «argentinización
@@ -2091,10 +1918,7 @@ salas:
             herramienta comunicacional que expresaba los datos mediante
             metáforas visuales; el lenguaje resultante —con ilustraciones
             realistas, maquetas y fotografías— pronto se convirtió en el «estilo
-            Clarín» y obtuvo numerosas distinciones del Premio Malofiej. El
-            archivo retiene la pieza como el momento en que la infografía
-            argentina alcanza reconocimiento mundial y deja de ser graficación
-            del dato duro para volverse un género narrativo y autoral.
+            Clarín» y obtuvo numerosas distinciones del Premio Malofiej. El momento en que la infografía argentina alcanza reconocimiento mundial y deja de ser graficación del dato duro para volverse un género narrativo y autoral.
           cita_textual: >-
             Fue el diario Clarín quien revolucionó este género al incorporarlo
             sistemáticamente a sus páginas... se estableció el Departamento de
@@ -2119,13 +1943,7 @@ salas:
             que reunieron a más de seis millones de personas. La identidad se
             aplicó a la comunicación de los festejos, a la estampilla del Correo
             Argentino, a monedas conmemorativas y al conjunto de eventos que
-            ocuparon el espacio público. El archivo retiene la pieza como cierre
-            del recorrido del catálogo: doscientos años después de los primeros
-            impresos revolucionarios, el Estado argentino convoca a sus
-            diseñadores por concurso abierto para construir la imagen de la
-            efeméride. La marca del Bicentenario funciona como contrapunto
-            deliberado del primer sello postal y de la gráfica de la Revolución
-            reunidos en las primeras salas.
+            ocuparon el espacio público. Doscientos años después de los primeros impresos revolucionarios, el Estado convoca a sus diseñadores por concurso abierto para construir la imagen de la efeméride —contrapunto deliberado del primer sello postal y de la gráfica de la Revolución de las primeras salas.
           cita_textual: >-
             el diseño de marca y emblema oficial —diseñado, por concurso
             público, por Juan Pablo Tredicce, Hernán Berdichevsky y Gustavo
@@ -2156,19 +1974,7 @@ salas:
             - {file: L070-2.png, slot: [4, 5, 3, 5], valign: top}
         texto:
           descripcion: >-
-            Corpus de carteles producidos por la OSPAAAL, la Organización de
-            Solidaridad de los Pueblos de Asia, África y América Latina, fundada
-            en La Habana en 1966. Sus afiches —difundidos plegados en el
-            interior de la revista Tricontinental y, por esa vía, distribuidos
-            por todo el mundo— articularon una iconografía antiimperialista y de
-            solidaridad entre los pueblos del Sur, con un lenguaje gráfico de
-            gran síntesis cromática y formal en el que se destacó, entre otros,
-            el diseñador Alfredo Rostgaard. El archivo retiene la pieza como uno
-            de los nodos fundacionales de la gráfica de activismo
-            latinoamericana: el momento en que el afiche se vuelve una
-            herramienta de internacionalismo, capaz de circular por fuera del
-            campo del arte y de construir imaginarios contrahegemónicos
-            transnacionales.
+            Corpus de carteles producidos por la OSPAAAL (Organización de Solidaridad de los Pueblos de Asia, África y América Latina), fundada en La Habana en 1966. Sus afiches —difundidos plegados en el interior de la revista Tricontinental y, por esa vía, distribuidos por todo el mundo— articularon una iconografía antiimperialista y de solidaridad entre los pueblos del Sur, con un lenguaje de gran síntesis cromática en el que se destacó el diseñador Alfredo Rostgaard. Es uno de los nodos fundacionales de la gráfica de activismo latinoamericana, el momento en que el afiche se vuelve herramienta de internacionalismo, capaz de circular por fuera del campo del arte.
           cita_textual: >-
             La clave antiimperialista y de solidaridad entre los pueblos
             —convocada por la OSPAAAL (Organización de Solidaridad de los
@@ -2183,23 +1989,7 @@ salas:
           images: [L071.png, L071-1.png, L071-2.png]
         texto:
           descripcion: >-
-            Serie de afiches diseñada por el artista peruano Jesús Ruiz Durand
-            entre 1969 y 1971, en el marco de un equipo de comunicaciones al
-            servicio de la Reforma Agraria peruana impulsada por el gobierno de
-            Juan Velasco Alvarado. Ruiz Durand bautizó la serie como «pop
-            achorado», fusionando la estética del pop art —los planos planos, la
-            trama benday, los rojos y amarillos saturados— con la insolencia o
-            desfachatez del campesinado mestizo andino. «Achorado» es una
-            palabra polisémica, de uso cotidiano en Perú, Bolivia y Chile, que
-            implica moverse por un ímpetu insumiso, un comportamiento
-            desfachatado o insolente; los afiches de Ruiz Durand asumen esa
-            insumisión visual y la ponen al servicio de una reorganización
-            territorial campesina. El archivo retiene la pieza como caso
-            paradigmático del giro gráfico latinoamericano de los años setenta y
-            como evidencia de que el pop, en América Latina, no es importación
-            sino reapropiación: el campo entra al lenguaje pop y lo modifica
-            desde adentro, desde sus iconografías mestizas y sus
-            reivindicaciones territoriales.
+           Serie de afiches diseñada por el artista peruano Jesús Ruiz Durand entre 1969 y 1971, en el marco de un equipo de comunicaciones al servicio de la Reforma Agraria peruana. Ruiz Durand bautizó la serie como «pop achorado», fusionando la estética del pop art con la insolencia o desfachatez del campesinado mestizo andino: «achorado» es una palabra de uso cotidiano en Perú, Bolivia y Chile que implica moverse por un ímpetu insumiso. Un caso paradigmático del giro gráfico latinoamericano de los años setenta y una evidencia de que, en América Latina, el pop no es importación sino reapropiación: el campo entra al lenguaje pop y lo modifica desde sus iconografías mestizas y sus reivindicaciones territoriales.
           cita_textual: >-
             Entre 1969 y 1971, el artista Jesús Ruiz Durand integró un equipo de
             comunicaciones al servicio de la reforma agraria en Perú... La serie
@@ -2216,18 +2006,7 @@ salas:
           images: [L072.jpeg]
         texto:
           descripcion: >-
-            Producción del Taller 4 Rojo, colectivo de gráfica política que
-            funcionó en Colombia entre 1972 y 1976. El taller utilizó la
-            serigrafía como medio de producción y agitación, integrando la
-            práctica artística con la lucha política y poniendo la imagen al
-            servicio de las demandas populares y antiimperialistas de la época.
-            El archivo retiene la pieza como uno de los episodios centrales del
-            «giro gráfico» latinoamericano: aquel proceso en el que, a lo largo
-            de los años setenta, distintos talleres y colectivos de la región
-            redefinieron el arte gráfico desde la práctica política, haciendo de
-            la estampa una herramienta de organización colectiva. Incorporar la
-            gráfica colombiana al catálogo es parte de la apuesta del museo por
-            una historia genuinamente latinoamericana, y no solo argentina.
+            Producción del Taller 4 Rojo, colectivo de gráfica política que funcionó en Colombia entre 1972 y 1976. El taller integró la práctica artística con la lucha política, poniendo la imagen al servicio de las demandas populares y antiimperialistas de la época. Es uno de los episodios centrales del «giro gráfico» latinoamericano —ese proceso en que, a lo largo de los setenta, talleres y colectivos de toda la región redefinieron el arte gráfico desde la práctica política— y parte de la apuesta del museo por una historia genuinamente latinoamericana, no solo argentina.
           cita_textual: >-
             el Taller 4 Rojo (1972-1976) en Colombia... la redefinición del arte
             gráfico desde la práctica política
@@ -2243,24 +2022,7 @@ salas:
             - {file: L073-1.png, slot: [2, 5.5, 4, 4], valign: top}
         texto:
           descripcion: >-
-            Red de colectivos de bordadoras de cinco países latinoamericanos que
-            tomaron una técnica «tradicionalmente recluida en el ámbito privado
-            del hogar» y la convirtieron en herramienta pública aglutinadora de
-            comunidades micropolíticas. Los proyectos articulan las prácticas
-            persistentes de las familiares de víctimas de la violencia en
-            México, Colombia y Estados Unidos —que bordan rostros, nombres y
-            biografías sobre tela para reclamar justicia ante el anonimato de la
-            negación oficial y la cifra apabullante de desapariciones— con
-            experiencias paralelas en El Salvador, Chile y Argentina. Texto 13
-            documenta piezas centrales como la «Manta de bordados por los 43»
-            realizada por la Asamblea de Pueblos, Barrios, Colonias y Pedregales
-            de Coyoacán junto al colectivo Texthilo (Ciudad de México, 2018), y
-            las «Mantas tendedero» de los grupos «Bordados de Paz, Memoria y
-            Justicia» (Ciudad de México, 2019). El archivo retiene la pieza como
-            ejemplo de cómo una técnica artesanal e íntima se vuelve lenguaje
-            gráfico-político transnacional: con gesto lento y sostenido, las
-            bordadoras inscriben en tela —puntada por puntada, durante meses—
-            aquello que el Estado se niega a escribir.
+            Red de colectivos de bordadoras de cinco países latinoamericanos —México, El Salvador, Colombia, Chile y Argentina— que tomaron una técnica tradicionalmente recluida en el ámbito privado del hogar y la convirtieron en herramienta pública: bordan rostros, nombres y biografías de las víctimas de la violencia para reclamar justicia ante el anonimato de la negación oficial. Una técnica artesanal e íntima se vuelve lenguaje gráfico-político transnacional. Con gesto lento y sostenido, las bordadoras inscriben en tela —puntada por puntada— aquello que el Estado se niega a escribir.
           cita_textual: >-
             un encuentro entre colectivos de bordadoras de México, El Salvador,
             Colombia, Chile y Argentina, esas que —con gesto lento y sostenido—
@@ -2280,19 +2042,7 @@ salas:
             - {file: L074.jpg,   slot: [4, 5, 3, 5], halign: left, valign: top}
         texto:
           descripcion: >-
-            Experiencia gráfica realizada entre 2012 y 2014 a partir del
-            encuentro entre Emory Douglas —artista gráfico que fue ministro de
-            Cultura del Partido de las Panteras Negras— y comunidades zapatistas
-            de Chiapas, en el centro cultural EDELO de San Cristóbal de las
-            Casas. Mujeres bordadoras intervinieron viejos afiches de Douglas y
-            nuevas imágenes creadas junto a jóvenes zapatistas, cruzando el
-            imaginario visual de las Panteras Negras —ligado a la historia de
-            esclavitud, racismo y represión policial contra la población negra
-            estadounidense— con las luchas rurales de las comunidades mayas. El
-            archivo retiene la pieza por el encuentro de temporalidades que
-            condensa: la velocidad serializada de la estampa y la lentitud
-            artesanal del bordado comunitario, dos «saberes hacer» que se anudan
-            en una gráfica pasafronteras, anticapitalista y antirrepresiva.
+            Experiencia gráfica realizada entre 2012 y 2014 a partir del encuentro entre Emory Douglas —artista gráfico que fue ministro de Cultura del Partido de las Panteras Negras— y comunidades zapatistas de Chiapas, en el centro cultural EDELO de San Cristóbal de las Casas. Mujeres bordadoras intervinieron viejos afiches de Douglas y nuevas imágenes creadas junto a jóvenes zapatistas, cruzando el imaginario visual de las Panteras Negras —ligado a la historia de esclavitud, racismo y represión policial contra la población negra estadounidense— con las luchas rurales de las comunidades mayas. Es un encuentro de temporalidades. La velocidad serializada de la estampa y la lentitud artesanal del bordado comunitario se anudan, como dos «saberes hacer», en una gráfica pasafronteras, anticapitalista y antirrepresiva.
           cita_textual: >-
             Mujeres bordadoras intervinieron sus viejos afiches y también nuevas
             imágenes gráficas creadas entre el artista y jóvenes zapatistas...
@@ -2306,12 +2056,11 @@ salas:
       nombre: "El sello postal argentino"
       periodo: "1856-2005"
       cita_curatorial: >-
-        La pieza de diseño gráfico de mayor circulación masiva en la historia
-        argentina —el sello postal— suele clasificarse como filatelia y rara vez
-        como diseño. La sala recorre, en seis programas filatélicos, ciento
-        cincuenta años de gráfica de Estado en pocos centímetros cuadrados: del
-        primer sello correntino de 1856 a la serie «Diseño Argentino» de 2005,
-        donde el Correo emite un sello sobre el propio diseño gráfico.
+        El sello postal —la pieza de diseño gráfico de mayor circulación 
+        masiva del país— casi nunca entra en la historia del diseño. 
+        Del primer sello correntino de 1856 a las grandes series 
+        conmemorativas del patrimonio nacional, la sala recorre siglo 
+        y medio de gráfica de Estado en pocos centímetros cuadrados.
     piezas:
       - imagen:
           tipo: "Sello postal / pieza filatélica"
@@ -2321,19 +2070,7 @@ salas:
           images: [L076.jpg]
         texto:
           descripcion: >-
-            Primer sello postal puesto en circulación en el territorio
-            argentino, emitido en la provincia de Corrientes tras la ley de
-            agosto de 1856 que estableció el impuesto postal y el franqueo
-            previo y obligatorio de la correspondencia. El diseño y grabado de
-            las planchas estuvo a cargo del inmigrante francés Matías Pipet,
-            mediante impresión tipográfica: impreso en papel de seda, en tinta
-            negra y con el contorno liso, lleva la efigie de la diosa Ceres
-            —diosa de la agricultura—, una elección iconográfica coherente con
-            la economía agroexportadora de la región. El archivo retiene la
-            pieza como el punto de partida de una larga tradición gráfica de
-            Estado: el sello postal, una de las piezas de diseño de circulación
-            más masiva y a la vez más invisibilizada, que durante siglo y medio
-            condensó en pocos milímetros la iconografía del patrimonio nacional.
+            Primer sello postal puesto en circulación en el territorio argentino, emitido en la provincia de Corrientes tras la ley de agosto de 1856 que estableció el impuesto postal y el franqueo previo y obligatorio de la correspondencia. El diseño y grabado de las planchas estuvo a cargo del inmigrante francés Matías Pipet, mediante impresión tipográfica: impreso en papel de seda, en tinta negra y con el contorno liso, lleva la efigie de la diosa Ceres. Marca el punto de partida de una larga tradición gráfica de Estado. El sello postal es una de las piezas de diseño de circulación más masiva y a la vez más invisibilizada de la historia argentina.
           cita_textual: >-
             El diseño y grabado de las planchas de la primera estampilla
             argentina estuvo a cargo de un inmigrante francés, Matías Pipet, y
@@ -2353,23 +2090,7 @@ salas:
             - {file: L077-4.png, slot: [5, 6, 2, 2.37], valign: top, halign: right}
         texto:
           descripcion: >-
-            Programa filatélico desplegado durante el segundo peronismo que usó
-            la estampilla como inventario sistemático del territorio nacional:
-            paisajes regionales, monumentos históricos, próceres y riquezas
-            naturales convertidos en gráfica de circulación masiva. La «II
-            Serie» —que sucedió a una primera entrega previa— articuló un
-            programa iconográfico ambicioso en el que cada sello operaba como
-            pequeña ventana al patrimonio del país. Ana Laura Ochoa analiza en
-            detalle la emisión dedicada a la Quebrada de Humahuaca (1954-1958),
-            valle andino del noroeste argentino que el sello adelantó por casi
-            medio siglo en la patrimonialización formal del paisaje —el sitio
-            fue declarado Patrimonio Mundial de la Humanidad por la UNESCO
-            recién en 2003—. El archivo retiene la pieza como uno de los
-            primeros grandes programas filatélicos argentinos pensados como
-            dispositivo de construcción identitaria: el sello postal, en
-            circulación masiva durante años y atravesando millones de manos,
-            fijaba en el imaginario colectivo qué paisajes, qué próceres y qué
-            riquezas merecían ser nombrados como argentinos.
+            Programa filatélico iniciado en los años cincuenta que usó la estampilla como inventario del territorio nacional: bajo el título «Próceres y Riquezas Nacionales», cada sello funcionaba como una pequeña ventana al patrimonio del país. La emisión documentada es la dedicada a la Quebrada de Humahuaca (1954-1958), valle andino del noroeste que el sello adelantó por casi medio siglo en la patrimonialización del paisaje: el sitio fue declarado Patrimonio Mundial de la Humanidad por la UNESCO recién en 2003. Uno de los primeros grandes programas filatélicos argentinos pensados como dispositivo de construcción identitaria.
           cita_textual: >-
             II SERIE DE PRÓCERES Y RIQUEZAS NACIONALES — Quebrada de Humahuaca —
             Año de Emisión: 1954/1958
@@ -2377,7 +2098,7 @@ salas:
 
       - imagen:
           tipo: "Series filatélicas / sellos conmemorativos del patrimonio natural"
-          titulo: "Series del patrimonio natural argentino en estampillas"
+          titulo: "Series del patrimonio natural argentino"
           autor: "Correo Argentino (equipos de diseño filatélico)"
           datos: "1971-2004 · Buenos Aires, Argentina"
           images:
@@ -2385,22 +2106,7 @@ salas:
             - {file: L078.png,   slot: [1, 5.5, 6, 3], valign: top}
         texto:
           descripcion: >-
-            Conjunto de programas filatélicos que continuaron la operación de
-            inventariar el territorio nacional, ahora con foco específico en el
-            patrimonio natural. Ochoa analiza varias series representativas:
-            «Riqueza Natural — Tierra del Fuego» (1971), «Ballenas y Delfines —
-            Delfín del Río de la Plata» (2001), «Paisaje de la Argentina II»
-            (2004) y «Bosques Nativos Argentinos» (2004). El conjunto opera como
-            atlas filatélico del territorio: cada emisión propone un fragmento
-            del país —una especie, un paisaje, un ecosistema— como bien nacional
-            digno de circular masivamente. El programa adelantó, y en algunos
-            casos acompañó, las declaraciones de Patrimonio Mundial UNESCO de
-            sitios como los Glaciares Argentinos (declarado en 1981) y la
-            Quebrada de Humahuaca (2003). El archivo retiene la pieza como caso
-            de gráfica de Estado puesta al servicio de una agenda ambiental y
-            patrimonial: las series naturalistas suman, a lo largo de tres
-            décadas, un mapa visual del territorio argentino y de sus especies y
-            paisajes considerados merecedores de protección.
+            Conjunto de programas filatélicos que continuaron la operación de inventariar el territorio, ahora con foco en el patrimonio natural: «Riqueza Austral — Tierra del Fuego» (1971), «Ballenas y Delfines — Delfín del Río de la Plata» (2001), «Paisaje de la Argentina II» (2004) y «Bosques Nativos Argentinos» (2004). Cada emisión propone un fragmento del país —una especie, un paisaje, un ecosistema— como bien nacional digno de circular masivamente, anticipando o acompañando declaraciones de Patrimonio Mundial UNESCO como las de los Glaciares Argentinos (1981) y la Quebrada de Humahuaca (2003).
           cita_textual: >-
             RIQUEZA NATURAL. Tierra del Fuego (1971); BALLENAS Y DELFINES —
             Delfín del Río de la Plata (2001); PAISAJE DE LA ARGENTINA II
@@ -2418,23 +2124,7 @@ salas:
             - {file: L079-4.png, slot: [2, 5, 4, 5], valign: top}
         texto:
           descripcion: >-
-            Conjunto de programas filatélicos dedicados a la figura de María Eva
-            Duarte de Perón a lo largo de cuatro décadas. La emisión original de
-            c. 1960 —analizada por Ochoa— presenta el retrato de Evita en primer
-            plano con composición axial estática; tiene además un dato
-            anecdótico fortísimo: una de sus tiradas circuló con el nombre del
-            país mal impreso —«Argfentina» en lugar de «Argentina»—, error
-            tipográfico que la convirtió en pieza filatélica buscadísima entre
-            coleccionistas. Cinco décadas después, en 2002, en ocasión del 50°
-            aniversario del fallecimiento, el Correo emitió cuatro variantes
-            adicionales del retrato evitista —subtituladas «Eva», «Lucha»,
-            «Olvido» y «Pronunciando un discurso»—, construyendo un programa
-            iconográfico estatal del peronismo a través del tiempo. El archivo
-            retiene la pieza como caso paradigmático del uso político de la
-            gráfica de Estado a través del sello postal: la imagen de un mismo
-            sujeto histórico, emitida y reemitida durante medio siglo, va
-            inscribiendo en la circulación masiva la memoria política del
-            peronismo.
+            Conjunto de programas filatélicos dedicados a la figura de María Eva Duarte de Perón a lo largo de cuatro décadas. La emisión original de c. 1960 presenta el retrato de Evita en primer plano con composición axial; tiene además un dato fortísimo: una de sus tiradas circuló con el nombre del país mal impreso —«Argfentina» en lugar de «Argentina»—, error tipográfico que la convirtió en pieza buscadísima entre coleccionistas. En 2002, por el 50.º aniversario del fallecimiento, el Correo emitió varias variantes del retrato —subtituladas «Eva», «Lucha», «Olvido», «Pronunciando un discurso»—, en un programa iconográfico que reescribe la figura del peronismo a través del tiempo.
           cita_textual: >-
             Argentina emitió una serie de Eva Perón que llevaba el nombre del
             país mal escrito: «Argfentina». — Aniversario del Fallecimiento de
@@ -2444,7 +2134,7 @@ salas:
 
       - imagen:
           tipo: "Sellos conmemorativos / serie meta-reflexiva"
-          titulo: "Sellos conmemorativos críticos y meta-diseño"
+          titulo: "Sellos conmemorativos críticos"
           autor: "Correo Argentino (equipos de diseño filatélico)"
           datos: "1986-2005 · Buenos Aires, Argentina"
           images:
@@ -2454,26 +2144,7 @@ salas:
             - {file: L080.png,   slot: [3, 5, 4, 5]}
         texto:
           descripcion: >-
-            Tres emisiones que Ochoa identifica como ejemplos del «conmemorativo
-            crítico»: estampillas en las que el Estado argentino pone a circular
-            sellos sobre temas que en su momento combatió o sobre el propio
-            diseño. «Arquitectura e Historia — Restauración Nacionalista
-            1910-1930» (1986), serie que revisa retrospectivamente el legado
-            arquitectónico nacionalista de principios del siglo XX. «Anarquía
-            del año '20» (1999), sello sobre el movimiento anarquista de la
-            década del veinte —episodio que el Estado había reprimido
-            violentamente en su momento—; Ochoa lo cita como caso paradigmático
-            de cómo, con el paso del tiempo, «los responsables de elegir los
-            temas se vuelven más críticos con el pasado y pueden manifestar
-            criterios que los aparten de lo que consideran repercusiones
-            comprometidas en el orden vigente». Y, como cierre, la serie «Diseño
-            Argentino — Diseño Gráfico» (2005): cuatro estampillas en las que el
-            Correo Argentino emite sellos sobre el propio diseño gráfico
-            argentino. El archivo retiene la pieza como cierre meta-reflexivo:
-            después de un siglo y medio de circular como objeto utilitario, el
-            sello postal se vuelve sobre sí mismo y se autonombra como diseño
-            —exactamente la operación que este museo propone para todas sus
-            piezas—.
+            Tres emisiones que ejemplifican el «conmemorativo crítico»: estampillas en las que el Estado pone a circular sellos sobre temas que en su momento combatió o sobre el propio diseño. «Arquitectura e Historia» (1986) revisa el legado nacionalista de principios de siglo; «Anarquía del año '20» (1999) conmemora un movimiento que el Estado había reprimido; y la serie «Diseño Argentino — Diseño Gráfico» (2005) lleva al Correo a emitir sellos sobre el propio diseño gráfico. Después de siglo y medio circulando como objeto utilitario, el sello se vuelve sobre sí mismo y se autonombra como diseño.
           cita_textual: >-
             ARQUITECTURA E HISTORIA — Restauración Nacionalista 1910-1930
             (1986); «Anarquía del año '20» (1999); DISEÑO ARGENTINO — Diseño
@@ -2488,22 +2159,7 @@ salas:
           images: [L081.jpg]
         texto:
           descripcion: >-
-            Programas filatélicos que ponen como sujeto los bienes culturales no
-            materiales —música, ritos, expresiones populares y patrimonio
-            originario— en lugar del paisaje o el prócer. Ochoa analiza dos
-            casos centrales. «Nuevo Milenio: La Música Popular — El Tango»
-            (1999), serie de seis estampillas que sintetiza con un lenguaje
-            gráfico altamente abstracto los elementos del tango —el bandoneón,
-            la elegancia de la vestimenta, la sensualidad— y que constituyó una
-            de las primeras emisiones bilaterales del Correo, en colaboración
-            con La Poste de Francia. «Pueblos Indígenas II — Vaso Antropomorfo
-            Ciénaga» (2000), serie de cuatro estampillas con artesanías y
-            motivos de las culturas originarias del territorio, donde la imagen
-            central remite al trabajo manual y a la materialidad de la tierra.
-            El archivo retiene la pieza como el momento en que el Correo
-            construye, en pocos centímetros y a través de millones de impresos,
-            un inventario de qué cuenta como cultura argentina inmaterial: lo
-            que el sello canoniza, opera de hecho como patrimonio.
+            Programas filatélicos que ponen como sujeto los bienes culturales no materiales —música, ritos, expresiones populares y patrimonio originario— en lugar del paisaje o el prócer. «Nuevo Milenio: La Música Popular — El Tango» (1999), serie de seis estampillas que sintetiza con un lenguaje gráfico abstracto los elementos del tango y que fue una de las primeras emisiones bilaterales del Correo, en colaboración con La Poste de Francia; y «Pueblos Indígenas II — Vaso Antropomorfo Ciénaga» (2000), con artesanías y motivos de las culturas originarias del territorio. Marca el momento en que el Correo construye, en pocos centímetros, un inventario de qué cuenta como cultura argentina inmaterial. Lo que el sello canoniza opera, de hecho, como patrimonio.
           cita_textual: >-
             NUEVO MILENIO. LA MÚSICA POPULAR. El Tango (1999, emisión conjunta
             Argentina-Francia); PUEBLOS INDÍGENAS II — Vaso Antropomorfo Ciénaga

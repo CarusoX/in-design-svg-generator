@@ -78,7 +78,7 @@ _BODY_DESC_MM = 0.21 * _BODY_STYLE.size_pt * r.MM_PER_PT
 
 # Closing colophon — italic, fixed at 10pt (the body size before the
 # 12pt bump). Smaller than the body so it reads as a separate "note".
-# Anchored with its cap-top on the top edge of row 7 (fixed slot,
+# Anchored with its cap-top on the top edge of row 8 (fixed slot,
 # regardless of how much body sits above), so the closing note always
 # lands in the same spot on the page.
 _COLOPHON_STYLE = replace(
@@ -89,7 +89,7 @@ _COLOPHON_LEADING_MM = (
     (_COLOPHON_STYLE.leading_pt or _COLOPHON_STYLE.size_pt * 1.2) * r.MM_PER_PT
 )
 _COLOPHON_DESC_MM = 0.21 * _COLOPHON_STYLE.size_pt * r.MM_PER_PT
-_COLOPHON_CAP_TOP_Y_MM = ch.row_top(7)
+_COLOPHON_CAP_TOP_Y_MM = ch.row_top(8)
 _COLOPHON_FIRST_BASELINE_Y_MM = _COLOPHON_CAP_TOP_Y_MM + _COLOPHON_CAP_H_MM
 # Visual gap between regular body (above) and colophon (below). 8mm ≈
 # one body-line-and-change of breathing room so the two read as

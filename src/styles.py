@@ -70,15 +70,16 @@ TEXT_STYLES: dict[str, TextStyle] = {
         align="middle",
     ),
     "05-Epigrafe-Cita": TextStyle(
-        # Regular weight 500 (not italic). Centered on the page.
+        # Regular weight 500, 20pt — page-3 trial. Centered on the page.
         font_family="EB Garamond", font_weight=500,
-        size_pt=22, leading_pt=26,
+        size_pt=20, leading_pt=26,
         color="blanco",
         align="middle",
     ),
     "06-Epigrafe-Fuente": TextStyle(
         # Reference centers the source line, not right-aligns (spec was wrong).
-        font_family="EB Garamond", font_style="italic",
+        # Regular (was italic) — page-3 trial.
+        font_family="EB Garamond",
         size_pt=10, leading_pt=14,
         color="blanco",
         align="middle",
@@ -248,6 +249,45 @@ TEXT_STYLES: dict[str, TextStyle] = {
         font_family="EB Garamond", font_style="italic",
         size_pt=8.5, leading_pt=11,
         color="gris_texto",
+    ),
+
+    # — Créditos / colofón (page 2: imprint, authorship, source-use note).
+    # Unnumbered like the other auxiliary styles — sits between the cover
+    # (01-03) and the epígrafe (04-06) in document order, but kept out of
+    # the numbered InDesign sequence so adding it doesn't renumber the
+    # whole Paragraph Styles panel. —
+    "Creditos-Titulo": TextStyle(
+        font_family="Lato", font_weight=700,
+        size_pt=15, leading_pt=18,
+        tracking_per1000=-10,
+        color="negro_tinta",
+    ),
+    "Creditos-Subtitulo": TextStyle(
+        font_family="EB Garamond", font_style="italic",
+        size_pt=10.5, leading_pt=14,
+        color="gris_texto",
+    ),
+    "Creditos-Volumen": TextStyle(
+        font_family="Lato", font_weight=900,
+        size_pt=7.5, leading_pt=10,
+        tracking_per1000=200,
+        color="rojo_tinta", uppercase=True,
+    ),
+    "Creditos-Linea": TextStyle(
+        font_family="EB Garamond",
+        size_pt=9.5, leading_pt=13,
+        color="negro_tinta",
+    ),
+    "Creditos-Nota": TextStyle(
+        font_family="EB Garamond",
+        size_pt=8.5, leading_pt=12.5,
+        color="gris_texto",
+    ),
+    "Creditos-Lugar": TextStyle(
+        font_family="Lato", font_weight=900,
+        size_pt=7, leading_pt=10,
+        tracking_per1000=200,
+        color="negro_tinta", uppercase=True,
     ),
 
     # — Auxiliary: page numbers (folios). Not in the original spec — added

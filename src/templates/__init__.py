@@ -9,6 +9,7 @@ render something visible during early development.
 from . import (
     placeholder,
     portada,
+    creditos,
     epigrafe,
     nota_curatorial,
     indice,
@@ -23,6 +24,7 @@ from . import (
 REGISTRY = {
     "placeholder": placeholder.render,
     "portada": portada.render,
+    "creditos": creditos.render,
     "epigrafe": epigrafe.render,
     "nota_curatorial": nota_curatorial.render,
     "indice": indice.render,

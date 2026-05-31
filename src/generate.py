@@ -80,10 +80,15 @@ def _compile_pages(raw: dict) -> list[dict]:
         portada.setdefault("salas", f"{len(salas)} salas")
         add("portada", portada)
 
-    # — Epígrafe: a blank (paper-white) verso (left) facing the quote on the
-    # recto (right), so the quote sits on a right-hand page per print convention.
+    # — Epígrafe: the quote sits on the recto (right) per print convention,
+    # so the facing verso (left) is either the créditos / colofón page
+    # (imprint, authorship, source-use note) when authored, or a blank
+    # paper-white page otherwise.
     if "epigrafe" in raw:
-        add("blank_white", {})
+        if "creditos" in raw:
+            add("creditos", dict(raw["creditos"]))
+        else:
+            add("blank_white", {})
         add("epigrafe", dict(raw["epigrafe"]))
 
     # — Nota curatorial: a single body string in YAML; the template
