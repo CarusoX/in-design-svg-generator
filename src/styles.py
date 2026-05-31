@@ -62,13 +62,6 @@ TEXT_STYLES: dict[str, TextStyle] = {
     ),
 
     # — Epígrafe (red-bg quote spread) —
-    "04-Epigrafe-Label": TextStyle(
-        font_family="Lato", font_weight=900,
-        size_pt=7, leading_pt=9,
-        tracking_per1000=200,
-        color="blanco", uppercase=True,
-        align="middle",
-    ),
     "05-Epigrafe-Cita": TextStyle(
         # Regular weight 500, 20pt — page-3 trial. Centered on the page.
         font_family="EB Garamond", font_weight=500,
@@ -208,12 +201,6 @@ TEXT_STYLES: dict[str, TextStyle] = {
         font_family="EB Garamond",
         size_pt=10, leading_pt=15,
         color="negro_tinta",
-    ),
-    "25-Ficha-CitaTextual": TextStyle(
-        # Reference uses EB Garamond Italic, not Caveat — see CLAUDE.md note.
-        font_family="EB Garamond", font_style="italic",
-        size_pt=14, leading_pt=18,
-        color="rojo_tinta",
     ),
     "26-Ficha-Fuente": TextStyle(
         font_family="Lato",
