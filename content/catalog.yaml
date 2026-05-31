@@ -4,7 +4,7 @@ meta:
 # ═══════════════════════════════════════════════════════════════════════
 # Catalog content. Pages are computed from this structure by
 # `src/generate.py`. Page numbers are assigned sequentially in document
-# order — to remove a sala, delete its block under `salas:` and everything
+# order - to remove a sala, delete its block under `salas:` and everything
 # renumbers. To swap two piezas, move their YAML blocks under `piezas:`.
 #
 # Auto-derived fields (don't set unless you want to override):
@@ -23,22 +23,24 @@ portada:
     Archivo
     de lo no
     conservado
-  subtitulo: "Catálogo del museo de diseño gráfico latinoamericano que no existe pero debería existir"
+  subtitulo: "Catálogo del museo de diseño gráfico latinoamericano que no existe pero debería."
+  autores:
+    - "D'Elia Sofía Belén"
+    - "Cristino Ángeles"
 
-# ── Créditos / colofón (page 2 — imprint, authorship, source-use note) ──
+# ── Créditos / colofón (page 2 - imprint, authorship, source-use note) ──
 creditos:
   titulo: "Archivo de lo no conservado"
-  subtitulo: "Catálogo del museo de diseño gráfico latinoamericano que no existe pero debería existir"
-  volumen: "1764-2020"
+  subtitulo: "Catálogo del museo de diseño gráfico latinoamericano que no existe pero debería."
+  volumen: "1764–2020"
   creditos:
     - "Autoras: D'Elia, Sofía Belén · Cristino, Ángeles"
-    - "Investigación, curaduría y diseño: Sofía Belén D'Elia · Ángeles Cristino"
+    - "Investigación, curaduría y diseño: D'Elia Sofía Belén · Cristino Ángeles"
   contexto:
     - >-
       Este catálogo se desarrolló en el marco de un trabajo práctico de la
       materia Historia del Diseño Gráfico Latinoamericano, de la Tecnicatura
-      Universitaria en Diseño Gráfico de la Universidad Provincial de Córdoba
-      — Comisión 2B.
+      Universitaria en Diseño Gráfico de la Universidad Provincial de Córdoba.
     - "Profesora: Fabiana Navarta Bianco"
     - "Tipografías: Lato, EB Garamond y Caveat."
   nota_legal: >-
@@ -178,6 +180,7 @@ salas:
           titulo: "Laudationes Quinque (ejemplar único de la Abadía de Montserrat)"
           autor: "Atribuido a Josep Manuel Peramàs; impreso por el P. Pablo Karer"
           datos: "1766 · Córdoba, Argentina"
+          fondo: negro            # black-bg override (batch)
           images: [L001.jpg]
         texto:
           descripcion: >-
@@ -437,6 +440,7 @@ salas:
           titulo: "La Gazeta de Buenos Ayres"
           autor: "Mariano Moreno (impulsor); Manuel Belgrano y Juan José Castelli (redactores iniciales)"
           datos: "1810 (primer número: 7 de junio) · Buenos Aires, Argentina"
+          fondo: negro            # black-bg override (batch)
           images: [L012.jpg]
         texto:
           descripcion: >-
@@ -599,6 +603,7 @@ salas:
           titulo: "Caras y Caretas (Buenos Aires)"
           autor: "Fundada por Eustaquio Pellicer; con José Sixto Álvarez 'Fray Mocho' (director); Bartolomé Mitre y Vedia (administrador); Manuel Mayol (dibujante principal)"
           datos: "1898-1939 · Buenos Aires, Argentina"
+          fondo: negro            # black-bg override (batch)
           images: [L019.jpg]
         texto:
           descripcion: >-
@@ -695,6 +700,7 @@ salas:
           titulo: "Almanaque del Mensajero"
           autor: "M. Sundt (fundador, 1901-1911); Viuda de Sundt (1912-1931); Editorial Peuser (a partir de los años 30)"
           datos: "1901-1931 (serie Sundt) · Buenos Aires, Argentina"
+          fondo: negro            # black-bg override (batch)
           images:
             - {file: L023-3.png, slot: [1, 1, 2, 3], valign: top}
             - {file: L023-4.png, slot: [1, 4, 2, 3]}
@@ -932,6 +938,7 @@ salas:
           titulo: "Identidades gráficas de las empresas estatales peronistas"
           autor: "Estado argentino (varios diseñadores anónimos)"
           datos: "1941-1952 · Buenos Aires, Argentina"
+          fondo: negro            # black-bg override (batch)
           images:
             - {file: L033.png,   slot: [1, 1, 3, 3]}
             - {file: L033-1.png, slot: [4, 1, 3, 3]}
@@ -1234,6 +1241,7 @@ salas:
           titulo: "Revista Summa"
           autor: "Carlos Méndez Mosquera (fundador) / Ediciones Summa — diseño editorial: Sara Torossian"
           datos: "1963-1989 · Buenos Aires, Argentina"
+          fondo: negro            # black-bg override (batch)
           images: [L046.jpg]
         texto:
           descripcion: >-
@@ -1315,6 +1323,7 @@ salas:
           titulo: "Tapa del álbum «Almendra», de Almendra"
           autor: "Luis Alberto Spinetta (ilustración) — sello RCA Vik"
           datos: "1969 · Buenos Aires, Argentina"
+          fondo: negro            # black-bg override (batch)
           images: [L049.png]
         texto:
           descripcion: >-
@@ -1432,6 +1441,7 @@ salas:
           titulo: "Identidad visual del CIDI (Centro de Investigación del Diseño Industrial)"
           autor: "Basilio Uribe (isologotipo, asesoría de Carlos Fracchia) y María Luisa Facorro de Colmenero (sistema gráfico)"
           datos: "1962-1972 · Buenos Aires, Argentina"
+          fondo: negro            # black-bg override (batch)
           images:
             - {file: L054.jpg,   slot: [1, 1, 3, 4]}
             - {file: L054-3.png, slot: [4, 1, 3, 4]}
@@ -1662,6 +1672,7 @@ salas:
           titulo: "Identidad de marca de YPF (FontanaDiseño)"
           autor: "FontanaDiseño (Rubén Fontana y Zalma Jalluf)"
           datos: "2004-2012 · Buenos Aires, Argentina"
+          fondo: negro            # black-bg override (batch)
           images:
             - {file: L067-1.png, slot: [1, 1, 6, 4], valign: bottom}
             - {file: L067.png,   slot: [1, 5, 6, 5], valign: top}
@@ -1777,6 +1788,7 @@ salas:
           titulo: "Bordadoras transnacionales: colectivos de México, El Salvador, Colombia, Chile y Argentina"
           autor: "Colectivos de bordadoras de México, El Salvador, Colombia, Chile y Argentina (autoras múltiples y anónimas)"
           datos: "2010-2020 · varias, México / El Salvador / Colombia / Chile / Argentina"
+          fondo: negro            # black-bg override (batch)
           images:
             - {file: L073.png,   slot: [2, 1.5, 4, 4], valign: bottom}
             - {file: L073-1.png, slot: [2, 5.5, 4, 4], valign: top}
@@ -1885,6 +1897,7 @@ salas:
           titulo: "Series del patrimonio cultural inmaterial argentino"
           autor: "Correo Argentino (emisión 1999 conjunta con La Poste, Francia)"
           datos: "1999-2005 · Buenos Aires, Argentina"
+          fondo: negro            # black-bg override (batch)
           images: [L081.jpg]
         texto:
           descripcion: >-
@@ -1895,60 +1908,80 @@ salas:
 bibliografia:
   titulo: "Bibliografía"
   referencias:
-    - "Almanaque del Mensajero (1921). Almanaque del Mensajero para 1921. Wikimedia Commons. https://upload.wikimedia.org/wikipedia/commons/4/44/Almanaque_del_Mensajero_1921.pdf"
-    - "Archivo de Ilustración Argentina (2018). Revista Plus Ultra. Archivo de Ilustración Argentina. https://ilustracionargentina.wordpress.com/2018/10/22/revista-plus-ultra/"
-    - "Archivo Histórico de Revistas Argentinas (s.f.). Capítulo (CEAL). AHIRA - Archivo Histórico de Revistas Argentinas. https://ahira.com.ar/revistas/capitulo-2/"
-    - "Archivo Lafuente (s.f.). Instituto Di Tella y CAyC. Archivo Lafuente. https://www.archivolafuente.com/obra-artistica/1945-1989/latinoamerica/instituto-di-tella-y-cayc/"
-    - "Ares, F. (2009). Real Imprenta de Niños Expósitos: revalorización patrimonial tipográfica del Buenos Aires virreinal (1780-1810). Boletín del IIB, vol. XIV, núms. 1 y 2. Universidad Nacional Autónoma de México, Instituto de Investigaciones Bibliográficas."
-    - "Ballester, A. (s.f.). Campesino, rotas tus cadenas, no consientas te opriman otros tiranos [Cartel]. Museo Nacional Centro de Arte Reina Sofía. https://www.museoreinasofia.es/en/collections/artwork/campesino-rotas-tus-cadenas-no-consientas-te-opriman-otros-tiranos-peasant"
+    - "AAcademica (s.f.). Afiche 'Obrero-campesino cargando una locomotora' (SIPP, nacionalización ferroviaria). AAcademica. https://www.aacademica.org/000-093/152.pdf"
+    - "Archivo de Ilustración Argentina (2018). Plus Ultra (suplemento mensual de Caras y Caretas). Archivo de Ilustración Argentina. https://ilustracionargentina.wordpress.com/2018/10/22/revista-plus-ultra/"
+    - "Archivo Histórico de Revistas Argentinas (s.f.). Tapas de libros del Centro Editor de América Latina (CEAL). AHIRA – Archivo Histórico de Revistas Argentinas. https://ahira.com.ar/revistas/capitulo-2/"
+    - "Archivo Lafuente (s.f.). Identidad y comunicación visual del Instituto Torcuato Di Tella. Archivo Lafuente. https://www.archivolafuente.com/obra-artistica/1945-1989/latinoamerica/instituto-di-tella-y-cayc/"
+    - "Ares, F. (2009). Real Imprenta de Niños Expósitos: revalorización patrimonial tipográfica del Buenos Aires virreinal (1780-1810). Boletín del Instituto de Investigaciones Bibliográficas, vol. XIV, núms. 1 y 2. Ciudad de México, Universidad Nacional Autónoma de México."
+    - "ArtNexus (s.f.). Gráfica del Taller 4 Rojo. ArtNexus. https://artnexus.com:5000/uploads/2021-10-24T23:02:11.739Zu0017152kin.jpg"
+    - "Behance (s.f.). Marca y emblema oficial del Bicentenario argentino. Behance. https://www.behance.net/gallery/919265/200-anos-Bicentenario-Argentino"
     - "Benavidez Bedoya, A. (2010). Silabario de la decoración americana. El código de la obra múltiple. https://elcodigodelaobramultiple.blogspot.com/2010/12/silabario-de-la-decoracion-americana.html"
-    - "Biblioteca Nacional Mariano Moreno (s.f.). El Pasatiempo. Almanaque literario, ilustrado y enciclopédico [publicación del micrositio]. Biblioteca Nacional Mariano Moreno. https://www.bn.gov.ar/micrositios/admin_assets/issues/files/3be0d8ca1d023084f562222452612c60.pdf"
-    - "Biblioteca Nacional Mariano Moreno (s.f.). Hemeroteca digital de la Biblioteca Nacional Mariano Moreno [visor]. Biblioteca Nacional Mariano Moreno. https://hemerotecadigital.bn.gob.ar/viewer"
-    - "Biblioteca Nacional Mariano Moreno (s.f.). Registro bibliográfico n.º 001186398. Catálogo de la Biblioteca Nacional Mariano Moreno. https://catalogo.bn.gov.ar/F?func=direct&doc_number=001186398&local_base=GENER"
-    - "Biblioteca Nacional Mariano Moreno (s.f.). The Southern Star / La Estrella del Sur (imagen del catálogo). Catálogo de la Biblioteca Nacional Mariano Moreno. https://catalogo.bn.gov.ar/exlibris1/apache_media/4J41I58EIGJP6H7YYCHGICKTT2V3C17H39Y.jpg"
-    - "Blondel, J. J. M. (1829). Almanaque de comercio de la ciudad de Buenos Aires, para el año de 1830. Wikimedia Commons (digitalización de la Academia Nacional de la Historia). https://upload.wikimedia.org/wikipedia/commons/2/28/BaANH47656_Almanaque_de_comercio_de_la_ciudad_de_Buenos_Aires_para_el_a%C3%B1o_1830_-_J._J.M._Blondel.pdf"
-    - "Cao, J. M. (1907). Caricaturas contemporáneas: William C. Morris (Caras y Caretas, 26 de enero de 1907) [Caricatura]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:1907-01-26,_Caras_y_Caretas,_Caricaturas_contempor%C3%A1neas,_William_C._Morris,_Cao.jpeg"
-    - "Caras y Caretas (1902). Caras y Caretas (Buenos Aires), N.º 206, 13 de septiembre de 1902. Scribd. https://es.scribd.com/document/658672022/Caras-y-caretas-Buenos-Aires-13-9-1902-n-o-206"
-    - "Caras y Caretas (1903). Caras y Caretas (Buenos Aires), N.º 253, 8 de agosto de 1903. Internet Archive. https://archive.org/details/Caras_y_Caretas_Buenos_Aires_1903-08-08_N_253/mode/2up"
-    - "Caras y Caretas (2018). 29 de octubre de 1898. Caras y Caretas. https://carasycaretas.org.ar/2018/11/27/29-de-octubre-de-1898/"
-    - "Caras y Caretas (Montevideo) (1890). Caras y Caretas (Montevideo), N.º 6, 24 de agosto de 1890. Internet Archive. https://archive.org/details/Caras_y_caretas_n06_-_24-8-1890/mode/2up"
-    - "Casa Nacional del Bicentenario (s.f.). Alejandro Sirio y la edad de oro del arte gráfico argentino. Casa Nacional del Bicentenario, Ministerio de Cultura de la Nación. https://casadelbicentenario.cultura.gob.ar/exhibicion/alejandro-sirio-y-la-edad-de-oro/"
-    - "Chartier, R. (2006). Inscribir y borrar. Cultura escrita y literatura (siglos XI-XVIII). Buenos Aires: Katz."
-    - "Colaboradores de Wikipedia (s.f.). Archivo: El Contrato Social.jpg. Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Archivo:El_Contrato_Social.jpg"
-    - "Colaboradores de Wikipedia (s.f.). Caras y Caretas (Argentina). Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Caras_y_Caretas_%28Argentina%29"
-    - "Colaboradores de Wikipedia (s.f.). Gazeta de Buenos-Ayres. Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Gazeta_de_Buenos-Ayres"
-    - "Colaboradores de Wikipedia (s.f.). Real Imprenta de Niños Expósitos. Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Real_Imprenta_de_Ni%C3%B1os_Exp%C3%B3sitos"
-    - "Devalle, V., Cabello, D., Corti, L. y Farías, V. (2005). Documentos del diseño gráfico. Un estudio de sus publicaciones. Seminario Crítica, Nº 145. Buenos Aires: Instituto de Arte Americano e Investigaciones Estéticas, FADU-UBA."
-    - "El Día (2009). Las novelas colectivas son una novedad. El Día (La Plata). https://www.eldia.com/nota/2009-3-29-las-novelas-colectivas-son-una-novedad"
-    - "Fasce, P. J. y Mantovani, L. A. (2022). Arte, industria e identidad. El nativismo y las artes aplicadas en la Argentina en la primera mitad del siglo XX. Iberoamericana (Ibero-Amerikanisches Institut, Berlín). https://journals.iai.spk-berlin.de/index.php/iberoamericana/article/download/2967/2450"
-    - "Fontana, R. (Estudio Fontanadiseño) (s.f.). Identidad corporativa de Full (YPF). Foroalfa. https://foroalfa.org/articulos/identidad-corporativa-de-full-ypf"
-    - "Garone Gravier, M. y Silverman, D. (s.f.). Tras las huellas del Laudationes Quinque (1766): historia, materialidad y destino del primer impreso jesuítico de Córdoba, Argentina [Presentación]. V Encuentro Nacional de Instituciones con Fondos Antiguos y Raros, Biblioteca Nacional Mariano Moreno. https://www.bn.gov.ar/resources/conferences/encuentroV/4-jueves/6-GARONE-SILVERMAN-POWER.pdf"
-    - "Giménez, S. M. (2018). El «oscuro» mundo del delito en Buenos Aires. Negritud y mirada policial en la Galería de Ladrones de la Capital (1880-1887). Runa. Archivo para las Ciencias del Hombre, vía Redalyc. https://www.redalyc.org/journal/1808/180857655003/html/"
-    - "Grupo Octubre de Patrimonio Argentino Tipográfico (GOPAT) (s.f.). Expósitos. La tipografía en Buenos Aires, 1780-1824 (2.ª edición). Issuu. https://issuu.com/gopat/docs/expositos_-_la_tipografia_en_ba_-_2_edicion"
-    - "Imprenta de la Independencia (1818). Almanak patriotico de la ciudad de Buenos-Ayres, para el año décimo de nuestra libertad. Wikimedia Commons. https://upload.wikimedia.org/wikipedia/commons/4/4b/Almanak_patriotico_de_la_ciudad_de_Buenos-Ayres.pdf"
-    - "Infobae (2017). Simbología peronista: los mejores afiches de 1945 a 1955, compilados en un libro. Infobae. https://www.infobae.com/cultura/2017/07/21/simbologia-peronista-los-mejores-afiches-de-1945-a-1955-compilados-en-un-libro/"
-    - "Instituto de Historia Argentina y Americana «Dr. Emilio Ravignani» (UBA-CONICET) (s.f.). Semanario Don Quijote, 1884-1891. Ravignani Digital. https://ravignanidigital.com.ar/libros/quijote/Q10000000.html"
-    - "Maestría en Diseño Comunicacional (diCom), FADU-UBA (2019). Música y diseño (1969-1983). Los álbumes del rock nacional entre la cultura visual y la contracultura. Artículos de la Maestría en Diseño Comunicacional. Buenos Aires: FADU-UBA. https://maestriadicom.org/articulos/musica-y-diseno-1969-1983-las-tapas-de-los-albumes-del-rock-nacional-entre-la-cultura-visual-y-la-contracultura/"
-    - "Mauzan, L. A. (ca. 1920-1930). Anuncio publicitario argentino de «Geniol» [Litografía en color]. Meisterdrucke. https://www.meisterdrucke.es/impresion-art%C3%ADstica/Luciano-Achille-Mauzan/1453873/Anuncio-publicitario-argentino-de-Geniol-c.1920-30-litografia-en-color.html"
-    - "Meggs, P. B. (2000). Historia del diseño gráfico (3.ª ed.). Ciudad de México: McGraw-Hill."
-    - "Meggs, P. B. (2000). Historia del Diseño Gráfico. México: McGraw-Hill."
-    - "METROMOD - Relocating Modernism: Global Metropolises, Modern Art and Exile (s.f.). Buenos Aires. METROMOD. https://metromod.net/cities/buenos-aires/"
-    - "Mosqueda, A. (2012). Condiciones de producción, formas y contenidos de los almanaques porteños en las primeras décadas del siglo XX. Primer Coloquio Argentino de Estudios sobre el Libro y la Edición. Universidad Nacional de La Plata."
-    - "Museo Virtual de la Universidad Nacional de Luján - Programa HISTELEA (s.f.). Catón cristiano. Museo Virtual UNLu - HISTELEA. https://www.museo.unlu.edu.ar/libros/ccatoncristiano.htm"
-    - "Ochoa, A. L. (2007). Los sellos postales como reflejo del patrimonio cultural de Argentina. Trabajo Final de Grado, Licenciatura en Diseño Gráfico. Córdoba: Universidad Empresarial Siglo 21."
-    - "Partícula Gráfica (2012). Primer Plan Visual de Buenos Aires (señalética). Partícula Gráfica. https://particulagrafica.wordpress.com/2012/02/27/primer-plan-visual-de-buenos-aires-senaletica/"
-    - "Picabea, F. (s.f.). Política económica y producción de tecnología en la segunda presidencia peronista. Análisis de la trayectoria socio-técnica de la motocicleta Puma (1952-1955). ResearchGate. https://www.researchgate.net/profile/Facundo-Picabea/publication/304273013"
-    - "Red Conceptualismos del Sur (RedCSur) (2022). Giro gráfico. Como en el muro la hiedra. Catálogo de exposición. Madrid: Museo Nacional Centro de Arte Reina Sofía."
-    - "Registro de Marcas Argentina (s.f.). Las marcas, más que un nombre. Marcasregistro.com.ar. https://marcasregistro.com.ar/las-marcas-mas-que-un-nombre/"
-    - "Rogers, G. (2008). Caras y Caretas: cultura, política y espectáculo en los inicios del siglo XX argentino. La Plata: Editorial de la Universidad Nacional de La Plata (EDULP)."
-    - "Rosa, G. H. (2011). Subjetivación y conflicto a través de una propuesta estética. La propaganda gráfica peronista (1946-1955). AAcademica - VI Jornadas de Jóvenes Investigadores, Instituto de Investigaciones Gino Germani, FSOC-UBA. https://www.aacademica.org/000-093/152.pdf"
-    - "Silverman, D. & Garone Gravier, M. (2021). Laudationes Quinque (1766): historia, materialidad y tecnología gráfica del primer impreso jesuítico de Córdoba, Argentina. Diseña, (18), Article 2. https://doi.org/10.7764/disena.18.Article.2"
-    - "Stylefeelfree (2015). Grete Stern y Horacio Coppola en el MoMA. De Berlín a Buenos Aires. Stylefeelfree. https://www.stylefeelfree.com/2015/05/grete-stern-y-horacio-coppola-en-moma.html"
-    - "Todo-Argentina.net (s.f.). Creación de Agua y Energía Eléctrica (primera presidencia de Perón). Todo-Argentina.net. https://www.todo-argentina.net/historia-argentina/peronismo/primera-peron/creacion-agua-energia.php"
-    - "Universidad Nacional de Cuyo (s.f.). Década 1950. Apuntes de Historia del Diseño. Materiales de cátedra, Carrera de Diseño. Mendoza: Facultad de Artes y Diseño, UNCuyo."
-    - "Universidad Nacional de Cuyo (s.f.). Década 1960. Apuntes de Historia del Diseño. Materiales de cátedra, Carrera de Diseño. Mendoza: Facultad de Artes y Diseño, UNCuyo."
-    - "Universidad Nacional de Cuyo (s.f.). Décadas de 1970-1980. Apuntes de Historia del Diseño. Materiales de cátedra, Carrera de Diseño. Mendoza: Facultad de Artes y Diseño, UNCuyo."
-    - "Universidad Nacional de Cuyo (s.f.). Décadas de 1990-2000-2010. Apuntes de Historia del Diseño. Materiales de cátedra, Carrera de Diseño. Mendoza: Facultad de Artes y Diseño, UNCuyo."
-    - "Universidad Torcuato Di Tella (s.f.). Página institucional sobre el Instituto Torcuato Di Tella. Universidad Torcuato Di Tella. https://www.utdt.edu/ver_contenido.php?id_contenido=1455&id_item_menu=3062"
-    - "Valdés de León, G. A. (2008). Latinoamérica en la trama del Diseño. Entre la utopía y la realidad. Cuadernos del Centro de Estudios en Diseño y Comunicación N° 26. Buenos Aires: Universidad de Palermo."
-    - "Wikimedia Commons (s.f.). Resultados de búsqueda: «el telégrafo mercantil». Wikimedia Commons. https://commons.wikimedia.org/w/index.php?search=el+telegrafo+mercantil"
+    - "Biblioteca Nacional Mariano Moreno (s.f.). El Mosquito. Catálogo de la Biblioteca Nacional Mariano Moreno. https://catalogo.bn.gov.ar/F?func=direct&doc_number=001186398&local_base=GENER"
+    - "Biblioteca Nacional Mariano Moreno (s.f.). El Pasatiempo. Almanaque literario, ilustrado, noticioso. Biblioteca Nacional Mariano Moreno. https://www.bn.gov.ar/micrositios/admin_assets/issues/files/3be0d8ca1d023084f562222452612c60.pdf"
+    - "Biblioteca Nacional Mariano Moreno (s.f.). Filigrana del papel del Laudationes Quinque. Biblioteca Nacional Mariano Moreno. https://www.bn.gov.ar/resources/conferences/encuentroV/4-jueves/6%20-%20GARONE%20SILVERMAN-POWER.pdf"
+    - "Biblioteca Nacional Mariano Moreno (s.f.). Semanario de Agricultura, Industria y Comercio. Hemeroteca digital de la Biblioteca Nacional Mariano Moreno. https://hemerotecadigital.bn.gob.ar/viewer"
+    - "Biblioteca Nacional Mariano Moreno (s.f.). The Southern Star / La Estrella del Sur. Catálogo de la Biblioteca Nacional Mariano Moreno. https://catalogo.bn.gov.ar/exlibris1/apache_media/4J41I58EIGJP6H7YYCHGICKTT2V3C17H39Y.jpg"
+    - "Caras y Caretas (2018). Tapa 'El nuevo Luis XIV' (Caras y Caretas N° 16). Caras y Caretas. https://carasycaretas.org.ar/2018/11/27/29-de-octubre-de-1898/"
+    - "Casa Nacional del Bicentenario (s.f.). Ilustraciones y diseño editorial de Alejandro Sirio. Casa Nacional del Bicentenario, Ministerio de Cultura de la Nación. https://casadelbicentenario.cultura.gob.ar/exhibicion/alejandro-sirio-y-la-edad-de-oro/"
+    - "Chartier, R. (2006). Inscribir y borrar. Cultura escrita y literatura (siglos XI-XVIII). Buenos Aires, Katz Editores."
+    - "Clarín (2013). Infografías de la Guerra de Malvinas (Alejandro Malofiej). Clarín. https://www.clarin.com/img/2013/11/07/Bygg9PV2Ql_720x0.jpg"
+    - "Colaboradores de Wikipedia (s.f.). Caras y Caretas (Buenos Aires). Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Caras_y_Caretas_%28Argentina%29"
+    - "Colaboradores de Wikipedia (s.f.). El Contrato Social (edición de Mariano Moreno). Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Archivo:El_Contrato_Social.jpg"
+    - "Colaboradores de Wikipedia (s.f.). La Gazeta de Buenos Ayres. Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Gazeta_de_Buenos-Ayres#/media/Archivo:Gazeta_de_buenos_aires-01.jpg"
+    - "Colaboradores de Wikipedia (s.f.). Libro «Nunca Más» (informe de la CONADEP). Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Nunca_m%C3%A1s_(libro)#/media/Archivo:Nunca_mas.jpg"
+    - "Colaboradores de Wikipedia (s.f.). Prensa de hierro de la 'Imprenta de la Patria' (Museo del Vino de Cafayate). Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Real_Imprenta_de_Ni%C3%B1os_Exp%C3%B3sitos#/media/Archivo:Imprenta_de_la_Patria_10.JPG"
+    - "CONICET – Repositorio Institucional (s.f.). Departamento de Infografía del diario Clarín. Repositorio Institucional CONICET. https://ri.conicet.gov.ar/bitstream/handle/11336/158999/CONICET_Digital_Nro.0716cb5c-27cf-44f5-bc7c-ad8eaf69008a_A.pdf?sequence=2&isAllowed=y"
+    - "Devalle, V., Cabello, D., Corti, L. y Farías, V. (2005). Documentos del diseño gráfico. Un estudio de sus publicaciones. Seminario Crítica, Nº 145. Buenos Aires, Instituto de Arte Americano e Investigaciones Estéticas, FADU-UBA."
+    - "Diseño Tipográfico Latinoamericano (2013). Familia tipográfica «Zootype». Diseño Tipográfico Latinoamericano. https://www.d-t-l.org/wp-content/uploads/2013/08/17/294_poster.gif"
+    - "Docs Populi (s.f.). Carteles de la OSPAAAL. Docs Populi. https://www.docspopuli.org/CubaWebCat/gallery-01.html"
+    - "Documento alojado en Google Drive (s.f.). «La Nación Argentina. Justa, libre, soberana» — libro del Primer Plan Quinquenal. Google Drive. https://drive.google.com/file/d/1QneRMZp6g55IL4mN3ORFQ7Jge4Bfum4Y/view"
+    - "El Día (s.f.). Folletines de Caras y Caretas (serie 1904 en adelante). El Día (La Plata). https://www.eldia.com/nota/2009-3-29-las-novelas-colectivas-son-una-novedad"
+    - "Facebook (s.f.). Mascota oficial del Mundial '78: «El Gauchito». Facebook (publicación pública). https://www.facebook.com/identidadalbiceleste/posts/jueves-12-de-mayo-de-1977un-d%C3%ADa-como-hoy-se-presentaba-a-mundialito-el-gauchito-/432411376206301/"
+    - "Filatelia Argentina (s.f.). Series Eva Perón en estampillas. Filatelia Argentina. https://www.filateliaargentina.com.ar/exsite/evita2003.html"
+    - "FontanaDiseño (s.f.). Identidad de marca de YPF (FontanaDiseño). FontanaDiseño. https://www.fontana-d.com/portfolio/ypf/"
+    - "FontanaDiseño (s.f.). Tipografía «Fontana tpG». FontanaDiseño. https://www.fontana-d.com/portfolio/tipografiafontana/"
+    - "Foroalfa (s.f.). Identidad gráfica YPF (símbolo y aplicaciones tempranas). Foroalfa. https://foroalfa.org/articulos/identidad-corporativa-de-full-ypf"
+    - "Fundación AYC (s.f.). Revista Summa. Fundación AYC. https://fundaayc.com/tag/revista-summa/"
+    - "Gobierno de la República Argentina (s.f.). Primer sello postal argentino (Corrientes). Argentina.gob.ar. https://www.argentina.gob.ar/noticias/se-cumplen-164-anos-del-primer-sello-postal-argentino"
+    - "Hernán, G. (2011). La propaganda gráfica peronista (1946-1955). Subjetivación y conflicto a través de una propuesta estética. VI Jornadas de Jóvenes Investigadores en Comunicación y Cultura, IIGG-UBA. Buenos Aires, Universidad de Buenos Aires."
+    - "Ibero-Amerikanisches Institut (s.f.). Viracocha (manual escolar). Iberoamericana – Ibero-Amerikanisches Institut (Berlin). https://journals.iai.spk-berlin.de/index.php/iberoamericana/article/download/2967/2450?inline=1"
+    - "Infobae (2017). Afiche 'Familia rural y perfil apoteótico de Perón'. Infobae. https://www.infobae.com/cultura/2017/07/21/simbologia-peronista-los-mejores-afiches-de-1945-a-1955-compilados-en-un-libro/"
+    - "Instituto de Historia Argentina y Americana «Dr. Emilio Ravignani» (UBA-CONICET) (s.f.). Don Quijote (semanario). Ravignani Digital – Instituto de Historia Argentina y Americana (UBA-CONICET). https://ravignanidigital.com.ar/libros/quijote/Q10000000.html?a=1&s=1&h=1"
+    - "Internet Archive (s.f.). Caras y Caretas (Montevideo). Internet Archive. https://archive.org/details/Caras_y_caretas_n06_-_24-8-1890/mode/2up"
+    - "Issuu (s.f.). El Triunfo Argentino. Poema Heroico. Issuu. https://issuu.com/gopat/docs/expositos_-_la_tipografia_en_ba_-_2_edicion"
+    - "MACBA – Museu d'Art Contemporani de Barcelona (s.f.). Gráfica de Tucumán Arde. Museu d'Art Contemporani de Barcelona (MACBA). https://www.macba.cat/es/obra/r2789-arxiu-tucuman-arde-documentacio-relativa-a-les-diverses-accions-i-treballs-daquest-collectiu/"
+    - "Maestría en Diseño Comunicacional (diCom), FADU-UBA (2019). Música y diseño (1969-1983). Los álbumes del rock nacional entre la cultura visual y la contracultura. Artículos de la Maestría en Diseño Comunicacional. Buenos Aires, FADU-UBA. https://maestriadicom.org/articulos/musica-y-diseno-1969-1983-las-tapas-de-los-albumes-del-rock-nacional-entre-la-cultura-visual-y-la-contracultura/"
+    - "Meggs, P. B. (2000). Historia del diseño gráfico (3.ª ed.). Ciudad de México, McGraw-Hill."
+    - "Meisterdrucke (s.f.). Campaña publicitaria 'Geniol' de Lucien Achille Mauzan. Meisterdrucke. https://www.meisterdrucke.es/impresion-art%C3%ADstica/Luciano-Achille-Mauzan/1453873/Anuncio-publicitario-argentino-de-%27Geniol,-c.1920-30-%28litograf%C3%ADa-en-color%29.html"
+    - "Monografias.com (s.f.). Marca de campaña presidencial de Carlos Menem. Monografias.com. https://www.monografias.com/trabajos82/disenando-candidatos-influencia-publicidad/disenando-candidatos-influencia-publicidad2"
+    - "Mosqueda, A. (2012). Condiciones de producción, formas y contenidos de los almanaques porteños en las primeras décadas del siglo XX. Primer Coloquio Argentino de Estudios sobre el Libro y la Edición. La Plata, Universidad Nacional de La Plata."
+    - "Museo Nacional Centro de Arte Reina Sofía (s.f.). Afiche 'Campesino rompiendo las cadenas' (SIPP). Museo Nacional Centro de Arte Reina Sofía. https://www.museoreinasofia.es/en/collections/artwork/campesino-rotas-tus-cadenas-no-consientas-te-opriman-otros-tiranos-peasant#moreAbout"
+    - "Museo Virtual de la Universidad Nacional de Luján – Programa HISTELEA (s.f.). Catones, cartillas y catecismos virreinales. Museo Virtual UNLu – HISTELEA. https://www.museo.unlu.edu.ar/libros/ccatoncristiano.htm"
+    - "Ochoa, A. L. (2007). Los sellos postales como reflejo del patrimonio cultural de Argentina. Trabajo Final de Grado, Licenciatura en Diseño Gráfico. Córdoba, Universidad Empresarial Siglo 21."
+    - "Oficio al medio (s.f.). Sistema expositivo de la 1ª Bienal Mundial de la Historieta. Oficio al medio (Substack). https://oficioalmedio.substack.com/p/17-oscar-masotta-the-last-crusade"
+    - "Partícula Gráfica (2012). Señalética urbana de Buenos Aires (Estudio Shakespeare). Partícula Gráfica. https://particulagrafica.wordpress.com/2012/02/27/primer-plan-visual-de-buenos-aires-senaletica/"
+    - "Pesados Argentinos (2014). Logotipo Siam y la agencia de diseño Agens. Pesados Argentinos (blog). https://pesadosargentinos.blogspot.com/2014/08/siam.html"
+    - "Red Conceptualismos del Sur (RedCSur) (2022). Giro gráfico. Como en el muro la hiedra. Catálogo de exposición. Madrid, Museo Nacional Centro de Arte Reina Sofía."
+    - "Redalyc (s.f.). Galería de los ladrones de la Capital. Redalyc. https://www.redalyc.org/journal/1808/180857655003/html/"
+    - "Registro de Marcas Argentina (s.f.). Identidades de marcas iconográficas argentinas (1930-1950). Marcasregistro.com.ar. https://marcasregistro.com.ar/las-marcas-mas-que-un-nombre/"
+    - "ResearchGate (s.f.). Identidad de marca IAME (motocicleta Puma). ResearchGate. https://www.researchgate.net/profile/Facundo-Picabea/publication/304273013_POLITICA_ECONOMICA_Y_PRODUCCION_DE_TECNOLOGIA_EN_LA_SEGUNDA_PRESIDENCIA_PERONISTA_ANALISIS_DE_LA_TRAYECTORIA_SOCIO-TECNICA_DE_LA_MOTOCICLETA_PUMA_1952-1955/links/576b6bd008ae6e772780bc0f/Politica-economica-y-produccion-de-tecnologia-en-la-segunda-presidencia-peronista-Analisis-de-la-trayectoria-socio-tecnica-de-la-motocicleta-Puma-1952-1955.pdf"
+    - "Revista Memo (s.f.). Sistema de identidad visual de la Feria de América. Revista Memo. https://www.memo.com.ar/cultura/feria-internacional-mendoza-1954/"
+    - "Revista tipoGráfica (s.f.). Revista tipoGráfica (tpG). Revista tipoGráfica. https://www.revistatipografica.com/category/revista/"
+    - "Revistas de Arte Latinoamericano (s.f.). Revista nueva visión. Revistas de Arte Latinoamericano. https://revistasdeartelatinoamericano.org/collections/show/18"
+    - "Revistas UNC (s.f.). Serie «Pop achorado»: afiches para la Reforma Agraria del Perú. Revistas UNC – Universidad Nacional de Córdoba. https://revistas.unc.edu.ar/index.php/RIHALC/article/view/37867/37819"
+    - "Rogers, G. (2008). Caras y Caretas: cultura, política y espectáculo en los inicios del siglo XX argentino. La Plata, Editorial de la Universidad Nacional de La Plata (EDULP)."
+    - "Scribd (s.f.). Caricatura 'Los ministros odontólogos' (Caras y Caretas, septiembre de 1902). Scribd. https://es.scribd.com/document/658672022/Caras-y-caretas-Buenos-Aires-13-9-1902-n-o-206"
+    - "Silverman, D. y Garone Gravier, M. (2021). Laudationes Quinque (1766): historia, materialidad y tecnología gráfica del primer impreso jesuítico de Córdoba, Argentina. Diseña, Nº 18, artículo 2. https://doi.org/10.7764/disena.18.Article.2"
+    - "Studocu (s.f.). Identidad visual del CIDI (Centro de Investigación del Diseño Industrial). Studocu. https://www.studocu.com/es-ar/document/universidad-nacional-de-cuyo/historia-del-diseno-ii/cidi-apuntes-de-moodle/73051790"
+    - "Todo-Argentina.net (s.f.). Identidades gráficas de las empresas estatales peronistas. Todo-Argentina.net. https://www.todo-argentina.net/historia-argentina/peronismo/primera-peron/creacion-agua-energia.php?idpagina=1503"
+    - "Universidad Nacional de Cuyo (s.f.). Década 1950. Apuntes de Historia del Diseño. Materiales de cátedra, Carrera de Diseño. Mendoza, Facultad de Artes y Diseño, UNCuyo."
+    - "Universidad Nacional de Cuyo (s.f.). Década 1960. Apuntes de Historia del Diseño. Materiales de cátedra, Carrera de Diseño. Mendoza, Facultad de Artes y Diseño, UNCuyo."
+    - "Universidad Nacional de Cuyo (s.f.). Décadas de 1970-1980. Apuntes de Historia del Diseño. Materiales de cátedra, Carrera de Diseño. Mendoza, Facultad de Artes y Diseño, UNCuyo."
+    - "Universidad Nacional de Cuyo (s.f.). Décadas de 1990-2000-2010. Apuntes de Historia del Diseño. Materiales de cátedra, Carrera de Diseño. Mendoza, Facultad de Artes y Diseño, UNCuyo."
+    - "Universidad Torcuato Di Tella (s.f.). Isologotipo oficial del Mundial '78. Universidad Torcuato Di Tella. https://www.utdt.edu/ver_nota_prensa.php?id_nota_prensa=20972&id_item_menu=6"
+    - "Valdés de León, G. A. (2008). Latinoamérica en la trama del Diseño. Entre la utopía y la realidad. Cuadernos del Centro de Estudios en Diseño y Comunicación, Nº 26. Buenos Aires, Universidad de Palermo."
+    - "Wikimedia Commons (s.f.). Almanak patriótico de Buenos Ayres, para el año décimo de nuestra libertad. Wikimedia Commons. https://upload.wikimedia.org/wikipedia/commons/4/4b/Almanak_patriotico_de_la_ciudad_de_Buenos-Ayres.pdf?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original&uselang=es"
+    - "Wikimedia Commons (s.f.). Almanaque del Mensajero. Wikimedia Commons. https://upload.wikimedia.org/wikipedia/commons/4/44/Almanaque_del_Mensajero_1921.pdf?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+    - "Wikimedia Commons (s.f.). Almanaques de comercio Blondel. Wikimedia Commons. https://upload.wikimedia.org/wikipedia/commons/2/28/BaANH47656_Almanaque_de_comercio_de_la_ciudad_de_Buenos_Aires_para_el_a%C3%B1o_1830_-_J._J.M._Blondel.pdf?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+    - "Wikimedia Commons (s.f.). El Telégrafo Mercantil, Rural, Político, Económico e Historiográfico. Wikimedia Commons. https://commons.wikimedia.org/w/index.php?search=el+telegrafo+mercantil&title=Special%3AMediaSearch&type=image"
+    - "Wiriko (s.f.). Gráfica del proyecto Zapantera Negra. Wiriko. https://www.wiriko.org/wiriko/zapanteras/"

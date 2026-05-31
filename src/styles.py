@@ -60,6 +60,14 @@ TEXT_STYLES: dict[str, TextStyle] = {
         color="negro_tinta",
         space_before_mm=10,
     ),
+    # Cover authors — tracked caps like 01-Portada-Label but larger, so the
+    # author block reads apart from the bottom piezas/salas label.
+    "Portada-Autores": TextStyle(
+        font_family="Lato", font_weight=900,
+        size_pt=10, leading_pt=16,
+        tracking_per1000=200,
+        color="negro_tinta", uppercase=True,
+    ),
 
     # — Epígrafe (red-bg quote spread) —
     "05-Epigrafe-Cita": TextStyle(
@@ -149,7 +157,8 @@ TEXT_STYLES: dict[str, TextStyle] = {
         color="blanco", uppercase=True,
     ),
     "16-Portadilla-CitaCurato": TextStyle(
-        font_family="EB Garamond", font_style="italic",
+        # Regular (was italic) — at user's request.
+        font_family="EB Garamond",
         size_pt=13, leading_pt=18,
         color="blanco",
         justified=True,

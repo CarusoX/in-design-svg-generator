@@ -249,12 +249,23 @@ def _hyphen_dict():
     return _HYPHEN_DICT
 
 
+def _alpha_len(s: str) -> int:
+    """Number of letters in `s` (ignores punctuation/digits)."""
+    return sum(c.isalpha() for c in s)
+
+
 def _hyphen_break_word(word: str, max_width_mm: float, style: TextStyle) -> tuple[str, str] | None:
     """Return (prefix, suffix) such that prefix + '-' fits in `max_width_mm`
     using real font metrics (via Pillow when available), choosing the
     LONGEST valid Spanish-syllable break. Returns None when no usable
-    break exists (no pyphen, too few chars on either side, or no
-    hyphenation point fits)."""
+    break exists (no pyphen, too few letters on either side, or no
+    hyphenation point fits).
+
+    The fragment-size rule counts LETTERS, not raw characters, so trailing
+    or leading punctuation can't sneak through a too-short break: pyphen
+    splits "conservados." as "con-ser-va-do-s." and that final "s." is 2
+    chars but only 1 letter — counting letters rejects it and falls back to
+    "conserva-dos.", the correct Spanish syllabification."""
     dic = _hyphen_dict()
     if dic is None or max_width_mm <= 0:
         return None
@@ -263,7 +274,7 @@ def _hyphen_break_word(word: str, max_width_mm: float, style: TextStyle) -> tupl
         return None
     best = None
     for p in positions:
-        if p < _HYPHEN_MIN_FRAGMENT or len(word) - p < _HYPHEN_MIN_FRAGMENT:
+        if _alpha_len(word[:p]) < _HYPHEN_MIN_FRAGMENT or _alpha_len(word[p:]) < _HYPHEN_MIN_FRAGMENT:
             continue
         if _measure_word_mm(word[:p] + "-", style) <= max_width_mm:
             best = p
