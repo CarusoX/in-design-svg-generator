@@ -125,29 +125,36 @@ def _build_spreads(
 
 
 def _write_fontconfig(tmp_dir: Path) -> Path:
-    """Write a fontconfig that adds the vendored Google variable EB
-    Garamond fonts to the search path and inherits the system config
-    (so Lato / Caveat still resolve from ~/Library/Fonts).
+    """Write a self-contained fontconfig: the vendored Google variable EB
+    Garamond FIRST, then the system font directories, listed EXPLICITLY —
+    deliberately NOT `<include>`-ing the system `fonts.conf`.
 
-    Without this — AND without `PANGOCAIRO_BACKEND=fc` (set alongside
-    in `_rsvg_env`) — rsvg-convert renders text through Pango's
-    CoreText backend on macOS, which picks the user's locally
-    installed EBGaramond12-Italic.otf / EBGaramond08-Italic.otf for
-    "EB Garamond:italic". Those report family "EB Garamond" too but
-    have noticeably different metrics from the Google variable family
-    our wrap was calibrated against (Pillow measures with the same
-    vendored TTFs; see `render._font_path`). The mismatch shows up in
-    the PDF as italic runs that read distorted vs. the browser
-    preview. Listing our `<dir>` FIRST makes the variable family win
-    fontconfig's family-name match."""
+    Why pin the vendored EB Garamond: rsvg's default (CoreText) backend
+    picks the locally installed optical cuts EBGaramond12/08 for
+    "EB Garamond", whose glyphs differ from the Google variable family
+    our wrap was calibrated against — most visibly the cap-Q swash, whose
+    long tail overruns the next letters ("Quedan"). The vendored variable
+    (what the browser preview also loads) keeps the Q contained. Listing
+    its `<dir>` first makes it win the family-name match.
+
+    Why explicit dirs instead of `<include>`: on some macOS + Homebrew
+    setups the bundled `fonts.conf` / conf.d leaves the matcher broken —
+    `fc-match` returns a single CJK fallback ('Hiragino Sans') for EVERY
+    family. Scanning the directories directly (no conf.d) sidesteps that:
+    EB Garamond resolves to the vendored variable and Lato / Caveat to
+    their installed files. `_font_pinning_works` re-checks this at build
+    time and falls back to CoreText if it ever fails."""
+    home_fonts = Path.home() / "Library" / "Fonts"
     conf = textwrap.dedent(f"""\
         <?xml version="1.0"?>
         <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
         <fontconfig>
           <dir>{VENDOR_FONTS_DIR}</dir>
-          <include ignore_missing="yes">/opt/homebrew/etc/fonts/fonts.conf</include>
-          <include ignore_missing="yes">/usr/local/etc/fonts/fonts.conf</include>
-          <include ignore_missing="yes">/etc/fonts/fonts.conf</include>
+          <dir>{home_fonts}</dir>
+          <dir>/System/Library/Fonts</dir>
+          <dir>/System/Library/Fonts/Supplemental</dir>
+          <dir>/Library/Fonts</dir>
+          <cachedir>{tmp_dir / "fc-cache"}</cachedir>
         </fontconfig>
     """)
     path = tmp_dir / "fontconfig.conf"
