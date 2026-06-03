@@ -215,6 +215,18 @@ def _compile_pages(raw: dict) -> list[dict]:
                 add("ficha_texto", texto)
                 add("ficha_imagen", imagen)
 
+    # — Closing essay + acknowledgments, right before the bibliografía.
+    # Rendered with the same essay template as the opening nota (red title
+    # + Garamond body), but with colophon=False so every paragraph flows
+    # as regular body (no italic closing line).
+    if raw.get("cierre") or raw.get("agradecimientos"):
+        from .templates.nota_curatorial import paginate as paginate_nota
+        for key in ("cierre", "agradecimientos"):
+            section = raw.get(key)
+            if section:
+                for page_data in paginate_nota(section, colophon=False):
+                    add("nota_curatorial", page_data)
+
     # — Bibliografía (paginated; long reference lists span several pages,
     # so the template wraps each ref into lines and packs them per page).
     if "bibliografia" in raw:

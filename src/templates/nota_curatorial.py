@@ -225,22 +225,31 @@ def _coalesce_runs(line: list[tuple[str, bool]]) -> list[tuple[str, bool]]:
 
 # ── Pagination ───────────────────────────────────────────────────────
 
-def paginate(note: dict) -> list[dict]:
+def paginate(note: dict, colophon: bool = True) -> list[dict]:
     """Split a curatorial note's body across pages, filling each page
     line-by-line. When a paragraph doesn't fit, top-up the current page
     with as many of its lines as fit and continue the rest on the next
-    page (with no first-line indent, since it's not a new paragraph)."""
+    page (with no first-line indent, since it's not a new paragraph).
+
+    `colophon=True` (the opening nota) renders the LAST paragraph as a
+    fully-italic closing note anchored to row 8. Set `colophon=False`
+    (e.g. the closing essay / acknowledgments) to flow every paragraph
+    as regular body, with no italic colophon."""
     titulo = str(note.get("titulo", "")).strip()
     body = str(note.get("body", "")).strip()
     if not body:
         return [{"titulo": titulo}] if titulo else []
 
     paragraphs = [p.strip() for p in body.split("\n") if p.strip()]
-    # The final paragraph is special: rendered fully italic and anchored
-    # to the bottom of its page (a closing colophon). Everything else
-    # flows normally from the top.
-    colophon_text = paragraphs[-1] if len(paragraphs) >= 1 else ""
-    regular_paragraphs = paragraphs[:-1]
+    # The final paragraph can be a colophon: rendered fully italic and
+    # anchored to the bottom of its page. Everything else flows from the
+    # top. With colophon=False, no paragraph is peeled off.
+    if colophon:
+        colophon_text = paragraphs[-1] if len(paragraphs) >= 1 else ""
+        regular_paragraphs = paragraphs[:-1]
+    else:
+        colophon_text = ""
+        regular_paragraphs = paragraphs
 
     # Pre-wrap every regular paragraph. The first line gets a narrower
     # budget to leave room for the 5mm sangría; the rest use the full

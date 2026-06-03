@@ -68,7 +68,7 @@ nota_curatorial:
   body: >-
     En 1994, Roger Chartier formuló una observación que con el tiempo se
     volvió incómoda: la tasa de sobrevida de un impreso es inversamente
-    proporcional a la importancia de su producción (Chartier, R., 2006). 
+    proporcional a la importancia de su producción (Chartier, 2006). 
     Dicho de otro modo, cuanto más se imprimió y más manos pasó,
     menos posibilidades tuvo de llegar hasta nosotros. Los objetos que
     una cultura considera valiosos los guarda; los que considera menores
@@ -85,9 +85,9 @@ nota_curatorial:
     gráfico latinoamericano. La razón es simple y es también el problema
     que este proyecto intenta nombrar: esa colección no existe.
 
-    Siguiendo esta linea, el ensayista e investigador argentino Gustavo Valdés de León señaló
+    Siguiendo esta línea, el ensayista e investigador argentino Gustavo Valdés de León señaló
     que el diseño latinoamericano carece todavía de una historia escrita
-    sistemática (Valdés de León, G., 2008). Sus objetos han sido
+    sistemática (Valdés de León, 2008). Sus objetos han sido
     clasificados de maneras que les restan especificidad: como arte,
     como artesanía, como patrimonio histórico, como documento de época.
     Rara vez como diseño. Esta operación clasificatoria no es inocente.
@@ -142,7 +142,7 @@ nota_curatorial:
     una genealogía formal que no comienza con la llegada de las
     vanguardias europeas ni con la institucionalización universitaria de
     la disciplina, sino mucho antes, en talleres coloniales con tipos
-    desgastados (Ares, F., 2009), en pliegos que nadie guardó (Mosqueda,
+    desgastados (Ares, 2009), en pliegos que nadie guardó (Mosqueda,
     2012), en filigranas de papel cuyo molino de origen todavía no hemos
     podido identificar (Silverman & Garone Gravier, 2021).
 
@@ -219,8 +219,8 @@ salas:
             recto y verso es prácticamente perfecto, dato imposible de notar en
             el facsímil de 1937. Las imágenes en alta resolución obtenidas en
             2019 permiten estudiar por primera vez la composición y el detalle
-            ornamental del libro, evidenciando que su impresor —probablemente
-            con experiencia previa— operaba con criterios proyectuales
+            ornamental del libro, evidenciando que su impresor, probablemente
+            con experiencia previa, operaba con criterios proyectuales
             explícitos.
           estado: "Conservada en el único ejemplar conocido (Montserrat)"
 
@@ -285,8 +285,8 @@ salas:
             otorgó la concesión a Silva y Aguiar en 1780, una de las condiciones
             del contrato fue la recolección obligatoria de todos los catones,
             cartillas y catecismos en circulación, para luego venderse por
-            cuenta de la Casa de Expósitos. Esa operación —combinación de
-            censura, monopolio fiscal y alfabetización— produjo durante tres
+            cuenta de la Casa de Expósitos. Esa operación, combinación de
+            censura, monopolio fiscal y alfabetización, produjo durante tres
             décadas los textos con los que aprendieron a leer las primeras
             generaciones porteñas. Los impresos eran baratos, mal compuestos por
             la urgencia y descuidados en la lectura; pocos sobrevivieron. Importan no por su excepcionalidad gráfica sino por lo contrario. Son el grueso silencioso de una producción que casi nadie pensó digno de conservar y que, sin embargo, fue lo más leído del virreinato.
@@ -332,7 +332,7 @@ salas:
             prerevolucionario: Manuel Belgrano, Domingo de Azcuénaga, Manuel
             José de Lavardén, Juan José Castelli. El periódico inauguró en
             Buenos Aires el debate público impreso sobre economía, agricultura,
-            educación y derechos —exactamente los temas que cinco años después
+            educación y derechos, exactamente los temas que cinco años después
             se convertirían en agenda revolucionaria. Marca el primer momento en que la imprenta porteña dejó de servir sólo al virreinato y a la Iglesia y empezó a producir un espacio de opinión pública.
           estado: "Conservada (Biblioteca Nacional Argentina, hemerotecas)"
 
@@ -354,7 +354,7 @@ salas:
             Cuando llegó la escasez tipográfica en 1805, Vieytes denunció
             públicamente que 'la escasez de letra con que se halla nuestra única
             imprenta hace imposible la edición de las noticias publicadas en
-            pliego separado': una declaración que confirma que el cuello de
+            pliego separado', una declaración que confirma que el cuello de
             botella material de la imprenta era, en sí mismo, una cuestión
             política. Es un antecedente directo de la prensa revolucionaria.
           estado: "Conservada (Biblioteca Nacional Argentina)"
@@ -396,9 +396,9 @@ salas:
             rareza absoluta para el Río de la Plata. Tras la capitulación
             inglesa, vendió todo el equipo a la Casa de Expósitos de Buenos
             Aires, que lo trasladó en la balandra Copiango el 29 de septiembre
-            de 1807. La pieza tiene una doble vida archivística: como periódico
-            —de circulación brevísima, alarmante para la Audiencia de Buenos
-            Aires— y como prensa y tipos, que se convirtieron en el aparato
+            de 1807. La pieza tiene una doble vida archivística: como periódico, de circulación brevísima, 
+            alarmante para la Audiencia de Buenos
+            Aires, y como prensa y tipos, que se convirtieron en el aparato
             productivo de la imprenta porteña durante la Revolución de Mayo.
           estado: "Conservada (Biblioteca Nacional del Uruguay y Argentina; facsímil 2007)"
 
@@ -801,9 +801,7 @@ salas:
           descripcion: >-
             Campaña publicitaria para el medicamento Geniol diseñada por el
             ilustrador francés Lucien Achille Mauzan, radicado en Buenos Aires
-            durante los años 20 y 30. La iconografía —el rostro deformado por el
-            dolor de cabeza, con la mano en la sien, en gran formato y colores
-            saturados— se convirtió en una de las imágenes publicitarias más
+            durante los años 20 y 30. La iconografía se convirtió en una de las imágenes publicitarias más
             reconocibles de la Argentina del siglo XX. Mauzan había trabajado
             antes en Italia y Francia y aplicó al mercado porteño las técnicas
             del cartel europeo de gran formato (Cappiello, Cassandre). La pieza
@@ -1021,7 +1019,9 @@ salas:
             iconografía es deliberada: el sujeto que sostiene la nueva propiedad
             estatal del sistema ferroviario no es el inmigrante europeo blanco
             asociado al ferrocarril privado británico, sino el 'cabecita'
-            criollo que el peronismo había incorporado a la escena política. Es un ejemplo del programa simbólico de la propaganda peronista. La nacionalización de un activo material —los ferrocarriles— se acompaña de una nacionalización del cuerpo del trabajador en la iconografía oficial, con una fisonomía que no replica las prescripciones estéticas europeizantes sino que las disputa.
+            criollo que el peronismo había incorporado a la escena política. 
+            Es un ejemplo del programa simbólico de la propaganda peronista. 
+            La nacionalización de un activo material —los ferrocarriles— se acompaña de una nacionalización del cuerpo del trabajador en la iconografía oficial, con una fisonomía que no replica las prescripciones estéticas europeizantes sino que las disputa.
           estado: "Conservada (AGN); autor no identificado"
 
       - imagen:
@@ -1035,8 +1035,7 @@ salas:
             Afiche de la segunda fase peronista donde una familia rural ocupa el
             primer plano (hombre sosteniendo una pala) y el perfil del líder
             aparece al fondo en tono apoteótico con tonos amarillos. La elección
-            iconográfica es deliberada: el perfil presidencial —y no el rostro
-            frontal— sugiere cercanía con el espectador y con la familia,
+            iconográfica es deliberada: el perfil presidencial sugiere cercanía con el espectador y con la familia,
             integrándolo a la escena en lugar de imponerse desde arriba. El
             crítico Gabriel Hernán describe la operación como 'plebeyización'
             conceptual de la imagen presidencial: la figura del Jefe de Estado
@@ -1061,7 +1060,7 @@ salas:
             iconografía es leve pero el mensaje es radical: el acceso de los
             sectores populares al derecho a las vacaciones y a los enclaves
             geográficos antes reservados a las élites. La caricatura mira hacia
-            abajo y hacia atrás —no al espectador— en una operación de
+            abajo y hacia atrás, no al espectador, en una operación de
             complicidad horizontal entre pares. Al fondo, un edificio en el
             estilo arquitectónico clásico del peronismo (hoteles sindicales,
             sanatorios sociales) da solidez material al mensaje. Es un ejemplo del momento en que la propaganda peronista deja la épica y entra al humor. El régimen ya estabilizado puede burlarse de los códigos pasados de las élites.
@@ -1096,12 +1095,12 @@ salas:
             - {file: L040-4.webp, slot: [1, 6, 6, 4]}
         texto:
           descripcion: >-
-            Publicación oficial de gran volumen —cerca de 800 páginas— editada
+            Publicación oficial de gran volumen, cerca de 800 páginas, editada
             en 1950 para presentar el macro-proyecto del Primer Plan Quinquenal
             y proyectar escenarios futuros para el país. La operación gráfica es
             deliberada y sistemática: imágenes de alto impacto, representaciones
             populares centradas en la figura de los trabajadores urbano y rural,
-            textos breves y de fácil lectura, y —sobre todo— la traducción de
+            textos breves y de fácil lectura, y la traducción de
             complejos datos económicos, productivos y geo-políticos en
             infografías y coreografías visuales inéditas para la época. El
             objetivo declarado era el acceso popular a la información,
@@ -1132,8 +1131,8 @@ salas:
             (octubre-noviembre de 1949) donde Tomás Maldonado publicó «El diseño
             y la vida social», artículo señalado por la historia académica como
             el primero que presenta el concepto de «Diseño» en la Argentina. La
-            pieza es doblemente fundante: por su contenido —que postula al
-            diseño funcional como modo social de manifestarse la nueva visión— y
+            pieza es doblemente fundante: por su contenido, que postula al
+            diseño funcional como modo social de manifestarse la nueva visión, y
             por su materialidad, ya que Maldonado aplicó en ella las primeras
             tipografías sans serif (de palo seco) que había traído de su viaje a
             Suiza y Alemania en 1948. Es el documento de origen del discurso del diseño en el país, el momento exacto en que una práctica empieza a nombrarse a sí misma, antes incluso de tener escuelas, carreras o profesión.
@@ -1151,14 +1150,16 @@ salas:
             - {file: L042-5.jpg, slot: [4, 5.5, 3, 4], halign: left,  valign: top}
         texto:
           descripcion: >-
-            Revista cuyo título homenajea a Moholy-Nagy, llevada adelante por
-            los miembros de la agencia axis junto a Jorge Grisetti. Fue la
-            primera publicación argentina —y latinoamericana— abocada a la
+            Revista cuyo título homenajea a Moholy-Nagy —artista húngaro y maestro de la 
+            Bauhaus cuyo libro *«La nueva visión»* (1929) dio nombre al programa 
+            estético que los editores quisieron continuar en América Latina— llevada adelante por
+            los miembros de la agencia Axis junto a Jorge Grisetti. Fue la
+            primera publicación argentina y latinoamericana abocada a la
             cultura visual: inauguró la «nueva cultura visual» como campo de
             inscripción de las manifestaciones artísticas modernas y
             concretistas, integrando arte, arquitectura, diseño gráfico e
-            industrial y tipografía. Su subtítulo fue mutando —«Revista de
-            cultura visual, arte moderno, arquitectura, diseño, tipografía»—
+            industrial y tipografía. Su subtítulo fue mutando, *«Revista de
+            cultura visual, arte moderno, arquitectura, diseño, tipografía»*,
             dando cuenta de esa voluntad de síntesis. A lo largo de sus nueve
             números configuró la primera voz pública y editorial del Proyecto
             Moderno en el país, y el uso de los primeros tipos de palo seco
@@ -1187,7 +1188,7 @@ salas:
             carnet de autoridades. Por su magnitud, complejidad y coherencia, la
             Feria constituyó un planteo inédito en el continente y uno de los
             principales hitos interdisciplinarios del Movimiento Moderno en
-            Argentina. Es una de las primeras identidades visuales completas de Latinoamérica —el sistema, no la feria—, un módulo gráfico generador desplegado con consistencia sobre diferentes de aplicaciones.
+            Argentina. Es una de las primeras identidades visuales completas de Latinoamérica, un módulo gráfico generador desplegado con consistencia sobre diferentes de aplicaciones.
           estado: "Conservada parcialmente (sellos, afiches y catálogos en archivos y colecciones; arquitectura efímera desaparecida)"
 
       - imagen:
@@ -1201,10 +1202,10 @@ salas:
         texto:
           descripcion: >-
             Conjunto de catálogos, afiches, programas y materiales gráficos del
-            Instituto Torcuato Di Tella, especialmente del Centro de Artes
+            *Instituto Torcuato Di Tella*, especialmente del Centro de Artes
             Visuales y del Centro de Experimentación Audiovisual, dirigido en
             gran parte por el diseñador y escultor Juan Carlos Distéfano. Entre
-            1958 y su cierre forzado en 1970, el Di Tella fue el laboratorio de
+            1958 y su cierre forzado en 1970, el *Di Tella* fue el laboratorio de
             la vanguardia argentina: por ahí pasaron Marta Minujín, Roberto
             Plate, Oscar Bony, Alberto Greco, las experiencias del pop, el
             happening y el video. Su comunicación visual definió un lenguaje
@@ -1229,7 +1230,7 @@ salas:
             colecciones de literatura universal y argentina, historias visuales,
             capítulos de historia argentina y un sistema editorial que llegó a
             kioscos, escuelas y barrios donde nunca había llegado un libro. El
-            diseño —firmado por equipos rotativos de jóvenes diseñadores—
+            diseño, firmado por equipos rotativos de jóvenes diseñadores,
             sostuvo durante tres décadas una idea radical: que el libro popular
             podía tener calidad gráfica sin disfrazarse de objeto de lujo. La
             dictadura militar incineró parte del fondo en 1980 (el famoso
@@ -1248,7 +1249,7 @@ salas:
             Revista fundada por el arquitecto Carlos Méndez Mosquera en abril de
             1963 con la intención de suplir la carencia, a nivel nacional y
             latinoamericano, de un medio de comunicación de alto nivel sobre
-            arquitectura, tecnología y diseño. A lo largo de tres décadas Summa
+            arquitectura, tecnología y diseño. A lo largo de tres décadas *Summa*
             se convirtió en un referente ineludible del campo editorial
             argentino y en el espacio donde aparece por primera vez planteada la
             distinción incipiente entre Diseño Industrial y Diseño Gráfico. Sus
@@ -1268,16 +1269,16 @@ salas:
             - {file: L047-10.png, slot: [1, 5.5, 6, 4.5], valign: top}
         texto:
           descripcion: >-
-            Con el subtítulo «comunicación para diseñadores» y la definición
-            «revista de diseño», en julio de 1987 apareció el primer número de
-            tipoGráfica, publicada por Ediciones de Diseño y dirigida por
+            Con el subtítulo *«comunicación para diseñadores»* y la definición
+            *«revista de diseño»*, en julio de 1987 apareció el primer número de
+            *tipoGráfica*, publicada por Ediciones de Diseño y dirigida por
             Roberto Alvarado y Rubén Fontana. La revista fue resultado del
             crecimiento explosivo de las artes visuales hacia mediados de los
             años ochenta y del cambio en el rol que la sociedad otorgaba a las
-            disciplinas del diseño; su pulso late en sincronía con la recién
+            disciplinas del diseño. Su pulso late en sincronía con la recién
             creada carrera de Diseño Gráfico en la FADU-UBA (1984). El cuidado
-            puesto en la elección y calidad tipográfica —la elección recae en el
-            alfabeto Frutiger—, la organización visual de la información, el
+            puesto en la elección y calidad tipográfica, cuya elección recae en el
+            alfabeto Frutiger, la organización visual de la información, el
             manejo de blancos, el papel y la impresión eran funcionales a la
             idea de diseño y de diseñador con la que se identificaba su editor.
             Es el emblema del momento en que el diseño gráfico argentino se piensa, se enseña y se nombra como disciplina autónoma.
@@ -1285,8 +1286,8 @@ salas:
 
       - imagen:
           tipo: "Sistema de señalización urbana"
-          titulo: "Señalética urbana de Buenos Aires (Estudio Shakespeare)"
-          autor: "Raúl Shakespeare y Ronald Shakespeare"
+          titulo: "Plan Visual de Buenos Aires (Estudio González Ruiz–Shakespear)"
+          autor: "Guillermo González Ruiz, Ronald Shakespear y Raúl Shakespear (Estudio González Ruiz-Shakespear)"
           datos: "1971-1990 · Buenos Aires, Argentina"
           images:
             - {file: L048.jpg,   slot: [1, 1, 6, 5], valign: bottom}
@@ -1294,15 +1295,17 @@ salas:
             - {file: L048-2.jpg, slot: [5, 6, 2, 4], fit: cover}
         texto:
           descripcion: >-
-            Sistema de señalización urbana de la Ciudad de Buenos Aires diseñado
-            por el estudio Shakespeare a partir de 1971, y posteriormente
-            extendido a autopistas, hospitales, aeropuertos y subterráneos. Los
-            Shakespeare —hermanos de origen británico— resolvieron por primera
-            vez en escala metropolitana sudamericana el problema de la
-            legibilidad a velocidad: tipografía sans-serif normalizada,
-            pictogramas reducidos a su esquema mínimo, sistema cromático
-            estable. Buena parte de las señales todavía en uso hoy en Buenos
-            Aires son herederas directas de ese diseño. Es una pieza paradójica. Está literalmente en la calle, sometida al desgaste cotidiano y al recambio inadvertido, y precisamente por eso es de las menos conservadas. Cada vez que un cartel se reemplaza, una versión del Buenos Aires gráfico moderno desaparece sin que nadie tome nota.
+            Plan Visual de Buenos Aires, sistema de señalización urbana diseñado 
+            entre 1971 y 1972 para la Municipalidad por el estudio González Ruiz-Shakespear 
+            (1969-1973), integrado por Guillermo González Ruiz y los hermanos Ronald y 
+            Raúl Shakespear. Resolvieron por primera vez en escala metropolitana sudamericana 
+            el problema de la legibilidad a velocidad, con tipografía sans-serif normalizada, 
+            articulación entre letra, distancia y velocidad y un sistema cromático estable. 
+            Buena parte de las señales todavía en uso hoy en Buenos Aires son herederas 
+            directas de ese diseño. Es una pieza paradójica: está literalmente en la calle, 
+            sometida al desgaste cotidiano y al recambio inadvertido, y precisamente por eso 
+            es de las menos conservadas. Cada vez que un cartel se reemplaza, una versión del 
+            Buenos Aires gráfico moderno desaparece sin que nadie tome nota.
           estado: "En uso urbano; pieza expuesta a desgaste y reemplazo continuo"
 
 
@@ -1312,11 +1315,10 @@ salas:
       nombre: "Gráfica, música y contracultura"
       periodo: "1969-1972"
       cita_curatorial: >-
-        Con la irrupción del rock nacional nace una gráfica de tapa que 
-        oscila entre el músico-artista y el diseñador profesional. De la 
-        ilustración críptica de Spinetta para Almendra al sello de 
-        vanguardia Mandioca, el disco se vuelve soporte de 
-        experimentación visual.
+        Con la irrupción del rock nacional nace una gráfica de tapa hecha 
+        por músicos, artistas plásticos, fotógrafos e ilustradores; ninguno 
+        de ellos diseñador profesional. De la ilustración críptica de Spinetta 
+        para Almendra al sello de vanguardia Mandioca, el disco se vuelve soporte de experimentación visual.
     piezas:
       - imagen:
           tipo: "Diseño discográfico / tapa de disco"
@@ -1327,16 +1329,17 @@ salas:
           images: [L049.png]
         texto:
           descripcion: >-
-            Tapa del disco homónimo debut de Almendra (1969), uno de los álbumes
-            históricos del rock argentino y una de sus primeras manifestaciones
-            gráficas. La ilustración de carpeta fue un dibujo del propio Luis
-            Alberto Spinetta que no se entendía a simple vista —los
-            especialistas lo llaman «críptico»—: el cantante buscaba una imagen
-            metafórica sobre la tristeza, encarnada en la lágrima que derrama el
-            personaje «Fermín». La discográfica RCA Vik se opuso y pretendía
-            continuar con el clásico uso fotográfico de la banda para asegurar
-            ventas; los músicos insistieron con el dibujo precisamente para
-            romper el estándar de cubiertas de la época. Es el acta de nacimiento de la gráfica del rock nacional, la primera vez que un músico-autor impone una ilustración propia contra el criterio comercial del sello.
+            Tapa del disco homónimo debut de Almendra (1969), uno de los álbumes 
+            históricos del rock argentino y una de sus primeras manifestaciones 
+            gráficas. La ilustración de carpeta fue un dibujo del propio Luis 
+            Alberto Spinetta que no se entendía a simple vista, los especialistas 
+            lo llaman «críptico». El cantante buscaba una imagen metafórica sobre 
+            la tristeza, encarnada en la lágrima que derrama el personaje «Fermín». 
+            La discográfica RCA Vik se opuso y pretendía continuar con el clásico uso 
+            fotográfico de la banda para asegurar ventas; los músicos insistieron con 
+            el dibujo precisamente para romper el estándar de cubiertas de la época, 
+            plantándose frente a la imposición del sello y eligiendo la imagen que la 
+            banda quería en lugar de la fotografía segura que la discográfica pedía para garantizar las ventas.
           estado: "Conservada (ediciones discográficas y reediciones; pieza de circulación masiva)"
 
       - imagen:
@@ -1347,17 +1350,18 @@ salas:
           images: [L050.jpg]
         texto:
           descripcion: >-
-            Tapa del disco debut de Manal (1969), editado por el sello Mandioca.
-            La imagen —una bomba de tiempo realizada con técnicas de collage
-            sobre las fotografías de los músicos— fue un trabajo de Daniel
-            Melgarejo y Rodolfo Binaghi, e inicia la serie de los primeros
-            profesionales de oficio dedicados al diseño discográfico argentino.
-            Melgarejo, como muchos de su generación, no era exactamente un
-            «diseñador» sino un artista plástico, caricaturista, ilustrador y
-            animador autodidacta. A diferencia de las grandes discográficas,
-            Mandioca había dado total libertad de acción y una especial
-            valoración por el «arte de tapa», lo que la posicionó pronto como el
-            sello de vanguardia. Es un ejemplo del lenguaje persuasivo y político del collage rockero, que captó —según sus autores— el «clima opresivo» de fines de los sesenta bajo la dictadura de Onganía.
+            Tapa del disco debut de Manal (1969), editado por el sello Mandioca. 
+            La imagen, una bomba de tiempo realizada con técnicas de collage 
+            sobre las fotografías de los músicos, fue un trabajo de Daniel 
+            Melgarejo y Rodolfo Binaghi, dos de los primeros que se dedicaron de 
+            manera sostenida al arte de tapa del rock argentino sin ser diseñadores 
+            de formación. Melgarejo era un artista plástico, caricaturista, 
+            ilustrador y animador autodidacta. A diferencia de las grandes 
+            discográficas, Mandioca había dado total libertad de acción y una 
+            especial valoración por el «arte de tapa», lo que la posicionó pronto 
+            como el sello de vanguardia. Es un ejemplo del lenguaje persuasivo y 
+            político del collage rockero, que captó, según uno de los integrantes de la banda, 
+            el «clima opresivo» de fines de los sesenta bajo la dictadura de Onganía.
           estado: "Conservada (ediciones discográficas y reediciones)"
 
       - imagen:
@@ -1369,15 +1373,15 @@ salas:
         texto:
           descripcion: >-
             Tapa del compilado editado por el sello Mandioca en 1970. La pieza
-            es una clara apropiación de la banana de Andy Warhol —diseñada para
-            The Velvet Underground & Nico— pero con condimentos locales: Jorge
+            es una clara apropiación de la banana de Andy Warhol, diseñada para
+            The Velvet Underground & Nico, pero con condimentos locales: Jorge
             Álvarez, Pedro Pujó y Melgarejo eran confesos peronistas, y Billy
             Bond explicaba que «es una gran pera, pero más bien es un Perón».
             Frente a la dictadura de Onganía, el compilado jugaba con esa
             sutileza desde la tapa. Bond y Melgarejo pensaron una fruta resuelta
             con tipografía manuscrita: la apropiación opera tanto en lo
-            morfológico —una fruta en la zona central— como en lo tipográfico
-            —el recurso a la letra script—. Es un caso paradigmático de apropiación local del pop art, el rock argentino retomando a Warhol para decir, en clave cifrada, lo que la censura no permitía decir.
+            morfológico como en lo tipográfico. Es un caso paradigmático de apropiación local 
+            del pop art, el rock argentino retomando a Warhol para decir, en clave cifrada, lo que la censura no permitía decir.
           estado: "Conservada parcialmente (ediciones discográficas; pieza de colección)"
 
       - imagen:
@@ -1388,17 +1392,17 @@ salas:
           images: [L052.jpg]
         texto:
           descripcion: >-
-            Tapa del primer disco de Pappo's Blues (1972), resuelta con los
-            recursos del arte psicodélico, muy extendido en esos años. Creada
-            por la artista plástica y escenógrafa Cristina Villamor, muestra a
-            un mago-hechicero en medio de un sueño alucinógeno. La pieza se vale
-            de formas turbulentas y tipografías deformadas: al resignar
-            legibilidad, gana en desempeño visual, con el contraste de colores
-            como recurso clave. La gráfica psicodélica abrevaba en el art
-            nouveau —sus curvas sinuosas y fluidas— y en el op art —sus bloques
-            de color y efectos de ilusión óptica—; si en su origen
-            estadounidense tenía un fuerte componente político, la apropiación
-            local vació ese sentido para quedar como pura estética. Es un ejemplo de la psicodelia rioplatense, una contracultura visual que llega importada y se reescribe en clave local.
+            Tapa del primer disco de Pappo's Blues (1972), resuelta con los recursos 
+            del arte psicodélico, muy extendido en esos años. Creada por la artista 
+            plástica y escenógrafa Cristina Villamor, muestra a un mago-hechicero en 
+            medio de un sueño alucinógeno. La pieza se vale de formas turbulentas y 
+            tipografías deformadas: al resignar legibilidad, gana en desempeño visual, 
+            con el contraste de colores como recurso clave. La gráfica psicodélica abrevaba 
+            en el art nouveau —sus curvas sinuosas y fluidas— y en el op art —sus bloques de 
+            color y efectos de ilusión óptica—. Si en su origen estadounidense tenía un 
+            fuerte componente político, la apropiación local vació ese sentido para quedar 
+            como pura estética. Es un ejemplo de la psicodelia rioplatense, una contracultura 
+            visual que llega importada y se reescribe en clave local.
           estado: "Conservada (ediciones discográficas y reediciones)"
 
 
@@ -1408,10 +1412,10 @@ salas:
       nombre: "Diseño, instituciones y cultura pop"
       periodo: "1960-1983"
       cita_curatorial: >-
-        Los años sesenta y setenta: el diseño entra en las empresas, las
-        instituciones y la universidad, y la cultura pop —de la historieta al Di
-        Tella— ocupa la calle. La modernización convive con los golpes
-        militares, la censura y la protesta.
+        Los años sesenta y setenta: el diseño entra en las empresas, 
+        las instituciones y la universidad, mientras la cultura pop 
+        ocupa la calle, de la historieta al Di Tella. La modernización 
+        convive con los golpes militares, la censura y la protesta.
     piezas:
       - imagen:
           tipo: "Marca / identidad corporativa y agencia de diseño"
@@ -1427,13 +1431,13 @@ salas:
           descripcion: >-
             El Grupo Onda, ganador del concurso de 1960, desarrolló el logotipo
             de Siam Di Tella y su manual de aplicaciones, así como las marcas
-            del automóvil Di Tella 1500 y del Instituto Torcuato Di Tella. En
-            1962, la compañía —por entonces el grupo industrial más grande de
-            Latinoamérica— creó Agens, una agencia interna de diseño
+            del automóvil Di Tella 1500 y del *Instituto Torcuato Di Tella*. En
+            1962, la compañía, por entonces el grupo industrial más grande de
+            Latinoamérica, creó *Agens*, una agencia interna de diseño
             interdisciplinario que reunió redactores, fotógrafos, diseñadores y
             arquitectos para planear campañas publicitarias, packagings,
             productos, stands y pabellones feriales. Inédita para el medio,
-            Agens funcionó además como una escuela para sus integrantes.  Es un caso temprano de identidad corporativa argentina concebida con manual de normas, y de la articulación pionera entre producción industrial y diseño de comunicación dentro de una misma empresa.
+            *Agens* funcionó además como una escuela para sus integrantes.  Es un caso temprano de identidad corporativa argentina concebida con manual de normas, y de la articulación pionera entre producción industrial y diseño de comunicación dentro de una misma empresa.
           estado: "Conservada parcialmente (manuales y piezas dispersas en archivos de diseño)"
 
       - imagen:
@@ -1452,7 +1456,7 @@ salas:
             funcionó entre 1962 y 1988 bajo la órbita del INTI para promover el
             diseño y la industria nacional mediante concursos, exposiciones y
             seminarios. El isologotipo fue diseñado por Basilio Uribe con la
-            asesoría de Carlos Fracchia; la diseñadora gráfica María Luisa
+            asesoría de Carlos Fracchia. La diseñadora gráfica María Luisa
             Facorro de Colmenero desarrolló entre 1967 y 1972 la imagen integral
             del centro: papelería institucional, afiches, catálogos y un sistema
             de exposiciones de aplicación constante. Documenta uno de los primeros sistemas de identidad de una institución argentina dedicada al propio diseño. El CIDI puso la disciplina en la agenda de empresarios y consumidores, y su comunicación visual fue, en sí misma, un argumento a favor de la profesión.
@@ -1470,12 +1474,14 @@ salas:
             Mundial de la Historieta, organizada en 1968 conjuntamente por la
             Escuela Panamericana de Arte y el Instituto Torcuato Di Tella, e
             impulsada por David Lipszyc y el teórico Oscar Masotta. La
-            exposición —presentada entre octubre y noviembre de 1968 en la sede
+            exposición, presentada entre octubre y noviembre de 1968 en la sede
             del ITDT (Florida 936) e itinerante luego en ciudades de Argentina y
-            América Latina— requirió un soporte expositivo a medida: el estudio
+            América Latina, requirió un soporte expositivo a medida: el estudio
             Diseño Buenos Aires resolvió la panelería modular y los arquitectos
             Rodolfo Möller, Augusto Brengio y Antonio Gache se encargaron del
-            diseño expositivo. Es uno de los primeros casos documentados de diseño expositivo argentino concebido como sistema modular, un dispositivo en el que el diseño deja la página y la marca para organizar el espacio cultural.
+            diseño expositivo. Es uno de los primeros casos documentados de diseño 
+            expositivo argentino concebido como sistema modular, un dispositivo en el 
+            que el diseño deja la página y la marca para organizar el espacio cultural.
           estado: "Conservada parcialmente (catálogos y registros fotográficos de la exposición; panelería no preservada)"
 
       - imagen:
@@ -1495,7 +1501,7 @@ salas:
             los ingenios azucareros tucumanos y la pobreza que provocaba. El
             proyecto incluyó afiches urbanos, anuncios en los medios y la
             exhibición de la 1ª Bienal de Arte de Vanguardia en Rosario y Buenos
-            Aires —clausurada el mismo día de su inauguración—. Entre sus
+            Aires, clausurada el mismo día de su inauguración. Entre sus
             integrantes estuvieron León Ferrari, Roberto Jacoby, Graciela
             Carnevale y Margarita Paksa.
           estado: "Conservada parcialmente (Archivo Graciela Carnevale; documentación dispersa)"
@@ -1541,7 +1547,7 @@ salas:
         texto:
           descripcion: >-
             Mascota oficial de la Copa Mundial de Fútbol de 1978: un personaje
-            criollo —«El Gauchito»— ilustrado por el dibujante Néstor Córdoba,
+            criollo, «El Gauchito», ilustrado por el dibujante Néstor Córdoba,
             que representaba a un jugador de fútbol con sombrero gaucho, pañuelo
             al cuello, fusta-banderín y la pelota junto al pie. La mascota pobló
             los álbumes de figuritas Panini, el merchandising oficial del torneo
@@ -1573,15 +1579,15 @@ salas:
             Familia tipográfica diseñada por Rubén Fontana y aplicada desde 1995
             a la revista tipoGráfica (tpG), publicación independiente de diseño
             que se editó ininterrumpidamente entre 1987 y 2007. El uso de una
-            tipografía propia —en lugar de una fuente comercial estándar— era un
+            tipografía propia en lugar de una fuente comercial estándar, era un
             gesto coherente con el programa de la revista: dotar al diseño
             gráfico argentino de un lenguaje propio, no subsidiario del catálogo
             tipográfico europeo. Fontana, integrante histórico del departamento
             de diseño del Instituto Torcuato Di Tella y fundador junto a Zalma
             Jalluf del estudio FontanaDiseño, fue uno de los referentes
-            centrales del diseño tipográfico argentino contemporáneo
-            —responsable también del rediseño de la marca YPF (2007) y de
-            campañas para grandes instituciones del país—. Es un caso paradigmático del diseño tipográfico al servicio de un proyecto editorial. La tipografía funciona como rasgo identitario de la publicación, una operación posible solo cuando la disciplina alcanza la autonomía para diseñar sus propias herramientas.
+            centrales del diseño tipográfico argentino contemporáneo, como también responsable
+            del rediseño de la marca YPF (2007) y de
+            campañas para grandes instituciones del país. Es un caso paradigmático del diseño tipográfico al servicio de un proyecto editorial. La tipografía funciona como rasgo identitario de la publicación, una operación posible solo cuando la disciplina alcanza la autonomía para diseñar sus propias herramientas.
           estado: "Disponible (tipografía utilizada en revista tpG; archivos del estudio Fontana)"
 
       - imagen:
@@ -1595,10 +1601,12 @@ salas:
             Mapas e infografías realizados por el cartógrafo Alejandro Malofiej
             (Buenos Aires, 1938-1987) para el diario Tiempo Argentino durante la
             Guerra de Malvinas de 1982. Frente a la información tendenciosa y
-            triunfalista que dominaba los medios —que titulaban «¡Estamos
-            ganando!» mientras se perdía la guerra—, Malofiej optó por la
+            triunfalista que dominaba los medios que titulaban «¡Estamos
+            ganando!» mientras se perdía la guerra, Malofiej optó por la
             información técnica y una visión documentalista, traduciendo el
-            conflicto en cartografía y datos. Es un antecedente fundacional de la infografía periodística argentina y latinoamericana. Tan determinante fue su aporte que el premio internacional más importante del género —considerado los Pulitzer de la infografía— lleva hoy su nombre.
+            conflicto en cartografía y datos. Es un antecedente fundacional de la infografía 
+            periodística argentina y latinoamericana. Tan determinante fue su aporte que 
+            el premio internacional más importante del género, considerado los Pulitzer de la infografía, lleva hoy su nombre.
           estado: "Conservada parcialmente (hemerotecas; ediciones de Tiempo Argentino)"
 
       - imagen:
@@ -1632,194 +1640,23 @@ salas:
           descripcion: >-
             Edición del informe de la Comisión Nacional sobre la Desaparición de
             Personas (CONADEP), publicada por Eudeba en noviembre de 1984. El
-            libro —una síntesis de 500 páginas de los testimonios recopilados
-            durante nueve meses, presidida la comisión por Ernesto Sábato— se
+            libro, una síntesis de 500 páginas de los testimonios recopilados
+            durante nueve meses, presidida la comisión por Ernesto Sábato, se
             editó en una tirada inicial de 40.000 ejemplares que se agotó en las
-            primeras 48 horas de venta. Es uno de los libros más decisivos de la historia argentina reciente, un objeto editorial cuyo diseño —sobrio, urgente, de circulación masiva— estuvo al servicio de hacer pública e irreversible la verdad sobre el terrorismo de Estado, y un testimonio del papel del diseño editorial en la construcción de la memoria.
+            primeras 48 horas de venta. Es uno de los libros más decisivos de la 
+            historia argentina reciente, un objeto editorial cuyo diseño sobrio, 
+            urgente y de circulación masiva estuvo al servicio de hacer pública e irreversible la verdad sobre el terrorismo de Estado, y un testimonio del papel del diseño editorial en la construcción de la memoria.
           estado: "Conservada (numerosas ediciones y reimpresiones)"
 
 
   # ── Sala X ─────────────────────────────────────────────────
   - romano: "X"
     portadilla:
-      nombre: "Identidad, infografía y activismo"
-      periodo: "1989-2010"
-      cita_curatorial: >-
-        Del menemismo al Bicentenario: identidad de marca, rebranding de las
-        empresas privatizadas, infografía periodística premiada en el mundo y
-        una gráfica social que disputa sentido. El diseño argentino se
-        profesionaliza y se globaliza.
-    piezas:
-      - imagen:
-          tipo: "Marca política / identidad de campaña"
-          titulo: "Marca de campaña presidencial de Carlos Menem"
-          autor: "Martín Mazzei"
-          datos: "1989 · Buenos Aires, Argentina"
-          images: [L066.jpg]
-        texto:
-          descripcion: >-
-            Marca de la campaña presidencial de Carlos Menem en 1989, diseñada
-            por Martín Mazzei, especialista en comunicación política. El sistema
-            gráfico se apoyó en una marca sintética y pregnante: Mazzei quitó la
-            cara del candidato para posar toda la comunicación en el logotipo,
-            una banda presidencial que atravesaba la letra «N» en el centro del
-            apellido. La operación apuntaba a captar al electorado independiente
-            no peronista. Funciona como contrapunto de la marca «RA» de Alfonsín. Dos campañas presidenciales sucesivas resueltas por una marca abstracta y memorable, indicio de la consolidación del diseño de comunicación política en la Argentina.
-          estado: "Conservada (documentación de campaña; pieza de circulación masiva)"
-
-      - imagen:
-          tipo: "Identidad corporativa / rebranding"
-          titulo: "Identidad de marca de YPF (FontanaDiseño)"
-          autor: "FontanaDiseño (Rubén Fontana y Zalma Jalluf)"
-          datos: "2004-2012 · Buenos Aires, Argentina"
-          fondo: negro            # black-bg override (batch)
-          images:
-            - {file: L067-1.png, slot: [1, 1, 6, 4], valign: bottom}
-            - {file: L067.png,   slot: [1, 5, 6, 5], valign: top}
-        texto:
-          descripcion: >-
-            Programa de identidad de marca de YPF desarrollado por
-            FontanaDiseño. Tras la privatización de los años 90 —cuando la
-            conducción descartó la marca histórica y se perdió el icónico
-            escudo—, y la fusión con la imagen española como Repsol YPF, el
-            estudio de Rubén Fontana y Zalma Jalluf proyectó en 2007 una
-            estrategia integral que la propia empresa definió como la
-            «argentinización de la marca». El nuevo programa reajustó la marca,
-            optimizó la reproducción del sistema y quitó la comunicación
-            compartida con Repsol para preservar los rasgos más valorados de la
-            identidad; la intervención había comenzado en 2004 con el rediseño
-            de las tiendas Full. Un caso testigo del ciclo argentino de privatización, extranjerización y reestatización leído a través de una marca.
-          estado: "Conservada (marca en uso; documentación de FontanaDiseño)"
-
-      - imagen:
-          tipo: "Infografía / diseño de información"
-          titulo: "Departamento de Infografía del diario Clarín"
-          autor: "Departamento de Infografía de Clarín (dir. Jaime Serra, 1994-2001; Alejandro Tumas y Pablo Loscri desde 2001)"
-          datos: "1993-2001 · Buenos Aires, Argentina"
-          images:
-            - {file: L068-1.png, slot: [1, 1.5, 6, 4], valign: bottom}
-            - {file: L068-4.png, slot: [1, 5.5, 6, 4], valign: top}
-        texto:
-          descripcion: >-
-            Producción del Departamento de Infografía del diario Clarín, creado
-            en 1993 en el marco del rediseño del diario y como novedad para los
-            medios locales. Iniciado por Michel Gafré y Xavier Conesa y dirigido
-            desde 1994 por el español Jaime Serra, el departamento generó un
-            punto de inflexión al sumar un equipo especializado en ilustración,
-            comunicación e investigación. Serra entendía la infografía como una
-            herramienta comunicacional que expresaba los datos mediante
-            metáforas visuales; el lenguaje resultante —con ilustraciones
-            realistas, maquetas y fotografías— pronto se convirtió en el «estilo
-            Clarín» y obtuvo numerosas distinciones del Premio Malofiej. El momento en que la infografía argentina alcanza reconocimiento mundial y deja de ser graficación del dato duro para volverse un género narrativo y autoral.
-          estado: "Conservada (hemerotecas; archivos del diario)"
-
-      - imagen:
-          tipo: "Marca / identidad de evento"
-          titulo: "Marca y emblema oficial del Bicentenario argentino"
-          autor: "Juan Pablo Tredicce, Hernán Berdichevsky y Gustavo Stecher"
-          datos: "2010 · Buenos Aires, Argentina"
-          images:
-            - {file: L069-1.png, halign: right}
-            - {file: L069-2.png, halign: left}
-            - {file: L069-3.png, halign: left}
-            - {file: L069-4.png}
-        texto:
-          descripcion: >-
-            Marca y emblema oficial del Bicentenario de la Revolución de Mayo,
-            diseñados por concurso público por Juan Pablo Tredicce, Hernán
-            Berdichevsky y Gustavo Stecher para los festejos de mayo de 2010,
-            que reunieron a más de seis millones de personas. La identidad se
-            aplicó a la comunicación de los festejos, a la estampilla del Correo
-            Argentino, a monedas conmemorativas y al conjunto de eventos que
-            ocuparon el espacio público. Doscientos años después de los primeros impresos revolucionarios, el Estado convoca a sus diseñadores por concurso abierto para construir la imagen de la efeméride —contrapunto deliberado del primer sello postal y de la gráfica de la Revolución de las primeras salas.
-          estado: "Conservada (documentación oficial; aplicaciones diversas)"
-
-
-  # ── Sala XI ─────────────────────────────────────────────────
-  - romano: "XI"
-    portadilla:
-      nombre: "Gráfica del activismo"
-      periodo: "1966-2020"
-      cita_curatorial: >-
-        El giro gráfico: la gráfica como práctica política, cultural y
-        comunitaria. Talleres, brigadas, colectivos y diseñadores autorales de
-        toda Latinoamérica que hacen de la serigrafía, el afiche, el bordado, el
-        cartel y el pop andino herramientas de construcción colectiva, por
-        dentro y por fuera del campo del arte.
-    piezas:
-      - imagen:
-          tipo: "Afiche político / cartelismo de solidaridad"
-          titulo: "Carteles de la OSPAAAL"
-          autor: "OSPAAAL — Organización de Solidaridad de los Pueblos de Asia, África y América Latina (entre otros, Alfredo Rostgaard)"
-          datos: "1966-1990 · La Habana, Cuba"
-          images:
-            - {file: L070.png,   slot: [1, 5, 3, 5], valign: top}
-            - {file: L070-1.png, slot: [1, 1, 6, 4]}
-            - {file: L070-2.png, slot: [4, 5, 3, 5], valign: top}
-        texto:
-          descripcion: >-
-            Corpus de carteles producidos por la OSPAAAL (Organización de Solidaridad de los Pueblos de Asia, África y América Latina), fundada en La Habana en 1966. Sus afiches —difundidos plegados en el interior de la revista Tricontinental y, por esa vía, distribuidos por todo el mundo— articularon una iconografía antiimperialista y de solidaridad entre los pueblos del Sur, con un lenguaje de gran síntesis cromática en el que se destacó el diseñador Alfredo Rostgaard. Es uno de los nodos fundacionales de la gráfica de activismo latinoamericana, el momento en que el afiche se vuelve herramienta de internacionalismo, capaz de circular por fuera del campo del arte.
-          estado: "Conservada parcialmente (colecciones de cartelismo; revista Tricontinental)"
-
-      - imagen:
-          tipo: "Serie de afiches / pop andino"
-          titulo: "Serie «Pop achorado»: afiches para la Reforma Agraria del Perú"
-          autor: "Jesús Ruiz Durand"
-          datos: "1969-1971 · Lima, Perú"
-          images: [L071.png, L071-1.png, L071-2.png]
-        texto:
-          descripcion: >-
-           Serie de afiches diseñada por el artista peruano Jesús Ruiz Durand entre 1969 y 1971, en el marco de un equipo de comunicaciones al servicio de la Reforma Agraria peruana. Ruiz Durand bautizó la serie como «pop achorado», fusionando la estética del pop art con la insolencia o desfachatez del campesinado mestizo andino: «achorado» es una palabra de uso cotidiano en Perú, Bolivia y Chile que implica moverse por un ímpetu insumiso. Un caso paradigmático del giro gráfico latinoamericano de los años setenta y una evidencia de que, en América Latina, el pop no es importación sino reapropiación: el campo entra al lenguaje pop y lo modifica desde sus iconografías mestizas y sus reivindicaciones territoriales.
-          estado: "Conservada parcialmente (archivos del autor; colecciones de gráfica política latinoamericana)"
-
-      - imagen:
-          tipo: "Serigrafía / gráfica de activismo"
-          titulo: "Gráfica del Taller 4 Rojo"
-          autor: "Taller 4 Rojo (entre otros, Diego Arango y Nirma Zárate)"
-          datos: "1972-1976 · Bogotá, Colombia"
-          images: [L072.jpeg]
-        texto:
-          descripcion: >-
-            Producción del Taller 4 Rojo, colectivo de gráfica política que funcionó en Colombia entre 1972 y 1976. El taller integró la práctica artística con la lucha política, poniendo la imagen al servicio de las demandas populares y antiimperialistas de la época. Es uno de los episodios centrales del «giro gráfico» latinoamericano —ese proceso en que, a lo largo de los setenta, talleres y colectivos de toda la región redefinieron el arte gráfico desde la práctica política— y parte de la apuesta del museo por una historia genuinamente latinoamericana, no solo argentina.
-          estado: "Conservada parcialmente (archivos y colecciones de arte y militancia)"
-
-      - imagen:
-          tipo: "Bordado colectivo / acción gráfica textil"
-          titulo: "Bordadoras transnacionales: colectivos de México, El Salvador, Colombia, Chile y Argentina"
-          autor: "Colectivos de bordadoras de México, El Salvador, Colombia, Chile y Argentina (autoras múltiples y anónimas)"
-          datos: "2010-2020 · varias, México / El Salvador / Colombia / Chile / Argentina"
-          fondo: negro            # black-bg override (batch)
-          images:
-            - {file: L073.png,   slot: [2, 1.5, 4, 4], valign: bottom}
-            - {file: L073-1.png, slot: [2, 5.5, 4, 4], valign: top}
-        texto:
-          descripcion: >-
-            Red de colectivos de bordadoras de cinco países latinoamericanos —México, El Salvador, Colombia, Chile y Argentina— que tomaron una técnica tradicionalmente recluida en el ámbito privado del hogar y la convirtieron en herramienta pública: bordan rostros, nombres y biografías de las víctimas de la violencia para reclamar justicia ante el anonimato de la negación oficial. Una técnica artesanal e íntima se vuelve lenguaje gráfico-político transnacional. Con gesto lento y sostenido, las bordadoras inscriben en tela —puntada por puntada— aquello que el Estado se niega a escribir.
-          estado: "Conservada (mantas en colectivos, exhibiciones itinerantes y archivos militantes)"
-
-      - imagen:
-          tipo: "Gráfica de activismo / estampa y bordado"
-          titulo: "Gráfica del proyecto Zapantera Negra"
-          autor: "Emory Douglas y comunidades zapatistas (mujeres bordadoras)"
-          datos: "2012-2014 · Chiapas, México"
-          images:
-            - {file: L074-2.jpg, slot: [1, 1, 3, 9]}
-            - {file: L074-1.jpg, slot: [4, 1, 3, 4], fit: cover}
-            - {file: L074.jpg,   slot: [4, 5, 3, 5], halign: left, valign: top}
-        texto:
-          descripcion: >-
-            Experiencia gráfica realizada entre 2012 y 2014 a partir del encuentro entre Emory Douglas —artista gráfico que fue ministro de Cultura del Partido de las Panteras Negras— y comunidades zapatistas de Chiapas, en el centro cultural EDELO de San Cristóbal de las Casas. Mujeres bordadoras intervinieron viejos afiches de Douglas y nuevas imágenes creadas junto a jóvenes zapatistas, cruzando el imaginario visual de las Panteras Negras —ligado a la historia de esclavitud, racismo y represión policial contra la población negra estadounidense— con las luchas rurales de las comunidades mayas. Es un encuentro de temporalidades. La velocidad serializada de la estampa y la lentitud artesanal del bordado comunitario se anudan, como dos «saberes hacer», en una gráfica pasafronteras, anticapitalista y antirrepresiva.
-          estado: "Conservada parcialmente (proyecto documentado; piezas en comunidades y colecciones)"
-
-
-  # ── Sala XII ─────────────────────────────────────────────────
-  - romano: "XII"
-    portadilla:
       nombre: "El sello postal argentino"
       periodo: "1856-2005"
       cita_curatorial: >-
-        El sello postal —la pieza de diseño gráfico de mayor circulación 
-        masiva del país— casi nunca entra en la historia del diseño. 
+        El sello postal, la pieza de diseño gráfico de mayor circulación 
+        masiva del país, casi nunca entra en la historia del diseño. 
         Del primer sello correntino de 1856 a las grandes series 
         conmemorativas del patrimonio nacional, la sala recorre siglo 
         y medio de gráfica de Estado en pocos centímetros cuadrados.
@@ -1860,7 +1697,15 @@ salas:
             - {file: L078.png,   slot: [1, 5.5, 6, 3], valign: top}
         texto:
           descripcion: >-
-            Conjunto de programas filatélicos que continuaron la operación de inventariar el territorio, ahora con foco en el patrimonio natural: «Riqueza Austral — Tierra del Fuego» (1971), «Ballenas y Delfines — Delfín del Río de la Plata» (2001), «Paisaje de la Argentina II» (2004) y «Bosques Nativos Argentinos» (2004). Cada emisión propone un fragmento del país —una especie, un paisaje, un ecosistema— como bien nacional digno de circular masivamente, anticipando o acompañando declaraciones de Patrimonio Mundial UNESCO como las de los Glaciares Argentinos (1981) y la Quebrada de Humahuaca (2003).
+            Conjunto de programas filatélicos que continuaron la operación de inventariar
+             el territorio, ahora con foco en el patrimonio natural: 
+             «Riqueza Austral, Tierra del Fuego» (1971), «Ballenas y Delfines, 
+             Delfín del Río de la Plata» (2001), «Paisaje de la Argentina II» 
+             (2004) y «Bosques Nativos Argentinos» (2004). Cada emisión propone 
+             un fragmento del país —una especie, un paisaje, un ecosistema— como 
+             bien nacional digno de circular masivamente, anticipando o acompañando 
+             declaraciones de Patrimonio Mundial UNESCO como las de los Glaciares 
+             Argentinos (1981) y la Quebrada de Humahuaca (2003).
           estado: "Conservada (catálogos filatélicos del Correo Argentino; colecciones)"
 
       - imagen:
@@ -1874,7 +1719,16 @@ salas:
             - {file: L079-4.png, slot: [2, 5, 4, 5], valign: top}
         texto:
           descripcion: >-
-            Conjunto de programas filatélicos dedicados a la figura de María Eva Duarte de Perón a lo largo de cuatro décadas. La emisión original de c. 1960 presenta el retrato de Evita en primer plano con composición axial; tiene además un dato fortísimo: una de sus tiradas circuló con el nombre del país mal impreso —«Argfentina» en lugar de «Argentina»—, error tipográfico que la convirtió en pieza buscadísima entre coleccionistas. En 2002, por el 50.º aniversario del fallecimiento, el Correo emitió varias variantes del retrato —subtituladas «Eva», «Lucha», «Olvido», «Pronunciando un discurso»—, en un programa iconográfico que reescribe la figura del peronismo a través del tiempo.
+            Conjunto de programas filatélicos dedicados a la figura de 
+            María Eva Duarte de Perón a lo largo de cuatro décadas. La 
+            emisión original de 1960 presenta el retrato de Evita en 
+            primer plano con composición axial; tiene además un dato fortísimo: 
+            una de sus tiradas circuló con el nombre del país mal impreso, «Argfentina»
+             en lugar de «Argentina», error tipográfico que la convirtió 
+             en pieza muy buscada entre coleccionistas. En 2002, por el 50.º 
+             aniversario del fallecimiento, el Correo emitió varias variantes del 
+             retrato, subtituladas «Eva», «Lucha», «Olvido», «Pronunciando un discurso», 
+             en un programa iconográfico que reescribe la figura del peronismo a través del tiempo.
           estado: "Conservada (catálogos filatélicos; emisión 1960 con error «Argfentina» como pieza de coleccionismo)"
 
       - imagen:
@@ -1901,8 +1755,249 @@ salas:
           images: [L081.jpg]
         texto:
           descripcion: >-
-            Programas filatélicos que ponen como sujeto los bienes culturales no materiales —música, ritos, expresiones populares y patrimonio originario— en lugar del paisaje o el prócer. «Nuevo Milenio: La Música Popular — El Tango» (1999), serie de seis estampillas que sintetiza con un lenguaje gráfico abstracto los elementos del tango y que fue una de las primeras emisiones bilaterales del Correo, en colaboración con La Poste de Francia; y «Pueblos Indígenas II — Vaso Antropomorfo Ciénaga» (2000), con artesanías y motivos de las culturas originarias del territorio. Marca el momento en que el Correo construye, en pocos centímetros, un inventario de qué cuenta como cultura argentina inmaterial. Lo que el sello canoniza opera, de hecho, como patrimonio.
+            Programas filatélicos que ponen como sujeto los bienes culturales 
+            no materiales, como música, ritos, expresiones populares y patrimonio 
+            originario, en lugar del paisaje o el prócer. «Nuevo Milenio: La 
+            Música Popular - El Tango» (1999), serie de seis estampillas que 
+            sintetiza con un lenguaje gráfico abstracto los elementos del 
+            tango y que fue una de las primeras emisiones bilaterales del 
+            Correo, en colaboración con La Poste de Francia; y «Pueblos 
+            Indígenas II - Vaso Antropomorfo Ciénaga» (2000), con artesanías y 
+            motivos de las culturas originarias del territorio. Marca el momento 
+            en que el Correo construye, en pocos centímetros, un inventario de 
+            qué cuenta como cultura argentina inmaterial. Lo que el sello canoniza opera, de hecho, como patrimonio.
           estado: "Conservada (catálogos filatélicos del Correo Argentino; colecciones)"
+
+  # ── Sala XI ─────────────────────────────────────────────────
+  - romano: "XI"
+    portadilla:
+      nombre: "Identidad, infografía y activismo"
+      periodo: "1989-2010"
+      cita_curatorial: >-
+        Del menemismo al Bicentenario: identidad de marca, rebranding de las
+        empresas privatizadas, infografía periodística premiada en el mundo y
+        una gráfica social que disputa sentido. El diseño argentino se
+        profesionaliza y se globaliza.
+    piezas:
+      - imagen:
+          tipo: "Marca política / identidad de campaña"
+          titulo: "Marca de campaña presidencial de Carlos Menem"
+          autor: "Martín Mazzei"
+          datos: "1989 · Buenos Aires, Argentina"
+          images: [L066.jpg]
+        texto:
+          descripcion: >-
+            Marca de la campaña presidencial de Carlos Menem en 1989, diseñada
+            por Martín Mazzei, especialista en comunicación política. El sistema
+            gráfico se apoyó en una marca sintética y pregnante: Mazzei quitó la
+            cara del candidato para posar toda la comunicación en el logotipo,
+            una banda presidencial que atravesaba la letra «N» en el centro del
+            apellido. La operación apuntaba a captar al electorado independiente
+            no peronista. Funciona como contrapunto de la marca «RA» de Alfonsín. Dos campañas presidenciales sucesivas resueltas por una marca abstracta y memorable, indicio de la consolidación del diseño de comunicación política en la Argentina.
+          estado: "Conservada (documentación de campaña; pieza de circulación masiva)"
+
+      - imagen:
+          tipo: "Identidad corporativa / rebranding"
+          titulo: "Identidad de marca de YPF (FontanaDiseño)"
+          autor: "FontanaDiseño (Rubén Fontana y Zalma Jalluf)"
+          datos: "2004-2012 · Buenos Aires, Argentina"
+          fondo: negro            # black-bg override (batch)
+          images:
+            - {file: L067-1.png, slot: [1, 1, 6, 4], valign: bottom}
+            - {file: L067.png,   slot: [1, 5, 6, 5], valign: top}
+        texto:
+          descripcion: >-
+            Programa de identidad de marca de YPF desarrollado por
+            FontanaDiseño. Tras la privatización de los años 90, cuando la
+            conducción descartó la marca histórica y se perdió el icónico
+            escudo, y la fusión con la imagen española como Repsol YPF, el
+            estudio de Rubén Fontana y Zalma Jalluf proyectó en 2007 una
+            estrategia integral que la propia empresa definió como la
+            «argentinización de la marca». El nuevo programa reajustó la marca,
+            optimizó la reproducción del sistema y quitó la comunicación
+            compartida con Repsol para preservar los rasgos más valorados de la
+            identidad; la intervención había comenzado en 2004 con el rediseño
+            de las tiendas Full. Un caso testigo del ciclo argentino de privatización, extranjerización y reestatización leído a través de una marca.
+          estado: "Conservada (marca en uso; documentación de FontanaDiseño)"
+
+      - imagen:
+          tipo: "Infografía / diseño de información"
+          titulo: "Departamento de Infografía del diario Clarín"
+          autor: "Departamento de Infografía de Clarín (dir. Jaime Serra, 1994-2001; Alejandro Tumas y Pablo Loscri desde 2001)"
+          datos: "1993-2001 · Buenos Aires, Argentina"
+          images:
+            - {file: L068-1.png, slot: [1, 1.5, 6, 4], valign: bottom}
+            - {file: L068-4.png, slot: [1, 5.5, 6, 4], valign: top}
+        texto:
+          descripcion: >-
+            Producción del Departamento de Infografía del diario Clarín, creado
+            en 1993 en el marco del rediseño del diario y como novedad para los
+            medios locales. Iniciado por Michel Gafré y Xavier Conesa y dirigido
+            desde 1994 por el español Jaime Serra, el departamento generó un
+            punto de inflexión al sumar un equipo especializado en ilustración,
+            comunicación e investigación. Serra entendía la infografía como una
+            herramienta comunicacional que expresaba los datos mediante
+            metáforas visuales; el lenguaje resultante con ilustraciones
+            realistas, maquetas y fotografías, pronto se convirtió en el «estilo
+            Clarín» y obtuvo numerosas distinciones del Premio Malofiej. El momento en que la infografía argentina alcanza reconocimiento mundial y deja de ser graficación del dato duro para volverse un género narrativo y autoral.
+          estado: "Conservada (hemerotecas; archivos del diario)"
+
+      - imagen:
+          tipo: "Marca / identidad de evento"
+          titulo: "Marca y emblema oficial del Bicentenario argentino"
+          autor: "Juan Pablo Tredicce, Hernán Berdichevsky y Gustavo Stecher"
+          datos: "2010 · Buenos Aires, Argentina"
+          images:
+            - {file: L069-1.png, halign: right}
+            - {file: L069-2.png, halign: left}
+            - {file: L069-3.png, halign: left}
+            - {file: L069-4.png}
+        texto:
+          descripcion: >-
+            Marca y emblema oficial del Bicentenario de la Revolución de Mayo,
+            diseñados por concurso público por Juan Pablo Tredicce, Hernán
+            Berdichevsky y Gustavo Stecher para los festejos de mayo de 2010,
+            que reunieron a más de seis millones de personas. La identidad se
+            aplicó a la comunicación de los festejos, a la estampilla del Correo
+            Argentino, a monedas conmemorativas y al conjunto de eventos que
+            ocuparon el espacio público. Doscientos años después de los primeros 
+            impresos revolucionarios, el Estado convoca a sus diseñadores por concurso 
+            abierto para construir la imagen de la efeméride, contrapunto deliberado 
+            del primer sello postal y de la gráfica de la Revolución de las primeras salas.
+          estado: "Conservada (documentación oficial; aplicaciones diversas)"
+
+  # ── Sala XII ─────────────────────────────────────────────────
+  - romano: "XII"
+    portadilla:
+      nombre: "Gráfica del activismo"
+      periodo: "1966-2020"
+      cita_curatorial: >-
+        El giro gráfico: la gráfica como práctica política, cultural y
+        comunitaria. Talleres, brigadas, colectivos y diseñadores autorales de
+        toda Latinoamérica que hacen de la serigrafía, el afiche, el bordado, el
+        cartel y el pop andino herramientas de construcción colectiva, por
+        dentro y por fuera del campo del arte.
+    piezas:
+      - imagen:
+          tipo: "Afiche político / cartelismo de solidaridad"
+          titulo: "Carteles de la OSPAAAL"
+          autor: "OSPAAAL — Organización de Solidaridad de los Pueblos de Asia, África y América Latina (entre otros, Alfredo Rostgaard)"
+          datos: "1966-1990 · La Habana, Cuba"
+          images:
+            - {file: L070.png,   slot: [1, 5, 3, 5], valign: top}
+            - {file: L070-1.png, slot: [1, 1, 6, 4]}
+            - {file: L070-2.png, slot: [4, 5, 3, 5], valign: top}
+        texto:
+          descripcion: >-
+            Corpus de carteles producidos por la OSPAAAL (Organización de Solidaridad 
+            de los Pueblos de Asia, África y América Latina), fundada en La Habana 
+            en 1966. Sus afiches, difundidos plegados en el interior de la revista 
+            Tricontinental y, por esa vía, distribuidos por todo el mundo, articularon 
+            una iconografía antiimperialista y de solidaridad entre los pueblos del Sur, 
+            con un lenguaje de gran síntesis cromática en el que se destacó el diseñador 
+            Alfredo Rostgaard. Es uno de los nodos fundacionales de la gráfica de activismo 
+            latinoamericana, el momento en que el afiche se vuelve herramienta de internacionalismo, 
+            capaz de circular por fuera del campo del arte.
+          estado: "Conservada parcialmente (colecciones de cartelismo; revista Tricontinental)"
+
+      - imagen:
+          tipo: "Serie de afiches / pop andino"
+          titulo: "Serie «Pop achorado»: afiches para la Reforma Agraria del Perú"
+          autor: "Jesús Ruiz Durand"
+          datos: "1969-1971 · Lima, Perú"
+          images: [L071.png, L071-1.png, L071-2.png]
+        texto:
+          descripcion: >-
+           Serie de afiches diseñada por el artista peruano Jesús Ruiz Durand entre 1969 y 1971, en el marco de un equipo de comunicaciones al servicio de la Reforma Agraria peruana. Ruiz Durand bautizó la serie como «pop achorado», fusionando la estética del pop art con la insolencia o desfachatez del campesinado mestizo andino: «achorado» es una palabra de uso cotidiano en Perú, Bolivia y Chile que implica moverse por un ímpetu insumiso. Un caso paradigmático del giro gráfico latinoamericano de los años setenta y una evidencia de que, en América Latina, el pop no es importación sino reapropiación: el campo entra al lenguaje pop y lo modifica desde sus iconografías mestizas y sus reivindicaciones territoriales.
+          estado: "Conservada parcialmente (archivos del autor; colecciones de gráfica política latinoamericana)"
+
+      - imagen:
+          tipo: "Serigrafía / gráfica de activismo"
+          titulo: "Gráfica del Taller 4 Rojo"
+          autor: "Taller 4 Rojo (entre otros, Diego Arango y Nirma Zárate)"
+          datos: "1972-1976 · Bogotá, Colombia"
+          images: [L072.jpeg]
+        texto:
+          descripcion: >-
+            Producción del Taller 4 Rojo, colectivo de gráfica política que funcionó 
+            en Colombia entre 1972 y 1976. El taller integró la práctica artística con 
+            la lucha política, poniendo la imagen al servicio de las demandas populares 
+            y antiimperialistas de la época. Es uno de los episodios centrales del «giro gráfico» 
+            latinoamericano, ese proceso en que, a lo largo de los setenta, talleres y colectivos 
+            de toda la región redefinieron el arte gráfico desde la práctica política, y parte de 
+            la apuesta del museo por una historia genuinamente latinoamericana, no solo argentina.
+          estado: "Conservada parcialmente (archivos y colecciones de arte y militancia)"
+
+      - imagen:
+          tipo: "Bordado colectivo / acción gráfica textil"
+          titulo: "Bordadoras transnacionales: colectivos de México, El Salvador, Colombia, Chile y Argentina"
+          autor: "Colectivos de bordadoras de México, El Salvador, Colombia, Chile y Argentina (autoras múltiples y anónimas)"
+          datos: "2010-2020 · varias, México / El Salvador / Colombia / Chile / Argentina"
+          fondo: negro            # black-bg override (batch)
+          images:
+            - {file: L073.png,   slot: [2, 1.5, 4, 4], valign: bottom}
+            - {file: L073-1.png, slot: [2, 5.5, 4, 4], valign: top}
+        texto:
+          descripcion: >-
+            Red de colectivos de bordadoras de cinco países latinoamericanos —México, El Salvador, 
+            Colombia, Chile y Argentina— que tomaron una técnica tradicionalmente recluida en el 
+            ámbito privado del hogar y la convirtieron en herramienta pública: bordan rostros, 
+            nombres y biografías de las víctimas de la violencia para reclamar justicia ante el 
+            anonimato de la negación oficial. Una técnica artesanal e íntima se vuelve lenguaje 
+            gráfico-político transnacional. Con gesto lento y sostenido, las bordadoras inscriben 
+            en tela, puntada por puntada, aquello que el Estado se niega a escribir.
+          estado: "Conservada (mantas en colectivos, exhibiciones itinerantes y archivos militantes)"
+
+      - imagen:
+          tipo: "Gráfica de activismo / estampa y bordado"
+          titulo: "Gráfica del proyecto Zapantera Negra"
+          autor: "Emory Douglas y comunidades zapatistas (mujeres bordadoras)"
+          datos: "2012-2014 · Chiapas, México"
+          images:
+            - {file: L074-2.jpg, slot: [1, 1, 3, 9]}
+            - {file: L074-1.jpg, slot: [4, 1, 3, 4], fit: cover}
+            - {file: L074.jpg,   slot: [4, 5, 3, 5], halign: left, valign: top}
+        texto:
+          descripcion: >-
+            Experiencia gráfica realizada entre 2012 y 2014 a partir del encuentro entre 
+            Emory Douglas, artista gráfico que fue ministro de Cultura del Partido de las 
+            Panteras Negras, y comunidades zapatistas de Chiapas, en el centro cultural 
+            EDELO de San Cristóbal de las Casas. Mujeres bordadoras intervinieron viejos 
+            afiches de Douglas y nuevas imágenes creadas junto a jóvenes zapatistas, 
+            cruzando el imaginario visual de las Panteras Negras, ligado a la historia de 
+            esclavitud, racismo y represión policial contra la población negra estadounidense, 
+            con las luchas rurales de las comunidades mayas. Es un encuentro de temporalidades. 
+            La velocidad serializada de la estampa y la lentitud artesanal del bordado 
+            comunitario se anudan, como dos «saberes hacer», en una gráfica pasafronteras, anticapitalista y antirrepresiva.
+          estado: "Conservada parcialmente (proyecto documentado; piezas en comunidades y colecciones)"
+
+
+# ── Cierre y agradecimientos (essay style, before the bibliografía) ───────
+cierre:
+  titulo: "Final del recorrido"
+  body: >-
+    Llegamos al final del recorrido. Después de doce salas y setenta y ocho piezas, la pregunta que abrió este catálogo sigue en pie: ¿por qué no existe un museo dedicado al diseño gráfico latinoamericano? Si algo demuestran estas páginas, es que la falta no se explica por escasez de objetos. Lo que falta no son piezas. Falta el dispositivo institucional que las reúna, las nombre y las conserve.
+
+    Las obras que recorrimos no estaban en ninguna sala. Estaban dispersas en hemerotecas, en archivos universitarios, en colecciones filatélicas, en discografías reeditadas, en repositorios digitales, en libros académicos y, muchas veces, en la memoria de quienes las usaron. Reunirlas en un catálogo no las restituye, pero al menos las rescata de pasar desapercibidas y las propone juntas como objeto de estudio.
+
+    Quedan, también, las que no entraron. La curaduría supuso elegir, y elegir supuso dejar afuera. El museo que no existe es, también, el museo que todavía falta imaginar. Este volumen es apenas un primer ejercicio.
+
+    Si el museo no existe, este catálogo propone empezar a leerlo como si existiera. Esa, quizás, sea la única forma de que algún día exista.
+
+agradecimientos:
+  titulo: "Agradecimientos"
+  body: >-
+    Este catálogo no habría sido posible sin algunos aportes que quiero reconocer.
+
+    A la profesora Fabiana Navarta Bianco, por la guía, las correcciones y la generosidad con la que acompañó este proceso desde la cátedra de Historia del Diseño Gráfico Latinoamericano.
+
+    A Uziel Ludueña, por el desarrollo del programa que hizo posible agilizar todo el proceso de maquetación y armado del catálogo.
+
+    A todos los autores, autoras, investigadores e investigadoras cuyos textos fundamentaron la curaduría: Gustavo Valdés de León, Daniel Silverman, Marina Garone Gravier, Fabio Ares, Ana Mosqueda, Geraldine Rogers, Gabriel Hernán, Verónica Devalle, Diego Cabello, Laura Corti, Vanina Farías, Ana Laura Ochoa, la Red de Conceptualismos del Sur y los equipos de cátedra de la Universidad Nacional de Cuyo y la Maestría diCom de la UBA.
+
+    A los archivos, bibliotecas, museos y plataformas digitales que conservan y hacen circular el patrimonio gráfico latinoamericano, sin los cuales no habría sido posible documentar las piezas de este catálogo.
+
+    Y, finalmente, a todas las piezas reunidas en estas páginas y a quienes alguna vez las diseñaron, imprimieron, pegaron en una pared, recortaron de una revista o las pasaron de mano en mano. Sin esos gestos cotidianos no habría nada para conservar.
 
 # ── Bibliografía ─────────────────────────────────────────────────────────
 bibliografia:

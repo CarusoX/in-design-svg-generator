@@ -167,9 +167,16 @@ def render(page_id: int, data: dict) -> str:
             x_mm=BODY_X_MM, y_mm=TIPO_BASELINE_Y_MM,
         ))
 
-    # — 2-column description (always left → right reading order)
+    # — 2-column description (always left → right reading order). When the
+    # text carries `*…*` inline-italic markup (e.g. magazine/book titles),
+    # use the markup-aware renderer; otherwise the plain one, so the
+    # hundreds of un-marked fichas render byte-for-byte as before.
     if descripcion:
-        svg, _ = r.paragraph_two_column(
+        render_2col = (
+            r.paragraph_two_column_rich if "*" in descripcion
+            else r.paragraph_two_column
+        )
+        svg, _ = render_2col(
             _BODY_STYLE_ID, descripcion,
             x_mm=BODY_X_MM, y_mm=BODY_BASELINE_Y_MM,
             col_w_mm=BODY_COL_W_MM, gutter_mm=BODY_GUTTER_MM,

@@ -174,6 +174,34 @@ def _rsvg_env(fontconfig_path: Path) -> dict[str, str]:
     }
 
 
+def _font_pinning_works(env: dict[str, str]) -> bool:
+    """True only if fontconfig (under `env`) actually resolves
+    'EB Garamond' to a Garamond face.
+
+    The font-pinning env above routes text layout through Pango's
+    fontconfig backend. That's the right path when fontconfig is healthy.
+    But on some macOS + Homebrew setups the fontconfig matcher is broken
+    at the library level: `fc-match` returns a single system fallback
+    (observed: 'Hiragino Sans') for EVERY family, even when `fc-list`
+    clearly contains Lato / EB Garamond. The PDF then embeds the wrong
+    faces (Hiragino for Lato, PT Serif for EB Garamond) and the wider
+    fallback overflows / clips the text.
+
+    When we detect that, we skip the env and let rsvg use its DEFAULT
+    backend — CoreText on macOS — which reads the installed fonts
+    (~/Library/Fonts etc.) directly and embeds the real Lato + EB
+    Garamond. (Install the fonts with `brew install --cask font-lato
+    font-eb-garamond font-caveat`.)"""
+    try:
+        out = subprocess.run(
+            ["fc-match", "-f", "%{family}", "EB Garamond"],
+            capture_output=True, text=True, env=env, check=True,
+        ).stdout
+    except (OSError, subprocess.CalledProcessError):
+        return False
+    return "garamond" in out.lower()
+
+
 def _collect_pages() -> dict[int, Path]:
     out: dict[int, Path] = {}
     for path in OUT_DIR.glob("page-*.svg"):
@@ -217,6 +245,17 @@ def main() -> None:
     with tempfile.TemporaryDirectory() as tmp_str:
         tmp = Path(tmp_str)
         rsvg_env = _rsvg_env(_write_fontconfig(tmp))
+        if not _font_pinning_works(rsvg_env):
+            # fontconfig matcher broken on this machine — it would embed
+            # the wrong faces (Hiragino / PT Serif) and clip the text.
+            # Use rsvg's native CoreText backend instead, which embeds the
+            # real installed Lato + EB Garamond.
+            print(
+                "note: fontconfig can't match the catalog fonts here; using "
+                "the native CoreText backend (embeds the installed Lato + "
+                "EB Garamond directly)."
+            )
+            rsvg_env = None
         spread_pdfs: list[Path] = []
         try:
             for idx, (left, right) in enumerate(spreads):

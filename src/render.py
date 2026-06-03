@@ -6,6 +6,8 @@ the page format stays consistent across the catalog.
 
 from __future__ import annotations
 
+import re
+from dataclasses import replace
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -668,6 +670,146 @@ def paragraph_two_column(
     max_lines = max(len(c[1]) for c in cols)
     height_mm = max_lines * leading_mm
     return "".join(parts), height_mm
+
+
+# — Inline-italic two-column body (markup-aware) —
+#
+# Same layout as `paragraph_two_column`, but the source text may contain
+# `*…*` spans that render italic. Used by ficha_texto for descriptions
+# that need magazine / book titles (and the like) set in italics. A whole
+# whitespace-delimited word is italicised when ANY of its characters fall
+# inside a marked span, so punctuation glued to a title ("tipoGráfica,",
+# "«La") stays with the italic run.
+
+_ITALIC_MARKUP_RE = re.compile(r"\*([^*]+)\*")
+
+
+def _parse_italic_markup(text_str: str) -> tuple[str, list[tuple[int, int]]]:
+    """Strip the `*…*` markers and return (clean_text, italic_ranges),
+    where each range is a (start, end) char span in the clean text."""
+    out: list[str] = []
+    ranges: list[tuple[int, int]] = []
+    pos = length = 0
+    for m in _ITALIC_MARKUP_RE.finditer(text_str):
+        before = text_str[pos:m.start()]
+        out.append(before); length += len(before)
+        inner = m.group(1)
+        ranges.append((length, length + len(inner)))
+        out.append(inner); length += len(inner)
+        pos = m.end()
+    out.append(text_str[pos:])
+    return "".join(out), ranges
+
+
+def _italic_tagged_words(text_str: str, ranges: list[tuple[int, int]]) -> list[tuple[str, bool]]:
+    """Whitespace-tokenise `text_str`, tagging each word italic when it
+    overlaps any marked range."""
+    def overlaps(s: int, e: int) -> bool:
+        return any(s < r_e and e > r_s for r_s, r_e in ranges)
+    return [(m.group(), overlaps(m.start(), m.end()))
+            for m in re.finditer(r"\S+", text_str)]
+
+
+def _wrap_lines_rich(
+    words: list[tuple[str, bool]], base_style: TextStyle,
+    italic_style: TextStyle, max_width_mm: float,
+) -> list[list[tuple[str, bool]]]:
+    """Greedy word-wrap of italic-tagged words; each word is measured with
+    its own (regular/italic) style and hyphenated when it overflows."""
+    lines: list[list[tuple[str, bool]]] = []
+    current: list[tuple[str, bool]] = []
+    current_w = 0.0
+    for word, ital in words:
+        st = italic_style if ital else base_style
+        word_w = _measure_word_mm(word, st)
+        space_w = _measure_word_mm(" ", st) if current else 0.0
+        if current and current_w + word_w + space_w > max_width_mm:
+            broken = _hyphen_break_word(word, max_width_mm - current_w - space_w, st)
+            if broken is not None:
+                prefix, suffix = broken
+                current.append((prefix + "-", ital))
+                lines.append(current)
+                current = [(suffix, ital)]
+                current_w = _measure_word_mm(suffix, st)
+                continue
+            lines.append(current)
+            current = [(word, ital)]
+            current_w = word_w
+        else:
+            current.append((word, ital))
+            current_w += word_w + space_w
+    if current:
+        lines.append(current)
+    return lines
+
+
+def _coalesce_italic_runs(line: list[tuple[str, bool]]) -> list[tuple[str, bool]]:
+    """Merge consecutive same-italic words into one run (space-joined)."""
+    if not line:
+        return []
+    runs: list[list] = [[[line[0][0]], line[0][1]]]
+    for word, ital in line[1:]:
+        if ital == runs[-1][1]:
+            runs[-1][0].append(word)
+        else:
+            runs.append([[word], ital])
+    return [(" ".join(ws), it) for ws, it in runs]
+
+
+def _emit_rich_line(runs: list[tuple[str, bool]], x_mm: float, y_mm: float, attrs: str) -> str:
+    """One wrapped line as `<text>` with alternating regular / italic
+    `<tspan>` children; the inter-run space rides the leading run."""
+    if not runs:
+        return ""
+    parts = [f'<text xml:space="preserve" x="{x_mm}" y="{y_mm:.4f}" {attrs}>']
+    for i, (txt, ital) in enumerate(runs):
+        chunk = txt if i == 0 else " " + txt
+        tag = '<tspan font-style="italic">' if ital else '<tspan>'
+        parts.append(f'{tag}{escape(chunk)}</tspan>')
+    parts.append('</text>')
+    return "".join(parts)
+
+
+def paragraph_two_column_rich(
+    style_id: str,
+    text_str: str,
+    x_mm: float,
+    y_mm: float,
+    col_w_mm: float,
+    gutter_mm: float,
+) -> tuple[str, float]:
+    """`paragraph_two_column` that honours `*…*` inline-italic markup.
+    Returns (svg, max_column_height_mm). Plain text (no markers) renders
+    exactly like the non-rich version."""
+    style = TEXT_STYLES[style_id]
+    italic_style = replace(style, font_style="italic")
+    clean, ranges = _parse_italic_markup(text_str)
+    words = _italic_tagged_words(clean, ranges)
+    if style.uppercase:
+        words = [(w.upper(), it) for w, it in words]
+    lines = [_coalesce_italic_runs(ln)
+             for ln in _wrap_lines_rich(words, style, italic_style, col_w_mm)]
+
+    leading_pt = style.leading_pt if style.leading_pt else style.size_pt * 1.2
+    leading_mm = leading_pt * MM_PER_PT
+    size_mm = style.size_pt * MM_PER_PT
+    ls_mm = _letter_spacing_pt(style) * MM_PER_PT
+    attrs = (
+        f'font-family="{font_family_css(style.font_family, style.font_weight)}" '
+        f'font-size="{size_mm:.4f}" font-weight="{style.font_weight}" '
+        f'fill="{PALETTE[style.color]}" text-anchor="{style.align}"'
+    )
+    if ls_mm:
+        attrs += f' letter-spacing="{ls_mm:.5f}"'
+
+    half = (len(lines) + 1) // 2
+    cols = [(x_mm, lines[:half]), (x_mm + col_w_mm + gutter_mm, lines[half:])]
+    parts: list[str] = []
+    for col_x, col_lines in cols:
+        for i, runs in enumerate(col_lines):
+            parts.append(_emit_rich_line(runs, col_x, y_mm + i * leading_mm, attrs))
+    max_lines = max((len(c[1]) for c in cols), default=0)
+    return "".join(parts), max_lines * leading_mm
 
 
 # — Folio (page number) —
