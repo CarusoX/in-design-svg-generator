@@ -113,7 +113,7 @@ nota_curatorial:
     conservación, notas curatoriales, bibliografía de referencia.
 
     La decisión de aplicar ese sistema a una página de libro tipográfico
-    de 1766, a una filigranade papel de procedencia incierta,
+    de 1766, a una filigrana de papel de procedencia incierta,
     a la arquitectura editorial de una revista de 1902, o a una tabla cronológica familiar en un almanaque de 1917, es, en sí misma, una toma de posición. Afirma
     que estos objetos son dignos del mismo rigor analítico y del mismo
     cuidado documental que cualquier otra expresión de la cultura
@@ -715,7 +715,7 @@ salas:
             Combinaba calendario y almanaque, reseña de todos los Estados
             independientes del mundo, historia del año, guía oficial con datos
             estadísticos de población y educación, miscelánea, atlas, tarifas y
-            fórmulas para distintos usos —desde calcular sueldos hasta convertir
+            fórmulas para distintos usos, desde calcular sueldos hasta convertir
             pesos y medidas. Premiado con diploma y medalla de oro en la
             Exposición de Artes Gráficas del Centenario (1916). Lüsebrink lo
             describiría como 'máquina textual': un dispositivo de orientación en
@@ -781,14 +781,17 @@ salas:
           descripcion: >-
             Sistema de identidad gráfica de YPF, primera empresa petrolera
             estatal del mundo, fundada en 1922. El símbolo gráfico fue aplicado
-            en escalas múltiples —papelería institucional, surtidores, fachadas
-            de estaciones, vehículos de reparto, publicidad en revistas— en lo
-            que constituye una de las primeras operaciones argentinas de
+            en escalas múltiples desde papelería institucional, surtidores, fachadas
+            de estaciones, vehículos de reparto hasta publicidad en revistas. 
+            Constituyendo una de las primeras operaciones argentinas de
             identidad corporativa sostenida. La pieza es archivísticamente
             compleja: las estaciones de servicio fueron construidas en estilos
             arquitectónicos diversos (racionalista, art deco, pintoresquista)
             según las regiones y décadas, pero todas exhibían el mismo símbolo
-            gráfico. Es el primer caso latinoamericano de sistema gráfico aplicado a una empresa pública de escala nacional, y una pieza que sigue mutando. Cada actualización del logo borra la anterior, y la identidad histórica sobrevive sólo en fotografías y archivos publicitarios.
+            gráfico. Es el primer caso latinoamericano de sistema gráfico aplicado 
+            a una empresa pública de escala nacional, y una pieza que sigue mutando. 
+            Cada actualización del logo borra la anterior, y la identidad histórica 
+            sobrevive sólo en fotografías y archivos publicitarios.
           estado: "En uso (logo actualizado); piezas históricas conservadas en archivo YPF y privados"
 
       - imagen:
@@ -1021,7 +1024,7 @@ salas:
             asociado al ferrocarril privado británico, sino el 'cabecita'
             criollo que el peronismo había incorporado a la escena política. 
             Es un ejemplo del programa simbólico de la propaganda peronista. 
-            La nacionalización de un activo material —los ferrocarriles— se acompaña de una nacionalización del cuerpo del trabajador en la iconografía oficial, con una fisonomía que no replica las prescripciones estéticas europeizantes sino que las disputa.
+            La nacionalización de un activo material, los ferrocarriles, se acompaña de una nacionalización del cuerpo del trabajador en la iconografía oficial, con una fisonomía que no replica las prescripciones estéticas europeizantes sino que las disputa.
           estado: "Conservada (AGN); autor no identificado"
 
       - imagen:
@@ -1398,8 +1401,8 @@ salas:
             medio de un sueño alucinógeno. La pieza se vale de formas turbulentas y 
             tipografías deformadas: al resignar legibilidad, gana en desempeño visual, 
             con el contraste de colores como recurso clave. La gráfica psicodélica abrevaba 
-            en el art nouveau —sus curvas sinuosas y fluidas— y en el op art —sus bloques de 
-            color y efectos de ilusión óptica—. Si en su origen estadounidense tenía un 
+            en el art nouveau (sus curvas sinuosas y fluidas) y en el op art (sus bloques de 
+            color y efectos de ilusión óptica). Si en su origen estadounidense tenía un 
             fuerte componente político, la apropiación local vació ese sentido para quedar 
             como pura estética. Es un ejemplo de la psicodelia rioplatense, una contracultura 
             visual que llega importada y se reescribe en clave local.
@@ -1472,7 +1475,7 @@ salas:
           descripcion: >-
             Sistema modular y diseño expositivo creado para la Primera Bienal
             Mundial de la Historieta, organizada en 1968 conjuntamente por la
-            Escuela Panamericana de Arte y el Instituto Torcuato Di Tella, e
+            *Escuela Panamericana de Arte* y el *Instituto Torcuato Di Tella*, e
             impulsada por David Lipszyc y el teórico Oscar Masotta. La
             exposición, presentada entre octubre y noviembre de 1968 en la sede
             del ITDT (Florida 936) e itinerante luego en ciudades de Argentina y
@@ -1577,13 +1580,13 @@ salas:
         texto:
           descripcion: >-
             Familia tipográfica diseñada por Rubén Fontana y aplicada desde 1995
-            a la revista tipoGráfica (tpG), publicación independiente de diseño
+            a la revista *tipoGráfica* (tpG), publicación independiente de diseño
             que se editó ininterrumpidamente entre 1987 y 2007. El uso de una
             tipografía propia en lugar de una fuente comercial estándar, era un
             gesto coherente con el programa de la revista: dotar al diseño
             gráfico argentino de un lenguaje propio, no subsidiario del catálogo
             tipográfico europeo. Fontana, integrante histórico del departamento
-            de diseño del Instituto Torcuato Di Tella y fundador junto a Zalma
+            de diseño del *Instituto Torcuato Di Tella* y fundador junto a Zalma
             Jalluf del estudio FontanaDiseño, fue uno de los referentes
             centrales del diseño tipográfico argentino contemporáneo, como también responsable
             del rediseño de la marca YPF (2007) y de
@@ -1771,104 +1774,6 @@ salas:
   # ── Sala XI ─────────────────────────────────────────────────
   - romano: "XI"
     portadilla:
-      nombre: "Identidad, infografía y activismo"
-      periodo: "1989-2010"
-      cita_curatorial: >-
-        Del menemismo al Bicentenario: identidad de marca, rebranding de las
-        empresas privatizadas, infografía periodística premiada en el mundo y
-        una gráfica social que disputa sentido. El diseño argentino se
-        profesionaliza y se globaliza.
-    piezas:
-      - imagen:
-          tipo: "Marca política / identidad de campaña"
-          titulo: "Marca de campaña presidencial de Carlos Menem"
-          autor: "Martín Mazzei"
-          datos: "1989 · Buenos Aires, Argentina"
-          images: [L066.jpg]
-        texto:
-          descripcion: >-
-            Marca de la campaña presidencial de Carlos Menem en 1989, diseñada
-            por Martín Mazzei, especialista en comunicación política. El sistema
-            gráfico se apoyó en una marca sintética y pregnante: Mazzei quitó la
-            cara del candidato para posar toda la comunicación en el logotipo,
-            una banda presidencial que atravesaba la letra «N» en el centro del
-            apellido. La operación apuntaba a captar al electorado independiente
-            no peronista. Funciona como contrapunto de la marca «RA» de Alfonsín. Dos campañas presidenciales sucesivas resueltas por una marca abstracta y memorable, indicio de la consolidación del diseño de comunicación política en la Argentina.
-          estado: "Conservada (documentación de campaña; pieza de circulación masiva)"
-
-      - imagen:
-          tipo: "Identidad corporativa / rebranding"
-          titulo: "Identidad de marca de YPF (FontanaDiseño)"
-          autor: "FontanaDiseño (Rubén Fontana y Zalma Jalluf)"
-          datos: "2004-2012 · Buenos Aires, Argentina"
-          fondo: negro            # black-bg override (batch)
-          images:
-            - {file: L067-1.png, slot: [1, 1, 6, 4], valign: bottom}
-            - {file: L067.png,   slot: [1, 5, 6, 5], valign: top}
-        texto:
-          descripcion: >-
-            Programa de identidad de marca de YPF desarrollado por
-            FontanaDiseño. Tras la privatización de los años 90, cuando la
-            conducción descartó la marca histórica y se perdió el icónico
-            escudo, y la fusión con la imagen española como Repsol YPF, el
-            estudio de Rubén Fontana y Zalma Jalluf proyectó en 2007 una
-            estrategia integral que la propia empresa definió como la
-            «argentinización de la marca». El nuevo programa reajustó la marca,
-            optimizó la reproducción del sistema y quitó la comunicación
-            compartida con Repsol para preservar los rasgos más valorados de la
-            identidad; la intervención había comenzado en 2004 con el rediseño
-            de las tiendas Full. Un caso testigo del ciclo argentino de privatización, extranjerización y reestatización leído a través de una marca.
-          estado: "Conservada (marca en uso; documentación de FontanaDiseño)"
-
-      - imagen:
-          tipo: "Infografía / diseño de información"
-          titulo: "Departamento de Infografía del diario Clarín"
-          autor: "Departamento de Infografía de Clarín (dir. Jaime Serra, 1994-2001; Alejandro Tumas y Pablo Loscri desde 2001)"
-          datos: "1993-2001 · Buenos Aires, Argentina"
-          images:
-            - {file: L068-1.png, slot: [1, 1.5, 6, 4], valign: bottom}
-            - {file: L068-4.png, slot: [1, 5.5, 6, 4], valign: top}
-        texto:
-          descripcion: >-
-            Producción del Departamento de Infografía del diario Clarín, creado
-            en 1993 en el marco del rediseño del diario y como novedad para los
-            medios locales. Iniciado por Michel Gafré y Xavier Conesa y dirigido
-            desde 1994 por el español Jaime Serra, el departamento generó un
-            punto de inflexión al sumar un equipo especializado en ilustración,
-            comunicación e investigación. Serra entendía la infografía como una
-            herramienta comunicacional que expresaba los datos mediante
-            metáforas visuales; el lenguaje resultante con ilustraciones
-            realistas, maquetas y fotografías, pronto se convirtió en el «estilo
-            Clarín» y obtuvo numerosas distinciones del Premio Malofiej. El momento en que la infografía argentina alcanza reconocimiento mundial y deja de ser graficación del dato duro para volverse un género narrativo y autoral.
-          estado: "Conservada (hemerotecas; archivos del diario)"
-
-      - imagen:
-          tipo: "Marca / identidad de evento"
-          titulo: "Marca y emblema oficial del Bicentenario argentino"
-          autor: "Juan Pablo Tredicce, Hernán Berdichevsky y Gustavo Stecher"
-          datos: "2010 · Buenos Aires, Argentina"
-          images:
-            - {file: L069-1.png, halign: right}
-            - {file: L069-2.png, halign: left}
-            - {file: L069-3.png, halign: left}
-            - {file: L069-4.png}
-        texto:
-          descripcion: >-
-            Marca y emblema oficial del Bicentenario de la Revolución de Mayo,
-            diseñados por concurso público por Juan Pablo Tredicce, Hernán
-            Berdichevsky y Gustavo Stecher para los festejos de mayo de 2010,
-            que reunieron a más de seis millones de personas. La identidad se
-            aplicó a la comunicación de los festejos, a la estampilla del Correo
-            Argentino, a monedas conmemorativas y al conjunto de eventos que
-            ocuparon el espacio público. Doscientos años después de los primeros 
-            impresos revolucionarios, el Estado convoca a sus diseñadores por concurso 
-            abierto para construir la imagen de la efeméride, contrapunto deliberado 
-            del primer sello postal y de la gráfica de la Revolución de las primeras salas.
-          estado: "Conservada (documentación oficial; aplicaciones diversas)"
-
-  # ── Sala XII ─────────────────────────────────────────────────
-  - romano: "XII"
-    portadilla:
       nombre: "Gráfica del activismo"
       periodo: "1966-2020"
       cita_curatorial: >-
@@ -1971,6 +1876,104 @@ salas:
             comunitario se anudan, como dos «saberes hacer», en una gráfica pasafronteras, anticapitalista y antirrepresiva.
           estado: "Conservada parcialmente (proyecto documentado; piezas en comunidades y colecciones)"
 
+
+  # ── Sala XII ─────────────────────────────────────────────────
+  - romano: "XII"
+    portadilla:
+      nombre: "Identidad e infografía"
+      periodo: "1989-2010"
+      cita_curatorial: >-
+        Del menemismo al Bicentenario: identidad de marca, rebranding de las
+        empresas privatizadas, infografía periodística premiada en el mundo y
+        una gráfica social que disputa sentido. El diseño argentino se
+        profesionaliza y se globaliza.
+    piezas:
+      - imagen:
+          tipo: "Marca política / identidad de campaña"
+          titulo: "Marca de campaña presidencial de Carlos Menem"
+          autor: "Martín Mazzei"
+          datos: "1989 · Buenos Aires, Argentina"
+          images: [L066.jpg]
+        texto:
+          descripcion: >-
+            Marca de la campaña presidencial de Carlos Menem en 1989, diseñada
+            por Martín Mazzei, especialista en comunicación política. El sistema
+            gráfico se apoyó en una marca sintética y pregnante: Mazzei quitó la
+            cara del candidato para posar toda la comunicación en el logotipo,
+            una banda presidencial que atravesaba la letra «N» en el centro del
+            apellido. La operación apuntaba a captar al electorado independiente
+            no peronista. Funciona como contrapunto de la marca «RA» de Alfonsín. Dos campañas presidenciales sucesivas resueltas por una marca abstracta y memorable, indicio de la consolidación del diseño de comunicación política en la Argentina.
+          estado: "Conservada (documentación de campaña; pieza de circulación masiva)"
+
+      - imagen:
+          tipo: "Identidad corporativa / rebranding"
+          titulo: "Identidad de marca de YPF (FontanaDiseño)"
+          autor: "FontanaDiseño (Rubén Fontana y Zalma Jalluf)"
+          datos: "2004-2012 · Buenos Aires, Argentina"
+          fondo: negro            # black-bg override (batch)
+          images:
+            - {file: L067-1.png, slot: [1, 1, 6, 4], valign: bottom}
+            - {file: L067.png,   slot: [1, 5, 6, 5], valign: top}
+        texto:
+          descripcion: >-
+            Programa de identidad de marca de YPF desarrollado por
+            FontanaDiseño. Tras la privatización de los años 90, cuando la
+            conducción descartó la marca histórica y se perdió el icónico
+            escudo, y la fusión con la imagen española como Repsol YPF, el
+            estudio de Rubén Fontana y Zalma Jalluf proyectó en 2007 una
+            estrategia integral que la propia empresa definió como la
+            «argentinización de la marca». El nuevo programa reajustó la marca,
+            optimizó la reproducción del sistema y quitó la comunicación
+            compartida con Repsol para preservar los rasgos más valorados de la
+            identidad; la intervención había comenzado en 2004 con el rediseño
+            de las tiendas Full. Un caso testigo del ciclo argentino de privatización, extranjerización y reestatización leído a través de una marca.
+          estado: "Conservada (marca en uso; documentación de FontanaDiseño)"
+
+      - imagen:
+          tipo: "Infografía / diseño de información"
+          titulo: "Departamento de Infografía del diario Clarín"
+          autor: "Departamento de Infografía de Clarín (dir. Jaime Serra, 1994-2001; Alejandro Tumas y Pablo Loscri desde 2001)"
+          datos: "1993-2001 · Buenos Aires, Argentina"
+          images:
+            - {file: L068-1.png, slot: [1, 1.5, 6, 4], valign: bottom}
+            - {file: L068-4.png, slot: [1, 5.5, 6, 4], valign: top}
+        texto:
+          descripcion: >-
+            Producción del Departamento de Infografía del diario Clarín, creado
+            en 1993 en el marco del rediseño del diario y como novedad para los
+            medios locales. Iniciado por Michel Gafré y Xavier Conesa y dirigido
+            desde 1994 por el español Jaime Serra, el departamento generó un
+            punto de inflexión al sumar un equipo especializado en ilustración,
+            comunicación e investigación. Serra entendía la infografía como una
+            herramienta comunicacional que expresaba los datos mediante
+            metáforas visuales; el lenguaje resultante con ilustraciones
+            realistas, maquetas y fotografías, pronto se convirtió en el «estilo
+            Clarín» y obtuvo numerosas distinciones del Premio Malofiej. El momento en que la infografía argentina alcanza reconocimiento mundial y deja de ser graficación del dato duro para volverse un género narrativo y autoral.
+          estado: "Conservada (hemerotecas; archivos del diario)"
+
+      - imagen:
+          tipo: "Marca / identidad de evento"
+          titulo: "Marca y emblema oficial del Bicentenario argentino"
+          autor: "Juan Pablo Tredicce, Hernán Berdichevsky y Gustavo Stecher"
+          datos: "2010 · Buenos Aires, Argentina"
+          images:
+            - {file: L069-1.png, halign: right}
+            - {file: L069-2.png, halign: left}
+            - {file: L069-3.png, halign: left}
+            - {file: L069-4.png}
+        texto:
+          descripcion: >-
+            Marca y emblema oficial del Bicentenario de la Revolución de Mayo,
+            diseñados por concurso público por Juan Pablo Tredicce, Hernán
+            Berdichevsky y Gustavo Stecher para los festejos de mayo de 2010,
+            que reunieron a más de seis millones de personas. La identidad se
+            aplicó a la comunicación de los festejos, a la estampilla del Correo
+            Argentino, a monedas conmemorativas y al conjunto de eventos que
+            ocuparon el espacio público. Doscientos años después de los primeros 
+            impresos revolucionarios, el Estado convoca a sus diseñadores por concurso 
+            abierto para construir la imagen de la efeméride, contrapunto deliberado 
+            del primer sello postal y de la gráfica de la Revolución de las primeras salas.
+          estado: "Conservada (documentación oficial; aplicaciones diversas)"
 
 # ── Cierre y agradecimientos (essay style, before the bibliografía) ───────
 cierre:

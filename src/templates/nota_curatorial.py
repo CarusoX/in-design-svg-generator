@@ -123,30 +123,13 @@ FIRST_PAGE_LINE_CAPACITY = _line_capacity(_FIRST_PAGE_FIRST_BASELINE_Y_MM)
 CONT_PAGE_LINE_CAPACITY = _line_capacity(_CONT_PAGE_FIRST_BASELINE_Y_MM)
 
 
-# ── Reference detection (auto-italic) ────────────────────────────────
-# Bibliographic references in this essay are all parenthetical and
-# contain a 4-digit year (e.g. "(Chartier, R., 2006, p. 55)",
-# "(Valdés de León, 2008)"). The body has no non-reference parens, so
-# matching any parens that contain a year safely italicizes every
-# citation without false positives.
-_REF_PATTERN = re.compile(r"\([^)]*\b\d{4}\b[^)]*\)")
-
-
+# ── Body tokenisation ────────────────────────────────────────────────
+# Parenthetical bibliographic references (e.g. "(Chartier, R., 2006)")
+# used to be auto-italicised. At the curator's request they now render
+# regular, like the rest of the body — so every word is tagged regular.
 def _tokenize_italics(paragraph: str) -> list[tuple[str, bool]]:
-    """Split a paragraph into (word, italic) tuples. A word is marked
-    italic when ANY character of it falls within a reference span."""
-    ranges = [(m.start(), m.end()) for m in _REF_PATTERN.finditer(paragraph)]
-
-    def overlaps(start: int, end: int) -> bool:
-        for rs, re_ in ranges:
-            if start < re_ and end > rs:
-                return True
-        return False
-
-    out: list[tuple[str, bool]] = []
-    for m in re.finditer(r"\S+", paragraph):
-        out.append((m.group(), overlaps(m.start(), m.end())))
-    return out
+    """Split a paragraph into (word, italic) tuples — all regular."""
+    return [(m.group(), False) for m in re.finditer(r"\S+", paragraph)]
 
 
 # ── Rich word wrap (italic-aware, hyphenation-aware) ─────────────────
